@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(/.claude/skills/movemental-asset-director/**)"
+    ]
+  }
+}
