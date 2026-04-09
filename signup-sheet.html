@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rainbow Schools Rodeo Auction — Personalized Bag Sign-Up</title>
+  <style>
+    :root {
+      --ink: #111;
+      --muted: #333;
+      --border: #000;
+      --rule: #222;
+    }
+    * { box-sizing: border-box; }
+    html {
+      font-size: 11pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    body {
+      margin: 0;
+      padding: 0.75in 0.65in;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.35;
+    }
+    .sheet { max-width: 7.5in; margin: 0 auto; }
+    header.top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.65rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 2pt solid var(--border);
+    }
+    .title-block { flex: 1 1 12rem; min-width: 0; }
+    .title-block .eyebrow {
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.2rem;
+      font-weight: 600;
+    }
+    .title-block h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.15rem;
+      line-height: 1.2;
+    }
+    .title-block h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .meta {
+      flex: 0 0 auto;
+      text-align: right;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .meta label { display: block; margin-bottom: 0.35rem; font-weight: 600; }
+    .meta .line {
+      display: inline-block;
+      min-width: 8.5rem;
+      border-bottom: 1pt solid var(--rule);
+      margin-left: 0.25rem;
+      vertical-align: baseline;
+    }
+    .instructions {
+      margin: 0 0 0.65rem;
+      padding: 0.5rem 0.6rem;
+      border: 1pt solid var(--rule);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .instructions strong { color: var(--ink); font-weight: 700; }
+    .legend {
+      font-size: 0.68rem;
+      color: var(--muted);
+      margin: 0 0 0.4rem;
+      line-height: 1.4;
+    }
+    .legend code {
+      font-family: inherit;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    table.signup {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.78rem;
+    }
+    table.signup caption {
+      caption-side: bottom;
+      text-align: left;
+      font-size: 0.68rem;
+      color: var(--muted);
+      padding-top: 0.35rem;
+    }
+    table.signup thead th {
+      background: transparent;
+      color: var(--ink);
+      font-weight: 700;
+      text-align: left;
+      vertical-align: bottom;
+      padding: 0.35rem 0.3rem 0.4rem;
+      border: 1pt solid var(--border);
+      font-size: 0.72rem;
+      line-height: 1.25;
+    }
+    table.signup thead th .sub {
+      display: block;
+      font-weight: 500;
+      font-size: 0.62rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+      line-height: 1.3;
+    }
+    table.signup thead th.name-bag {
+      font-size: 0.78rem;
+      border-width: 2pt;
+    }
+    table.signup tbody td {
+      border: 1pt solid var(--border);
+      vertical-align: middle;
+      padding: 0.15rem 0.25rem;
+      height: 2.15rem;
+    }
+    table.signup tbody td.write-cell { border-width: 2pt 1pt; }
+    .hand-line {
+      display: block;
+      min-height: 1.5rem;
+      border-bottom: 0.75pt solid #999;
+      margin: 0.1rem 0 0;
+    }
+    .opts {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.25rem 0.45rem;
+      line-height: 1.2;
+    }
+    .opts span { white-space: nowrap; font-size: 0.68rem; }
+    .opts .mark {
+      display: inline-block;
+      width: 0.55rem;
+      height: 0.55rem;
+      border: 1pt solid var(--border);
+      border-radius: 50%;
+      vertical-align: -0.1rem;
+      margin-right: 0.12rem;
+    }
+    .opts.cols-4 span {
+      flex: 0 0 calc(50% - 0.25rem);
+      max-width: calc(50% - 0.25rem);
+    }
+    footer.sheet-foot {
+      margin-top: 0.65rem;
+      padding-top: 0.45rem;
+      border-top: 1pt solid var(--rule);
+      font-size: 0.68rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    footer.sheet-foot strong { color: var(--ink); }
+    @media print {
+      @page { size: letter portrait; margin: 0.45in 0.5in; }
+      body { padding: 0; }
+      .sheet { max-width: none; }
+      table.signup tbody td { height: 2.25rem; }
+      a { color: inherit; text-decoration: none; }
+    }
+    @media screen {
+      body { background: #e8e8e8; }
+      .sheet {
+        background: #fff;
+        padding: 0.65in 0.55in;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="top">
+      <div class="title-block">
+      
+        <h2>Personalized Bag Sign-Up Sheet</h2>
+      </div>
+      
+    </header>
+
+    <section class="instructions" aria-label="Pricing and how to fill out">
+      <strong>How to order:</strong> Each bag is <strong>$15</strong>. Adding a personalized name on the back (after the words “Property of”) is an additional <strong>+$10</strong> per bag. Please fill out <strong>one row per bag</strong>. Use the circles in each row to mark font style, bag color, and glitter—no need to write those words out.
+    </section>
+
+    <p class="legend" id="col-legend">
+      <strong>Column tips:</strong> <code>Parent / Buyer</code> is the adult placing the order (for pickup questions). <code>Name on bag</code> is the exact spelling for “Property of ___.” Font and color use the letter key in the header: <strong>O</strong>  · <strong>G</strong> Green · <strong>B</strong> Blue · <strong>P</strong> Purple.
+    </p>
+
+    <table class="signup" aria-describedby="col-legend">
+      <caption>Sign-up rows — print additional copies if needed.</caption>
+      <thead>
+        <tr>
+          <th scope="col" style="width:17%">Parent / buyer name <span class="sub">Purchasing adult (for order questions)</span></th>
+          <th scope="col" class="name-bag" style="width:24%">Name to write on bag <span class="sub">Exact spelling after “Property of”</span></th>
+          <th scope="col" style="width:15%">Font style <span class="sub">Circle one: Print or Cursive</span></th>
+          <th scope="col" style="width:18%">Bag color <span class="sub">Circle one: O · G · B · P</span></th>
+          <th scope="col" style="width:12%">Glitter <span class="sub">Circle Yes or No</span></th>
+          <th scope="col" style="width:14%">Classroom <span class="sub">Teacher or room</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 14 rows: at least 12 sign-ups per page -->
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+        <tr><td><span class="hand-line" aria-hidden="true"></span></td><td class="write-cell"><span class="hand-line" aria-hidden="true"></span></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Print</span><span><span class="mark" aria-hidden="true"></span>Cursive</span></div></td><td><div class="opts cols-4"><span><span class="mark" aria-hidden="true"></span>O </span><span><span class="mark" aria-hidden="true"></span>G Green</span><span><span class="mark" aria-hidden="true"></span>B Blue</span><span><span class="mark" aria-hidden="true"></span>P Purple</span></div></td><td><div class="opts"><span><span class="mark" aria-hidden="true"></span>Yes</span><span><span class="mark" aria-hidden="true"></span>No</span></div></td><td><span class="hand-line" aria-hidden="true"></span></td></tr>
+      </tbody>
+    </table>
+
+    <footer class="sheet-foot">
+      <strong>Payment &amp; pickup:</strong> Collect payment per your auction rules. Keep this sheet with fulfilled bags so personalization matches the order. Reprint as needed—each sheet is identical for stackable use at the table.
+    </footer>
+  </main>
+</body>
+</html>
