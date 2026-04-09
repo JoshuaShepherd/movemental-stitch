@@ -1,21 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Newsreader, Inter } from "next/font/google";
+import { Nav } from "@/components/nav";
+import { Footer } from "@/components/footer";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
+  style: ["normal", "italic"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Movemental Stitch — Design Gallery",
+  title: "Movemental | From Content to Living Systems",
   description:
-    "A curated gallery of Stitch design screens for The Curator / Movemental project.",
+    "We analyze your unique content, frameworks, and cultural context to architect digital ecosystems where transformation happens at scale.",
 };
 
 export default function RootLayout({
@@ -24,11 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${newsreader.variable} ${inter.variable} scroll-smooth`}>
+      <body className="min-h-screen flex flex-col bg-surface text-on-surface font-body antialiased">
+        <Nav />
+        <main className="flex-1 pt-[72px]">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

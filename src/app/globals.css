@@ -1,41 +1,108 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbf9f4;
-  --foreground: #1b1c19;
-  --primary: #5300b7;
-  --primary-container: #6d28d9;
+  /* Movemental Design System — Material Design 3 tokens from Stitch */
+  --primary: #380080;
+  --primary-container: #5300b7;
+  --on-primary: #ffffff;
+  --on-primary-container: #bd9cff;
+  --primary-fixed: #eaddff;
   --primary-fixed-dim: #d3bbff;
+  --inverse-primary: #d3bbff;
+
+  --secondary: #5e5f5b;
+  --secondary-container: #deddd8;
+  --on-secondary: #ffffff;
+  --on-secondary-container: #61615d;
+
+  --tertiary: #4e1a00;
+  --tertiary-container: #722a00;
+  --on-tertiary: #ffffff;
+  --on-tertiary-container: #fa9261;
+
+  --surface: #fbf9f4;
+  --on-surface: #1b1c19;
+  --on-surface-variant: #4a4454;
+  --surface-variant: #e4e2dd;
+  --surface-dim: #dbdad5;
+  --surface-bright: #fbf9f4;
   --surface-container: #f0eee9;
   --surface-container-low: #f5f3ee;
-  --surface-dim: #dbdad5;
+  --surface-container-high: #eae8e3;
+  --surface-container-highest: #e4e2dd;
+  --surface-container-lowest: #ffffff;
+  --inverse-surface: #30312e;
+  --inverse-on-surface: #f2f1ec;
+
   --outline: #7b7486;
   --outline-variant: #ccc3d7;
-  --on-surface-variant: #4a4455;
+  --surface-tint: #7238d5;
+
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
+  --on-error: #ffffff;
+  --on-error-container: #93000a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-primary-fixed: var(--primary-fixed);
   --color-primary-fixed-dim: var(--primary-fixed-dim);
+  --color-inverse-primary: var(--inverse-primary);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary: var(--on-secondary);
+  --color-on-secondary-container: var(--on-secondary-container);
+
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-container: var(--tertiary-container);
+  --color-on-tertiary: var(--on-tertiary);
+  --color-on-tertiary-container: var(--on-tertiary-container);
+
+  --color-surface: var(--surface);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-surface-variant: var(--surface-variant);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-bright: var(--surface-bright);
   --color-surface-container: var(--surface-container);
   --color-surface-container-low: var(--surface-container-low);
-  --color-surface-dim: var(--surface-dim);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-inverse-surface: var(--inverse-surface);
+  --color-inverse-on-surface: var(--inverse-on-surface);
+
   --color-outline: var(--outline);
   --color-outline-variant: var(--outline-variant);
-  --color-on-surface-variant: var(--on-surface-variant);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface-tint: var(--surface-tint);
+
+  --color-error: var(--error);
+  --color-error-container: var(--error-container);
+  --color-on-error: var(--on-error);
+  --color-on-error-container: var(--on-error-container);
+
+  --font-headline: "Newsreader", serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  font-family: var(--font-body);
+  background-color: var(--surface);
+  color: var(--on-surface);
+  line-height: 1.6;
 }
 
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
+h1, h2, h3 {
+  font-family: var(--font-headline);
+  letter-spacing: -0.02em;
 }
