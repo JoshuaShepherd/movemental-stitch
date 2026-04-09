@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | The Integrated System</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,700;0,6..72,800;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed-variant": "#7a3005",
+                "surface-container": "#f0eee9",
+                "on-secondary": "#ffffff",
+                "surface": "#fbf9f4",
+                "on-primary-fixed-variant": "#5912bd",
+                "on-error": "#ffffff",
+                "surface-bright": "#fbf9f4",
+                "outline": "#7b7486",
+                "on-secondary-container": "#61615d",
+                "background": "#fbf9f4",
+                "surface-container-low": "#f5f3ee",
+                "primary-container": "#5300b7",
+                "surface-container-high": "#eae8e3",
+                "primary": "#380080",
+                "on-primary-fixed": "#25005a",
+                "tertiary": "#4e1a00",
+                "inverse-on-surface": "#f2f1ec",
+                "on-secondary-fixed-variant": "#464743",
+                "inverse-primary": "#d3bbff",
+                "primary-fixed": "#eaddff",
+                "error-container": "#ffdad6",
+                "on-error-container": "#93000a",
+                "tertiary-fixed-dim": "#ffb595",
+                "surface-variant": "#e4e2dd",
+                "on-tertiary": "#ffffff",
+                "outline-variant": "#ccc3d7",
+                "on-tertiary-fixed": "#351000",
+                "on-surface-variant": "#4a4454",
+                "on-secondary-fixed": "#1b1c19",
+                "on-primary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "secondary": "#5e5f5b",
+                "on-tertiary-container": "#fa9261",
+                "primary-fixed-dim": "#d3bbff",
+                "secondary-fixed-dim": "#c7c6c2",
+                "tertiary-fixed": "#ffdbcc",
+                "surface-dim": "#dbdad5",
+                "tertiary-container": "#722a00",
+                "error": "#ba1a1a",
+                "on-primary-container": "#bd9cff",
+                "surface-tint": "#7238d5",
+                "on-surface": "#1b1c19",
+                "inverse-surface": "#30312e",
+                "surface-container-highest": "#e4e2dd",
+                "secondary-container": "#deddd8",
+                "on-background": "#1b1c19",
+                "secondary-fixed": "#e4e2dd"
+            },
+            "borderRadius": {
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Newsreader", "serif"],
+                "body": ["Inter", "sans-serif"],
+                "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fbf9f4; color: #1b1c19; }
+        .serif-title { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="w-full top-0 left-0 z-50 sticky bg-[#fbf9f4] dark:bg-zinc-950">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-serif font-black tracking-tighter text-[#1b1c19] dark:text-[#fbf9f4]">
+                Movemental
+            </div>
+<div class="hidden md:flex items-center gap-10 font-serif text-lg tracking-tight font-medium">
+<a class="text-[#5300b7] dark:text-[#a855f7] border-b-2 border-[#5300b7] pb-1 hover:opacity-100 transition-all duration-300" href="#">Platform</a>
+<a class="text-[#1b1c19] dark:text-zinc-400 opacity-70 hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Movement Leaders</a>
+<a class="text-[#1b1c19] dark:text-zinc-400 opacity-70 hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-zinc-400 opacity-70 hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Research</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-3 font-medium hover:bg-primary transition-all duration-300 active:scale-95">
+                Start a Conversation
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="px-12 pt-32 pb-48 grid grid-cols-12 gap-8 items-end">
+<div class="col-span-12 lg:col-span-8">
+<h1 class="serif-title text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-[-0.04em] font-medium text-on-surface">
+                    This is not a platform you use. It’s a <span class="italic text-primary-container">system</span> we build.
+                </h1>
+</div>
+<div class="col-span-12 lg:col-span-4 pb-4">
+<p class="text-xl md:text-2xl font-body leading-relaxed text-on-surface-variant opacity-90 max-w-md">
+                    Movemental turns bodies of work and organizations into living systems—integrating content, pathways, AI, and formation into a single coherent environment.
+                </p>
+</div>
+</section>
+<!-- Image Break -->
+<section class="px-12">
+<div class="w-full h-[716px] bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-90" data-alt="abstract architectural study of concrete and light with dramatic shadows and sharp lines creating an intellectual editorial mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxcSEmAxh9A5Ruj-Ktv9FEx6HD3Pu1MFaxfRJOTqpM6G3YCcRkspB-8wvXOstssN65P87I5J9B8DFWQRcBp17NuQAV0swc3s-zIjyy405DORXqn3VvYB-zr-4LvGdL-KFFSbAisOw3gOj5tiNZp6GFpag3XjgT1a_a0-j9s7CV_A2zbKe8QcW5-4evTqJXxUIpsdmOde_JPB5ov3Uqxct-yUL0y7VDW4RICxjpB4g8oZ4aDIlijzkpwjwmW6uyaFNXA6rXtqVx7wiX"/>
+<div class="absolute inset-0 bg-primary-container/10 mix-blend-multiply"></div>
+</div>
+</section>
+<!-- Section 1: The Fragmentation -->
+<section class="px-12 py-32 grid grid-cols-12 gap-12">
+<div class="col-span-12 lg:col-span-5 sticky top-32 h-fit">
+<h2 class="serif-title text-5xl leading-tight font-medium">
+                    Most systems weren’t built as systems.
+                </h2>
+</div>
+<div class="col-span-12 lg:col-span-6 lg:col-start-7 space-y-12">
+<p class="text-2xl font-body leading-relaxed text-on-surface">
+                    Traditional digital ecosystems are a patchwork of convenience. We stitch together tools that were never meant to speak to one another, creating a "Frankenstein" experience for both creator and participant.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/30">
+<div class="bg-surface-container-low p-8">
+<span class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-4 block">Fragmented Tool 01</span>
+<h4 class="text-xl font-bold mb-2">Static Website</h4>
+<p class="text-on-surface-variant">Content lives in a silo, detached from actual user progress or interaction.</p>
+</div>
+<div class="bg-surface-container-low p-8">
+<span class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-4 block">Fragmented Tool 02</span>
+<h4 class="text-xl font-bold mb-2">Course LMS</h4>
+<p class="text-on-surface-variant">A rigid pathway that ignores the nuance of the community's real-time needs.</p>
+</div>
+<div class="bg-surface-container-low p-8">
+<span class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-4 block">Fragmented Tool 03</span>
+<h4 class="text-xl font-bold mb-2">Email Automations</h4>
+<p class="text-on-surface-variant">One-way broadcasts that lack context of what the user is currently building.</p>
+</div>
+<div class="bg-surface-container-low p-8">
+<span class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-4 block">Fragmented Tool 04</span>
+<h4 class="text-xl font-bold mb-2">AI Add-ons</h4>
+<p class="text-on-surface-variant">External bots that have no access to the proprietary depth of your organization's work.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Integration (Bento-ish Grid) -->
+<section class="px-12 py-32 bg-surface-container">
+<div class="max-w-[1920px] mx-auto">
+<div class="mb-24 max-w-4xl">
+<h2 class="serif-title text-6xl leading-tight font-medium mb-8">A single, integrated system.</h2>
+<p class="text-2xl text-on-surface-variant font-light leading-relaxed">
+                        We replace the patchwork with a single data layer. When content, pathways, and AI connect, the system begins to learn and evolve alongside its members.
+                    </p>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-8 h-[500px] bg-primary-container p-12 flex flex-col justify-between text-on-primary">
+<div class="max-w-md">
+<h3 class="serif-title text-4xl mb-4">The Universal Core</h3>
+<p class="text-lg opacity-80">Every interaction, from a lesson completed to a query asked, informs the entire ecosystem. Your data is no longer scattered; it is centralized and actionable.</p>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<div class="w-12 h-12 bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined">database</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 h-[500px] bg-surface-container-highest p-12">
+<img class="w-full h-48 object-cover mb-8 grayscale hover:grayscale-0 transition-all duration-700" data-alt="minimalist futuristic computer hardware and glowing light circuits representing a deep tech data layer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzJfqoF8dfXZ6RtOaBDk0WwOv1s6mSeEBUNqTuv8lwpT72dRr7NuMvAA1Hj4l-IbeXdHDaF8PT7s3y6pNkvxmSuPpXE8fJnvjGJDFVRACJ3At0fyrMfJO_avAge3TZK-Gs53wiZN-SSJjLDTdOM0ktVTWa6do2RZtIexRBpdUY1MjtGAD7crV1hwbjzOGiYVBSrvy71uF61XBYz3ifUI78w7kXBpUJj2eRojcdH0ltnMlllLuB-UWO9KskAENBAvMn0UIrv5zx-yvY"/>
+<h3 class="serif-title text-3xl mb-4">Responsive Intelligence</h3>
+<p class="text-on-surface-variant">AI that doesn't just answer—it navigates. It understands the context of the user's journey.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: What's Inside (Asymmetric Cards) -->
+<section class="px-12 py-48">
+<h2 class="serif-title text-6xl mb-24 text-center">What’s inside</h2>
+<div class="space-y-32">
+<!-- Layer 1 -->
+<div class="flex flex-col md:flex-row items-center gap-16 md:gap-32">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-[4/3] object-cover" data-alt="vibrant rows of books in an old library representing the depth of the content layer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuyn-QJgRFJJRpHNpGUXjg8zCItxIdUaRXdOvvOfo-3GM5CvWHsL_zUMNjtobv8Z8hKu-nE51aHqLplAZ1ZVgNoIIK5dEDxssLtqupwVAbTRcbJu2KhiDmPmnD894MY8Um7z8hg_A25MhMG4RCRntQOfjN1GJRTQ50hJ6ATVYlImRBSLozq_TYfsMIP6B0IoIq4OJ1fycDrSTOuuTnILQrOGnip-vFgc8mdt5Alh3_z3kwddQhwMlTWwi3Cyo1YEfISBOkg3RrrxlX"/>
+</div>
+<div class="w-full md:w-1/3">
+<span class="text-5xl serif-title italic text-primary-container mb-6 block">01</span>
+<h3 class="text-4xl serif-title font-bold mb-6">Content Layer</h3>
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            Beyond blogs and videos. This is a dynamic library where every piece of information is tagged, mapped, and ready to be summoned by the AI or triggered by a pathway.
+                        </p>
+</div>
+</div>
+<!-- Layer 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-16 md:gap-32">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-[4/3] object-cover" data-alt="close up of drafting tools and architectural plans representing structured formation pathways" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4nv-hflGczV_BsRVMFJN2N_V18mmSjtVUUGYuGT0ZCdotcl92zYwfO13WXWdcqKleqvL8N9zG_DDSigDpsU__7z9IReS2aNsvTqIidJCWSGgK-SGOVQCUbHnKwlRBDfy6WIccn5LyXLsYhypwCTckS8HItf4EImuP12Srxi7HjEfCTvHlH5FAi7m8E85fkEAxNG287W9LyIyA6HWVGEIgUK868Ka6PRpW9Gtsvb7MRx2gGEcDqDwP_mzuNVdEMsvSurI5EEX4IafQ"/>
+</div>
+<div class="w-full md:w-1/3">
+<span class="text-5xl serif-title italic text-primary-container mb-6 block">02</span>
+<h3 class="text-4xl serif-title font-bold mb-6">Formation Layer</h3>
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            Structured journeys designed for transformation. Not just passive consumption, but active formation through sequences that adapt to the user's pace and input.
+                        </p>
+</div>
+</div>
+<!-- Layer 3 -->
+<div class="flex flex-col md:flex-row items-center gap-16 md:gap-32">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-[4/3] object-cover" data-alt="abstract digital waves of purple and charcoal light representing a sophisticated AI layer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfqSLVGTglVTFRlCFsD6UHYPR0TlJuvXs5FXkGq7IKgBaPOMCG9Cgj1FRcI-aF2fFH3fsytNby94HKEgkPmS3y7plO2sefrHNjzx6oigJyUAv2LAKuC62qMf3QmWmrEtrxovILjWmtEnf0mWqu54Cap2uIZpp1so2MUM8oeP8cpFqH3mzO5gGK6U5nqkj-BnaGTocwpyExl-NCIdcuc6En0OLDo4oXeyVY8xe-x-o9aHK3wdhh4NnMAUz6LwO6QMH9P61UNnpZRswT"/>
+</div>
+<div class="w-full md:w-1/3">
+<span class="text-5xl serif-title italic text-primary-container mb-6 block">03</span>
+<h3 class="text-4xl serif-title font-bold mb-6">AI Layer</h3>
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            The nervous system of the platform. Our proprietary integration allows the AI to act as a mentor, librarian, and guide, trained specifically on your body of work.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Difference -->
+<section class="bg-on-surface text-surface px-12 py-32">
+<div class="grid grid-cols-12 gap-12 max-w-[1920px] mx-auto items-center">
+<div class="col-span-12 lg:col-span-6">
+<h2 class="serif-title text-6xl leading-tight mb-8">What makes this different</h2>
+<p class="text-2xl font-light opacity-80 leading-relaxed max-w-xl">
+                        Integration isn't just a technical feature; it's a pedagogical shift. By bringing content, courses, and AI into one environment, we remove the friction of learning and the isolation of expertise.
+                    </p>
+</div>
+<div class="col-span-12 lg:col-span-6">
+<div class="border-l-4 border-primary-container pl-12 py-8 space-y-12">
+<div>
+<h4 class="text-xl font-bold uppercase tracking-widest text-primary-container mb-4">The Intersection</h4>
+<p class="text-3xl serif-title italic">"Most tools focus on the storage of knowledge. We focus on the activation of it."</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<p class="text-4xl font-bold mb-2">100%</p>
+<p class="text-sm opacity-60 uppercase tracking-tighter">Proprietary Training</p>
+</div>
+<div>
+<p class="text-4xl font-bold mb-2">Zero</p>
+<p class="text-sm opacity-60 uppercase tracking-tighter">Third-party Silos</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-12 py-48 text-center bg-surface">
+<h2 class="serif-title text-7xl md:text-8xl mb-12 leading-[0.9]">Ready to build <br/>your <span class="italic">living system?</span></h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-primary-container text-on-primary px-12 py-5 text-lg font-medium hover:bg-primary transition-all duration-300">
+                    Schedule a Consultation
+                </button>
+<button class="bg-on-surface text-surface px-12 py-5 text-lg font-medium hover:opacity-90 transition-all duration-300">
+                    View the Ethics Framework
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full mt-24 bg-[#fbf9f4] dark:bg-zinc-950 font-sans text-sm tracking-wide">
+<div class="flex flex-col gap-2 mb-8 md:mb-0">
+<div class="text-lg font-serif font-bold text-[#1b1c19]">Movemental</div>
+<div class="opacity-60">© 2024 Movemental. All rights reserved.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-[#1b1c19] dark:text-zinc-100">
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="opacity-60 hover:opacity-100 transition-opacity underline font-bold" href="#">Terms of Service</a>
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Ethics Framework</a>
+<a class="opacity-60 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</div>
+</footer>
+</body></html>

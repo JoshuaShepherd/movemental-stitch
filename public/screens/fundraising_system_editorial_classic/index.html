@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Digital Curator | AI-Powered Fundraising System</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#574183",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#30312d",
+                        "outline-variant": "#ccc3d7",
+                        "on-secondary-fixed": "#240a4e",
+                        "inverse-primary": "#d3bbff",
+                        "inverse-on-surface": "#f2f1eb",
+                        "surface-container-high": "#e9e8e3",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#d3bbff",
+                        "primary": "#380080",
+                        "surface-tint": "#7238d5",
+                        "on-primary-container": "#bd9cff",
+                        "primary-fixed": "#eaddff",
+                        "on-surface-variant": "#4a4454",
+                        "surface-variant": "#e4e2dd",
+                        "surface": "#fbf9f4",
+                        "surface-bright": "#fbf9f4",
+                        "primary-container": "#5300b7",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-fixed": "#eaddff",
+                        "background": "#fbf9f4",
+                        "tertiary-container": "#722a00",
+                        "on-tertiary-container": "#fa9261",
+                        "tertiary": "#4e1a00",
+                        "secondary": "#695296",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#efeee8",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-background": "#1b1c19",
+                        "surface-dim": "#dbdad5",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "secondary-container": "#cbb2fd",
+                        "on-tertiary-fixed": "#351000",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f5f4ee",
+                        "on-primary-fixed": "#25005a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "on-secondary-fixed-variant": "#503a7c",
+                        "secondary-fixed-dim": "#d3bbff",
+                        "outline": "#7b7486"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto bg-[#fbf9f4] dark:bg-[#1b1c19] backdrop-blur-md opacity-90">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-[#fbf9f4]">The Digital Curator</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-xs font-bold uppercase tracking-wider text-[#380080] dark:text-[#5300b7] border-b-2 border-[#380080] pb-1 hover:text-[#5300b7] transition-colors duration-300" href="#">Curriculum</a>
+<a class="text-xs font-bold uppercase tracking-wider text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] transition-colors duration-300" href="#">Outcomes</a>
+<a class="text-xs font-bold uppercase tracking-wider text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] transition-colors duration-300" href="#">Faculty</a>
+<a class="text-xs font-bold uppercase tracking-wider text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] transition-colors duration-300" href="#">Registration</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full text-sm font-semibold hover:bg-primary-container active:scale-[0.98] transition-all">
+            Apply Now
+        </button>
+</nav>
+<main class="pt-32">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="px-12 md:px-24 py-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-start-3 md:col-span-8">
+<span class="inline-block px-4 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-xs font-bold uppercase tracking-widest mb-8">AI-Powered Intensive</span>
+<h1 class="text-5xl md:text-7xl leading-tight font-headline tracking-tight mb-8">
+                    Build a fundraising system that is <span class="italic">informed</span>, <span class="italic text-primary">targeted</span>, and <span class="italic">effective</span>.
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface/80 font-body leading-relaxed max-w-2xl">
+                    Merge institutional heritage with modern intelligence. A curriculum designed for development professionals seeking the digital edge.
+                </p>
+<div class="mt-12 flex flex-wrap gap-6">
+<button class="bg-primary-container text-on-primary px-10 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-all flex items-center gap-2">
+                        Build your fundraising system
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-10 py-4 rounded-full text-lg font-medium hover:bg-surface-container transition-all">
+                        View Curriculum
+                    </button>
+</div>
+</div>
+</section>
+<!-- Overview Section: Tonal Shift Separation -->
+<section class="bg-surface-container-low py-32 px-12 md:px-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+<div class="md:col-start-2 md:col-span-4">
+<h2 class="text-4xl font-headline italic mb-6">The Curation Strategy</h2>
+</div>
+<div class="md:col-span-6">
+<p class="text-lg leading-relaxed text-on-surface/90 mb-8">
+                        Traditional fundraising relies on fragmented data and manual outreach. The Digital Curator AI Intensive provides a framework to consolidate institutional knowledge into a high-precision outreach machine.
+                    </p>
+<div class="flex items-center gap-4 py-6">
+<div class="flex-1 h-3 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-2/3"></div>
+</div>
+<span class="text-xs font-bold uppercase tracking-tighter text-tertiary">Formation Phase 02</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Who This Is For: Bullet Points with Offset -->
+<section class="py-32 px-12 md:px-24 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-start-4 md:col-span-7">
+<h2 class="text-4xl font-headline mb-12">Who This Is For</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance">account_balance</span>
+<div>
+<h3 class="text-xl font-bold mb-2">Non-Profit Directors</h3>
+<p class="text-on-surface/70 leading-relaxed">Visionaries tasked with modernizing development departments without sacrificing organizational soul.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="hub">hub</span>
+<div>
+<h3 class="text-xl font-bold mb-2">Development Officers</h3>
+<p class="text-on-surface/70 leading-relaxed">Professionals looking to automate lead qualification and prospect research using private AI models.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="query_stats">query_stats</span>
+<div>
+<h3 class="text-xl font-bold mb-2">Strategy Analysts</h3>
+<p class="text-on-surface/70 leading-relaxed">Data-driven thinkers who want to build predictive models for donor lifetime value and churn.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What You'll Leave With: Bento Grid / Glassmorphism Cards -->
+<section class="bg-surface-container-low py-32 px-12 md:px-24">
+<h2 class="text-4xl font-headline text-center mb-20">What You’ll Leave With</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container rounded-lg p-10 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="architecture">architecture</span>
+<h3 class="text-2xl font-bold mb-4">The Intelligent Pipeline</h3>
+<p class="text-on-surface/70 leading-relaxed">A custom-configured AI dashboard that monitors donor sentiment across all digital touchpoints.</p>
+</div>
+<div class="mt-8">
+<img class="w-full h-32 object-cover rounded-md opacity-80 mix-blend-multiply" data-alt="high-end minimal dashboard visualization with subtle purple data points on a clean cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHIZ02D2OkBsRRElG33P7mSMyRq0-0-df4iFiP50-vrcFOejhC7GaAHVaTI-C3fhRsRCEgidmv3oIyKNDQRd1pxSbBJkRjFcztLP0d0CfxKjdlNqsvCmAp5o2-6MUEiRl563Mu-jJtnItsiz7tlYWo4ZpGGTKPh6vBetQRwhXKrBwm6_GjxtxIDuXVRW9FjHI2PdhZ0gVuSF1Tn8UPQkNns2jzdB3HicbTdX2zonOW83aSkg265oLjxv9C88ybTsGTZL4o9oVabS8S"/>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container rounded-lg p-10 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="contract_edit">contract_edit</span>
+<h3 class="text-2xl font-bold mb-4">Curation Playbook</h3>
+<p class="text-on-surface/70 leading-relaxed">200+ proprietary prompt templates for high-conversion grant writing and personalized major gift outreach.</p>
+</div>
+<div class="mt-8 border-t border-on-surface/10 pt-6">
+<div class="flex -space-x-2">
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-gray-200 overflow-hidden">
+<img data-alt="professional portrait of a senior development officer in a library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCibo-rf79UIvAVefTv8ALG3wW81oSUpjKS0QFXn_2ywH7Df9-1ggbWFnxmHqoWIH4BLtDOOXdWgyKTnS_lF9x5gdyyxIeyoxSkxsgIpVopZ33-GRSpwePqn_YGW4g4hZloKT2ZNcZqWNC7MLqAD3M5pIRZBIVy3_TOJgFFd7ZatVSoiLDNA81eT26fhIOVFHotOZa6I-NF2ek0g8VpI2yh3BEM3D7Z3gOyQ0iz1fdpF6MFEhQFYyvTp3ZwUlixwP7QpgHDgZKWAXJK"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-gray-300 overflow-hidden">
+<img data-alt="professional portrait of a tech analyst in a modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM-qqditbU-g54CKf8z-pLuwbC9GOqaMYPlyikCMWxs_dg4Jc2l_bgYeV69UFb9tUoUW2ofBNSF-_0ugZyOYkDaqU2egzL2zB_7qu0RDvkPokN_UirVFciQclO9DPX6lyzH6A-N0nF9CCid6DjVXowK8hYXEmy0tjdzs0giu8f-nISIo4tgFfLXlKiVTnhJEr8XVIVFrc8CLY7-5QZuNOxiJ-cxRVmN9XcF9uH9SbNrytOWUpQ3I9Aj8TEtAEYGDAXirj9GeY39ZPk"/>
+</div>
+</div>
+<p class="text-xs mt-3 font-medium opacity-60">Used by 40+ leading institutions</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container rounded-lg p-10 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="verified_user">verified_user</span>
+<h3 class="text-2xl font-bold mb-4">The Ethical Seal</h3>
+<p class="text-on-surface/70 leading-relaxed">Certification of your system's compliance with emerging AI transparency and privacy regulations.</p>
+</div>
+<div class="mt-8 bg-surface p-4 rounded-md shadow-sm">
+<div class="flex items-center gap-3 text-sm text-primary font-bold">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+                            Verified Architecture
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-40 px-12 md:px-24 bg-surface text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-5xl md:text-6xl font-headline mb-10 leading-tight">Ready to institutionalize your intelligence?</h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full text-xl font-semibold hover:bg-primary-container transition-all flex items-center gap-4 group">
+                        Build your fundraising system
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<p class="mt-12 text-on-surface/50 font-label uppercase text-xs tracking-widest">Limited to 25 participants per cohort.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex flex-col md:flex-row justify-between items-start gap-8 bg-[#f5f4ee] dark:bg-[#1b1c19] py-16 px-12">
+<div class="flex flex-col gap-4">
+<div class="text-xl font-serif text-[#1b1c19] dark:text-[#fbf9f4]">The Digital Curator</div>
+<p class="max-w-xs text-on-surface/60 text-sm leading-relaxed">
+                Empowering modern institutions with scholarly AI frameworks and curated fundraising systems.
+            </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-wider text-[#380080]">Program</span>
+<a class="text-on-surface/60 hover:text-[#380080] underline decoration-amethyst-500/30 transition-opacity" href="#">Curriculum</a>
+<a class="text-on-surface/60 hover:text-[#380080] underline decoration-amethyst-500/30 transition-opacity" href="#">Schedule</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-wider text-[#380080]">Resources</span>
+<a class="text-on-surface/60 hover:text-[#380080] underline decoration-amethyst-500/30 transition-opacity" href="#">Case Studies</a>
+<a class="text-on-surface/60 hover:text-[#380080] underline decoration-amethyst-500/30 transition-opacity" href="#">Faculty Bio</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-wider text-[#380080]">Legal</span>
+<a class="text-on-surface/60 hover:text-[#380080] underline decoration-amethyst-500/30 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-on-surface/60 hover:text-[#380080] underline decoration-amethyst-500/30 transition-opacity" href="#">Terms</a>
+</div>
+</div>
+<div class="flex flex-col md:items-end gap-6 w-full md:w-auto mt-8 md:mt-0">
+<p class="text-xs text-on-surface/50 text-right">
+                © 2024 The Digital Curator AI Intensive. All Rights Reserved.
+            </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface/40 hover:text-primary cursor-pointer" data-icon="language">language</span>
+<span class="material-symbols-outlined text-on-surface/40 hover:text-primary cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+</footer>
+</body></html>

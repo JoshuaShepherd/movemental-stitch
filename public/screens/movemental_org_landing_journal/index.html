@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Editorial Intelligence | The Capacity Problem</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb595",
+                        "surface-container-low": "#f5f3ee",
+                        "on-secondary-fixed-variant": "#464743",
+                        "surface-bright": "#fbf9f4",
+                        "on-secondary-fixed": "#1b1c19",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1b1c19",
+                        "on-primary-fixed": "#25005a",
+                        "on-error": "#ffffff",
+                        "primary": "#380080",
+                        "secondary-container": "#deddd8",
+                        "surface-dim": "#dbdad5",
+                        "outline-variant": "#ccc3d7",
+                        "background": "#fbf9f4",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface": "#fbf9f4",
+                        "tertiary": "#4e1a00",
+                        "surface-container-high": "#eae8e3",
+                        "primary-fixed": "#eaddff",
+                        "surface-tint": "#7238d5",
+                        "surface-variant": "#e4e2dd",
+                        "inverse-primary": "#d3bbff",
+                        "on-surface-variant": "#4a4454",
+                        "on-primary-container": "#bd9cff",
+                        "surface-container": "#f0eee9",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container-highest": "#e4e2dd",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-tertiary-container": "#fa9261",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "on-error-container": "#93000a",
+                        "outline": "#7b7486",
+                        "secondary-fixed": "#e4e2dd",
+                        "primary-fixed-dim": "#d3bbff",
+                        "on-surface": "#1b1c19",
+                        "on-secondary-container": "#61615d",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#5300b7",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#722a00",
+                        "secondary": "#5e5f5b",
+                        "inverse-surface": "#30312e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fbf9f4; color: #1b1c19; }
+        .serif-headline { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="w-full top-0 z-50 bg-[#fbf9f4] dark:bg-[#1b1c19] border-none">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] italic text-[#1b1c19] dark:text-[#fbf9f4]">
+                Editorial Intelligence
+            </div>
+<div class="hidden md:flex space-x-12 items-center">
+<a class="font-['Newsreader'] tracking-tight transition-all duration-300 text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7]" href="#">Capacity</a>
+<a class="font-['Newsreader'] tracking-tight transition-all duration-300 text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7]" href="#">Governance</a>
+<a class="font-['Newsreader'] tracking-tight transition-all duration-300 text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7]" href="#">Structural</a>
+<a class="font-['Newsreader'] tracking-tight transition-all duration-300 text-[#5300b7] dark:text-[#a370f7] border-b-2 border-[#5300b7] pb-1" href="#">Insights</a>
+<a class="font-['Newsreader'] tracking-tight transition-all duration-300 text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7]" href="#">About</a>
+</div>
+<button class="bg-[#5300b7] text-white px-8 py-3 font-body font-medium transition-all duration-300 scale-100 active:scale-95">
+                Partner With Us
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative py-32 px-8 overflow-hidden bg-surface">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-8">
+<span class="font-body text-sm uppercase tracking-widest text-primary-container mb-6 block">Vol. 01 — Institutional Integrity</span>
+<h1 class="serif-headline text-7xl md:text-8xl leading-none tracking-tight text-on-surface mb-12">
+                        Most nonprofits don't have a <span class="italic">strategy problem</span>.
+                    </h1>
+<div class="max-w-2xl">
+<p class="font-body text-xl md:text-2xl leading-relaxed text-on-surface-variant">
+                            They have a <span class="text-on-surface font-semibold">capacity problem</span>. The gap between your mission and your impact isn't a lack of vision; it's the friction of Time, People, Structure, and Tools.
+                        </p>
+</div>
+</div>
+<div class="lg:col-span-4 self-center">
+<div class="bg-surface-container p-12 aspect-[4/5] flex flex-col justify-between">
+<span class="material-symbols-outlined text-5xl text-primary-container" data-icon="auto_awesome">auto_awesome</span>
+<div class="space-y-4">
+<h3 class="serif-headline text-2xl">Reframing the Work</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                                Strategy is cheap. Execution is expensive. We build the machinery that makes your strategy inevitable.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: AI Capabilities -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<h2 class="serif-headline text-5xl md:text-6xl max-w-3xl leading-tight">New capabilities with AI are not tools—they are <span class="italic">extensions</span> of your intent.</h2>
+<p class="font-body text-sm uppercase tracking-widest text-outline">The Intelligence Layer</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-outline-variant/30">
+<div class="bg-surface p-10 group hover:bg-primary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl mb-8 group-hover:text-white" data-icon="account_tree">account_tree</span>
+<h4 class="serif-headline text-2xl mb-4 group-hover:text-white">Mapping Relationships</h4>
+<p class="font-body text-on-surface-variant group-hover:text-white/80 leading-relaxed">Surface deep connections between donors, policy, and impact areas that human eyes miss.</p>
+</div>
+<div class="bg-surface p-10 group hover:bg-primary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl mb-8 group-hover:text-white" data-icon="inventory_2">inventory_2</span>
+<h4 class="serif-headline text-2xl mb-4 group-hover:text-white">Organizing Info</h4>
+<p class="font-body text-on-surface-variant group-hover:text-white/80 leading-relaxed">Transform unstructured field data and archives into actionable knowledge bases instantly.</p>
+</div>
+<div class="bg-surface p-10 group hover:bg-primary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl mb-8 group-hover:text-white" data-icon="edit_note">edit_note</span>
+<h4 class="serif-headline text-2xl mb-4 group-hover:text-white">Generating Content</h4>
+<p class="font-body text-on-surface-variant group-hover:text-white/80 leading-relaxed">Scale your voice across platforms without losing the precision of your core editorial standard.</p>
+</div>
+<div class="bg-surface p-10 group hover:bg-primary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl mb-8 group-hover:text-white" data-icon="insights">insights</span>
+<h4 class="serif-headline text-2xl mb-4 group-hover:text-white">Decision Support</h4>
+<p class="font-body text-on-surface-variant group-hover:text-white/80 leading-relaxed">Synthesize vast amounts of evidence into clear, evidence-based recommendations for leadership.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3 & 4: The Five Builds -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-32">
+<h2 class="serif-headline text-5xl md:text-6xl mb-8">We don't advise. <br/><span class="italic text-primary-container">We build with you.</span></h2>
+<p class="font-body text-2xl text-on-surface-variant max-w-3xl">A four-week environment designed for institutional transformation. No long-term retainer, just functional systems.</p>
+</div>
+<div class="space-y-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center group">
+<div class="lg:col-span-1">
+<span class="serif-headline text-4xl opacity-20 group-hover:opacity-100 transition-opacity">01</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="serif-headline text-3xl mb-2">Governance Frameworks</h3>
+<p class="font-body text-on-surface-variant">The ethical and operational rules of engagement for institutional intelligence.</p>
+</div>
+<div class="lg:col-span-3 text-right">
+<span class="font-body font-bold text-xl">$5,000 USD</span>
+</div>
+<div class="lg:col-span-3">
+<button class="w-full bg-secondary-container py-4 font-body font-medium hover:bg-on-surface hover:text-white transition-all">Explore Build</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center group">
+<div class="lg:col-span-1">
+<span class="serif-headline text-4xl opacity-20 group-hover:opacity-100 transition-opacity">02</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="serif-headline text-3xl mb-2">Discovery Lab</h3>
+<p class="font-body text-on-surface-variant">Rapid prototyping of AI workflows tailored to your specific internal friction points.</p>
+</div>
+<div class="lg:col-span-3 text-right">
+<span class="font-body font-bold text-xl">$5,000 USD</span>
+</div>
+<div class="lg:col-span-3">
+<button class="w-full bg-secondary-container py-4 font-body font-medium hover:bg-on-surface hover:text-white transition-all">Explore Build</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center group">
+<div class="lg:col-span-1">
+<span class="serif-headline text-4xl opacity-20 group-hover:opacity-100 transition-opacity">03</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="serif-headline text-3xl mb-2">Adaptive Leadership</h3>
+<p class="font-body text-on-surface-variant">Training your executive team to lead in a world where intelligence is a utility.</p>
+</div>
+<div class="lg:col-span-3 text-right">
+<span class="font-body font-bold text-xl">$5,000 USD</span>
+</div>
+<div class="lg:col-span-3">
+<button class="w-full bg-secondary-container py-4 font-body font-medium hover:bg-on-surface hover:text-white transition-all">Explore Build</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center group">
+<div class="lg:col-span-1">
+<span class="serif-headline text-4xl opacity-20 group-hover:opacity-100 transition-opacity">04</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="serif-headline text-3xl mb-2">Content System</h3>
+<p class="font-body text-on-surface-variant">A fully automated editorial pipeline that maintains high-fidelity brand voice at scale.</p>
+</div>
+<div class="lg:col-span-3 text-right">
+<span class="font-body font-bold text-xl">$10,000 USD</span>
+</div>
+<div class="lg:col-span-3">
+<button class="w-full bg-primary-container text-white py-4 font-body font-medium hover:brightness-110 transition-all">Select Build</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center group">
+<div class="lg:col-span-1">
+<span class="serif-headline text-4xl opacity-20 group-hover:opacity-100 transition-opacity">05</span>
+</div>
+<div class="lg:col-span-5">
+<h3 class="serif-headline text-3xl mb-2">Fundraising System</h3>
+<p class="font-body text-on-surface-variant">Automated prospect research, personalized outreach, and donation tracking engine.</p>
+</div>
+<div class="lg:col-span-3 text-right">
+<span class="font-body font-bold text-xl">$10,000 USD</span>
+</div>
+<div class="lg:col-span-3">
+<button class="w-full bg-secondary-container py-4 font-body font-medium hover:bg-on-surface hover:text-white transition-all">Explore Build</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Image Break Section -->
+<section class="w-full h-[614px] bg-on-surface relative overflow-hidden">
+<img alt="abstract" class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="dramatic minimalist photo of an old library archive with shafts of light hitting dust motes and heavy wood grain textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBM-kHNpA92Ubiyxg0Ay63FiZhV-5IJofyuJbrggrvb34xMvqPtAtjCyYiY-d-_j4YtB_RaadMbj-bIRqg5QxIM2_CNRZMVRvlvG4qQBi8Jl1k4tbD94JXxqwph8Sk_C8exUK3w5NZhMWpyQAyB4i7zlcx69gqLPSvifrI8_F14vOXmyCgB3b3AnfPA5lEFFwCWBOyn2oM4VzDLZEPaxUmaHVorYQXGUHEouD43z2Rfazo2oR9Gi4FlB2L1qNF3RQxZVA4quIVirwo"/>
+<div class="absolute inset-0 flex items-center justify-center p-8">
+<div class="max-w-3xl text-center">
+<h2 class="serif-headline text-4xl md:text-6xl text-surface leading-tight">Four weeks, <span class="italic">real outcomes</span>. Not consulting, building systems.</h2>
+</div>
+</div>
+</section>
+<!-- Sections 7, 8, 9, 10: Qualifications & Ethos -->
+<section class="py-32 px-8 bg-surface-container-high">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+<!-- Focused Collaboration -->
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="handshake">handshake</span>
+<h3 class="serif-headline text-3xl">Focused Collaboration</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">We work with one organization at a time. This ensures our full cognitive capacity is directed at your specific institutional architecture.</p>
+</div>
+<!-- Movement Leaders -->
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="groups">groups</span>
+<h3 class="serif-headline text-3xl">Relationship to Movement Leaders</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">We understand the unique pressures of movement work. Our systems are built to absorb volatility and provide a stable foundation for leadership.</p>
+</div>
+<!-- Outcomes -->
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="task_alt">task_alt</span>
+<h3 class="serif-headline text-3xl">Radical Outcomes</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Success isn't a report on your desk; it's a functioning system in your browser that your team actually uses every morning.</p>
+</div>
+</div>
+<!-- Qualification Grids (Who this is for) -->
+<div class="max-w-screen-2xl mx-auto mt-32 grid grid-cols-1 lg:grid-cols-2 gap-px bg-outline-variant/20">
+<div class="bg-surface p-16">
+<h4 class="font-body text-sm uppercase tracking-widest text-primary-container mb-12">Who this is for</h4>
+<ul class="space-y-8">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="serif-headline text-2xl">Capable teams hitting their ceiling.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="serif-headline text-2xl">Organizations with limited capacity for R&amp;D.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="serif-headline text-2xl">Leaders ready to build real systems.</span>
+</li>
+</ul>
+</div>
+<div class="bg-surface p-16">
+<h4 class="font-body text-sm uppercase tracking-widest text-error mb-12">Who this is not for</h4>
+<ul class="space-y-8">
+<li class="flex items-start gap-4 opacity-60">
+<span class="material-symbols-outlined text-error" data-icon="cancel">cancel</span>
+<span class="serif-headline text-2xl">Those looking for a "quick fix" or magic pill.</span>
+</li>
+<li class="flex items-start gap-4 opacity-60">
+<span class="material-symbols-outlined text-error" data-icon="cancel">cancel</span>
+<span class="serif-headline text-2xl">Teams without implementation bandwidth.</span>
+</li>
+<li class="flex items-start gap-4 opacity-60">
+<span class="material-symbols-outlined text-error" data-icon="cancel">cancel</span>
+<span class="serif-headline text-2xl">Traditional consultancy report enthusiasts.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="py-48 px-8 bg-primary-container relative overflow-hidden">
+<!-- Decorative Gradient -->
+<div class="absolute inset-0 bg-gradient-to-br from-[#380080] to-[#5300b7] opacity-100"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="serif-headline text-5xl md:text-7xl text-white mb-12 leading-tight">
+                    If this works, it <span class="italic">changes</span> what you're capable of doing.
+                </h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<button class="bg-white text-primary-container px-12 py-5 font-body font-bold text-lg hover:bg-surface-container-low transition-all">
+                        Start a Conversation
+                    </button>
+<a class="font-body text-white/80 underline underline-offset-8 hover:text-white transition-colors" href="#">
+                        View our Governance Frameworks
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#1b1c19] dark:bg-[#000000] border-t border-[#ccc9c6]/10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-bold font-['Newsreader'] text-[#fbf9f4]">Editorial Intelligence</div>
+<p class="font-['Inter'] text-sm uppercase tracking-widest text-[#ccc9c6]">Built for Institutional Integrity.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-['Inter'] text-sm uppercase tracking-widest text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">Governance Frameworks</a>
+<a class="font-['Inter'] text-sm uppercase tracking-widest text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">Capacity Audits</a>
+<a class="font-['Inter'] text-sm uppercase tracking-widest text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">AI Ethics Board</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-['Inter'] text-sm uppercase tracking-widest text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm uppercase tracking-widest text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="text-[#ccc9c6] font-['Inter'] text-xs leading-relaxed opacity-80">
+                © 2024 Editorial Intelligence. All rights reserved. Registered for public good.
+            </div>
+</div>
+</footer>
+</body></html>

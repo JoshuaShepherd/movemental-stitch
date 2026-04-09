@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#574183",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312d",
+                    "outline-variant": "#ccc3d7",
+                    "on-secondary-fixed": "#240a4e",
+                    "inverse-primary": "#d3bbff",
+                    "inverse-on-surface": "#f2f1eb",
+                    "surface-container-high": "#e9e8e3",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#d3bbff",
+                    "primary": "#380080",
+                    "surface-tint": "#7238d5",
+                    "on-primary-container": "#bd9cff",
+                    "primary-fixed": "#eaddff",
+                    "on-surface-variant": "#4a4454",
+                    "surface-variant": "#e4e2dd",
+                    "surface": "#fbf9f4",
+                    "surface-bright": "#fbf9f4",
+                    "primary-container": "#5300b7",
+                    "surface-container-highest": "#e4e2dd",
+                    "secondary-fixed": "#eaddff",
+                    "background": "#fbf9f4",
+                    "tertiary-container": "#722a00",
+                    "on-tertiary-container": "#fa9261",
+                    "tertiary": "#4e1a00",
+                    "secondary": "#695296",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#efeee8",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-background": "#1b1c19",
+                    "surface-dim": "#dbdad5",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "secondary-container": "#cbb2fd",
+                    "on-tertiary-fixed": "#351000",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f5f4ee",
+                    "on-primary-fixed": "#25005a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "on-secondary-fixed-variant": "#503a7c",
+                    "secondary-fixed-dim": "#d3bbff",
+                    "outline": "#7b7486"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-nav {
+        background-color: rgba(251, 249, 244, 0.8);
+        backdrop-filter: blur(24px);
+      }
+      .ambient-shadow {
+        box-shadow: 0 32px 64px -4px rgba(27, 28, 25, 0.06);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #380080 0%, #5300b7 100%);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .formation-pill {
+        height: 8px;
+        background: #e4e2dd;
+        border-radius: 9999px;
+        overflow: hidden;
+      }
+      .formation-progress {
+        height: 100%;
+        background: #722a00;
+        width: 65%;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-12 py-6 glass-nav">
+<div class="text-2xl font-headline italic text-on-background">The Digital Curator</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-xs font-label uppercase tracking-wider text-primary border-b-2 border-primary pb-1 transition-all active:scale-[0.98]" href="#">Curriculum</a>
+<a class="text-xs font-label uppercase tracking-wider text-on-background/70 hover:text-primary transition-colors duration-300" href="#">Outcomes</a>
+<a class="text-xs font-label uppercase tracking-wider text-on-background/70 hover:text-primary transition-colors duration-300" href="#">Faculty</a>
+<a class="text-xs font-label uppercase tracking-wider text-on-background/70 hover:text-primary transition-colors duration-300" href="#">Registration</a>
+</nav>
+<button class="primary-gradient text-on-primary px-8 py-3 rounded-full text-xs font-label uppercase tracking-widest hover:opacity-90 transition-all">Apply Now</button>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 py-24 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<h1 class="font-headline text-[3.5rem] leading-[1.1] mb-8 -tracking-widest">
+                        Build a fundraising system <br/>
+<span class="italic text-primary">powered by institutional intelligence.</span>
+</h1>
+<p class="text-body-lg text-on-background/80 max-w-xl leading-relaxed mb-10">
+                        Transition from transactional donor chasing to a systematic, AI-curated pipeline. We apply architectural precision to your capital strategy, ensuring your mission finds the permanent support it deserves.
+                    </p>
+<div class="flex gap-4">
+<button class="primary-gradient text-on-primary px-10 py-4 rounded-full text-xs font-label uppercase tracking-widest font-bold ambient-shadow">Initialize System</button>
+<button class="bg-surface-container-high text-on-surface px-10 py-4 rounded-full text-xs font-label uppercase tracking-widest font-bold">View Curriculum</button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden ambient-shadow">
+<img alt="Architectural detail" class="w-full h-full object-cover" data-alt="Modern architectural detail of glass and concrete building with dramatic shadows and clean lines in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFLgNgRZU9N7_K3Yk9TJ9xs5ts2pY23OswN8hD89icxhK6P8tlIOk5BpaLEjsFFyPF1kHwAmN3pzrfogQeoUD_rLXCniU7Ma72fagKQw9jCJQuQ6-r9W9xTSX6uMvbN_ez0RtXY-k80TB29v8nj10M3_9pQWy-hfWOML8l9XzTEUgGRUxGbnJLK4y16lmFtVgyFiA2G5Oo1_ky6hjNq3rJbINka5NkygF0FNyYjma8wz-Mzrqja5ekVZS1nC8lmsqQ6TsmH7-DFNg1"/>
+</div>
+<div class="absolute -bottom-8 -left-8 p-8 glass-nav rounded-lg ambient-shadow max-w-[280px]">
+<div class="flex justify-between items-center mb-4">
+<span class="text-[0.75rem] font-label uppercase tracking-wider text-on-background/60">Formation Progress</span>
+<span class="text-[0.75rem] font-bold text-tertiary-container">65%</span>
+</div>
+<div class="formation-pill">
+<div class="formation-progress"></div>
+</div>
+<p class="mt-4 text-xs italic text-on-background/70 font-headline">Synthesizing donor data clusters...</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Overview Section (Asymmetric Bento) -->
+<section class="bg-surface-container-low py-24 px-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 p-12 bg-surface-container rounded-lg flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="text-xs font-label uppercase tracking-widest text-primary mb-4 block">Institutional Overview</span>
+<h2 class="font-headline text-3xl leading-tight mb-6">Beyond the Spreadsheet: A Curation-First Approach to Capital.</h2>
+<p class="text-body-lg text-on-background/70 leading-[1.6]">
+                                Most fundraising fails because it lacks structure. Our AI-Powered Fundraising System treats donor acquisition as an architectural challenge. We don't just find names; we build the digital infrastructure that identifies alignment, automates stewardship, and scales with institutional permanence.
+                            </p>
+</div>
+<div class="flex gap-2 mt-8">
+<div class="h-2 w-12 bg-primary rounded-full"></div>
+<div class="h-2 w-4 bg-outline-variant rounded-full"></div>
+<div class="h-2 w-4 bg-outline-variant rounded-full"></div>
+</div>
+</div>
+<div class="bg-primary p-12 rounded-lg flex flex-col justify-end text-on-primary overflow-hidden relative group">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-6xl opacity-20">architecture</span>
+</div>
+<h3 class="font-headline text-2xl mb-4 italic">The Foundation</h3>
+<p class="text-on-primary/80 mb-6">The only intensive that bridges the gap between sophisticated LLMs and high-stakes philanthropy.</p>
+<a class="text-xs font-label uppercase tracking-widest border-b border-on-primary/30 w-fit pb-1 group-hover:border-on-primary transition-all" href="#">Learn more</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Who This Is For (Institutional Lists) -->
+<section class="py-32 px-12 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+<div class="md:col-span-4">
+<h2 class="font-headline text-4xl -tracking-wider mb-6">Who This Is For</h2>
+<p class="text-body-lg text-on-background/70 mb-8">This program is designed for institutions ready to move beyond "traditional" methods and embrace algorithmic scale.</p>
+<div class="w-24 h-px bg-outline-variant"></div>
+</div>
+<div class="md:col-span-8">
+<div class="space-y-4">
+<div class="p-8 hover:bg-surface-container-low transition-colors rounded-lg group">
+<div class="flex items-start gap-8">
+<span class="text-primary font-headline text-2xl italic">01.</span>
+<div>
+<h4 class="text-xl font-headline font-semibold mb-2">Non-Profit Architects</h4>
+<p class="text-on-background/60 leading-relaxed">Founders and Directors building organizations meant to last centuries, not just seasons.</p>
+</div>
+</div>
+</div>
+<div class="p-8 hover:bg-surface-container-low transition-colors rounded-lg group">
+<div class="flex items-start gap-8">
+<span class="text-primary font-headline text-2xl italic">02.</span>
+<div>
+<h4 class="text-xl font-headline font-semibold mb-2">Advancement Officers</h4>
+<p class="text-on-background/60 leading-relaxed">Strategic leaders seeking to leverage LLMs for personalized donor outreach at massive scale.</p>
+</div>
+</div>
+</div>
+<div class="p-8 hover:bg-surface-container-low transition-colors rounded-lg group">
+<div class="flex items-start gap-8">
+<span class="text-primary font-headline text-2xl italic">03.</span>
+<div>
+<h4 class="text-xl font-headline font-semibold mb-2">Philanthropic Advisors</h4>
+<p class="text-on-background/60 leading-relaxed">Consultants looking for a modern framework to offer high-value capital raising services.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Outcomes (Glass Cards) -->
+<section class="py-24 px-12 bg-surface-container-low relative">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-16 text-center">
+<span class="text-xs font-label uppercase tracking-widest text-primary mb-4 block">Core Outcomes</span>
+<h2 class="font-headline text-5xl italic">What You’ll Leave With</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Glass Card 1 -->
+<div class="glass-nav p-10 rounded-lg ambient-shadow flex flex-col h-full border border-outline-variant/20">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary">database</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">The Clean Vault</h3>
+<p class="text-on-background/70 leading-relaxed mb-6">A fully structured, AI-ready donor database that eliminates duplicates and highlights latent high-value connections.</p>
+<div class="mt-auto formation-pill opacity-40"></div>
+</div>
+<!-- Glass Card 2 -->
+<div class="glass-nav p-10 rounded-lg ambient-shadow flex flex-col h-full border border-outline-variant/20 translate-y-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary">smart_toy</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Autonomous Outreach</h3>
+<p class="text-on-background/70 leading-relaxed mb-6">Custom-trained LLM agents that handle initial donor discovery and personalized outreach drafts in your institutional voice.</p>
+<div class="mt-auto formation-pill opacity-40"></div>
+</div>
+<!-- Glass Card 3 -->
+<div class="glass-nav p-10 rounded-lg ambient-shadow flex flex-col h-full border border-outline-variant/20">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-tertiary">dashboard_customize</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">The Curator's Dashboard</h3>
+<p class="text-on-background/70 leading-relaxed mb-6">A visual capital pipeline that provides real-time insights into donor sentiment and closing probabilities.</p>
+<div class="mt-auto formation-pill opacity-40"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 px-12 max-w-[1440px] mx-auto text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl mb-8">Ready to curate your institution's future?</h2>
+<p class="text-body-lg text-on-background/70 mb-12">Applications for the Autumn Intensive are now open. Seats are limited to 40 participants to ensure high-touch implementation.</p>
+<div class="relative inline-block">
+<button class="primary-gradient text-on-primary px-16 py-6 rounded-full text-sm font-label uppercase tracking-widest font-bold ambient-shadow hover:scale-105 transition-transform">Begin Application</button>
+<!-- Decorative element -->
+<div class="absolute -z-10 -top-4 -left-4 w-12 h-12 bg-tertiary-container/10 rounded-full blur-xl"></div>
+<div class="absolute -z-10 -bottom-4 -right-4 w-12 h-12 bg-primary-container/10 rounded-full blur-xl"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low py-16 px-12 border-t border-outline-variant/10">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="max-w-xs">
+<div class="text-xl font-headline text-on-background mb-4">The Digital Curator</div>
+<p class="text-on-background/60 text-sm leading-relaxed">
+                    Elevating fundraising to a systematic art form through the fusion of human wisdom and algorithmic precision.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<span class="text-xs font-label uppercase tracking-widest text-primary font-bold mb-4 block">Institutional</span>
+<ul class="space-y-3">
+<li><a class="text-on-background/60 hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-on-background/60 hover:text-primary transition-colors text-sm" href="#">Institutional Terms</a></li>
+<li><a class="text-on-background/60 hover:text-primary transition-colors text-sm" href="#">Support</a></li>
+</ul>
+</div>
+<div>
+<span class="text-xs font-label uppercase tracking-widest text-primary font-bold mb-4 block">Contact</span>
+<ul class="space-y-3">
+<li class="text-on-background/60 text-sm">Cambridge, MA</li>
+<li class="text-on-background/60 text-sm">intensive@digitalcurator.ai</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-16 pt-8 border-t border-outline-variant/10 flex justify-between items-center">
+<p class="text-xs font-label uppercase tracking-widest text-on-background/40">© 2024 The Digital Curator AI Intensive. All Rights Reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-background/40 hover:text-primary cursor-pointer transition-colors">language</span>
+<span class="material-symbols-outlined text-on-background/40 hover:text-primary cursor-pointer transition-colors">shield</span>
+</div>
+</div>
+</footer>
+</body></html>

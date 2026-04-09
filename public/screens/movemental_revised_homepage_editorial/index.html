@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | Movement Intelligence</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e4e2dd",
+                    "background": "#fbf9f4",
+                    "on-surface": "#1b1c19",
+                    "on-secondary-container": "#61615d",
+                    "on-surface-variant": "#4a4454",
+                    "surface-container": "#f0eee9",
+                    "primary-container": "#5300b7",
+                    "primary": "#380080",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#464743",
+                    "primary-fixed": "#eaddff",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#722a00",
+                    "on-tertiary-container": "#fa9261",
+                    "tertiary-fixed": "#ffdbcc",
+                    "outline-variant": "#ccc3d7",
+                    "inverse-surface": "#30312e",
+                    "surface-tint": "#7238d5",
+                    "secondary": "#5e5f5b",
+                    "outline": "#7b7486",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-tertiary-fixed": "#351000",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#d3bbff",
+                    "on-secondary-fixed": "#1b1c19",
+                    "secondary-container": "#deddd8",
+                    "surface-dim": "#dbdad5",
+                    "surface-bright": "#fbf9f4",
+                    "tertiary": "#4e1a00",
+                    "surface-container-low": "#f5f3ee",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-background": "#1b1c19",
+                    "surface-variant": "#e4e2dd",
+                    "surface": "#fbf9f4",
+                    "surface-container-high": "#eae8e3",
+                    "inverse-on-surface": "#f2f1ec",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#bd9cff",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fbf9f4;
+        color: #1b1c19;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Newsreader', serif;
+        letter-spacing: -0.02em;
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .bg-deep-gradient {
+        background: linear-gradient(135deg, #380080 0%, #5300b7 100%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fbf9f4] dark:bg-stone-950 flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-[1440px] mx-auto transition-all">
+<div class="text-2xl font-serif font-bold text-[#1b1c19] dark:text-stone-100">Movemental</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#380080] dark:hover:text-[#c4a1ff] transition-colors duration-300" href="#">Platform</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#380080] dark:hover:text-[#c4a1ff] transition-colors duration-300" href="#">Movement Leaders</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#380080] dark:hover:text-[#c4a1ff] transition-colors duration-300" href="#">Organizations</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#380080] dark:hover:text-[#c4a1ff] transition-colors duration-300" href="#">Research</a>
+</div>
+<button class="bg-deep-gradient text-white px-6 py-3 font-medium hover:opacity-90 scale-95 active:opacity-80 transition-all">
+            Start a Conversation
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="editorial-grid min-h-[870px] items-center px-6 md:px-12 py-24 gap-12 bg-surface">
+<div class="col-span-12 md:col-span-8 lg:col-span-7">
+<h1 class="text-5xl md:text-7xl font-headline font-bold leading-[1.1] mb-8 text-on-surface">
+                    Turn your ideas—or your organization—into a living system that forms people and <span class="italic text-primary">scales impact.</span>
+</h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant leading-relaxed max-w-2xl mb-12">
+                    Movemental translates movement intelligence into modern digital infrastructure—analyzing your content, frameworks, and context to build platforms, pathways, and AI systems that actually work.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-deep-gradient text-white px-10 py-5 font-bold tracking-tight hover:opacity-90 transition-all text-lg">
+                        Explore the Methodology
+                    </button>
+<button class="border-b-2 border-on-surface px-4 py-5 font-bold text-lg hover:text-primary hover:border-primary transition-all inline-flex items-center gap-2">
+                        View our Portfolio
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Digital Infrastructure Concept" class="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" data-alt="abstract architectural minimalist structure with clean lines and high contrast shadows on warm cream concrete surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjEAT_NSJbL5ZP0fD6ypW94maOxPmFvuurBT6ybE2hnGHx_FXt4Mk7DZz-qZNj2ztWHbcLBH-X8kP-q4NVbzojSsciAehSF3XfMXvz748cN4_jBANDLjaMFPJS_f_iUexJD7JKeyduof3wcu-5yUHSsS4-k9TESepwxBhLq53kDLLnUpY0DNYFlUzfwEeXXInJIbR3z15BT9x8X7OGeTdoryL0RhO287lfOYEEdTBA0E2S5BFhGx6z9Z1rtDiiIx-LuGjfcKkaHRlw"/>
+</div>
+<!-- Floating Detail -->
+<div class="absolute -bottom-12 -left-12 hidden lg:block bg-surface-container-lowest p-8 w-64 shadow-xl">
+<span class="text-xs font-label uppercase tracking-widest text-primary font-bold mb-4 block">Systemic Architecture</span>
+<p class="text-sm font-body leading-relaxed text-on-surface">We move beyond static documents to dynamic, lived frameworks.</p>
+</div>
+</div>
+</section>
+<!-- Entry Section: Asymmetric Path Selection -->
+<section class="bg-surface-container py-32 px-6 md:px-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-20 text-center md:text-left">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-4 italic">Where are you coming from?</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="editorial-grid gap-8">
+<!-- Movement Leaders Card -->
+<div class="col-span-12 lg:col-span-5 bg-surface-container-lowest group cursor-pointer overflow-hidden flex flex-col justify-between">
+<div class="p-12">
+<span class="material-symbols-outlined text-5xl text-primary mb-8" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="text-4xl font-headline font-bold mb-6">Movement Leaders</h3>
+<p class="text-lg font-body text-on-surface-variant leading-relaxed mb-12">
+                                We work with a small number of movement leaders to build platforms around their life's work—with a shared upside model.
+                            </p>
+<a class="inline-flex items-center gap-3 font-bold text-primary group-hover:gap-5 transition-all" href="#">
+                                Begin the Translation <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<div class="h-64 bg-surface-container-high overflow-hidden">
+<img alt="Movement Leader Path" class="w-full h-full object-cover grayscale opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="dramatic silhouette of a person standing against a large window with soft foggy morning light pouring in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1uexqj25kdaEQBXEyAxGKeCrownlvelJxmMJlI0u1iyqww4zH-1X4HJDkMGOOSoR7bM1mLbLHZ8LXxiB3Rsht_rjDNy6xLbbHtKrt-OAWEwzQ5AYslTPzawP_I2qmFuVyFq_JTBTlv3Mpd8ghW2tOFK18FkxgUmLojFCmcRUNaKNUaVynuj2ukpqI3enlYUiMerwTzMpmROEZZj0SBV9s_NAm__sdNxHo34USQUSUXhSguhaRGd2ITp4ebgItjOh5XTVbsXB7ezdx"/>
+</div>
+</div>
+<!-- Spacer / Decorative Column -->
+<div class="hidden lg:block lg:col-span-1 flex items-center justify-center">
+<div class="h-full w-px bg-outline-variant opacity-30"></div>
+</div>
+<!-- Organizations Card -->
+<div class="col-span-12 lg:col-span-6 bg-[#1b1c19] text-white group cursor-pointer overflow-hidden flex flex-col justify-between mt-12 lg:mt-24">
+<div class="p-12">
+<span class="material-symbols-outlined text-5xl text-primary-fixed mb-8" data-icon="account_tree">account_tree</span>
+<h3 class="text-4xl font-headline font-bold mb-6">Organizations</h3>
+<p class="text-lg font-body text-stone-400 leading-relaxed mb-12">
+                                Build systems that actually form people, align your practices, and carry your mission forward.
+                            </p>
+<a class="inline-flex items-center gap-3 font-bold text-primary-fixed group-hover:gap-5 transition-all" href="#">
+                                Modernize Infrastructure <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<div class="h-80 bg-stone-900 overflow-hidden relative">
+<img alt="Organization Path" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="modern minimalist glass and steel office architecture with dramatic geometric shadows and cool blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK0R7ACBJe9E-_bOClOP_Ht8g5o8zWv9obsugMaekCQO-kICtmHFuzkS-p4PSoiwQgBAF14cxh7eFnZOgBNxJb_o8usb1ISs_Ot-TD72yA3UQUjRcoyb7YKMybJbLA0-NbylHljUaIpdEGWzze1d96cAnaUVDxGpJPDmq8E0WohdteyWrb3YMa4VWTHGyFrDV1Qb6Z7vDZrqmEDFCgKMPATGro9SbAS18gRQhEmfjgqbG3syeXORyrfzXaQwi7iEOZW4GegDTN0afa"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats/Context Section (Glassmorphism card) -->
+<section class="py-32 px-6 md:px-12 bg-surface">
+<div class="max-w-[1440px] mx-auto editorial-grid">
+<div class="col-span-12 lg:col-span-10 lg:col-start-2 bg-surface-container p-12 md:p-24 relative overflow-hidden">
+<!-- Subtle background blur decorative element -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 grid md:grid-cols-3 gap-16">
+<div>
+<span class="text-sm font-label uppercase tracking-widest text-primary font-bold mb-4 block">The Problem</span>
+<h4 class="text-2xl font-headline font-bold mb-4 italic">Static Frameworks</h4>
+<p class="text-on-surface-variant">Ideas trapped in PDF manuals or siloed spreadsheets lose their vitality and fail to scale.</p>
+</div>
+<div>
+<span class="text-sm font-label uppercase tracking-widest text-primary font-bold mb-4 block">The Solution</span>
+<h4 class="text-2xl font-headline font-bold mb-4 italic">Intelligence Layers</h4>
+<p class="text-on-surface-variant">We weave your core logic into the very tools your team uses every single day.</p>
+</div>
+<div>
+<span class="text-sm font-label uppercase tracking-widest text-primary font-bold mb-4 block">The Outcome</span>
+<h4 class="text-2xl font-headline font-bold mb-4 italic">Actual Formation</h4>
+<p class="text-on-surface-variant">Systems that don't just track tasks, but actually shape the character of your movement.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Insights -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto">
+<h2 class="text-3xl font-headline font-bold mb-16 text-center">Movement Methodology</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 min-h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest p-10 flex flex-col justify-end relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img alt="Methodology Visual" class="w-full h-full object-cover" data-alt="abstract close-up of high-end circuitry and glass fiber optics with soft purple glowing light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXYzuqGXBEGjpSI4RmERmN2-rPaN2JjS6-YlPx9W_WIt-0cNXrkRxFInQadUv0uGNQ6hNrvqBPhCuz0VksFKnh7zhTwyGwjxNafHta9WXo_UZ-g-jfX-d91vOog_25NgxaZTNnlrfR78GhwC-CWPb1X3z5TopWp3ZWk8XOict58UjbVm9qrD0SbZt1tkhZL1gNLf3psLQlYstrUPkSws7QxicWvwisRBwwS3Y07CkFOjALR80EWO9ZkJ02plxXGb_2LOEg-fF6Rf-2"/>
+</div>
+<div class="relative z-10">
+<h3 class="text-3xl font-headline font-bold mb-4">Neural Architecture</h3>
+<p class="font-body text-on-surface-variant">Mapping the complex relationships between your people, your mission, and your tech stack.</p>
+</div>
+</div>
+<div class="md:col-span-2 bg-primary text-white p-10">
+<span class="material-symbols-outlined text-4xl mb-6" data-icon="psychology">psychology</span>
+<h3 class="text-2xl font-headline font-bold mb-4">AI-Driven Content Analysis</h3>
+<p class="opacity-80">Turning decades of archives into responsive knowledge bases for the next generation of leaders.</p>
+</div>
+<div class="bg-surface-container-high p-10 flex flex-col justify-center text-center">
+<span class="text-4xl font-headline font-bold text-primary mb-2">94%</span>
+<p class="text-sm font-label uppercase tracking-widest font-bold">Retention</p>
+</div>
+<div class="bg-[#ccc9c6] p-10 flex flex-col justify-center text-center">
+<span class="text-4xl font-headline font-bold text-on-surface mb-2">12+</span>
+<p class="text-sm font-label uppercase tracking-widest font-bold">Active Org Platforms</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-6 md:px-12 bg-deep-gradient text-white text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-8 leading-tight">Ready to bridge the gap between intelligence and infrastructure?</h2>
+<p class="text-xl opacity-80 mb-12 font-body max-w-2xl mx-auto">We are currently accepting inquiries for late 2024 partnerships. Let's discuss the future of your life's work.</p>
+<button class="bg-white text-primary px-12 py-5 text-xl font-bold hover:bg-opacity-90 transition-all">
+                    Inquire About Partnership
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-24 pb-12 bg-[#1b1c19] dark:bg-black text-[#fbf9f4]">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 w-full max-w-[1440px] mx-auto border-b border-stone-800 pb-12 mb-12">
+<div class="text-lg font-serif italic text-[#fbf9f4] mb-8 md:mb-0">Movemental</div>
+<div class="flex flex-wrap justify-center gap-8 text-[#fbf9f4] font-sans Inter uppercase tracking-widest text-xs">
+<a class="text-stone-500 hover:text-white transition-colors" href="#">Archives</a>
+<a class="text-stone-500 hover:text-white transition-colors" href="#">Methodology</a>
+<a class="text-stone-500 hover:text-white transition-colors" href="#">Ethics Charter</a>
+<a class="text-stone-500 hover:text-white transition-colors" href="#">Privacy</a>
+<a class="text-stone-500 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="px-6 md:px-12 w-full max-w-[1440px] mx-auto text-center md:text-left">
+<p class="font-sans Inter uppercase tracking-widest text-[10px] text-stone-500">
+                © 2024 Movemental Intelligence. All rights reserved. Built for the Modern Archivist.
+            </p>
+</div>
+</footer>
+</body></html>

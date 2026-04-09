@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-dim": "#dbdad5",
+                    "primary-container": "#5300b7",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#deddd8",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#722a00",
+                    "secondary": "#5e5f5b",
+                    "on-secondary-fixed-variant": "#464743",
+                    "on-secondary-fixed": "#1b1c19",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e4e2dd",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#351000",
+                    "on-surface-variant": "#4a4454",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-container": "#fa9261",
+                    "inverse-primary": "#d3bbff",
+                    "on-primary-fixed": "#25005a",
+                    "primary": "#380080",
+                    "primary-fixed": "#eaddff",
+                    "on-secondary-container": "#61615d",
+                    "secondary-fixed": "#e4e2dd",
+                    "background": "#fbf9f4",
+                    "outline": "#7b7486",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "surface-bright": "#fbf9f4",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "outline-variant": "#ccc3d7",
+                    "surface-tint": "#7238d5",
+                    "surface-container": "#f0eee9",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "inverse-surface": "#30312e",
+                    "on-primary-container": "#bd9cff",
+                    "on-background": "#1b1c19",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#eae8e3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem",
+                    "lg": "0rem",
+                    "xl": "0rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body { background-color: #fbf9f4; color: #1b1c19; -webkit-font-smoothing: antialiased; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .text-display-lg { font-size: 3.5rem; line-height: 1.1; letter-spacing: -0.02em; }
+      .bg-primary-gradient { background: linear-gradient(135deg, #380080 0%, #5300b7 100%); }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar -->
+<header class="bg-[#fbf9f4] dark:bg-[#1b1c19] w-full top-0 z-50">
+<nav class="flex justify-between items-center px-12 py-6 w-full max-w-[1440px] mx-auto">
+<div class="font-['Newsreader'] text-2xl font-bold italic text-[#1b1c19] dark:text-[#fbf9f4]">Movemental</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-['Inter'] font-medium text-sm" href="#">Platform</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-['Inter'] font-medium text-sm" href="#">Movement Leaders</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-['Inter'] font-medium text-sm" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-['Inter'] font-medium text-sm" href="#">Research</a>
+</div>
+<button class="bg-primary-gradient text-white px-6 py-3 font-medium text-sm hover:opacity-90 transition-all active:scale-[0.98]">
+                Start a Conversation
+            </button>
+</nav>
+<div class="bg-[#f0eee9] dark:bg-[#252623] h-[1px] w-full invisible"></div>
+</header>
+<main>
+<!-- Hero: The Origin Story -->
+<section class="max-w-[1440px] mx-auto px-12 pt-24 pb-32">
+<div class="grid grid-cols-12 gap-8 items-start">
+<div class="col-span-12 md:col-span-7 mb-12 md:mb-0">
+<span class="font-label text-xs tracking-widest uppercase text-primary mb-6 block">Origin Narrative</span>
+<h1 class="font-headline text-display-lg italic mb-12">The genesis of a movement began with a single question about human potential.</h1>
+<div class="space-y-8 max-w-xl">
+<p class="font-body text-lg leading-relaxed text-on-surface">
+                            Movemental didn't begin in a boardroom. It began in the field, observing the subtle mechanics of how communities actually thrive. When Alan Hirsch began articulating the paradigms of movemental intelligence, it wasn't just theory—it was the rediscovery of a lost operating system.
+                        </p>
+<p class="font-body text-lg leading-relaxed text-on-surface">
+                            We exist to bridge the gap between institutional stability and movemental agility. What started as a focused inquiry has expanded into a new category of infrastructure: Editorial Intelligence for the modern archivist.
+                        </p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 relative mt-12">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 hover:scale-105" data-alt="Black and white high-contrast portrait of a thoughtful man in a library setting, emphasizing wisdom and deep focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5LCUk30n17QWwRR5Das-9K3VVzq_gPhbOlO1Lcpht7SSlUXt3rxpq0gbr28TZs5h_08-DqJiEavHzRS6ip3pyXqCpJvtxs9QTGUo-kTxrZpO5AuMCskST9lTDnoAsDgKvl4fJyggbCpYu5lWNc5T7kxCeokaxyH-2dwwsM5tEleFL5vLD6Jx7zv17286Ncac7Q3tfTuNI2W1dEO2eUowC3oxpcYuSqJBUHaMI_u4rAKGXi5jWk4MxkCrxdM1iHdADjGDZEl6Dqvsd"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 max-w-[280px]">
+<p class="font-headline italic text-xl mb-4">"Structure is the skeleton; movement is the soul."</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">— Alan Hirsch</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Curation Section -->
+<section class="bg-surface-container py-32">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-12 gap-16 items-center">
+<div class="col-span-12 md:col-span-4 md:order-last">
+<h2 class="font-headline text-3xl mb-8 leading-tight">Defining a New Category of Infrastructure.</h2>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            We are not just a platform; we are an ecosystem. By combining historical wisdom with digital-first curation, we empower leaders to architect movements that outlast their founders.
+                        </p>
+</div>
+<div class="col-span-12 md:col-span-8">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface p-12 aspect-square flex flex-col justify-end">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="account_tree">account_tree</span>
+<h3 class="font-headline text-xl mb-2">Relational Logic</h3>
+<p class="text-sm text-on-surface-variant">Moving beyond transactional networking to deep trust architecture.</p>
+</div>
+<div class="bg-surface-container-lowest p-12 aspect-square flex flex-col justify-end translate-y-12">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="auto_stories">auto_stories</span>
+<h3 class="font-headline text-xl mb-2">Editorial Voice</h3>
+<p class="text-sm text-on-surface-variant">Curating the signal from the noise with intentionality.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Team: Editorial Intelligence -->
+<section class="max-w-[1440px] mx-auto px-12 py-32">
+<div class="mb-20">
+<span class="font-label text-xs tracking-widest uppercase text-primary mb-4 block">The Collective</span>
+<h2 class="font-headline text-4xl">Architects of the Movement.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<!-- Alan Hirsch -->
+<div class="group border-r border-outline-variant/10 pr-8 pb-12">
+<div class="aspect-[3/4] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Editorial portrait of a senior man with grey hair and glasses, looking direct to camera with authority and warmth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABosSqssv_DgTZ3I1BHd2DDBEl9EPSzapGq23heQJQe_7R5aUOcm_f2NNCnfWNWfKX9EOsgICAOEpMhRYTd9KEI5Vbws6lvFczpQVMxmQp0qZ50LnwBgfNaORJ6Zhhie0yCvkNep1BNDPmcVnJwyAOHtFnOTUhUhHY1bViruhhn32_jphNsqZ-twfSpiXHu5uiv-2jPjHRlnqdHU0lrutHuqFJMyWVsiEYnjdfS1H63jbeyw_le-XMI89Dmu03O4Ss6P79mAF84b3M"/>
+</div>
+<h3 class="font-headline text-2xl mb-1">Alan Hirsch</h3>
+<p class="font-label text-xs uppercase tracking-widest text-primary mb-6">Founder &amp; Chief Visionary</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        A global strategist and movemental pioneer. Alan has spent decades decoding the DNA of apostolic movements to help leaders navigate the complexity of the modern world.
+                    </p>
+</div>
+<!-- Brad -->
+<div class="group border-r border-outline-variant/10 px-8 pb-12">
+<div class="aspect-[3/4] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Modern professional portrait of a man in his 40s in a minimalist creative studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz9f-EM6kmFhl4lW9ORKmfEiG_sug32QhsVgR-60QWkhVj6M_BNtssbDaPQokj4KUi8Kd9QOIlKL_RfqIwn8zm6-nkHN7Z95Ecr8fYP4EorA2Xse9LxxsUFr2aZHMGnyH8jb_lhwRi39wHXmb0NHLqL_QmV9evAcabnSWkz2Br5lB1gtWNYTOPYmKp-R7zRSq5jqWOSms6yTk2fh8DjonCGJ8CZoqarbarJVP49THoW8ejX_WG-UWexNMCeRlBYn0-04K5jTs5J5qG"/>
+</div>
+<h3 class="font-headline text-2xl mb-1">Brad Brisco</h3>
+<p class="font-label text-xs uppercase tracking-widest text-primary mb-6">Director of Operations</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Brad bridges the gap between vision and execution. His focus is on building sustainable institutional access while maintaining the radical core of our movemental roots.
+                    </p>
+</div>
+<!-- You (User) -->
+<div class="group pl-8 pb-12">
+<div class="aspect-[3/4] bg-surface-container mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional profile of a creative director, soft window lighting, neutral background, looking off-camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWIqzVNo-kCD-lGjlKEwGVQ3STpH4ngZ8Qw13RuLZ_HwTP_1WMuNwhe5XBRnnLeqB9ZbvlYg9ixfSpuSB4-M4NKK_Ar9ibPGslWmpzWxSs9FoO3kt3kuFnJGehHh48D0sqKre7z4MjBJWQBENQkM3aGO06D1-b2G4Dk3LWUhW7Z6EF1Q85_RARVYMY-O54mwva8YAOu5dKnjVhqkMHbQayejPC3CT0TjIVsMFkNtrEku-KlpIX0vESMXKMqcYVH-PI7C1Aiu_VUPSY"/>
+</div>
+<h3 class="font-headline text-2xl mb-1">A.J. Swoboda</h3>
+<p class="font-label text-xs uppercase tracking-widest text-primary mb-6">Content Strategist</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Curating the intellectual capital of the platform. Focused on translating complex movemental theories into actionable, editorial-grade insights for our leaders.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Relational Footer/CTA -->
+<section class="bg-primary-container text-white py-32 text-center">
+<div class="max-w-2xl mx-auto px-6">
+<h2 class="font-headline text-4xl italic mb-8">Ready to explore the expansion?</h2>
+<p class="font-body text-on-primary-container mb-12 text-lg">
+                    Movemental is built on trust, not algorithms. Let's start a dialogue about how we can support your organization's unique journey.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-white text-primary px-10 py-4 font-medium hover:bg-surface-container-lowest transition-colors">
+                        Institutional Access
+                    </button>
+<button class="border border-white/30 text-white px-10 py-4 font-medium hover:bg-white/10 transition-colors">
+                        Read the Research
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f0eee9] dark:bg-[#1b1c19] w-full">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1440px] mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-['Newsreader'] text-lg font-semibold text-[#1b1c19] dark:text-[#fbf9f4] mb-2">Movemental</div>
+<div class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60">© 2024 Movemental Infrastructure. All rights reserved.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Institutional Access</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>

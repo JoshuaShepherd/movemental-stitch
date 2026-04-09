@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e4e2dd",
+                        "inverse-surface": "#30312e",
+                        "inverse-on-surface": "#f2f1ec",
+                        "inverse-primary": "#d3bbff",
+                        "tertiary-fixed": "#ffdbcc",
+                        "tertiary-container": "#722a00",
+                        "on-primary-container": "#bd9cff",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e4e2dd",
+                        "surface-container-high": "#eae8e3",
+                        "primary-container": "#5300b7",
+                        "on-tertiary-container": "#fa9261",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0eee9",
+                        "primary": "#380080",
+                        "tertiary": "#4e1a00",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fbf9f4",
+                        "background": "#fbf9f4",
+                        "secondary": "#5e5f5b",
+                        "on-surface-variant": "#4a4454",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "on-surface": "#1b1c19",
+                        "surface-bright": "#fbf9f4",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#eaddff",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "primary-fixed-dim": "#d3bbff",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "on-secondary-container": "#61615d",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "secondary-fixed": "#e4e2dd",
+                        "on-secondary-fixed": "#1b1c19",
+                        "outline-variant": "#ccc3d7",
+                        "on-primary-fixed": "#25005a",
+                        "surface-tint": "#7238d5",
+                        "outline": "#7b7486",
+                        "secondary-container": "#deddd8",
+                        "on-background": "#1b1c19",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#464743",
+                        "surface-container-low": "#f5f3ee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "md": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f4;
+            color: #1b1c19;
+        }
+        h1, h2, h3 {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4] dark:bg-stone-950">
+<div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<a class="font-['Newsreader'] text-2xl font-bold italic text-[#1b1c19] dark:text-[#fbf9f4]" href="#">Movemental</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Newsreader'] text-lg font-medium tracking-tight text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 transition-opacity duration-200" href="#">Models</a>
+<a class="font-['Newsreader'] text-lg font-medium tracking-tight text-[#5300b7] dark:text-[#7c4dff] font-semibold transition-opacity duration-200" href="#">Pricing</a>
+<a class="font-['Newsreader'] text-lg font-medium tracking-tight text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 transition-opacity duration-200" href="#">Impact</a>
+<a class="font-['Newsreader'] text-lg font-medium tracking-tight text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 transition-opacity duration-200" href="#">Resources</a>
+</div>
+<button class="bg-[#5300b7] text-white px-8 py-3 font-medium transition-transform active:scale-95 duration-150">
+                Get Started
+            </button>
+</div>
+<div class="bg-[#f0eee9] dark:bg-stone-900 h-[1px] w-full"></div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-8 md:px-24 py-24 md:py-32 flex flex-col md:flex-row items-end gap-12">
+<div class="md:w-2/3">
+<h1 class="text-[3.5rem] leading-[1.1] tracking-[-0.02em] font-medium italic mb-8">
+                    Aligned with what this produces
+                </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    Our model is built on mutual excellence. We don't just provide intelligence; we engineer the cognitive architecture for modern leaders and global organizations.
+                </p>
+</div>
+<div class="md:w-1/3 flex flex-col items-start gap-6">
+<div class="h-24 w-full bg-surface-container flex items-center justify-center p-6 italic text-lg border-l-4 border-primary">
+                    "Intelligence is not a commodity; it is a catalyst for movement."
+                </div>
+</div>
+</section>
+<!-- Pricing Tiers -->
+<section class="bg-surface-container-low px-8 md:px-24 py-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Leaders Plan (Bento Main) -->
+<div class="md:col-span-7 bg-surface-container-lowest p-12 rounded-md transition-all hover:bg-white shadow-[0_12px_40px_-15px_rgba(27,28,25,0.04)]">
+<div class="flex justify-between items-start mb-16">
+<div>
+<span class="font-body text-xs uppercase tracking-widest text-primary font-bold mb-4 block">For Individuals</span>
+<h2 class="text-4xl font-medium">Modern Leaders</h2>
+</div>
+<div class="text-right">
+<div class="text-3xl font-headline font-semibold">$1,000<span class="text-base font-normal text-on-surface-variant">/mo</span></div>
+<div class="text-sm font-body text-primary-container font-semibold">+ 10% Output Value</div>
+</div>
+</div>
+<div class="space-y-12 mb-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="psychology">psychology</span>
+<h3 class="text-xl font-medium">Bespoke Curation</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Daily editorial intelligence streams designed specifically for your decision-making matrix.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="text-xl font-medium">Synthesis Architecture</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Advanced cross-disciplinary mental models applied to your specific industry challenges.</p>
+</div>
+</div>
+</div>
+<button class="w-full md:w-auto bg-gradient-to-br from-[#380080] to-[#5300b7] text-white px-10 py-5 rounded-full font-body font-semibold tracking-wide hover:opacity-90 transition-all">
+                        Start a Conversation
+                    </button>
+</div>
+<!-- Orgs Plan (Bento Side) -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="bg-primary-container text-white p-12 rounded-md flex-1 relative overflow-hidden group">
+<div class="relative z-10">
+<span class="font-body text-xs uppercase tracking-widest opacity-80 font-bold mb-4 block">For Teams</span>
+<h2 class="text-4xl font-medium mb-8">Intelligence Units</h2>
+<p class="mb-12 font-body opacity-90 leading-relaxed">Full-scale organization builds, custom neural deployments, and institutional memory integration.</p>
+<div class="flex flex-col gap-4 font-headline text-2xl">
+<span>$5,000 <span class="text-base font-normal opacity-70">Development</span></span>
+<span>$10,000 <span class="text-base font-normal opacity-70">Integration Build</span></span>
+</div>
+</div>
+<div class="absolute -bottom-10 -right-10 opacity-10 group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-[200px]" data-icon="hub" style="font-variation-settings: 'FILL' 1;">hub</span>
+</div>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-md border-l-2 border-primary">
+<h3 class="text-lg font-semibold mb-2">Custom Inquiries</h3>
+<p class="text-sm text-on-surface-variant mb-6">Looking for institutional access or sovereign deployments?</p>
+<a class="text-primary font-body font-bold text-sm underline underline-offset-8" href="#">Request Access Details</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Aesthetic Imagery Section -->
+<section class="px-8 md:px-24 py-32 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative aspect-square">
+<img alt="Minimalist editorial studio" class="w-full h-full object-cover grayscale" data-alt="A minimalist high-end editorial studio with large windows, mid-century furniture, warm cream walls, and soft afternoon light shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzlNe-EGES-Arn-oBOB9w1cSqWSdy92xj-xKelfDrEHhqJPLi4PtNSeP2FdFVfQJet5Ix3PLsvh8l5H16xSQFQNQBitRFl7Z8sg3B4Z2vEo03tW3k60HSufjR1BLk9n9WgvFg4IGg13lTrID51hksjTfokxWefSW5e5oEjVHtk2LYcw7n0YtSktzLl45fmtGnx3xy1etJZ71-X3eqCJIa86MYo-NqbjmIy_0SW2s6UZGisNDk3glzdrcBDNSu8e034SsjNq_xHA6Ss"/>
+<div class="absolute inset-0 bg-primary-container/10 mix-blend-multiply"></div>
+</div>
+<div class="space-y-12">
+<h2 class="text-5xl font-medium leading-tight">The Archival Standard</h2>
+<div class="space-y-8 font-body text-on-surface-variant leading-relaxed">
+<p>We operate on the principles of the Modern Archivist. Every engagement is a curated dialogue, treated with the precision of a high-end journal and the velocity of modern silicon.</p>
+<p>Our pricing reflects the depth of synthesis and the tangible movement created within your sphere of influence.</p>
+</div>
+<div class="pt-8 border-t border-outline-variant/30">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-widest text-on-surface">Institutional Quality</p>
+<p class="text-xs text-on-surface-variant">Sovereign infrastructure for private intelligence.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-48 flex flex-col items-center justify-center text-center px-8">
+<h2 class="text-6xl font-headline italic mb-12">Begin the Movement.</h2>
+<button class="bg-[#1b1c19] text-white px-12 py-6 rounded-full font-body font-bold text-lg tracking-widest hover:scale-105 transition-transform duration-300">
+                START A CONVERSATION
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<span class="font-['Newsreader'] text-xl font-bold text-[#fbf9f4]">Movemental</span>
+<p class="font-['Inter'] text-sm tracking-wide leading-relaxed text-[#ccc9c6] mt-2 max-w-xs">
+                    Synthesizing the future of cognitive architecture and collective intelligence.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="font-['Inter'] text-sm tracking-wide leading-relaxed text-[#ccc9c6] hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide leading-relaxed text-[#ccc9c6] hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-sm tracking-wide leading-relaxed text-[#ccc9c6] hover:text-white transition-colors" href="#">Institutional Access</a>
+<a class="font-['Inter'] text-sm tracking-wide leading-relaxed text-[#ccc9c6] hover:text-white transition-colors" href="#">Security</a>
+<a class="font-['Inter'] text-sm tracking-wide leading-relaxed text-[#ccc9c6] hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="px-12 pb-12 text-center md:text-left">
+<p class="font-['Inter'] text-sm tracking-wide leading-relaxed text-[#ccc9c6] opacity-60">
+                © 2024 Movemental Intelligence. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

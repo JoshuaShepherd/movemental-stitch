@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#deddd8",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5e5f5b",
+                    "surface-bright": "#fbf9f4",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-tertiary-fixed": "#351000",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "primary-fixed": "#eaddff",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#722a00",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-secondary-fixed-variant": "#464743",
+                    "surface-tint": "#7238d5",
+                    "on-primary-container": "#bd9cff",
+                    "surface": "#fbf9f4",
+                    "surface-dim": "#dbdad5",
+                    "on-background": "#1b1c19",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c19",
+                    "background": "#fbf9f4",
+                    "surface-variant": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "outline-variant": "#ccc3d7",
+                    "outline": "#7b7486",
+                    "on-tertiary-container": "#fa9261",
+                    "on-surface-variant": "#4a4454",
+                    "on-secondary-container": "#61615d",
+                    "inverse-primary": "#d3bbff",
+                    "on-primary-fixed": "#25005a",
+                    "tertiary": "#4e1a00",
+                    "surface-container": "#f0eee9",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-container-high": "#eae8e3",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#d3bbff",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-secondary-fixed": "#1b1c19",
+                    "primary": "#380080",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#30312e",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#5300b7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fbf9f4;
+        color: #1b1c19;
+      }
+      .newsreader {
+        font-family: 'Newsreader', serif;
+      }
+      .glass-card {
+        background: rgba(251, 249, 244, 0.8);
+        backdrop-filter: blur(24px);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="w-full top-0 z-50 bg-[#fbf9f4] dark:bg-stone-950">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-['Newsreader'] font-bold text-[#1b1c19] dark:text-[#fbf9f4]">
+                Editorial Intelligence
+            </div>
+<div class="hidden md:flex space-x-12 items-center">
+<a class="font-['Newsreader'] italic tracking-tight text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] transition-opacity duration-300" href="#">Solutions</a>
+<a class="font-['Newsreader'] italic tracking-tight text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] transition-opacity duration-300" href="#">The Five Builds</a>
+<a class="font-['Newsreader'] italic tracking-tight text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] transition-opacity duration-300" href="#">Approach</a>
+</div>
+<button class="bg-gradient-to-br from-[#380080] to-[#5300b7] text-white px-8 py-3 font-medium hover:opacity-80 transition-all active:scale-95 duration-150 ease-in-out">
+                Start a Conversation
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-15 grayscale" data-alt="Monochrome wide shot of a grand classical library with tall shelves of books and soft sunlight filtering through arched windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc9fMl5GhkXj1QIV_jVPNePDbOSR6QBSwkBrtE8c2dDgRgWVDh2GSUsk9gyzrnaWmMnj3QRxVCFiNj52GPQb63ZxvJI4abovIjFiBoLO5CTgeFtjmFnlgwfigNCKNmPZbmSt7FdkZjH7TO2kfnw-DSfjNbb6pCeV_Tw6ZCH8Ic3XpdbFyRNY4DgZ3v7oHEMJJgRO4itn4YipvwoDexgs7gDR4ylF-R8WNQcq04hI7clpwkcmv-ht2WGeN3Z_DFBE6TDXaHjpYFz5gH"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-12 grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 md:col-span-8 lg:col-span-7">
+<span class="font-label uppercase tracking-widest text-primary font-semibold mb-6 block">The Collaborative Build</span>
+<h1 class="newsreader text-6xl md:text-8xl lg:text-[7rem] leading-[0.9] tracking-tighter mb-8 font-normal italic">
+                        We don’t advise. <br/>
+<span class="text-primary-container not-italic">We build with you.</span>
+</h1>
+<p class="text-xl md:text-2xl font-body leading-relaxed max-w-2xl text-on-surface-variant mb-10">
+                        Editorial Intelligence is not a consultancy. We are architects of internal narrative and digital infrastructure, co-authoring the future of your organization's intellectual capital.
+                    </p>
+<div class="flex items-center gap-8">
+<div class="w-16 h-[2px] bg-primary"></div>
+<p class="font-label text-sm uppercase tracking-[0.2em]">Architecture of Authority</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Five Builds -->
+<section class="py-32 bg-surface-container">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div>
+<h2 class="newsreader text-5xl md:text-6xl italic leading-tight">The Five Builds</h2>
+<p class="text-on-surface-variant max-w-lg mt-6 text-lg">A formation progress motif: five strategic pillars that transform raw information into organizational wisdom.</p>
+</div>
+<div class="text-right">
+<span class="newsreader text-[8rem] leading-none opacity-10 font-bold">01—05</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-10 gap-0">
+<!-- Build 1 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-12 glass-card hover:translate-y-[-8px] transition-transform duration-500">
+<div class="flex justify-between items-start mb-16">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="architecture">architecture</span>
+<span class="font-label text-primary font-bold">BUILD 01</span>
+</div>
+<h3 class="newsreader text-3xl mb-6">Structural Taxonomy</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Designing the semantic skeletal system of your enterprise. How information is categorized, tagged, and discovered across silos.</p>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-primary w-1/5"></div>
+</div>
+</div>
+<!-- Build 2 -->
+<div class="md:col-span-6 bg-primary-container p-12 text-white transition-transform duration-500">
+<div class="flex justify-between items-start mb-16">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" data-icon="hub" style="font-variation-settings: 'FILL' 1;">hub</span>
+<span class="font-label text-on-primary-container font-bold">BUILD 02</span>
+</div>
+<h3 class="newsreader text-3xl mb-6">Narrative Infrastructure</h3>
+<p class="text-white/80 leading-relaxed mb-8 text-lg">We build the engines that generate and distribute your internal knowledge. It's not about news—it's about the consistent curation of meaning within the workspace.</p>
+<div class="h-1 w-full bg-white/20">
+<div class="h-full bg-white w-2/5"></div>
+</div>
+</div>
+<!-- Build 3 -->
+<div class="md:col-span-5 bg-surface-container-highest p-12 hover:bg-surface-container-lowest transition-colors duration-500">
+<div class="flex justify-between items-start mb-16">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label text-primary font-bold">BUILD 03</span>
+</div>
+<h3 class="newsreader text-3xl mb-6">Augmented Intelligence</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Implementing LLMs and curation tools that act as a digital librarian for every employee, surfaced through high-end UI.</p>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-primary w-3/5"></div>
+</div>
+</div>
+<!-- Build 4 -->
+<div class="md:col-span-5 bg-white p-12 border-l border-surface-container">
+<div class="flex justify-between items-start mb-16">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="history_edu">history_edu</span>
+<span class="font-label text-primary font-bold">BUILD 04</span>
+</div>
+<h3 class="newsreader text-3xl mb-6">Ethical Governance</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">The rules of the road. Defining the ethics of your organization’s voice, privacy parameters, and intellectual integrity.</p>
+<div class="h-1 w-full bg-surface-container">
+<div class="h-full bg-primary w-4/5"></div>
+</div>
+</div>
+<!-- Build 5 -->
+<div class="md:col-span-10 bg-[#1b1c19] text-white p-12 flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<div class="flex justify-between items-start mb-8">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-icon="rocket_launch">rocket_launch</span>
+<span class="font-label text-primary-container font-bold">BUILD 05</span>
+</div>
+<h3 class="newsreader text-4xl mb-4">Operational Resonance</h3>
+<p class="text-white/60 leading-relaxed mb-8 text-xl italic">The final build isn't a tool, it's the rhythm. We optimize the velocity at which insight becomes action.</p>
+<div class="h-1 w-full bg-white/10">
+<div class="h-full bg-primary-container w-full"></div>
+</div>
+</div>
+<div class="hidden md:block w-px h-32 bg-white/10 mx-12"></div>
+<div class="md:w-1/3">
+<img alt="" class="w-full h-48 object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Abstract architectural shot of modern glass office building with sharp angles and dramatic sky reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6_lYHLUzp5c8fsuZ6M494GnlWBDQ6teLygezX9TnIhU98fz6oxx4LBkM4P6jfQ1Jijdl7QMpWGR4GPAEmYKCjamvwrtAzvj21AW8QvcqtgPUKC2klyK6d40OhcX1n9n3Z0lVt1icO0JWlgXb2LRoJWuM9xUHm6iBo6W245XdrY4rL_GOWzdcuRvLglKeUBqVi2P7co2N4M29WA-sc5fWCwLUPSB2VweW0NxxdLFMpJDTb8ff-OB-mdP2nzsAMsPiYi3oGz3Hq5swE"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Side-by-Side Comparison (Section 9 & 10) -->
+<section class="py-0 flex flex-col md:flex-row">
+<!-- Who this is for -->
+<div class="flex-1 bg-surface py-32 px-12 md:px-24">
+<h4 class="font-label text-primary uppercase tracking-[0.3em] mb-12">The Alignment</h4>
+<h2 class="newsreader text-5xl mb-16 leading-tight">Who this is for.</h2>
+<ul class="space-y-12">
+<li class="flex gap-6">
+<span class="newsreader text-2xl text-primary-container font-bold">01</span>
+<div>
+<h5 class="font-bold text-lg mb-2">Complexity-Heavy Enterprises</h5>
+<p class="text-on-surface-variant">Organizations drowning in their own expertise, needing a way to synthesize disparate high-level intelligence.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="newsreader text-2xl text-primary-container font-bold">02</span>
+<div>
+<h5 class="font-bold text-lg mb-2">The "Second Era" Founders</h5>
+<p class="text-on-surface-variant">Leaders who have built the product and now need to build the institution's intellectual soul.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="newsreader text-2xl text-primary-container font-bold">03</span>
+<div>
+<h5 class="font-bold text-lg mb-2">Institutional Archivists</h5>
+<p class="text-on-surface-variant">Legacy brands looking to modernize their archives into living, breathing assets for the AI era.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Who this is not for -->
+<div class="flex-1 bg-surface-container-high py-32 px-12 md:px-24">
+<h4 class="font-label text-on-surface-variant uppercase tracking-[0.3em] mb-12">The Boundary</h4>
+<h2 class="newsreader text-5xl mb-16 leading-tight">Who this is not for.</h2>
+<ul class="space-y-12 opacity-80">
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-error" data-icon="close">close</span>
+<div>
+<h5 class="font-bold text-lg mb-2">Template Seekers</h5>
+<p class="text-on-surface-variant">If you want a plug-and-play SaaS dashboard with no human intervention, we are not the partner for you.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-error" data-icon="close">close</span>
+<div>
+<h5 class="font-bold text-lg mb-2">The Velocity-Only Culture</h5>
+<p class="text-on-surface-variant">Those who value speed over depth. Our builds require deep intellectual labor from both sides.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<span class="material-symbols-outlined text-error" data-icon="close">close</span>
+<div>
+<h5 class="font-bold text-lg mb-2">"Black Box" Operations</h5>
+<p class="text-on-surface-variant">Organizations unwilling to open their silos for a collaborative mapping of their data topography.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-40 bg-primary-container relative overflow-hidden text-white">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10">
+<img alt="" class="w-full h-full object-cover" data-alt="Close up of mechanical typewriter keys with dramatic lighting highlighting the metal textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG1j65uqaNlIbeODegXhLK4V9qfgp2wJf6aQDyL4LrW5ATofP5PA99qNbmKB5PJ2BRZEDY1iNCeCM1DgScOeAExuWjcwTjKarlXRjdyVLNem_RoNgxUhhC2EslHhijuhXxmk3IhNL66obr2qpkNBvMFHNDvHGdu0shqjDozlL4r6jTD6HpLteDOxvI9f9GFAzfXwMZTvneldIoDpsvfqX4rKSGKb5UTgbYz_9AbK7bFwIwo01hN066K4BqiCTWdVMUFVlngkfhU4Wr"/>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 relative z-10">
+<div class="max-w-4xl">
+<h2 class="newsreader text-6xl md:text-8xl leading-[0.95] mb-12 tracking-tighter italic">
+                        If this works... <br/>
+<span class="not-italic text-on-primary-container">it changes how your organization operates.</span>
+</h2>
+<p class="text-2xl font-body mb-16 text-white/70 max-w-2xl leading-relaxed">
+                        The builds are permanent. The narrative is yours. The intelligence is shared. Are you ready to move past the advice and start the build?
+                    </p>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<button class="bg-white text-primary px-12 py-5 text-xl font-bold hover:bg-surface-container-low transition-colors duration-300">
+                            Apply for a Partnership
+                        </button>
+<div class="flex items-center gap-4 py-5 group cursor-pointer">
+<span class="font-label text-sm uppercase tracking-widest text-on-primary-container">Explore the builds</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#ccc9c6]/20 bg-[#fbf9f4] dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full mx-auto max-w-screen-2xl">
+<div class="text-lg font-['Newsreader'] text-[#1b1c19] mb-6 md:mb-0">
+                Editorial Intelligence
+            </div>
+<div class="flex flex-wrap justify-center gap-10 font-['Inter'] text-sm uppercase tracking-widest">
+<a class="text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#ccc9c6] hover:text-[#5300b7] transition-colors" href="#">Institutional Ethics</a>
+</div>
+<div class="mt-6 md:mt-0 font-['Inter'] text-sm uppercase tracking-widest text-[#ccc9c6]">
+                © 2024 Editorial Intelligence. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

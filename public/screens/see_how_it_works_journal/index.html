@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | See How It Works</title>
+<!-- Google Fonts: Newsreader for Editorial Headlines & Inter for UI/Body -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-dim": "#dbdad5",
+                    "primary-container": "#5300b7",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#deddd8",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#722a00",
+                    "secondary": "#5e5f5b",
+                    "on-secondary-fixed-variant": "#464743",
+                    "on-secondary-fixed": "#1b1c19",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e4e2dd",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#351000",
+                    "on-surface-variant": "#4a4454",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-container": "#fa9261",
+                    "inverse-primary": "#d3bbff",
+                    "on-primary-fixed": "#25005a",
+                    "primary": "#380080",
+                    "primary-fixed": "#eaddff",
+                    "on-secondary-container": "#61615d",
+                    "secondary-fixed": "#e4e2dd",
+                    "background": "#fbf9f4",
+                    "outline": "#7b7486",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "surface-bright": "#fbf9f4",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "outline-variant": "#ccc3d7",
+                    "surface-tint": "#7238d5",
+                    "surface-container": "#f0eee9",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "inverse-surface": "#30312e",
+                    "on-primary-container": "#bd9cff",
+                    "on-background": "#1b1c19",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#eae8e3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fbf9f4; color: #1b1c19; }
+        .serif-display { font-family: 'Newsreader', serif; }
+        .glass-overlay {
+            background: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .text-ink { color: #1b1c19; }
+        .text-amethyst { color: #5300b7; }
+        .bg-amethyst { background-color: #5300b7; }
+        .amethyst-gradient {
+            background: linear-gradient(135deg, #380080 0%, #5300b7 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-[#fbf9f4] dark:bg-[#1b1c19] sticky top-0 z-50 transition-transform duration-300">
+<nav class="flex justify-between items-center px-12 py-6 w-full max-w-[1440px] mx-auto">
+<div class="font-['Newsreader'] text-2xl font-bold italic text-[#1b1c19] dark:text-[#fbf9f4]">Movemental</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-['Inter'] font-medium text-sm text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors transition-colors" href="#">Platform</a>
+<a class="font-['Inter'] font-medium text-sm text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors transition-colors" href="#">Movement Leaders</a>
+<a class="font-['Inter'] font-medium text-sm text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors transition-colors" href="#">Organizations</a>
+<a class="font-['Inter'] font-medium text-sm text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors transition-colors" href="#">Research</a>
+</div>
+<button class="scale-100 active:scale-[0.98] transition-transform amethyst-gradient text-white px-8 py-3 font-['Inter'] font-medium text-sm">
+                Start a Conversation
+            </button>
+</nav>
+<!-- style_separation_logic -->
+<div class="bg-[#f0eee9] dark:bg-[#252623] h-[1px] w-full invisible"></div>
+</header>
+<main class="relative">
+<!-- Hero Section: The Narrative Intro -->
+<section class="max-w-[1440px] mx-auto px-12 pt-32 pb-24 grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-8">
+<p class="font-['Inter'] uppercase tracking-[0.2em] text-xs mb-8 text-on-surface-variant font-semibold">The Methodology</p>
+<h1 class="serif-display text-[3.5rem] leading-[1.1] font-medium tracking-tight text-ink mb-12 -ml-1">
+                    An intelligence layer designed for the <span class="italic text-amethyst">modern archive</span>.
+                </h1>
+<p class="font-['Inter'] text-lg leading-relaxed text-on-surface-variant max-w-2xl">
+                    We treat data not as a commodity, but as a living narrative. Movemental structures the chaos of institutional knowledge into a rhythmic, actionable engine for organizational change.
+                </p>
+</div>
+<div class="md:col-span-4 flex items-end">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden group">
+<img alt="Editorial paper textures" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of high-quality cream-colored paper textures with soft shadows and sharp architectural edges in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt_4YvujhdyYPDcHuPgyAQC12a5EGa509OFDQRVN5b9uOFxhwDcq_wmNRf0wgSU6NwAF18IKwnG743MkAJ64Ub1rraFDxNAN3XuGzM9W1f-ygh35-yUYazR9pNX8nAs2jZ-pVIh_0Qsz_u_QA-GcQ6aw8YFsgytPhHn8YhS-RxYWxXYOkSQMgP3brgp_IYkUjfnKsErDLiXV6sMbwR386u5F8Olqkb1BalsJWNEt9s760gwWxWzA8cC7g4k20UHl_NLnF28cvH6-0H"/>
+</div>
+</div>
+</section>
+<!-- Chapter 1: The Analysis (Input) -->
+<section class="bg-surface-container py-32">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5 sticky top-48">
+<span class="font-['Newsreader'] italic text-2xl text-amethyst block mb-4">Chapter I</span>
+<h2 class="serif-display text-[2.5rem] leading-none mb-8 text-ink">The Analysis</h2>
+<p class="font-['Inter'] text-on-surface-variant leading-relaxed mb-10">
+                            Transformation begins with digestion. We ingest the raw, unrefined signals of your organization—research papers, internal mandates, and cultural artifacts—stripping away noise to find the core resonance.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-amethyst">data_exploration</span>
+<span class="font-['Inter'] font-semibold text-sm uppercase tracking-wider">Pattern Recognition</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-amethyst">history_edu</span>
+<span class="font-['Inter'] font-semibold text-sm uppercase tracking-wider">Semantic Extraction</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 space-y-12">
+<!-- Glassmorphic Input Card -->
+<div class="bg-surface p-12 relative overflow-hidden shadow-[40px_12px_40px_rgba(27,28,25,0.04)]">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">article</span>
+</div>
+<div class="relative z-10">
+<div class="flex gap-4 mb-12">
+<div class="w-2 h-2 rounded-full bg-amethyst"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+<div class="space-y-4">
+<div class="h-[1px] w-full bg-outline-variant opacity-30"></div>
+<p class="serif-display text-xl italic text-on-surface-variant">"The infrastructure of movement is defined by its ability to remain fluid while providing rigid structural support..."</p>
+<div class="h-[1px] w-full bg-outline-variant opacity-30"></div>
+<div class="pt-8">
+<div class="inline-flex items-center px-4 py-1 bg-surface-container-low text-xs font-bold uppercase tracking-widest text-amethyst">Signal Detected</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="bg-surface-container-highest p-8 h-64 flex flex-col justify-end">
+<p class="font-['Inter'] text-sm font-bold uppercase mb-2">Unstructured</p>
+<div class="h-2 w-full bg-outline-variant mb-1"></div>
+<div class="h-2 w-2/3 bg-outline-variant"></div>
+</div>
+<div class="bg-primary-container p-8 h-64 flex flex-col justify-end text-white">
+<p class="font-['Inter'] text-sm font-bold uppercase mb-2">Synthesized</p>
+<div class="h-2 w-full bg-white opacity-40 mb-1"></div>
+<div class="h-2 w-full bg-white opacity-40 mb-1"></div>
+<div class="h-2 w-full bg-white mb-1"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Chapter 2: The Synthesis (Structure) -->
+<section class="bg-surface py-32 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="flex flex-col items-center text-center mb-24">
+<span class="font-['Newsreader'] italic text-2xl text-amethyst block mb-4 text-center">Chapter II</span>
+<h2 class="serif-display text-[2.5rem] leading-none mb-8 text-ink">The Synthesis</h2>
+<p class="font-['Inter'] text-on-surface-variant leading-relaxed max-w-2xl">
+                        Information is mapped into a three-dimensional taxonomy. We don't just categorize; we create a constellation of meaning where every insight supports a broader organizational goal.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1 px-12">
+<!-- Bento Grid Variation -->
+<div class="md:col-span-2 bg-surface-container-low p-12 h-[500px] flex flex-col justify-between">
+<div>
+<h3 class="serif-display text-2xl mb-4">Relational Mapping</h3>
+<p class="text-sm font-['Inter'] text-on-surface-variant leading-loose max-w-xs">Connecting legacy documentation with emergent cultural shifts through graph-based intelligence.</p>
+</div>
+<div class="relative w-full h-48 bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<!-- Visualizing the "Constellation" -->
+<div class="absolute w-64 h-64 border border-outline-variant/20 rounded-full animate-pulse"></div>
+<div class="absolute w-32 h-32 border border-amethyst/30 rounded-full"></div>
+<div class="flex gap-4 z-10">
+<div class="w-12 h-12 bg-amethyst rounded-full shadow-lg shadow-amethyst/20"></div>
+<div class="w-12 h-12 bg-on-surface rounded-full"></div>
+<div class="w-12 h-12 bg-secondary rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="bg-on-surface p-12 text-white h-[500px] flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl text-amethyst">hub</span>
+<div>
+<h3 class="serif-display text-2xl mb-4">Semantic Stability</h3>
+<p class="text-sm opacity-60 font-['Inter'] leading-loose">Ensuring that institutional language remains consistent across all vertical channels of communication.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Chapter 3: The Formation (Outcome) -->
+<section class="bg-surface-container py-32 border-t border-outline-variant/10">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-6 relative">
+<div class="aspect-square bg-surface-container-lowest relative p-8">
+<img alt="Movement visualization" class="w-full h-full object-cover" data-alt="Abstract minimalist photography of fluid ink flowing into clear water with deep purple and charcoal tones on a cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxTr9-PMQYfzIxz50XcgZT-s4EffxVDUlZAQ424hyXB5QcultvWJHLgKzCqgYLA5GIIBQGG3FBeN5d7m5nuv1s0P9q3Tsi9bxFY4vfXuVWXebN2cnTvcTW2NKLY1hMETVsQZtP4b220DHn3eEiad0wJVL3-uz2H5KQMA3Ry4Vz5L1ttBGfnfk5h2GzMqH8Tn9CTiC_ghMb45-Tbw17OJRb2hm9_7-LIx_W-RDLjIprxKaJurQF8MvYKApS1Hp3Xw_b-0dd7W0zk-yY"/>
+<!-- Glassmorphic floating outcome -->
+<div class="absolute -bottom-12 -right-12 glass-overlay p-8 w-80 shadow-[40px_12px_40px_rgba(27,28,25,0.08)]">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-2 h-2 bg-amethyst"></span>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant">Deployment Ready</span>
+</div>
+<h4 class="serif-display text-xl mb-3">Institutional Strategy v2.4</h4>
+<div class="space-y-2">
+<div class="h-1 w-full bg-amethyst"></div>
+<div class="h-1 w-3/4 bg-outline-variant"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 md:ml-auto">
+<span class="font-['Newsreader'] italic text-2xl text-amethyst block mb-4">Chapter III</span>
+<h2 class="serif-display text-[2.5rem] leading-none mb-8 text-ink">The Formation</h2>
+<p class="font-['Inter'] text-on-surface-variant leading-relaxed mb-8">
+                            The final stage is translation. We convert the synthesized synthesis into tangible institutional artifacts: policy frameworks, strategic narratives, and leadership playbooks.
+                        </p>
+<div class="flex flex-col gap-4">
+<div class="bg-surface p-6 flex justify-between items-center group cursor-pointer hover:bg-surface-container-highest transition-all duration-300">
+<span class="font-['Inter'] font-semibold text-sm">Policy Infrastructure</span>
+<span class="material-symbols-outlined text-amethyst group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="bg-surface p-6 flex justify-between items-center group cursor-pointer hover:bg-surface-container-highest transition-all duration-300">
+<span class="font-['Inter'] font-semibold text-sm">Leadership Playbooks</span>
+<span class="material-symbols-outlined text-amethyst group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<div class="bg-surface p-6 flex justify-between items-center group cursor-pointer hover:bg-surface-container-highest transition-all duration-300">
+<span class="font-['Inter'] font-semibold text-sm">Communication Nodes</span>
+<span class="material-symbols-outlined text-amethyst group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA: Poetic End -->
+<section class="py-48 bg-surface">
+<div class="max-w-4xl mx-auto px-12 text-center">
+<h2 class="serif-display text-[3.5rem] leading-tight mb-12">Move your organization from <span class="italic">static</span> to <span class="text-amethyst italic">cinematic</span>.</h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="amethyst-gradient text-white px-12 py-5 font-['Inter'] font-bold text-sm tracking-widest uppercase">
+                        Request a Demo
+                    </button>
+<button class="bg-on-surface text-white px-12 py-5 font-['Inter'] font-bold text-sm tracking-widest uppercase">
+                        Read the Manifesto
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f0eee9] dark:bg-[#1b1c19] flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<div class="font-['Newsreader'] text-lg font-semibold text-[#1b1c19] dark:text-[#fbf9f4] mb-2">Movemental</div>
+<p class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60">© 2024 Movemental Infrastructure. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Institutional Access</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Press Kit</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Organizations Hub | Movemental</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Newsreader & Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary": "#ffffff",
+                "surface-container-highest": "#e4e2dd",
+                "background": "#fbf9f4",
+                "on-surface": "#1b1c19",
+                "on-secondary-container": "#61615d",
+                "on-surface-variant": "#4a4454",
+                "surface-container": "#f0eee9",
+                "primary-container": "#5300b7",
+                "primary": "#380080",
+                "on-error": "#ffffff",
+                "on-secondary-fixed-variant": "#464743",
+                "primary-fixed": "#eaddff",
+                "tertiary-fixed-dim": "#ffb595",
+                "secondary-fixed": "#e4e2dd",
+                "on-error-container": "#93000a",
+                "tertiary-container": "#722a00",
+                "on-tertiary-container": "#fa9261",
+                "tertiary-fixed": "#ffdbcc",
+                "outline-variant": "#ccc3d7",
+                "inverse-surface": "#30312e",
+                "surface-tint": "#7238d5",
+                "secondary": "#5e5f5b",
+                "outline": "#7b7486",
+                "on-tertiary-fixed-variant": "#7a3005",
+                "on-tertiary-fixed": "#351000",
+                "surface-container-lowest": "#ffffff",
+                "error-container": "#ffdad6",
+                "inverse-primary": "#d3bbff",
+                "on-secondary-fixed": "#1b1c19",
+                "secondary-container": "#deddd8",
+                "surface-dim": "#dbdad5",
+                "surface-bright": "#fbf9f4",
+                "tertiary": "#4e1a00",
+                "surface-container-low": "#f5f3ee",
+                "primary-fixed-dim": "#d3bbff",
+                "on-background": "#1b1c19",
+                "surface-variant": "#e4e2dd",
+                "surface": "#fbf9f4",
+                "surface-container-high": "#eae8e3",
+                "inverse-on-surface": "#f2f1ec",
+                "secondary-fixed-dim": "#c7c6c2",
+                "on-secondary": "#ffffff",
+                "on-primary-container": "#bd9cff",
+                "error": "#ba1a1a",
+                "on-primary-fixed-variant": "#5912bd",
+                "on-primary-fixed": "#25005a",
+                "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Newsreader", "serif"],
+                "body": ["Inter", "sans-serif"],
+                "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .font-serif { font-family: 'Newsreader', serif; }
+      .font-sans { font-family: 'Inter', sans-serif; }
+      .tracking-tight-custom { tracking: -0.02em; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-sans selection:bg-primary-fixed selection:text-primary">
+<!-- Top Navigation -->
+<nav class="w-full top-0 sticky bg-[#fbf9f4] dark:bg-stone-950 z-50 transition-colors">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-[1440px] mx-auto">
+<div class="text-2xl font-serif font-bold text-[#1b1c19] dark:text-stone-100">Movemental</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#380080] dark:hover:text-[#c4a1ff] transition-colors duration-300" href="#">Platform</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#380080] dark:hover:text-[#c4a1ff] transition-colors duration-300" href="#">Movement Leaders</a>
+<a class="text-[#5300b7] dark:text-[#a370f7] font-semibold border-b-2 border-[#5300b7] dark:border-[#a370f7] pb-1" href="#">Organizations</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#380080] dark:hover:text-[#c4a1ff] transition-colors duration-300" href="#">Research</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-medium hover:bg-primary-container scale-95 active:opacity-80 transition-all">
+                Start a Conversation
+            </button>
+</div>
+</nav>
+<main class="w-full max-w-[1440px] mx-auto px-12 pt-32 pb-48">
+<!-- Hero Section -->
+<section class="max-w-4xl mb-32">
+<span class="font-sans uppercase tracking-[0.2em] text-xs text-on-surface-variant font-semibold">Institutional Intelligence</span>
+<h1 class="font-serif italic font-light text-7xl md:text-8xl mt-6 leading-[1.1] tracking-tight-custom">
+                A home for the <br/>
+<span class="text-primary">Modern Archivist.</span>
+</h1>
+<p class="font-sans text-xl text-on-secondary-container mt-12 max-w-2xl leading-relaxed">
+                We empower research institutions, NGOs, and global collectives with the digital infrastructure required to catalog, protect, and amplify human movement history.
+            </p>
+</section>
+<!-- Asymmetric Bento-Inspired Grid -->
+<div class="grid grid-cols-12 gap-12 items-stretch">
+<!-- Large Focus Card -->
+<div class="col-span-12 md:col-span-8 bg-surface-container-low p-16 flex flex-col justify-between min-h-[600px] hover:bg-surface-container transition-colors group">
+<div>
+<h2 class="font-serif text-5xl mb-8 leading-tight">Research <br/>Institutions</h2>
+<p class="font-sans text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                        Secure vaults and high-fidelity archival tools for data-driven discovery. Our scholarly framework supports complex taxonomies and multi-generational movement tracking.
+                    </p>
+</div>
+<div class="mt-12">
+<img class="w-full h-80 object-cover grayscale brightness-110 mb-8" data-alt="Close-up of a vintage scientific lens over old blueprints with soft, warm afternoon light in a minimalist study" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAReMIJ6dSs5KRSaYNQO7Y22rSfs7C8nq0vj0Bhu8h-SxER0k51uE3dBTFQr5pvzCnbCz3xXnH4MS-3xb4KmjMaCW6S1MU1bhDiGbTteDevxHnBMmy05GJ_7p38cXtr1HnqFk2_JPUMfcCWNtxRx2OcD5VmGU243C-CAQG3rD2HF9j9Bqo320pJxTFqqOkF2fmk1QFU-W-Ur9Io96sSxDSJKyfPE8cL9Hz3zeuRF2964ywTBaC0adgMQtLfLWYwuybMQmYEcBOWPcjl"/>
+<div class="flex items-center gap-4 text-primary font-semibold group-hover:translate-x-2 transition-transform">
+<span>Explore Research Portal</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Side Card (Tonal Shift) -->
+<div class="col-span-12 md:col-span-4 bg-primary-container p-12 text-on-primary flex flex-col justify-end min-h-[600px] hover:brightness-110 transition-all">
+<div class="mb-auto">
+<span class="material-symbols-outlined text-4xl mb-6" data-weight="fill">account_balance</span>
+</div>
+<div>
+<h3 class="font-serif text-4xl mb-6">Global <br/>Foundations</h3>
+<p class="font-sans text-on-primary-container text-md leading-relaxed mb-8 opacity-90">
+                        Centralizing fragmented data across borders to create a cohesive narrative for policy change and cultural preservation.
+                    </p>
+<button class="w-full py-4 bg-on-primary text-primary font-bold hover:bg-primary-fixed transition-colors">
+                        Partner with us
+                    </button>
+</div>
+</div>
+<!-- Wide Entry Point -->
+<div class="col-span-12 bg-surface-container-highest p-16 flex flex-col md:flex-row justify-between items-center gap-12 group hover:bg-surface-dim transition-colors">
+<div class="max-w-xl">
+<h2 class="font-serif text-5xl mb-6">Community Collectives</h2>
+<p class="font-sans text-lg text-on-surface-variant leading-relaxed">
+                        Grassroots organizations leveraging Movemental's tools to document local heritage and coordinate synchronized collective action.
+                    </p>
+</div>
+<div class="h-64 w-full md:w-1/2 overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist long exposure photo of city lights blurring into abstract movement patterns against a dark gray background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5xy6xmdVf57a_WsKjCOjeUSzl7tnX6x8Q1F8BobEspBVFvLpYMXDYtD7FpRAfCwfiCpm6Rzsu9y5MemDWf9zZXkVk37016xtxRUajFonbyz2xCLSMRCgDyFRgTeENxm0D5gC5IIqRNKrX8VxnL3HtlW4HTgMWnDLDyYZRqQPxSYMxp0A65M8eqnkBurUdsNlLoNnCX09UnhBTqj1x_mwRe9fU9wTdJnYKVCKL-pXE87eYzvIaRPX4KvCt_w8OW-CJe0_iRUDHJRHo"/>
+</div>
+</div>
+</div>
+<!-- Scholarly Call to Action -->
+<section class="mt-48 pt-32 border-t border-outline-variant/30 text-center max-w-3xl mx-auto">
+<h2 class="font-serif text-5xl italic mb-8">Join the Methodology</h2>
+<p class="font-sans text-lg text-on-surface-variant mb-12">
+                We are currently accepting inquiries for our 2024 Institutional Pilot Program. Access the Ethics Charter and technical methodology below.
+            </p>
+<div class="flex flex-col md:flex-row justify-center gap-8 font-sans uppercase tracking-widest text-xs font-bold">
+<a class="border-b border-primary text-primary py-2 hover:opacity-70 transition-opacity" href="#">Request Prospectus</a>
+<a class="border-b border-on-surface py-2 hover:opacity-70 transition-opacity" href="#">Technical Docs</a>
+<a class="border-b border-on-surface py-2 hover:opacity-70 transition-opacity" href="#">Ethics Charter</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-black w-full pt-24 pb-12 transition-colors">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 w-full max-w-[1440px] mx-auto">
+<div class="text-lg font-serif italic text-[#fbf9f4] mb-8 md:mb-0">Movemental Intelligence</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="font-sans Inter uppercase tracking-widest text-xs text-stone-500 hover:text-white transition-colors" href="#">Archives</a>
+<a class="font-sans Inter uppercase tracking-widest text-xs text-stone-500 hover:text-white transition-colors" href="#">Methodology</a>
+<a class="font-sans Inter uppercase tracking-widest text-xs text-stone-500 hover:text-white transition-colors" href="#">Ethics Charter</a>
+<a class="font-sans Inter uppercase tracking-widest text-xs text-stone-500 hover:text-white transition-colors" href="#">Privacy</a>
+<a class="font-sans Inter uppercase tracking-widest text-xs text-stone-500 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="px-12 mt-16 flex flex-col md:flex-row justify-between items-center border-t border-stone-800 pt-8 w-full max-w-[1440px] mx-auto">
+<p class="font-sans Inter uppercase tracking-widest text-[10px] text-stone-500 mb-4 md:mb-0">
+                © 2024 Movemental Intelligence. All rights reserved. Built for the Modern Archivist.
+            </p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-stone-500 hover:text-[#fbf9f4] cursor-pointer transition-colors" data-icon="share">share</span>
+<span class="material-symbols-outlined text-stone-500 hover:text-[#fbf9f4] cursor-pointer transition-colors" data-icon="language">language</span>
+</div>
+</div>
+</footer>
+</body></html>

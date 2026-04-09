@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | From scattered work to structured system</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#25005a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#bd9cff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "surface-container-high": "#eae8e3",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-variant": "#e4e2dd",
+                        "surface": "#fbf9f4",
+                        "primary-fixed-dim": "#d3bbff",
+                        "on-background": "#1b1c19",
+                        "tertiary": "#4e1a00",
+                        "surface-container-low": "#f5f3ee",
+                        "secondary-container": "#deddd8",
+                        "surface-dim": "#dbdad5",
+                        "surface-bright": "#fbf9f4",
+                        "on-secondary-fixed": "#1b1c19",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#d3bbff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#7238d5",
+                        "secondary": "#5e5f5b",
+                        "outline": "#7b7486",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary-container": "#fa9261",
+                        "tertiary-fixed": "#ffdbcc",
+                        "outline-variant": "#ccc3d7",
+                        "inverse-surface": "#30312e",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#722a00",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "secondary-fixed": "#e4e2dd",
+                        "on-secondary-fixed-variant": "#464743",
+                        "primary-fixed": "#eaddff",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0eee9",
+                        "primary-container": "#5300b7",
+                        "primary": "#380080",
+                        "on-surface": "#1b1c19",
+                        "on-secondary-container": "#61615d",
+                        "on-surface-variant": "#4a4454",
+                        "surface-container-highest": "#e4e2dd",
+                        "background": "#fbf9f4",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-italic {
+            font-family: 'Newsreader', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fbf9f4] dark:bg-[#1b1c19] flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif font-bold text-[#1b1c19] dark:text-[#fbf9f4]">Movemental</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-serif italic tracking-tighter text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Principles</a>
+<a class="font-serif italic tracking-tighter text-[#5300b7] dark:text-[#a370f7] border-b-2 border-[#5300b7] pb-1" href="#">Methods</a>
+<a class="font-serif italic tracking-tighter text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Archive</a>
+<a class="font-serif italic tracking-tighter text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Theory</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-[#5300b7] text-white px-6 py-2 font-serif italic scale-95 transition-transform hover:scale-100">Subscribe</button>
+<span class="material-symbols-outlined text-[#1b1c19] dark:text-[#fbf9f4]" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="max-w-screen-2xl mx-auto px-6 md:px-12 pt-24 pb-48">
+<!-- Hero Section -->
+<header class="mb-32 max-w-4xl">
+<span class="font-label uppercase tracking-widest text-xs text-primary mb-6 block font-bold">The Methodology</span>
+<h1 class="font-headline text-[3.5rem] md:text-[5.5rem] leading-[0.95] tracking-[-0.03em] mb-12">
+                From scattered work to <span class="serif-italic">structured system.</span>
+</h1>
+<div class="h-1 w-24 bg-primary mb-12"></div>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                Movemental transforms raw creative output into durable editorial intelligence. We don't just store information; we architect movement.
+            </p>
+</header>
+<!-- Asymmetric Grid Content -->
+<div class="space-y-48">
+<!-- 01 Input -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-4 sticky top-32">
+<div class="flex items-baseline gap-4 mb-8">
+<span class="text-4xl font-headline italic text-outline-variant">01</span>
+<h2 class="text-3xl font-headline">Input</h2>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        We start with what already exists. Your body of work—books, talks, private documents—is the raw material for the new system.
+                    </p>
+</div>
+<div class="md:col-span-8 bg-surface-container h-[500px] relative overflow-hidden">
+<img alt="Input" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-60" data-alt="Close-up of organized stacks of antique books and modern manuscripts on a clean warm cream surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqzehzx8CRWnj5QfRQlRtkMOpd7mGyTEDK8cFPEgSJ8w9aw5w68yje3lpZQF1p5wy1P0zxUkiFd2Oh7IAu-AhDR8TB1y1LzLkV6ldqZP1lojdiseSo5kUw9sqw8v25zVtnr6leUjpvipudlOzdqe2m7yRamaLLkuxrqCumE_ju6Afhy6igfuAMp5tA4W_t-tSFCpbELxlGtZwVSbCxdDc6_jJqjuA93-4gO-8xwp6c8YnyZbROJScKijoHh-0C_0yVffBGa0MO5V5P"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end">
+<h3 class="font-headline text-4xl text-on-surface mb-2">We start with what already exists</h3>
+<p class="font-body text-sm uppercase tracking-widest opacity-60">Books · Talks · Documents</p>
+</div>
+</div>
+</section>
+<!-- 02 Analysis -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 bg-primary-container p-12 h-[600px] flex flex-col justify-center text-white order-2 md:order-1">
+<h3 class="font-headline text-5xl mb-6 leading-tight">Structure is extracted</h3>
+<p class="font-body text-xl opacity-80 mb-12 max-w-md">Our intelligence engine identifies the latent themes and frameworks buried within your existing content.</p>
+<div class="flex flex-wrap gap-4">
+<span class="px-4 py-2 border border-on-primary-container text-sm uppercase tracking-widest">Themes</span>
+<span class="px-4 py-2 border border-on-primary-container text-sm uppercase tracking-widest">Frameworks</span>
+<span class="px-4 py-2 border border-on-primary-container text-sm uppercase tracking-widest">Ontologies</span>
+</div>
+</div>
+<div class="md:col-span-5 order-1 md:order-2">
+<div class="flex items-baseline gap-4 mb-8">
+<span class="text-4xl font-headline italic text-outline-variant">02</span>
+<h2 class="text-3xl font-headline">Analysis</h2>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Data without structure is noise. We strip away the non-essential to find the structural integrity of your ideas.
+                    </p>
+</div>
+</section>
+<!-- 03 Build -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4">
+<div class="flex items-baseline gap-4 mb-8">
+<span class="text-4xl font-headline italic text-outline-variant">03</span>
+<h2 class="text-3xl font-headline">Build</h2>
+</div>
+</div>
+<div class="md:col-span-8">
+<h3 class="font-headline text-5xl mb-12 leading-tight">The system is constructed</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant">
+<div class="bg-surface p-12 aspect-square flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="architecture">architecture</span>
+<div>
+<h4 class="text-2xl font-headline mb-4">Pathways</h4>
+<p class="text-on-surface-variant leading-relaxed">Linear journeys designed for cognitive progression and mastery.</p>
+</div>
+</div>
+<div class="bg-surface p-12 aspect-square flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="library_books">library_books</span>
+<div>
+<h4 class="text-2xl font-headline mb-4">Courses</h4>
+<p class="text-on-surface-variant leading-relaxed">Interactive modules that bridge the gap between theory and practice.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 04 Interaction -->
+<section class="relative">
+<div class="bg-surface-container-low p-12 md:p-24">
+<div class="max-w-3xl">
+<div class="flex items-baseline gap-4 mb-8">
+<span class="text-4xl font-headline italic text-outline-variant">04</span>
+<h2 class="text-3xl font-headline">Interaction</h2>
+</div>
+<h3 class="font-headline text-[3.5rem] leading-tight mb-12">People move through it</h3>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-16">
+                            A system is only as good as the movement it inspires. We create interfaces that encourage active reflection, not passive consumption.
+                        </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-primary mb-2">01</p>
+<p class="font-serif italic text-lg">Engaging</p>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-primary mb-2">02</p>
+<p class="font-serif italic text-lg">Reflecting</p>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-primary mb-2">03</p>
+<p class="font-serif italic text-lg">Applying</p>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-primary mb-2">04</p>
+<p class="font-serif italic text-lg">Sharing</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decentred floating image -->
+<div class="hidden lg:block absolute -right-12 top-1/2 -translate-y-1/2 w-[400px] h-[500px] bg-white shadow-xl p-4 transform rotate-2">
+<img alt="Interaction" class="w-full h-full object-cover" data-alt="Hands writing in a minimalist notebook on a wooden desk with a single ray of sunlight filtering through" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYtuy2XDilgGOYH-uQ6LW2nKvQJY6ePle2VLgJzZhuwksAuq1nAMCWHmQuGPXU85o1XQWnbOqtu5Xtoxf49VJIHWYeHHrvf8Pato7qQy9pS_m8KmQ-8QF6Ml8ns0WDkEVM2drgoIpTzLvromEdlPZrk7EjKqJrevBrMVt0qBFj9JK1H0egrFHM-rPC86qTxC1qz7p5uspBQzBX9YdXIaWAzOHnWu1ltbTgMz6qonJOiaJ_U-dUh6ZUT5g69njBNyLrOeDzvVA9wxsR"/>
+</div>
+</section>
+<!-- 05 Evolution -->
+<section class="py-24 text-center max-w-2xl mx-auto">
+<span class="text-4xl font-headline italic text-outline-variant mb-6 block">05</span>
+<h2 class="text-3xl font-headline mb-8">Evolution</h2>
+<h3 class="font-headline text-5xl mb-12 leading-tight">It grows over time.</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-16">
+                    Our systems are living archives. As your body of work expands, the methodology adapts, ensuring your editorial intelligence never goes stale.
+                </p>
+<!-- CTA Pill -->
+<button class="bg-primary text-white px-12 py-5 font-serif italic text-xl rounded-full hover:bg-[#5300b7] transition-all duration-300 shadow-lg">
+                    Start a Conversation
+                </button>
+</section>
+</div>
+</main>
+<!-- SideNavBar (Hidden on small screens) -->
+<aside class="hidden lg:flex flex-col w-72 h-screen fixed left-0 top-0 pt-24 bg-[#fbf9f4] dark:bg-[#1b1c19] border-r-0 z-40 transition duration-200 ease-in-out">
+<div class="px-8 mb-12">
+<h2 class="font-headline text-2xl text-[#1b1c19] dark:text-[#fbf9f4] mb-1">The Methodology</h2>
+<p class="font-sans uppercase tracking-widest text-[10px] text-on-surface-variant">V1.04 Systematic Guide</p>
+</div>
+<nav class="flex flex-col space-y-4">
+<div class="text-[#1b1c19] opacity-50 pl-4 font-sans uppercase tracking-widest text-xs py-2 hover:bg-[#f0eee9] dark:hover:bg-[#252622] transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined scale-75" data-icon="menu_book">menu_book</span> The Overview
+            </div>
+<div class="text-[#1b1c19] opacity-50 pl-4 font-sans uppercase tracking-widest text-xs py-2 hover:bg-[#f0eee9] dark:hover:bg-[#252622] transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined scale-75" data-icon="lightbulb">lightbulb</span> Phase I: Intent
+            </div>
+<div class="text-[#1b1c19] opacity-50 pl-4 font-sans uppercase tracking-widest text-xs py-2 hover:bg-[#f0eee9] dark:hover:bg-[#252622] transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined scale-75" data-icon="timer">timer</span> Phase II: Rhythm
+            </div>
+<div class="text-[#5300b7] font-bold border-l-4 border-[#5300b7] pl-4 font-sans uppercase tracking-widest text-xs py-2 flex items-center gap-4">
+<span class="material-symbols-outlined scale-75" data-icon="architecture">architecture</span> Phase III: Form
+            </div>
+<div class="text-[#1b1c19] opacity-50 pl-4 font-sans uppercase tracking-widest text-xs py-2 hover:bg-[#f0eee9] dark:hover:bg-[#252622] transition-colors flex items-center gap-4">
+<span class="material-symbols-outlined scale-75" data-icon="library_books">library_books</span> Full Syllabus
+            </div>
+</nav>
+</aside>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full bg-[#1b1c19] dark:bg-[#000000] text-[#fbf9f4] mt-24">
+<div class="mb-8 md:mb-0">
+<div class="font-serif text-[#5300b7] text-xl mb-2">Movemental</div>
+<p class="font-sans text-sm tracking-tight text-[#ccc9c6]">© 2024 Movemental Editorial Intelligence. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-8 justify-center">
+<a class="font-sans text-sm tracking-tight text-[#ccc9c6] hover:text-white transition-colors" href="#">Ethics Statement</a>
+<a class="font-sans text-sm tracking-tight text-[#fbf9f4] underline underline-offset-4" href="#">Privacy</a>
+<a class="font-sans text-sm tracking-tight text-[#ccc9c6] hover:text-white transition-colors" href="#">Research Index</a>
+<a class="font-sans text-sm tracking-tight text-[#ccc9c6] hover:text-white transition-colors" href="#">Archives</a>
+<a class="font-sans text-sm tracking-tight text-[#ccc9c6] hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</footer>
+</body></html>

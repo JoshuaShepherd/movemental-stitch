@@ -1,0 +1,278 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#7331df",
+                        "tertiary-fixed": "#ebdcff",
+                        "surface-dim": "#dbdad5",
+                        "on-primary-container": "#dac5ff",
+                        "tertiary-container": "#693fb3",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-background": "#1b1c19",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-container": "#e2dfde",
+                        "on-surface": "#1b1c19",
+                        "inverse-surface": "#30312e",
+                        "outline-variant": "#ccc3d7",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#260059",
+                        "on-surface-variant": "#4a4455",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "tertiary-fixed-dim": "#d3bbff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#d3bbff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "on-tertiary-container": "#dbc6ff",
+                        "on-primary-fixed": "#250059",
+                        "tertiary": "#51239a",
+                        "surface-container-low": "#f5f3ee",
+                        "primary-container": "#6d28d9",
+                        "background": "#fbf9f4",
+                        "primary": "#5300b7",
+                        "surface-container-high": "#eae8e3",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#474746",
+                        "inverse-primary": "#d3bbff",
+                        "inverse-on-surface": "#f2f1ec",
+                        "primary-fixed": "#ebddff",
+                        "surface": "#fbf9f4",
+                        "on-primary-fixed-variant": "#5b00c5",
+                        "on-tertiary-fixed-variant": "#572ba0",
+                        "surface-container": "#f0eee9",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "outline": "#7b7486",
+                        "on-secondary-container": "#636262",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="fixed top-0 w-full z-50 glass-nav bg-stone-50/80 dark:bg-zinc-900/80 shadow-2xl shadow-stone-900/5">
+<div class="flex justify-between items-center px-12 py-6 max-w-full mx-auto">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-serif font-bold text-stone-900 dark:text-stone-50 tracking-tighter" style="">The Curator</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-violet-800 dark:text-violet-300 border-b-2 border-violet-700 pb-1 font-serif italic tracking-tight" href="#" style="">Who We Serve</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-serif italic tracking-tight" href="#" style="">How It Works</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-serif italic tracking-tight" href="#" style="">Courses</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-serif italic tracking-tight" href="#" style="">Articles</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-serif italic tracking-tight" href="#" style="">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary-container hover:shadow-xl hover:shadow-primary/20 scale-95 active:opacity-80 transition-transform" style="">
+                    Start with Discovery
+                </button>
+<button class="text-on-background p-2 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 rounded-full transition-all" style="">
+<span class="material-symbols-outlined" data-icon="menu" style="">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 min-h-screen">
+<section class="relative bg-on-background text-surface min-h-[921px] flex flex-col justify-center items-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-40">
+<img alt="Desk with lamp and books" class="w-full h-full object-cover grayscale" data-alt="Cinematic low-light overhead shot of a dark oak desk, a single warm brass lamp illuminating a stack of ancient leather books and a fountain pen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDJIDphZdI989swNlVX-lpmgVfxdPGpiZXcwn-aM-Eq9m9iwNM1RhtLLXgaBgVpsOpp2u9u0ZTmMxUAT4P48LRkt2egRf8OrdFfsLNpmajWQjzTVW-r_DGegoHIUJQKNnsuHIDSKgArVHLL3YRNtDW9sPeXbH_UoQOdcXTgfB6-bzbe2M0_PnVm5167-WT72ApqoRf4_avFHeUGCwb6kDmLl4zVZjdCiwlXpEAY3ZxZeflnbH7Tv1C1qbz0Eg2H4ZXq5FMfNblJH8" style="">
+<div class="absolute inset-0 bg-gradient-to-b from-on-background via-transparent to-on-background"></div>
+</div>
+<div class="relative z-10 max-w-4xl w-full text-center space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-container/30 border border-tertiary-fixed/10 text-tertiary-fixed text-sm font-medium" style="">
+<span class="material-symbols-outlined text-[18px]" data-icon="auto_awesome" style="">auto_awesome</span>
+                    A Formation Ecosystem for Modern Leaders
+                </div>
+<h1 class="text-5xl md:text-8xl font-headline tracking-tighter leading-[1.1] text-surface-container-lowest" style="">
+                    Navigate AI with <span class="italic text-primary-fixed-dim" style="">wisdom</span>. <br>
+                    Build what lasts.
+                </h1>
+<p class="text-xl md:text-2xl text-surface-dim max-w-2xl mx-auto font-body leading-relaxed opacity-90" style="">
+                    Movemental is a sanctuary for deep work and scholarly rigor. We help pioneers integrate emerging technology with timeless architectural principles.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
+<button class="group relative px-10 py-5 bg-primary text-on-primary rounded-full text-lg font-semibold overflow-hidden transition-all hover:pr-14" style="">
+<span class="relative z-10" style="">Enter the Archive</span>
+<span class="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all material-symbols-outlined" data-icon="arrow_forward" style="">arrow_forward</span>
+</button>
+<button class="px-10 py-5 border border-surface-variant/30 text-surface hover:bg-surface/10 rounded-full text-lg font-medium transition-all backdrop-blur-sm" style="">
+                        Our Philosophy
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+<span class="material-symbols-outlined text-4xl" data-icon="keyboard_double_arrow_down" style="">keyboard_double_arrow_down</span>
+</div>
+</section>
+<section class="py-32 px-12 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-24 gap-8">
+<div class="max-w-2xl space-y-6">
+<span class="font-sans uppercase tracking-[0.3em] text-xs font-bold text-primary" style="">The Curated Approach</span>
+<h2 class="text-4xl md:text-6xl font-headline text-on-background tracking-tight" style="">Four Pillars of <span class="italic" style="">Persistent</span> Infrastructure.</h2>
+</div>
+<div class="text-on-surface-variant text-lg max-w-sm font-body" style="">
+                        We avoid the ephemeral hype. We prioritize systems that remain relevant through the shifts of the digital age.
+                    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="col-span-1 md:col-span-2 aspect-video md:aspect-auto md:h-[600px] bg-surface-container-low rounded-lg p-12 flex flex-col justify-between transition-all hover:bg-surface-container hover:shadow-2xl hover:shadow-primary/5 group">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="architecture" style="">architecture</span>
+<div class="space-y-4">
+<h3 class="text-3xl font-headline text-on-background" style="">Ethical Architecture</h3>
+<p class="text-on-surface-variant text-lg" style="">Designing AI integrations that respect human agency and dignity from the foundation up.</p>
+<div class="pt-6">
+<span class="text-sm font-bold uppercase tracking-widest text-primary flex items-center gap-2 group-hover:gap-4 transition-all" style="">Explore Pillar <span class="material-symbols-outlined text-sm" data-icon="east" style="">east</span></span>
+</div>
+</div>
+</div>
+<div class="grid grid-rows-2 gap-4 col-span-1 md:col-span-2">
+<div class="bg-surface-container-low rounded-lg p-10 flex items-start gap-8 transition-all hover:bg-surface-container">
+<div class="p-4 bg-primary/10 rounded-xl">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="school" style="">school</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-2xl font-headline text-on-background" style="">Scholarly Formation</h3>
+<p class="text-on-surface-variant" style="">Intensive courses designed for leaders who require depth over speed.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-on-background text-surface rounded-lg p-10 flex flex-col justify-center gap-4 hover:shadow-2xl hover:shadow-primary/20 transition-all">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl" data-icon="menu_book" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">menu_book</span>
+<h3 class="text-xl font-headline italic" style="">The Archive</h3>
+<p class="text-sm text-surface-dim" style="">A private collection of case studies on longevity.</p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-10 flex flex-col justify-center gap-4 transition-all hover:bg-surface-container">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="groups" style="">groups</span>
+<h3 class="text-xl font-headline" style="">Guild Circles</h3>
+<p class="text-sm text-on-surface-variant" style="">Peer-led discovery for complex organizational transitions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-12 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+<div class="flex-1 space-y-10">
+<h2 class="text-5xl font-headline leading-tight" style="">Join the next cohort of <span class="italic text-primary" style="">visionary architects</span>.</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed" style="">
+                        Our Discovery process is an invitation-only evaluation of your current infrastructure. We don't just teach AI; we help you curate a legacy.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary" data-icon="check" style="">check</span>
+</div>
+<span class="text-lg font-medium" style="">Personalized Infrastructure Roadmap</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary" data-icon="check" style="">check</span>
+</div>
+<span class="text-lg font-medium" style="">Access to the Movemental Network</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-lg blur-3xl"></div>
+<div class="relative bg-surface p-12 rounded-lg shadow-2xl space-y-8">
+<h4 class="text-2xl font-headline italic" style="">Reserve your session</h4>
+<form class="space-y-6">
+<div class="space-y-1">
+<label class="text-[11px] uppercase tracking-widest font-bold text-on-surface-variant" style="">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline/30 focus:border-primary focus:ring-0 py-3 text-lg transition-all" placeholder="Johnathan Sterling" type="text">
+</div>
+<div class="space-y-1">
+<label class="text-[11px] uppercase tracking-widest font-bold text-on-surface-variant" style="">Institutional Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline/30 focus:border-primary focus:ring-0 py-3 text-lg transition-all" placeholder="j.sterling@firm.org" type="email">
+</div>
+<button class="w-full py-5 bg-on-background text-surface rounded-full text-lg font-semibold hover:bg-primary transition-all" type="submit" style="">
+                                Request Discovery
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-on-background text-surface py-20 px-12 border-t border-surface-variant/10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
+<div class="col-span-1 md:col-span-2 space-y-8">
+<span class="text-3xl font-serif font-bold italic tracking-tighter" style="">The Curator</span>
+<p class="text-surface-dim text-lg max-w-sm leading-relaxed" style="">
+                    A formation ecosystem for leaders navigating the intersection of ancient wisdom and emerging machine intelligence.
+                </p>
+<div class="flex gap-6">
+<a class="text-surface-dim hover:text-primary-fixed-dim transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-2xl" data-icon="mail" style="">mail</span>
+</a>
+<a class="text-surface-dim hover:text-primary-fixed-dim transition-colors" href="#" style="">
+<span class="material-symbols-outlined text-2xl" data-icon="rss_feed" style="">rss_feed</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h5 class="font-sans uppercase tracking-widest text-[11px] font-bold text-primary-fixed-dim" style="">Institutional</h5>
+<ul class="space-y-4 text-surface-dim">
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">Who We Serve</a></li>
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">How It Works</a></li>
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">About Us</a></li>
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">Partnerships</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="font-sans uppercase tracking-widest text-[11px] font-bold text-primary-fixed-dim" style="">Knowledge</h5>
+<ul class="space-y-4 text-surface-dim">
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">Courses</a></li>
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">Articles</a></li>
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">Research Paper</a></li>
+<li class="" style=""><a class="hover:text-surface transition-colors" href="#" style="">Case Studies</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-12 border-t border-surface-variant/5 flex flex-col md:flex-row justify-between text-surface-dim text-xs tracking-widest uppercase font-bold">
+<p class="" style="">© 2024 THE CURATOR. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="hover:text-surface transition-colors" href="#" style="">Privacy</a>
+<a class="hover:text-surface transition-colors" href="#" style="">Terms</a>
+<a class="hover:text-surface transition-colors" href="#" style="">Ethics Manifest</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Discovery Lab | AI Use Case Discovery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "tertiary": "#4e1a00",
+                        "primary-fixed": "#eaddff",
+                        "on-primary-fixed": "#25005a",
+                        "background": "#fbf9f4",
+                        "surface-container": "#efeee8",
+                        "surface-tint": "#7238d5",
+                        "secondary-fixed": "#eaddff",
+                        "on-surface": "#1b1c19",
+                        "surface-container-high": "#e9e8e3",
+                        "error-container": "#ffdad6",
+                        "primary": "#380080",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#722a00",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#bd9cff",
+                        "on-background": "#1b1c19",
+                        "on-secondary-container": "#574183",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#30312d",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-container": "#cbb2fd",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container-low": "#f5f4ee",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f2f1eb",
+                        "on-secondary-fixed": "#240a4e",
+                        "secondary": "#695296",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "on-surface-variant": "#4a4454",
+                        "surface-variant": "#e4e2dd",
+                        "primary-fixed-dim": "#d3bbff",
+                        "surface-bright": "#fbf9f4",
+                        "inverse-primary": "#d3bbff",
+                        "surface-dim": "#dbdad5",
+                        "outline": "#7b7486",
+                        "on-tertiary-container": "#fa9261",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "primary-container": "#5300b7",
+                        "on-secondary-fixed-variant": "#503a7c",
+                        "surface": "#fbf9f4",
+                        "secondary-fixed-dim": "#d3bbff",
+                        "outline-variant": "#ccc3d7",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background-color: rgba(251, 249, 244, 0.8);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ambient-shadow {
+            box-shadow: 0 32px 64px -4px rgba(27, 28, 25, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tight font-serif text-[#1b1c19] dark:text-[#fbf9f4]">
+                Discovery Lab
+            </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-[#380080] dark:text-[#5300b7] font-semibold border-b-2 border-[#380080] pb-1 transition-all active:scale-95" href="#">Curriculum</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#380080] transition-colors duration-300 active:scale-95" href="#">Outcomes</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#380080] transition-colors duration-300 active:scale-95" href="#">Enrollment</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-medium hover:bg-primary-container transition-all active:scale-95">
+                Secure a Seat
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 md:col-span-8 md:col-start-4">
+<h1 class="font-headline text-[3.5rem] leading-[1.1] tracking-[-0.02em] mb-8">
+                        Discover where AI actually creates value in your organization
+                    </h1>
+<p class="font-body text-[1rem] leading-[1.6] text-on-surface/80 max-w-2xl mb-12">
+                        Move beyond the noise of generic automation. The Discovery Lab is a rigorous, institutional framework designed to identify high-impact, low-risk opportunities for AI integration within your unique operational landscape.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-gradient-to-br from-[#5300b7] to-[#6d28d9] text-on-primary px-10 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-all active:scale-95">
+                            Join the Cohort
+                        </button>
+<button class="bg-surface-container-high text-on-surface px-10 py-4 rounded-full text-lg font-medium hover:bg-surface-container-highest transition-all active:scale-95">
+                            View Syllabus
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Overview Section -->
+<section class="bg-surface-container-low py-32 mb-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-5">
+<div class="rounded-lg overflow-hidden ambient-shadow h-96">
+<img class="w-full h-full object-cover" data-alt="Minimalist institutional laboratory setting with sleek glass surfaces, warm wooden accents, and soft architectural lighting reflecting intellectual clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-Dms8zZwEH5FgfxKYkBIuDAcrD96o7S1vAXWAEkbKtrZimnFYFTOvCzlzCAGtG1NzPzFa6tq5l74_VHc8Wx0LNoZG0V4qGMxODBcdzp9_6RAGXLBF8f7z2GqFT26UWyar0krP5JNc_fGlg37eUQohHKQ0atJfmvptQnWP8rzRcc_5JImUnwjH6K9wZh1IXnMoP2QrlPLrTSdzr-t7bpWtb0TBQmka2sNbxloVzzwiVYShdEUpBKnVDLKKBoDaen7oA8YEcyY4Uo8n"/>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7 flex flex-col justify-center">
+<h2 class="font-headline text-4xl mb-6 italic">Quiet Authority in AI Implementation</h2>
+<div class="font-body text-[1.125rem] leading-[1.8] text-on-surface/90 space-y-6">
+<p>The Digital Curator philosophy posits that AI is not a replacement for human judgment, but a sophisticated instrument that requires expert calibration. Our lab provides the clean, clinical environment needed to strip away the hype.</p>
+<p>We leverage a proprietary curation engine to audit your existing data infrastructure, organizational bottlenecks, and untapped potential. The result is a bespoke roadmap that favors permanence over novelty.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Who This Is For (Institutional List) -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-4">
+<h2 class="font-headline text-3xl mb-8">Audience Profile</h2>
+<p class="font-body text-on-surface/70">The Discovery Lab is reserved for leaders who prioritize long-term institutional stability over transient digital trends.</p>
+</div>
+<div class="col-span-12 md:col-span-8">
+<div class="space-y-0">
+<div class="py-8 px-6 hover:bg-surface-container-low transition-colors duration-300 flex justify-between items-center group">
+<div>
+<h3 class="font-headline text-xl mb-1">Chief Technology Officers</h3>
+<p class="text-on-surface/60 font-body">Seeking a rigorous vetting framework for enterprise-scale deployment.</p>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div class="py-8 px-6 bg-surface-container-low/30 hover:bg-surface-container-low transition-colors duration-300 flex justify-between items-center group">
+<div>
+<h3 class="font-headline text-xl mb-1">Product Strategy Leads</h3>
+<p class="text-on-surface/60 font-body">Focused on sustainable value creation and user-centric curation.</p>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div class="py-8 px-6 hover:bg-surface-container-low transition-colors duration-300 flex justify-between items-center group">
+<div>
+<h3 class="font-headline text-xl mb-1">Institutional Directors</h3>
+<p class="text-on-surface/60 font-body">Preserving core mission values while integrating modern intelligence layers.</p>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What You’ll Leave With (Clean Cards) -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-[2rem] mb-4">Laboratory Deliverables</h2>
+<p class="text-on-surface/60 font-body">Concrete assets to guide your institutional transformation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-lowest transition-all duration-500 flex flex-col h-full">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Strategic Blueprints</h3>
+<p class="text-on-surface/70 font-body leading-relaxed mb-8 flex-grow">
+                            Comprehensive architectural diagrams mapping data flows and AI integration points across your existing stack.
+                        </p>
+<div class="mt-auto pt-6">
+<!-- Signature Component: Formation Progress Pill -->
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary-container h-full w-3/4"></div>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-on-surface/40">Formation Status</span>
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-tertiary-container font-semibold">Verified</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-lowest transition-all duration-500 flex flex-col h-full">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="policy">policy</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Governance Guardrails</h3>
+<p class="text-on-surface/70 font-body leading-relaxed mb-8 flex-grow">
+                            A set of ethical and operational guidelines to ensure AI deployment adheres to institutional integrity.
+                        </p>
+<div class="mt-auto pt-6">
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary-container h-full w-1/2"></div>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-on-surface/40">Formation Status</span>
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-tertiary-container font-semibold">Iterating</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-10 rounded-lg hover:bg-surface-container-lowest transition-all duration-500 flex flex-col h-full">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="experiment">experiment</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Pilot Prototypes</h3>
+<p class="text-on-surface/70 font-body leading-relaxed mb-8 flex-grow">
+                            Low-fidelity functional models to test hypotheses before committing to full-scale development.
+                        </p>
+<div class="mt-auto pt-6">
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary-container h-full w-full"></div>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-on-surface/40">Formation Status</span>
+<span class="font-label text-[0.75rem] uppercase tracking-wider text-tertiary-container font-semibold">Finalized</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-background">
+<div class="max-w-4xl mx-auto text-center px-8">
+<span class="font-label text-[0.75rem] uppercase tracking-[0.2em] text-primary font-bold mb-6 block">Limited Availability</span>
+<h2 class="font-headline text-[3.5rem] leading-tight mb-8">Ready to curate your organization's future?</h2>
+<p class="font-body text-[1rem] text-on-surface/70 mb-12 max-w-2xl mx-auto">
+                    Enrollment for the next Discovery Lab cohort is strictly capped to ensure bespoke attention for every institutional partner.
+                </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="bg-gradient-to-br from-[#380080] to-[#5300b7] text-on-primary px-12 py-5 rounded-full text-xl font-medium ambient-shadow hover:scale-[1.02] transition-all active:scale-95">
+                        Secure a Seat
+                    </button>
+<button class="bg-transparent text-on-surface border-b-2 border-on-surface/20 hover:border-primary transition-all pb-1 px-4 py-5 font-medium">
+                        Speak with the Dean
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f4ee] dark:bg-[#1b1c19] py-12 border-t-0">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="font-serif italic text-lg text-on-surface">Discovery Lab</span>
+<p class="font-sans text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 mt-2">
+                    © 2024 The Digital Curator Institutional Lab. All rights reserved.
+                </p>
+</div>
+<div class="flex gap-8 font-sans text-sm tracking-wide uppercase">
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#380080] transition-colors" href="#">Academic Integrity</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#380080] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#380080] transition-colors" href="#">Contact Dean</a>
+</div>
+</div>
+</footer>
+</body></html>

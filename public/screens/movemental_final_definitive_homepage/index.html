@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | From Content to Living Systems</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#4a4454",
+                    "on-secondary-fixed": "#1b1c19",
+                    "outline": "#7b7486",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#351000",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#61615d",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-background": "#1b1c19",
+                    "background": "#fbf9f4",
+                    "outline-variant": "#ccc3d7",
+                    "on-tertiary-container": "#fa9261",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#eaddff",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#e4e2dd",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container": "#f0eee9",
+                    "on-primary-fixed": "#25005a",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "primary-container": "#5300b7",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "surface-tint": "#7238d5",
+                    "primary": "#380080",
+                    "tertiary-fixed": "#ffdbcc",
+                    "inverse-primary": "#d3bbff",
+                    "inverse-on-surface": "#f2f1ec",
+                    "tertiary": "#4e1a00",
+                    "secondary-container": "#deddd8",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-container-high": "#eae8e3",
+                    "secondary": "#5e5f5b",
+                    "surface": "#fbf9f4",
+                    "on-surface": "#1b1c19",
+                    "surface-dim": "#dbdad5",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fbf9f4",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#30312e",
+                    "tertiary-container": "#722a00",
+                    "on-secondary-fixed-variant": "#464743",
+                    "on-primary-container": "#bd9cff",
+                    "primary-fixed-dim": "#d3bbff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "surface-variant": "#e4e2dd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-tight { font-family: 'Newsreader'; letter-spacing: -0.02em; }
+        .glass-nav {
+            background-color: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-full mx-auto">
+<a class="text-2xl font-serif italic text-[#1b1c19] dark:text-[#fbf9f4]" href="#">Movemental</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm tracking-wide" href="#">Archives</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm tracking-wide" href="#">Infrastructure</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm tracking-wide" href="#">Intelligence</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm tracking-wide" href="#">Theory</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-[#5300b7] text-white px-8 py-3 text-sm font-medium hover:bg-[#380080] transition-all transform active:scale-95">Access Portal</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- 1. Hero -->
+<section class="min-h-[921px] flex flex-col justify-center px-6 md:px-12 bg-surface">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7 space-y-10">
+<h1 class="text-5xl md:text-7xl serif-tight leading-[1.1] text-on-surface font-light">
+                        Turn your ideas—or your organization—into a <span class="italic text-primary-container">living system</span> that forms people and scales impact.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        We analyze your unique content, frameworks, and cultural context to architect digital ecosystems where transformation happens at scale.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-gradient-to-br from-[#380080] to-[#5300b7] text-white px-10 py-5 text-base font-semibold hover:brightness-110 transition-all">Start a Conversation</button>
+<button class="bg-secondary-container text-on-secondary-fixed px-10 py-5 text-base font-semibold hover:bg-surface-container-highest transition-all">See How It Works</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative h-[500px] bg-surface-container flex items-center justify-center">
+<div class="absolute inset-0 overflow-hidden opacity-20">
+<img alt="System Architecture Visual" class="w-full h-full object-cover" data-alt="abstract geometric network of interconnected nodes and thin threads minimalist monochrome amethyst tint editorial design style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDraVITHn0TnbbHtzBjFO2Ma_RPHvQwiIKoQmNtkvwQO2QiHsZTuSuiiqT3vmi0qtsTN46wpjNlcgzxsW1iB1c18nNLoXwh_u6gNHE6KnLqlo3MjvEDtXKuALZBVFAH2VrB5MMcyFTwLyYgfHQ8N9uV6nKs9kxDY_s5uDaOCHZGdP4d-wJswZrGSLaF1588syIH-TYi7Zii_1YaS6mWB3H7x4he6OntY_IOy_CTUXBVjAOOTXeQECFjhvaifLX-h1MteJTZc9oexGs1"/>
+</div>
+<!-- Node Visual Mockup -->
+<div class="relative w-full h-full flex items-center justify-center p-8">
+<div class="w-full aspect-square border border-primary/10 relative flex items-center justify-center">
+<div class="absolute w-4 h-4 bg-primary rounded-full"></div>
+<div class="absolute w-full h-[1px] bg-primary/20 rotate-45"></div>
+<div class="absolute w-full h-[1px] bg-primary/20 -rotate-45"></div>
+<div class="absolute top-1/4 left-1/4 w-3 h-3 bg-primary-container/40"></div>
+<div class="absolute bottom-1/4 right-1/4 w-3 h-3 bg-primary-container/40"></div>
+<div class="w-64 h-64 border border-primary/20 animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Problem -->
+<section class="bg-on-surface text-surface py-32 px-6 md:px-12">
+<div class="max-w-4xl mx-auto text-center md:text-left space-y-8">
+<h2 class="text-4xl md:text-6xl font-light serif-tight leading-tight">
+                    Most platforms distribute content.<br/>
+<span class="opacity-50">But movements don’t spread through</span><br/>
+                    content alone.
+                </h2>
+<div class="h-[1px] w-24 bg-primary-container"></div>
+</div>
+</section>
+<!-- 3. Content -> System -->
+<section class="py-32 px-6 md:px-12 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<div class="space-y-10 lg:sticky lg:top-40">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">The Evolution</span>
+<h2 class="text-4xl md:text-5xl serif-tight leading-tight">From static content to living systems</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Static PDFs and video libraries are digital graveyards for great ideas. We identify your core themes and translate them into interactive pathways and intelligent AI interfaces that meet people in their specific context.
+                    </p>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="p-12 bg-surface-container-low flex flex-col justify-between min-h-[300px]">
+<span class="text-xs font-bold uppercase tracking-widest opacity-40">Traditional Model</span>
+<h3 class="text-3xl serif-tight mt-8">Books / PDFs / Linear Courses</h3>
+<p class="mt-4 text-on-surface-variant italic">Passive consumption, low retention, limited scale.</p>
+</div>
+<div class="p-12 bg-primary-container text-white flex flex-col justify-between min-h-[300px]">
+<span class="text-xs font-bold uppercase tracking-widest opacity-60">The Movemental Model</span>
+<h3 class="text-3xl serif-tight mt-8">Platform / Pathways / Applied AI</h3>
+<p class="mt-4 opacity-80 italic">Contextual formation, active engagement, exponential growth.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. What you actually build -->
+<section class="py-32 px-6 md:px-12 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl serif-tight mb-20 text-center">What you actually build</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+<div class="bg-surface p-10 space-y-6">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+<h4 class="text-xl font-bold">A Formation Platform</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">A custom digital home for your movement’s core DNA and developmental journey.</p>
+</div>
+<div class="bg-surface p-10 space-y-6">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+<h4 class="text-xl font-bold">An Intelligent Layer</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">AI tuned to your specific frameworks, acting as a guide, not just a chatbot.</p>
+</div>
+<div class="bg-surface p-10 space-y-6">
+<span class="material-symbols-outlined text-primary text-3xl">schema</span>
+<h4 class="text-xl font-bold">A Structured Ecosystem</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Standardized data structures that allow diverse tools to work as one system.</p>
+</div>
+<div class="bg-surface p-10 space-y-6">
+<span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+<h4 class="text-xl font-bold">A System That Scales</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Infrastructure designed to handle thousands of leaders without losing intimacy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Choose Your Path -->
+<section class="py-32 px-6 md:px-12 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative bg-on-surface text-surface p-16 flex flex-col justify-between aspect-square md:aspect-auto min-h-[500px]">
+<div class="space-y-6">
+<h3 class="text-5xl serif-tight">Movement Leaders</h3>
+<p class="text-lg opacity-70 max-w-sm">For thinkers, authors, and pioneers looking to institutionalize their core message into a scalable model.</p>
+</div>
+<button class="w-full py-5 border-2 border-surface/20 text-surface font-bold uppercase tracking-widest text-xs hover:bg-surface hover:text-on-surface transition-all">See Movement Leader Model</button>
+</div>
+<div class="group relative bg-surface-container-highest p-16 flex flex-col justify-between aspect-square md:aspect-auto min-h-[500px]">
+<div class="space-y-6">
+<h3 class="text-5xl serif-tight">Organizations</h3>
+<p class="text-lg text-on-surface-variant max-w-sm">Churches, nonprofits, and institutions building unified systems for internal formation and external impact.</p>
+</div>
+<button class="w-full py-5 border-2 border-on-surface/10 text-on-surface font-bold uppercase tracking-widest text-xs hover:bg-on-surface hover:text-surface transition-all">See How We Work with Organizations</button>
+</div>
+</div>
+</section>
+<!-- 6. How it works -->
+<section class="py-32 px-6 md:px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<h2 class="text-4xl md:text-6xl serif-tight">The Methodology</h2>
+<p class="text-on-surface-variant max-w-sm">A serious approach to system architecture. No shortcuts, just engineering for impact.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<span class="text-6xl font-serif italic text-primary-container/20">01</span>
+<h4 class="text-xl font-bold uppercase tracking-tighter">Analyze</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Deep audit of existing content, frameworks, and cultural DNA.</p>
+</div>
+<div class="space-y-6">
+<span class="text-6xl font-serif italic text-primary-container/20">02</span>
+<h4 class="text-xl font-bold uppercase tracking-tighter">Extract</h4>
+<h4 class="text-xl font-bold">Extract</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Distilling core logic into structured pathways and intelligent data points.</p>
+</div>
+<div class="space-y-6">
+<span class="text-6xl font-serif italic text-primary-container/20">03</span>
+<h4 class="text-xl font-bold uppercase tracking-tighter">Build</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Architecting the custom digital ecosystem and AI deployment layer.</p>
+</div>
+<div class="space-y-6">
+<span class="text-6xl font-serif italic text-primary-container/20">04</span>
+<h4 class="text-xl font-bold uppercase tracking-tighter">Evolve</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Continuous refinement based on user behavior and systemic feedback.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Proof -->
+<section class="py-32 px-6 md:px-12 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">Case Study</span>
+<h2 class="text-4xl md:text-5xl serif-tight mt-4">What this looks like in practice</h2>
+</div>
+<div class="relative bg-white shadow-2xl p-4 md:p-8 transform translate-x-12 md:translate-x-24">
+<div class="aspect-video bg-surface-container relative overflow-hidden">
+<img alt="Alan Hirsch Platform Screenshot" class="w-full h-full object-cover" data-alt="professional saas dashboard ui clean minimalist editorial design amethyst and charcoal colors showing network graphs and learning paths" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNiaxaULnTNsA-FV-Bxk07TJ2yC637G3wI6Mb4CT3Hwy4g2vbuu8epk8GHfvZT2z06GyXOmChR7zt0YHNItQ2ltobyjfS6S95vgtsUsVMxB12C7-W24FSCLXCOIOByWqOlqOpjEtrp-kbGApUd4ELaCJNxnM6PySDjjpUOPNts6lowLlcO8wtHUoPBofv7YBAsSVtAFPBm-PotBILtAn3EFgtF5xkyzJlcXF01sVrTqufHbNYENjkgrSIguoW5crM94u7ZxbP5kaei"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<div class="mt-8 flex justify-between items-center px-4">
+<span class="text-sm font-bold">The Alan Hirsch Formation Platform</span>
+<span class="text-sm text-on-surface-variant italic">Scaleable intelligence for missional movements.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. AI Demystified -->
+<section class="py-32 px-6 md:px-12 bg-surface">
+<div class="max-w-4xl mx-auto space-y-12 text-center">
+<h2 class="text-4xl md:text-5xl serif-tight">AI is part of the system—not the product</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                    We don't use AI for the sake of novelty. We use it to ground your content in context—allowing a user to ask, "How does this principle apply to my specific leadership challenge?" and receive an answer rooted entirely in your wisdom.
+                </p>
+<div class="pt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface-container-low text-left">
+<h5 class="font-bold mb-2">Contextual Engagement</h5>
+<p class="text-sm text-on-surface-variant">Moves beyond generic responses to specific situational guidance.</p>
+</div>
+<div class="p-8 bg-surface-container-low text-left">
+<h5 class="font-bold mb-2">Grounded Knowledge</h5>
+<p class="text-sm text-on-surface-variant">The AI only knows what you've taught it. Your IP is the boundary.</p>
+</div>
+<div class="p-8 bg-surface-container-low text-left">
+<h5 class="font-bold mb-2">Insight Generation</h5>
+<p class="text-sm text-on-surface-variant">Identifies patterns across your movement that you can't see on your own.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Final CTA -->
+<section class="py-48 px-6 md:px-12 bg-primary-container text-white text-center">
+<div class="max-w-3xl mx-auto space-y-12">
+<h2 class="text-5xl md:text-7xl serif-tight leading-none">Let’s build what actually works.</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-white text-primary-container px-12 py-5 text-lg font-bold hover:bg-surface-container-lowest transition-all">Schedule a Consultation</button>
+<button class="border border-white/30 text-white px-12 py-5 text-lg font-bold hover:bg-white/10 transition-all">Read the Methodology</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#1b1c19] dark:bg-[#000000] mt-0">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full">
+<div class="mb-8 md:mb-0">
+<a class="text-[#fbf9f4] font-serif italic text-xl" href="#">Movemental</a>
+<p class="text-[#ccc9c6] text-[10px] tracking-[0.2em] uppercase Inter mt-2">Editorial Intelligence</p>
+</div>
+<div class="flex space-x-8 mb-8 md:mb-0">
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-xs tracking-widest uppercase font-sans" href="#">Privacy</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-xs tracking-widest uppercase font-sans" href="#">Terms</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-xs tracking-widest uppercase font-sans" href="#">Methodology</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-xs tracking-widest uppercase font-sans" href="#">Contact</a>
+</div>
+<div class="text-[#ccc9c6] text-[10px] tracking-widest uppercase">
+                © 2024 Movemental Intelligence. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | The Platform</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,700;0,6..72,800;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-container": "#f0eee9",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fbf9f4",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#fbf9f4",
+                    "outline": "#7b7486",
+                    "on-secondary-container": "#61615d",
+                    "background": "#fbf9f4",
+                    "surface-container-low": "#f5f3ee",
+                    "primary-container": "#5300b7",
+                    "surface-container-high": "#eae8e3",
+                    "primary": "#380080",
+                    "on-primary-fixed": "#25005a",
+                    "tertiary": "#4e1a00",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-secondary-fixed-variant": "#464743",
+                    "inverse-primary": "#d3bbff",
+                    "primary-fixed": "#eaddff",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "surface-variant": "#e4e2dd",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#ccc3d7",
+                    "on-tertiary-fixed": "#351000",
+                    "on-surface-variant": "#4a4454",
+                    "on-secondary-fixed": "#1b1c19",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#5e5f5b",
+                    "on-tertiary-container": "#fa9261",
+                    "primary-fixed-dim": "#d3bbff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "tertiary-fixed": "#ffdbcc",
+                    "surface-dim": "#dbdad5",
+                    "tertiary-container": "#722a00",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#bd9cff",
+                    "surface-tint": "#7238d5",
+                    "on-surface": "#1b1c19",
+                    "inverse-surface": "#30312e",
+                    "surface-container-highest": "#e4e2dd",
+                    "secondary-container": "#deddd8",
+                    "on-background": "#1b1c19",
+                    "secondary-fixed": "#e4e2dd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fbf9f4; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gutters-of-thought {
+            padding-left: clamp(2rem, 15vw, 20rem);
+            padding-right: clamp(2rem, 5vw, 10rem);
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface antialiased">
+<!-- TopAppBar Section -->
+<nav class="w-full top-0 left-0 z-50 sticky bg-[#fbf9f4] dark:bg-zinc-950">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-headline font-black tracking-tighter text-[#1b1c19] dark:text-[#fbf9f4]">Movemental</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#5300b7] dark:text-[#a855f7] border-b-2 border-[#5300b7] pb-1 font-serif text-lg tracking-tight font-medium transition-all duration-300" href="#">Platform</a>
+<a class="text-[#1b1c19] dark:text-zinc-400 opacity-70 font-serif text-lg tracking-tight font-medium hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Movement Leaders</a>
+<a class="text-[#1b1c19] dark:text-zinc-400 opacity-70 font-serif text-lg tracking-tight font-medium hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-zinc-400 opacity-70 font-serif text-lg tracking-tight font-medium hover:opacity-100 hover:text-[#5300b7] transition-all duration-300" href="#">Research</a>
+</div>
+<button class="bg-primary-container text-on-primary px-8 py-3 font-medium text-sm tracking-wide hover:scale-95 duration-150 transition-transform">
+                Start a Conversation
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<header class="pt-32 pb-48 gutters-of-thought">
+<h1 class="font-headline text-[clamp(2.5rem,8vw,5.5rem)] leading-[1.05] tracking-[-0.03em] font-medium text-on-surface mb-12 max-w-4xl italic">
+                This is not a platform you use. It’s a system we build.
+            </h1>
+<p class="font-body text-xl md:text-2xl leading-[1.6] text-on-surface-variant max-w-2xl font-light">
+                Movemental turns bodies of work and organizations into living systems—integrating content, pathways, AI, and formation into a single coherent environment.
+            </p>
+</header>
+<!-- Section 1: Editorial Contrast -->
+<section class="py-32 bg-surface-container-low">
+<div class="gutters-of-thought grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-5">
+<h2 class="font-headline text-4xl leading-tight mb-8">Most systems weren’t built as systems</h2>
+</div>
+<div class="md:col-span-7">
+<div class="space-y-12 max-w-xl">
+<p class="text-lg leading-[1.7] text-on-surface-variant">
+                            Fragmentation is the silent killer of institutional momentum. When your knowledge lives in one place, your communities in another, and your operational logic in a third, the soul of the work is lost in the gaps.
+                        </p>
+<p class="text-lg leading-[1.7] text-on-surface-variant">
+                            We believe that technology should not be an "add-on" to your mission. It should be the digital expression of your philosophy—the architecture through which transformation actually happens.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Rhythmic Editorial Flow -->
+<section class="py-48 gutters-of-thought">
+<div class="max-w-4xl">
+<h2 class="font-headline text-5xl mb-24 italic">A single, integrated system</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-32">
+<div class="space-y-6">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">The Integration</span>
+<h3 class="font-headline text-2xl font-semibold">Beyond Content Delivery</h3>
+<p class="leading-[1.6] text-on-surface-variant">
+                            It isn't about hosting videos or PDFs. It is about how those pieces of information interact with a user's progress, how they trigger new pathways, and how they inform the collective intelligence of the organization.
+                        </p>
+</div>
+<div class="space-y-6 mt-16 md:mt-32">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">The Formation</span>
+<h3 class="font-headline text-2xl font-semibold">Living Environments</h3>
+<p class="leading-[1.6] text-on-surface-variant">
+                            Environments that breathe. We design digital spaces that facilitate human formation—moving people from passive consumers to active participants in a shared body of work.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: What's Inside - Subtle Bento -->
+<section class="py-32 bg-surface">
+<div class="gutters-of-thought">
+<h2 class="font-headline text-sm tracking-[0.2em] uppercase text-outline mb-16">What’s inside</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<div class="bg-surface-container p-12 aspect-square flex flex-col justify-end hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">dynamic_feed</span>
+<h4 class="font-headline text-2xl mb-4">Adaptive Pathways</h4>
+<p class="text-sm leading-relaxed text-on-surface-variant opacity-80">Non-linear learning structures that respond to the user's current state and organizational goals.</p>
+</div>
+<div class="bg-surface-container p-12 aspect-square flex flex-col justify-end hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">psychology</span>
+<h4 class="font-headline text-2xl mb-4">Core Intelligence</h4>
+<p class="text-sm leading-relaxed text-on-surface-variant opacity-80">Integrated AI models trained specifically on your philosophy, not the general internet.</p>
+</div>
+<div class="bg-surface-container p-12 aspect-square flex flex-col justify-end hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">hub</span>
+<h4 class="font-headline text-2xl mb-4">Formation Hubs</h4>
+<p class="text-sm leading-relaxed text-on-surface-variant opacity-80">Community structures that prioritize depth of interaction over the breadth of notification noise.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: What makes this different - Visual Focus -->
+<section class="py-48 bg-primary-container text-on-primary overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<img alt="" class="w-full h-full object-cover grayscale" data-alt="abstract geometric shadows and light patterns on a stone wall, minimalist architectural photography with sharp edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwcX9fF0P0_UO1dQw15ioIUbswmmuyHJpwuWJvJPKHgg0uK5QKRkn-4Eu_-WbJMEOzlk0mw6bwuc7fQJRVddahuZQvSPltE8Uyor1hO3TB-LmdtYkZ1tBZFg4h1YSE-s_3SYJCEmUsidZ3rWSjEAQoylW6eX9Pngv_OLayevl3MYoFOUb_QgwMkrP6oTf7XI-TKIQSxaiv3vtPv-af9MkL8BRXqSpfA9_YycgoSGhmmMX9AuCzyV0aLkdZEaQ128Q67V7YfwfHxCUZ"/>
+</div>
+<div class="relative z-10 gutters-of-thought">
+<div class="max-w-3xl">
+<h2 class="font-headline text-5xl md:text-6xl mb-12 italic leading-tight">What makes this different</h2>
+<p class="text-2xl font-light mb-16 leading-relaxed opacity-90">
+                        Most platforms are agnostic to the content they host. Movemental is the opposite. Our platform is built specifically for high-context, high-transformation work where the medium must be as considered as the message.
+                    </p>
+<div class="space-y-12">
+<div class="flex items-start gap-8">
+<span class="text-on-primary-container font-headline text-4xl">01.</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Content as Data, Not Files</h4>
+<p class="opacity-70 max-w-lg">We break down your content into atomic units of intelligence, allowing the AI to weave connections across your entire body of work.</p>
+</div>
+</div>
+<div class="flex items-start gap-8">
+<span class="text-on-primary-container font-headline text-4xl">02.</span>
+<div>
+<h4 class="text-xl font-bold mb-2">AI for Alignment</h4>
+<p class="opacity-70 max-w-lg">Our AI doesn't just answer questions; it acts as a steward of your organization's unique voice and methodology.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA/Image Section -->
+<section class="py-32 gutters-of-thought">
+<div class="flex flex-col md:flex-row gap-24 items-center">
+<div class="w-full md:w-1/2">
+<img alt="Editorial Still Life" class="w-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="minimalist studio photography of open antique books and modern digital tablet on a clean cream surface with soft natural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jqLu6Ze2QMPyq9SIItGTlc-VT2ylUlsmGGc8noEsSgQwDmKuw0wbMaPIlEm-xUhoTrgYT0wQ89TNTdH3EPSuYBcbZwO9-F7i2Yuphjii-aNveXDrfigfxZiTZlcd1GjwScxDRIvSLKD_DlvtPL4CxLmPTmxNxMPGmHL8P8PaVHQplbMZJoXXsEZayqbv7atnFM1SlRMkLOXXkHbi44bw18yw-XmhJYXhijNsThMI3BJAegtOoQnXb4DNKZvyQyzb3gcP3iGgNVaa"/>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="font-headline text-4xl mb-8 leading-tight">Ready to build your living system?</h3>
+<p class="text-on-surface-variant text-lg mb-12 max-w-md">We partner with a limited number of organizations each year to ensure the architectural integrity of every system we launch.</p>
+<a class="inline-flex items-center group font-bold tracking-widest text-sm uppercase" href="#">
+                        Request an Audit 
+                        <span class="material-symbols-outlined ml-4 group-hover:translate-x-2 transition-transform">east</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="bg-[#fbf9f4] dark:bg-zinc-950 mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1920px] mx-auto border-t-0 bg-[#f0eee9] dark:bg-zinc-900">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-headline font-bold text-[#1b1c19]">Movemental</div>
+<p class="font-sans text-sm tracking-wide opacity-60 mt-2">© 2024 Movemental. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-sans text-sm tracking-wide opacity-60 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-sans text-sm tracking-wide opacity-60 hover:opacity-100 transition-opacity" href="#">Terms of Service</a>
+<a class="font-sans text-sm tracking-wide opacity-60 hover:opacity-100 transition-opacity" href="#">Ethics Framework</a>
+<a class="font-sans text-sm tracking-wide opacity-60 hover:opacity-100 transition-opacity underline font-bold" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

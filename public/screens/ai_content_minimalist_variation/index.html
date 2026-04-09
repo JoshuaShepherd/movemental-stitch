@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Digital Curator | AI Content &amp; Platform System</title>
+<!-- Google Fonts: Newsreader for Serif, Inter for Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#4e1a00",
+                    "secondary": "#695296",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#fa9261",
+                    "tertiary-container": "#722a00",
+                    "surface-container-highest": "#e4e2dd",
+                    "secondary-fixed": "#eaddff",
+                    "background": "#fbf9f4",
+                    "surface": "#fbf9f4",
+                    "surface-bright": "#fbf9f4",
+                    "primary-container": "#5300b7",
+                    "surface-variant": "#e4e2dd",
+                    "primary-fixed": "#eaddff",
+                    "on-surface-variant": "#4a4454",
+                    "primary-fixed-dim": "#d3bbff",
+                    "primary": "#380080",
+                    "surface-tint": "#7238d5",
+                    "on-primary-container": "#bd9cff",
+                    "surface-container-high": "#e9e8e3",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#ccc3d7",
+                    "on-secondary-fixed": "#240a4e",
+                    "inverse-primary": "#d3bbff",
+                    "inverse-on-surface": "#f2f1eb",
+                    "on-secondary-container": "#574183",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312d",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#d3bbff",
+                    "outline": "#7b7486",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "on-secondary-fixed-variant": "#503a7c",
+                    "surface-container-low": "#f5f4ee",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary-fixed": "#351000",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#cbb2fd",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-dim": "#dbdad5",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "error": "#ba1a1a",
+                    "on-background": "#1b1c19",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeee8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .shadow-ambient {
+            box-shadow: 0 32px 64px -4px rgba(27, 28, 25, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4]/80 backdrop-blur-xl transition-all duration-300 shadow-[0_32px_64px_-4px_rgba(27,28,25,0.06)]">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-12 py-6">
+<div class="text-2xl font-newsreader font-semibold text-[#1b1c19] tracking-tighter">
+                The Digital Curator
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1b1c19]/70 font-body text-sm uppercase tracking-widest hover:text-[#380080] transition-colors duration-300" href="#">Curriculum</a>
+<a class="text-[#1b1c19]/70 font-body text-sm uppercase tracking-widest hover:text-[#380080] transition-colors duration-300" href="#">Outcomes</a>
+<a class="text-[#1b1c19]/70 font-body text-sm uppercase tracking-widest hover:text-[#380080] transition-colors duration-300" href="#">Scholars</a>
+<a class="text-[#1b1c19]/70 font-body text-sm uppercase tracking-widest hover:text-[#380080] transition-colors duration-300" href="#">Enroll</a>
+</div>
+<button class="bg-gradient-to-br from-[#380080] to-[#5300b7] text-white px-8 py-3 rounded-full font-body font-medium text-sm tracking-wide active:opacity-80 active:scale-95 transition-all">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-12 py-24 md:py-48 flex flex-col items-center">
+<div class="w-full max-w-5xl">
+<div class="label-md text-[#380080] font-semibold tracking-widest uppercase text-xs mb-8">Systemic Intelligence</div>
+<h1 class="font-newsreader text-6xl md:text-8xl text-on-surface leading-[1.1] tracking-tight mb-12 max-w-4xl">
+                    Create a content system that <span class="italic">extends your reach</span> and multiplies your impact
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-16">
+                    Move beyond transient posting. We help institutional leaders build durable digital infrastructures powered by proprietary AI workflows.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-5 rounded-full font-body font-semibold text-lg shadow-ambient hover:opacity-90 transition-all">
+                        Begin Curation
+                    </button>
+<button class="bg-surface-container-high text-on-surface px-10 py-5 rounded-full font-body font-semibold text-lg hover:bg-surface-container-highest transition-all">
+                        View Methodology
+                    </button>
+</div>
+</div>
+</section>
+<!-- Asymmetric Intro Section -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-[1440px] mx-auto px-12 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7">
+<div class="aspect-[16/10] bg-surface-container rounded-lg overflow-hidden shadow-ambient">
+<img class="w-full h-full object-cover grayscale-[20%]" data-alt="Minimalist modern library interior with floor to ceiling glass windows, warm wood textures, and clean white stone surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Zwrx1QObof8ofQO66Jf_EqG4j6CaQ7VTdnI7LAM4wAL2oj-M8jbUkITYlEm-haDARcKxNXElAq1_7LcbsXMgIV3fB6Oro9QKVwNK4SX8vrpw_kyO4pKNapxIlv4FbovzcSOhlYBmIm6yOZBre3lr5-ptETncrcds_qh0doo3FA6U06wYm2cVhaNhVGbS7WAjRW8hTKdBbxFJbSRgiuOYx-WvuqNe3NOvS3yipWDk8lwipB77zkiyWHAsg4bugA_F1LksbUI84nZg"/>
+</div>
+</div>
+<div class="md:col-span-5 md:pl-12">
+<h2 class="font-newsreader text-4xl text-on-surface mb-8 leading-tight">Quiet Authority in a Noisy Landscape</h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                        The Digital Curator provides the cognitive leverage required to manage vast amounts of insight without losing the human nuance that defines your authority.
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body font-medium">Automated Knowledge Distillation</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body font-medium">Multi-Channel Synthetization</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body font-medium">Institutional Archiving</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Core Outcomes (Bento Grid with Formation Pill) -->
+<section class="max-w-[1440px] mx-auto px-12 py-32">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-newsreader text-5xl text-on-surface mb-6">Core Outcomes</h2>
+<p class="font-body text-on-surface-variant text-lg">Measurable shifts in how your digital presence functions as an institutional asset.</p>
+</div>
+<!-- Formation Progress Pill Signature -->
+<div class="flex items-center gap-4 bg-surface-container-low px-6 py-3 rounded-full">
+<span class="font-body text-xs uppercase tracking-widest font-semibold text-on-surface-variant">System Formation</span>
+<div class="w-32 h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-3/4"></div>
+</div>
+<span class="font-body text-xs font-bold text-tertiary">75%</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Bento Card 1 -->
+<div class="md:col-span-2 bg-surface-container-low p-12 rounded-lg shadow-ambient flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6">account_balance</span>
+<h3 class="font-newsreader text-3xl text-on-surface mb-4">Intellectual Capital Retention</h3>
+<p class="font-body text-on-surface-variant leading-relaxed max-w-md">Every thought, every thread, every lecture is synthesized and stored in a permanent, searchable database that serves as your platform's foundation.</p>
+</div>
+<div class="flex gap-4 mt-8">
+<span class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-tertiary-fixed-variant">Archive</span>
+<span class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-on-tertiary-fixed-variant">Scale</span>
+</div>
+</div>
+<!-- Bento Card 2 -->
+<div class="bg-primary text-on-primary p-12 rounded-lg shadow-ambient flex flex-col min-h-[400px]">
+<span class="material-symbols-outlined text-4xl mb-6">auto_awesome</span>
+<h3 class="font-newsreader text-3xl mb-4">AI-Driven Nuance</h3>
+<p class="font-body opacity-80 leading-relaxed">Advanced language models trained exclusively on your unique corpus of work to maintain absolute tonal integrity across all outputs.</p>
+<div class="mt-auto pt-12">
+<div class="text-4xl font-newsreader italic">0.02ms</div>
+<div class="text-xs uppercase tracking-widest opacity-60">Synthesis Latency</div>
+</div>
+</div>
+<!-- Bento Card 3 -->
+<div class="bg-surface-container p-12 rounded-lg shadow-ambient flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6">dynamic_feed</span>
+<h3 class="font-newsreader text-3xl text-on-surface mb-4">Recursive Distribution</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Turn a single deep-dive session into a week of strategic multi-channel engagement without manual intervention.</p>
+</div>
+<div class="mt-8 border-t border-on-surface/10 pt-6">
+<div class="flex justify-between items-center text-sm font-medium">
+<span>Reach Multiplier</span>
+<span class="text-primary">12x</span>
+</div>
+</div>
+</div>
+<!-- Bento Card 4 -->
+<div class="md:col-span-2 bg-surface-container-high p-12 rounded-lg shadow-ambient flex items-center gap-12 min-h-[400px]">
+<div class="hidden md:block w-1/2 aspect-square rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Abstract blue and purple energy flowing through a digital mesh, symbolizing data synthesis and neural networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG1SpOcrG7TQ4IScMsXBqwdQf2T02xgqp-zT35kQYy7Bg5qWO1Af0z5VXtAm0e0HlQ0Ksc82APgfaWWbfLk1rIcG7ZBY9ukAM0kSJGpwFHIlZNjcfq_JfVwq9O6N1vy7_LcEJzOMSTnwHvmsVOJeXwW7_IWtjwxDf-xhK30CnVGhAHB7OPDgCImt2-5mFJvfxFfo_TodarGPhbnmICzKfLeeg9VwkqvLMISPC92OuCsRrTbDkhYIAXY0aC6UF3f_8wGBehPUAmClgP"/>
+</div>
+<div class="md:w-1/2">
+<h3 class="font-newsreader text-3xl text-on-surface mb-6">Algorithmic Resiliency</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">Stop chasing platform trends. Build a system that thrives regardless of social media algorithm shifts by focusing on core ownership.</p>
+<a class="text-primary font-bold inline-flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                            Explore the Logic <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-[1440px] mx-auto px-12 py-48 text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-newsreader text-6xl text-on-surface mb-8 leading-tight">Ready to institutionalize your influence?</h2>
+<p class="font-body text-xl text-on-surface-variant mb-12">Applications are reviewed on a rolling basis for the Q4 Cohort of The Digital Curator program.</p>
+<div class="flex justify-center gap-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-12 py-5 rounded-full font-body font-semibold text-xl shadow-ambient hover:scale-105 transition-all">
+                        Submit Application
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f4ee] dark:bg-[#1b1c19] w-full py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1440px] mx-auto px-12">
+<div class="flex flex-col justify-between">
+<div>
+<div class="text-xl font-newsreader italic text-[#1b1c19] dark:text-[#fbf9f4] mb-4">The Digital Curator</div>
+<p class="font-body text-sm text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 max-w-xs">A modern institute for digital strategy and cognitive leverage in the age of intelligence.</p>
+</div>
+<div class="mt-12 text-sm text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 font-body">
+                    © 2024 The Digital Curator. All institutional rights reserved.
+                </div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="font-body font-bold text-xs uppercase tracking-widest text-[#1b1c19]/30 mb-6">Legal</div>
+<ul class="space-y-4">
+<li><a class="font-body text-sm text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#380080] underline decoration-from-font underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-body text-sm text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#380080] underline decoration-from-font underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<div class="font-body font-bold text-xs uppercase tracking-widest text-[#1b1c19]/30 mb-6">Connect</div>
+<ul class="space-y-4">
+<li><a class="font-body text-sm text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#380080] underline decoration-from-font underline-offset-4 transition-all" href="#">Institutional Contact</a></li>
+<li><a class="font-body text-sm text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#380080] underline decoration-from-font underline-offset-4 transition-all" href="#">Twitter / X</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

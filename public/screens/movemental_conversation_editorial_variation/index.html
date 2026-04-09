@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#722a00",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-bright": "#fbf9f4",
+                    "on-tertiary-fixed": "#351000",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#4a4454",
+                    "surface-container": "#f0eee9",
+                    "surface-container-high": "#eae8e3",
+                    "secondary": "#5e5f5b",
+                    "outline-variant": "#ccc3d7",
+                    "surface-variant": "#e4e2dd",
+                    "primary-container": "#5300b7",
+                    "inverse-surface": "#30312e",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#61615d",
+                    "on-secondary-fixed-variant": "#464743",
+                    "surface-container-low": "#f5f3ee",
+                    "surface": "#fbf9f4",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#bd9cff",
+                    "on-background": "#1b1c19",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary-container": "#fa9261",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "on-secondary-fixed": "#1b1c19",
+                    "outline": "#7b7486",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#d3bbff",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#deddd8",
+                    "inverse-primary": "#d3bbff",
+                    "surface-tint": "#7238d5",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#dbdad5",
+                    "on-surface": "#1b1c19",
+                    "primary": "#380080",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed": "#eaddff",
+                    "background": "#fbf9f4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-serif { font-family: 'Newsreader', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body>
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fbf9f4] dark:bg-zinc-950">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif text-[#1b1c19] dark:text-[#fbf9f4] uppercase tracking-widest">
+                Movemental
+            </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Platform</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Movement Leaders</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Research</a>
+</div>
+<button class="bg-gradient-to-br from-[#380080] to-[#5300b7] text-white px-8 py-3 font-sans text-sm uppercase tracking-widest hover:brightness-110 transition-all duration-300">
+                Start a Conversation
+            </button>
+</div>
+<div class="h-[1px] bg-[#f0eee9] dark:bg-zinc-900 w-full"></div>
+</nav>
+<main class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<!-- Hero: The Opening -->
+<section class="py-24 md:py-40 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<h1 class="editorial-serif text-5xl md:text-8xl leading-tight -tracking-[0.02em] text-[#1b1c19]">
+                    The Movemental <br/>
+<span class="italic text-[#5300b7]">Conversation</span>
+</h1>
+<p class="mt-12 text-xl md:text-2xl font-body text-secondary max-w-2xl leading-relaxed">
+                    A 45-60 minute architectural consultation. This isn't a sales call. It's us figuring out if there is something worth building.
+                </p>
+</div>
+<div class="md:col-span-4 flex justify-end">
+<div class="w-full h-80 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist abstract photograph of layered archival paper with subtle shadows and a single amethyst-colored silk thread" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDExXkYbTt2z0WUrSsTN-DLk_j54y5l4rb2FdyHb2NXa8cW_u1NmE5hXGIjeTI7QfA5fQO_wxKzuIG_RrvgD7DEh9cB_jO7MmWhyjPGXgygPyNv32kzYFuZtz33EK7J0ewZMNkV9n33CSjuKbKI_OFC7ZKo4pQmPf95k3IIZZVZJJc25_XOJLwK2k7t4wdI8VIBiNwPJ15H4eVQqM4YyOCzD-qO9Vvxuv2iMwwdV2M-l7AVfogYGgbkHUrpzIIOOtHCuYIgSncVMeJf"/>
+</div>
+</div>
+</section>
+<!-- Phase 2: Context (The Inquiry) -->
+<section class="py-24 grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4 sticky top-32 h-fit">
+<span class="text-xs font-sans uppercase tracking-[0.3em] text-[#5300b7] block mb-4">Phase 01 — Context</span>
+<h2 class="editorial-serif text-4xl leading-tight">The Anatomy of <br/>Understanding</h2>
+</div>
+<div class="md:col-span-8 space-y-16">
+<!-- Segment: Leaders -->
+<div class="bg-surface-container-low p-12">
+<h3 class="editorial-serif italic text-2xl mb-8">For Movement Leaders</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<p class="text-xs uppercase tracking-widest text-secondary mb-2">Corpus &amp; Legacy</p>
+<p class="text-lg text-on-surface leading-relaxed italic">"What is the core intellectual property that must survive you?"</p>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-secondary mb-2">Reach &amp; Resonace</p>
+<p class="text-lg text-on-surface leading-relaxed italic">"Where is the signal getting lost in the noise of modern digital reach?"</p>
+</div>
+</div>
+</div>
+<!-- Segment: Organizations -->
+<div class="bg-surface-container-high p-12 ml-auto max-w-2xl">
+<h3 class="editorial-serif italic text-2xl mb-8">For Organizations</h3>
+<div class="space-y-10">
+<div>
+<p class="text-xs uppercase tracking-widest text-secondary mb-2">The Energy Leak</p>
+<p class="text-lg text-on-surface leading-relaxed">Identifying where mission-critical focus is fragmented across disparate systems and cultural silos.</p>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-secondary mb-2">Strategic Cohesion</p>
+<p class="text-lg text-on-surface leading-relaxed italic">"Does your current infrastructure multiply your impact or merely manage it?"</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Phase 3: Reveal (Transformation) -->
+<section class="py-32 bg-[#1b1c19] -mx-6 md:-mx-12 px-6 md:px-12 text-surface">
+<div class="max-w-screen-xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div>
+<span class="text-xs font-sans uppercase tracking-[0.3em] text-[#bd9cff] block mb-6">Phase 02 — The Reveal</span>
+<h2 class="editorial-serif text-5xl md:text-6xl leading-tight mb-8">Concrete <br/>Transformation</h2>
+<p class="text-surface-container-highest text-lg leading-relaxed mb-12">
+                            We don't talk in abstractions for long. We move quickly to what Alan Hirsch discovered when mapping the 'Fivefold' system into a digital reality.
+                        </p>
+<div class="space-y-8">
+<div class="flex items-start space-x-6 border-l border-[#5300b7] pl-8">
+<div>
+<p class="text-xs uppercase tracking-widest text-[#ccc9c6] mb-2">Before</p>
+<p class="text-xl editorial-serif italic">Fragmented ideas buried in PDFs and disconnected workshops.</p>
+</div>
+</div>
+<div class="flex items-start space-x-6 border-l-4 border-[#5300b7] pl-8">
+<div>
+<p class="text-xs uppercase tracking-widest text-[#5300b7] font-bold mb-2">After</p>
+<p class="text-xl editorial-serif italic">A cohesive living movement system that scales intelligence automatically.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] bg-zinc-900 overflow-hidden">
+<img class="w-full h-full object-cover opacity-60" data-alt="A cinematic, high-contrast black and white portrait of a thoughtful intellectual in a study filled with books and architectural drawings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWcRibgd4SS19AxBDc_INkgZl9DcCSxbwviI8m9qhMV1I7SXIKky32jddtnB4IXm9pZ-zP6l6TkFfRR_cXCNhAbIFJheuSBQ-6m9sxj3TW3ctdKgJULid1seglHsQ3iGs5uU9Tx5xWzFX2NkFyVi9x83Nsc8B2JQNWNA8rVisaO-zVHz6rtlFhTFjKFj92-uHzSfS4g6b7NuRXCQaXo9WxN54k96q87VrrxKImrVyKbGCU1QbIRVcvb4KefOMLLyCoobzVJIuGgZPw"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-[#5300b7] p-10 hidden lg:block">
+<span class="material-symbols-outlined text-4xl text-white mb-4 block" data-icon="auto_awesome">auto_awesome</span>
+<p class="text-white font-body text-sm font-medium leading-snug">
+                                "Movemental helped us see the <br/>geometry of our movement."
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Phase 4: Map (The Sketch) -->
+<section class="py-40">
+<div class="max-w-4xl mx-auto text-center mb-24">
+<span class="text-xs font-sans uppercase tracking-[0.3em] text-[#5300b7] block mb-4">Phase 03 — The Map</span>
+<h2 class="editorial-serif text-5xl leading-tight">Mapping the <span class="italic">Abstract</span> <br/>into the Specific</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#f0eee9]">
+<div class="bg-surface p-12 flex flex-col justify-between aspect-square">
+<span class="text-4xl editorial-serif italic text-[#ccc9c6]">01</span>
+<div>
+<h4 class="font-sans font-bold uppercase text-sm tracking-widest mb-4">Extraction</h4>
+<p class="text-secondary leading-relaxed">Identifying the core DNA of your methodology from your existing corpus.</p>
+</div>
+</div>
+<div class="bg-surface p-12 flex flex-col justify-between aspect-square md:mt-12">
+<span class="text-4xl editorial-serif italic text-[#5300b7]">02</span>
+<div>
+<h4 class="font-sans font-bold uppercase text-sm tracking-widest mb-4">Logic Flow</h4>
+<p class="text-secondary leading-relaxed">Designing the technical scaffolding that allows your ideas to breathe and respond to users.</p>
+</div>
+</div>
+<div class="bg-surface p-12 flex flex-col justify-between aspect-square">
+<span class="text-4xl editorial-serif italic text-[#ccc9c6]">03</span>
+<div>
+<h4 class="font-sans font-bold uppercase text-sm tracking-widest mb-4">System Design</h4>
+<p class="text-secondary leading-relaxed">A visual blueprint of how your movement feels, moves, and scales globally.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Phase 5: Decision (Alignment) -->
+<section class="py-24 border-t border-[#f0eee9]">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6">
+<h2 class="editorial-serif text-5xl leading-tight mb-8">Honest Fit <br/><span class="italic text-secondary">Assessment</span></h2>
+<p class="text-xl font-body text-secondary leading-relaxed">
+                        At the end of our conversation, we will both know. If there isn't a fit, we'll point you toward resources that serve your current stage. If there is, we'll outline the first three steps of the build.
+                    </p>
+</div>
+<div class="md:col-span-6 flex justify-center md:justify-end">
+<div class="bg-[#5300b7] p-12 text-surface max-w-sm w-full">
+<p class="editorial-serif italic text-2xl mb-8">Ready to begin the inquiry?</p>
+<button class="w-full border border-[#bd9cff] text-[#bd9cff] py-4 px-6 hover:bg-[#bd9cff] hover:text-[#5300b7] transition-all duration-300 font-sans uppercase tracking-widest text-xs font-bold">
+                            Schedule Your Call
+                        </button>
+<p class="mt-6 text-[10px] uppercase tracking-tighter opacity-60 text-center">No cost. No obligation. Pure clarity.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-black w-full mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-screen-2xl mx-auto">
+<div class="text-lg font-serif text-[#fbf9f4] mb-8 md:mb-0">
+                Movemental
+            </div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-[#ccc9c6]/60 font-sans text-xs tracking-widest uppercase hover:text-[#fbf9f4] transition-opacity" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6]/60 font-sans text-xs tracking-widest uppercase hover:text-[#fbf9f4] transition-opacity" href="#">Terms of Service</a>
+<a class="text-[#ccc9c6]/60 font-sans text-xs tracking-widest uppercase hover:text-[#fbf9f4] transition-opacity" href="#">Institutional Ethics</a>
+</div>
+<div class="text-[#fbf9f4] dark:text-[#ccc9c6] font-sans text-xs tracking-widest uppercase">
+                © 2024 Movemental Institutional Systems. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

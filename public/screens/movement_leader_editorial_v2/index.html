@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Editorial Intelligence | Movement Leader</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "tertiary": "#4e1a00",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#fbf9f4",
+                    "background": "#fbf9f4",
+                    "secondary": "#5e5f5b",
+                    "on-surface-variant": "#4a4454",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#722a00",
+                    "inverse-primary": "#d3bbff",
+                    "inverse-surface": "#30312e",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-container-highest": "#e4e2dd",
+                    "primary": "#380080",
+                    "surface-variant": "#e4e2dd",
+                    "surface-container-high": "#eae8e3",
+                    "primary-container": "#5300b7",
+                    "on-tertiary-container": "#fa9261",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0eee9",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#bd9cff",
+                    "surface-tint": "#7238d5",
+                    "outline": "#7b7486",
+                    "outline-variant": "#ccc3d7",
+                    "on-primary-fixed": "#25005a",
+                    "on-secondary-fixed-variant": "#464743",
+                    "surface-container-low": "#f5f3ee",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-background": "#1b1c19",
+                    "secondary-container": "#deddd8",
+                    "primary-fixed": "#eaddff",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dbdad5",
+                    "surface-bright": "#fbf9f4",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "on-surface": "#1b1c19",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-secondary-fixed": "#1b1c19",
+                    "on-secondary-container": "#61615d",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "primary-fixed-dim": "#d3bbff",
+                    "secondary-fixed-dim": "#c7c6c2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 40px rgba(27, 28, 25, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4] dark:bg-stone-950 flex justify-between items-center px-12 h-24 w-full">
+<div class="text-2xl font-serif font-bold text-[#1b1c19] dark:text-[#fbf9f4]">
+            Editorial Intelligence
+        </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#5300b7] dark:text-[#a370f7] font-bold border-b-2 border-[#5300b7] font-serif italic tracking-tight Newsreader hover:text-[#5300b7] transition-colors duration-300" href="#">Archives</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium font-serif italic tracking-tight Newsreader hover:text-[#5300b7] transition-colors duration-300" href="#">Infrastructure</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium font-serif italic tracking-tight Newsreader hover:text-[#5300b7] transition-colors duration-300" href="#">Intelligence</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium font-serif italic tracking-tight Newsreader hover:text-[#5300b7] transition-colors duration-300" href="#">Theory</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary-container text-white px-8 py-3 font-medium transition-all active:scale-95 duration-200">
+                Access Portal
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col justify-center px-12 md:px-24 bg-surface">
+<div class="max-w-5xl">
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-[1.1] tracking-tight text-on-surface mb-8 italic">
+                    What you’ve built can now become something it <span class="text-primary-container">couldn’t before.</span>
+</h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant max-w-3xl leading-relaxed">
+                    Transformation is not additive; it is architectural. We specialize in turning a lifetime’s body of work into a coordinated, integrated digital system that thinks, preserves, and expands your legacy.
+                </p>
+</div>
+<div class="mt-16 flex justify-end">
+<div class="w-full md:w-2/3 h-96 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-125 opacity-90" data-alt="Close-up of high-quality vintage paper stacks meeting modern sleek glass surfaces in a sunlit architectural library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIYWqoPpcVoKm_Rft2Cpd11fY9lw0gcAGkFmjXoSg3CEmuVC_l2iHzy37sNzHHSPqD0FO4U5CIks6RNQTqDK2o1nbNI7af-COqGLivss5KaXLHnOwXkh0npO0I72vQtECXdNO_xPi8oP6lJUgFyy93BlGJxOY2bOuIrL7GVKUNXWgX7hprCtG7m3uZd6Dv35PKJpBv-Jvh_klyVuOFJECQKwWP4u7pdszgMhdYAaSIW0TGAPCSp45DUD8b07D8WbhOijMasS2eRWnM"/>
+<div class="absolute inset-0 bg-primary-container/10 mix-blend-multiply"></div>
+</div>
+</div>
+</section>
+<!-- Section 1: The Hook -->
+<section class="py-32 px-12 md:px-24 bg-surface-container-low">
+<div class="grid md:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="text-4xl md:text-5xl font-headline font-semibold mb-8 italic">This probably wasn’t something you were looking for.</h2>
+<p class="text-lg font-body text-on-surface-variant leading-loose">
+                        True intellectual breakthroughs rarely arrive via a search query. They arrive when the volume of your work reaches a critical mass that requires a new vessel. Most systems ask you to fit into their boxes; we build the box around the unique geometry of your thought.
+                    </p>
+</div>
+<div class="pt-12 md:pt-48">
+<div class="p-12 bg-surface text-on-surface editorial-shadow border-l-4 border-primary-container">
+<span class="block mb-6 font-label uppercase tracking-widest text-xs opacity-60">The Curator's Note</span>
+<p class="text-2xl font-headline italic leading-snug">"The transition from content creator to movement leader requires a shift from publishing to platform architecture."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Case Study -->
+<section class="py-32 px-12 md:px-24 bg-surface">
+<div class="mb-20 text-center">
+<span class="text-primary-container font-label tracking-[0.2em] uppercase text-sm font-bold">Case Study 01 // Alan Hirsch</span>
+</div>
+<div class="grid md:grid-cols-12 gap-0 items-stretch bg-on-surface text-surface">
+<div class="md:col-span-7 p-12 md:p-24 flex flex-col justify-center">
+<h2 class="text-4xl md:text-6xl font-headline mb-8 italic">What becomes possible</h2>
+<p class="text-xl opacity-80 leading-relaxed mb-12">
+                        For Alan Hirsch, the challenge wasn't a lack of ideas, but the fragmentation of a global movement. We teaser-engineered a corpus of thirty years of theological innovation into a unified intelligence layer.
+                    </p>
+<a class="inline-flex items-center gap-4 text-primary-container font-label uppercase tracking-widest text-sm font-bold group" href="#">
+                        Explore the Archive <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-5 relative min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="Abstract visualization of complex data networks forming organic crystalline shapes against a dark charcoal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc2l30pxh9St-4GHTwqYueEcOmR97iAfF13G7AbGwArvczNlQpRtqyLhoOt5bsyzLGDRoK9SZpvpX8IMBYo0XPYcqC2V5cRmS8REnZK9O8Oufivnu7n_qVVMTQf1w6FLA8h5NAP3Wj2AUg9Rzus1kxXXeEtiSh8kgy6eAuyab0Vda713DVIhUVbxrtk6sz4DG_CZUWXeln2OzQcYGXwUCXIRR7lo5Ht-d8f96bSPXEuJFSUVxwE5L6u2YexbNveVT397CWCaJhMh6v"/>
+</div>
+</div>
+</section>
+<!-- Section 3: The Corpus -->
+<section class="py-32 px-12 md:px-24 bg-surface">
+<div class="max-w-4xl">
+<h2 class="text-5xl font-headline mb-16 italic">A system built from your entire body of work.</h2>
+<div class="grid md:grid-cols-3 gap-16">
+<div>
+<h3 class="text-xl font-headline font-bold mb-4 uppercase tracking-tighter">01. Corpus Analysis</h3>
+<p class="text-sm font-body text-on-surface-variant leading-relaxed">
+                            We don't just read your books. We map the semantic DNA of every lecture, transcript, and manuscript to find the invisible threads.
+                        </p>
+</div>
+<div class="md:mt-12">
+<h3 class="text-xl font-headline font-bold mb-4 uppercase tracking-tighter">02. Extraction</h3>
+<p class="text-sm font-body text-on-surface-variant leading-relaxed">
+                            The distillation of core principles into actionable intelligence. We move from 'static text' to 'dynamic logic'.
+                        </p>
+</div>
+<div class="md:mt-24">
+<h3 class="text-xl font-headline font-bold mb-4 uppercase tracking-tighter">03. Preservation</h3>
+<p class="text-sm font-body text-on-surface-variant leading-relaxed">
+                            Ensuring your intellectual legacy isn't just stored, but remains functional and accessible for the next generation of leaders.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: The Proof (Asymmetric Bento) -->
+<section class="py-32 px-12 md:px-24 bg-surface-container">
+<div class="mb-20">
+<h2 class="text-5xl font-headline italic mb-4">This hasn’t existed before.</h2>
+<p class="font-body opacity-60">Comparative intelligence: Movemental vs. Global Creators</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-8 bg-surface p-12 editorial-shadow">
+<h3 class="text-2xl font-headline mb-6 italic">The Global Top 25 Status Quo</h3>
+<p class="text-on-surface-variant mb-12">The elite use 5–8 disconnected tools. Their intelligence is siloed, their data is scattered, and their AI is generic.</p>
+<div class="flex flex-wrap gap-4 opacity-40 grayscale">
+<div class="px-4 py-2 border border-on-surface text-xs font-label">NOTION</div>
+<div class="px-4 py-2 border border-on-surface text-xs font-label">SLACK</div>
+<div class="px-4 py-2 border border-on-surface text-xs font-label">ZAPIER</div>
+<div class="px-4 py-2 border border-on-surface text-xs font-label">HUBSPOT</div>
+<div class="px-4 py-2 border border-on-surface text-xs font-label">CHATGPT</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary-container p-12 text-white">
+<h3 class="text-2xl font-headline mb-6 italic">Movemental</h3>
+<p class="opacity-80 mb-8">One unified system. Coordinated AI that knows your voice, your history, and your goals.</p>
+<div class="w-12 h-1 bg-white opacity-30 mb-8"></div>
+<p class="text-4xl font-headline italic">Integrated. Coordinated. Singular.</p>
+</div>
+</div>
+</section>
+<!-- Section 5: Cohort -->
+<section class="py-32 px-12 md:px-24 bg-surface">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="text-5xl font-headline mb-8 italic">Built with you, not for you.</h2>
+<p class="text-lg text-on-surface-variant mb-12">
+                    This is a 4-week deep-dive cohort. We don't hand you a manual; we build the infrastructure alongside you in real-time.
+                </p>
+<div class="flex justify-center gap-12 text-left">
+<div>
+<span class="block text-3xl font-headline italic text-primary-container">4</span>
+<span class="text-xs font-label uppercase tracking-widest opacity-60">Weeks</span>
+</div>
+<div class="w-px bg-outline-variant opacity-30"></div>
+<div>
+<span class="block text-3xl font-headline italic text-primary-container">12</span>
+<span class="text-xs font-label uppercase tracking-widest opacity-60">Visionaries</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Outcomes -->
+<section class="py-32 px-12 md:px-24 bg-on-surface text-surface">
+<h2 class="text-4xl md:text-5xl font-headline mb-16 italic">What you end up with.</h2>
+<div class="space-y-16 max-w-4xl">
+<div class="flex items-start gap-8">
+<span class="text-2xl font-serif text-primary-container">/01</span>
+<p class="text-2xl md:text-3xl font-headline opacity-90">A proprietary AI model trained exclusively on your life's work.</p>
+</div>
+<div class="flex items-start gap-8">
+<span class="text-2xl font-serif text-primary-container">/02</span>
+<p class="text-2xl md:text-3xl font-headline opacity-90">A unified dashboard for movement-wide coordination and tracking.</p>
+</div>
+<div class="flex items-start gap-8">
+<span class="text-2xl font-serif text-primary-container">/03</span>
+<p class="text-2xl md:text-3xl font-headline opacity-90">An immutable digital archive of your intellectual capital.</p>
+</div>
+</div>
+</section>
+<!-- Section 7: The Model -->
+<section class="py-32 px-12 md:px-24 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="max-w-xl">
+<h2 class="text-5xl font-headline mb-8 italic">The Model</h2>
+<p class="text-lg text-on-surface-variant">We align our success with yours. This isn't a subscription; it's a partnership in movement building.</p>
+</div>
+<div class="bg-surface-container-high p-12 flex flex-col gap-4">
+<div class="flex justify-between items-baseline gap-20">
+<span class="font-label uppercase text-xs tracking-widest">Entry</span>
+<span class="text-4xl font-headline italic">$1,000 upfront</span>
+</div>
+<div class="h-px bg-outline-variant opacity-20"></div>
+<div class="flex justify-between items-baseline gap-20">
+<span class="font-label uppercase text-xs tracking-widest">Alignment</span>
+<span class="text-4xl font-headline italic">10% Rev Share</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Why this exists -->
+<section class="py-32 px-12 md:px-24 bg-surface-container-lowest">
+<div class="grid md:grid-cols-2 gap-24">
+<div class="relative h-[600px]">
+<img class="w-full h-full object-cover" data-alt="Candid, atmospheric portrait of a focused thinker in a dimly lit study with shelves of books and a single warm desk lamp" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6LHciP-CgLWY1Q8b9zU59GM8G1MOlurBORb39nVnLNag8jn2PWjsejO1cqqxlmUrb_Y-y4rW4O7J8Qn7__lbHZqyVHZQhOJ1x8zMXA1q0Q55mppz0-hGUWNoseLqgUMDJV-Lwgujw-GCNRyg3LL2UfbjkvltM4ln8ck7cH80uPsmnOvQf60kDMk5P-CpVD5xt5HDDpHLE-o1X48K-9r76yF3VCMXT4e7MbKl5jSIx6FGnXekmyRIPHhSWmn5KRpiiHKHW0tyYhfIM"/>
+</div>
+<div class="flex flex-col justify-center">
+<h2 class="text-4xl md:text-5xl font-headline mb-8 italic">Why this exists.</h2>
+<div class="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
+<p>The digital age has prioritized speed over depth, and noise over wisdom. Great leaders are spending 40% of their time managing tools instead of stewarding their vision.</p>
+<p>We exist to reclaim that time. We exist because the world needs your body of work to be more than just a list of downloads—it needs it to be a living, breathing system.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9: Limitation -->
+<section class="py-32 px-12 md:px-24 bg-primary text-white text-center">
+<div class="max-w-3xl mx-auto">
+<span class="inline-block px-4 py-1 border border-white/30 text-xs font-label uppercase tracking-widest mb-8">Notice of Availability</span>
+<h2 class="text-4xl md:text-6xl font-headline mb-12 italic">Limited to a small group of stewards.</h2>
+<p class="text-xl opacity-80 mb-12">To maintain the architectural integrity of each system we build, we only accept 12 leaders per cohort. This is not for everyone. It is for those whose work is ready to evolve.</p>
+</div>
+</section>
+<!-- Final Call -->
+<section class="py-48 px-12 md:px-24 bg-surface flex flex-col items-center text-center">
+<h2 class="text-5xl md:text-7xl font-headline italic mb-16 leading-tight max-w-5xl">
+                If this is real... it changes what your work can become.
+            </h2>
+<button class="bg-on-surface text-surface px-12 py-5 text-lg font-bold tracking-widest uppercase hover:bg-primary-container transition-colors duration-500">
+                Apply for the Next Cohort
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-black w-full py-16 flex flex-col md:flex-row justify-between items-center px-12 w-full">
+<div class="text-[#fbf9f4] font-serif text-lg mb-8 md:mb-0">
+            Editorial Intelligence
+        </div>
+<div class="flex gap-8 mb-8 md:mb-0">
+<a class="text-[#ccc9c6] opacity-70 font-sans uppercase tracking-widest text-xs Inter hover:opacity-100 transition-opacity" href="#">Ethics</a>
+<a class="text-[#ccc9c6] opacity-70 font-sans uppercase tracking-widest text-xs Inter hover:opacity-100 transition-opacity" href="#">Privacy</a>
+<a class="text-[#ccc9c6] opacity-70 font-sans uppercase tracking-widest text-xs Inter hover:opacity-100 transition-opacity" href="#">Protocols</a>
+<a class="text-[#ccc9c6] opacity-70 font-sans uppercase tracking-widest text-xs Inter hover:opacity-100 transition-opacity" href="#">Institutional Access</a>
+</div>
+<div class="text-[#fbf9f4] font-sans uppercase tracking-widest text-[10px] opacity-50">
+            © 2024 Editorial Intelligence. All rights reserved. Built for the Modern Archivist.
+        </div>
+</footer>
+</body></html>

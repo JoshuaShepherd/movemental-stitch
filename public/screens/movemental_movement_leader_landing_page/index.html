@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movement Leaders | Movemental</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed": "#e4e2dd",
+                      "primary-container": "#5300b7",
+                      "on-background": "#1b1c19",
+                      "inverse-on-surface": "#f2f1ec",
+                      "surface-variant": "#e4e2dd",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#fbf9f4",
+                      "on-primary-fixed": "#25005a",
+                      "on-secondary-fixed": "#1b1c19",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-container": "#61615d",
+                      "tertiary-fixed": "#ffdbcc",
+                      "on-tertiary-fixed": "#351000",
+                      "inverse-surface": "#30312e",
+                      "tertiary-container": "#722a00",
+                      "on-tertiary-container": "#fa9261",
+                      "error-container": "#ffdad6",
+                      "outline": "#7b7486",
+                      "on-secondary-fixed-variant": "#464743",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e4e2dd",
+                      "on-surface": "#1b1c19",
+                      "primary-fixed": "#eaddff",
+                      "surface": "#fbf9f4",
+                      "on-tertiary-fixed-variant": "#7a3005",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#4a4454",
+                      "primary": "#380080",
+                      "on-primary-fixed-variant": "#5912bd",
+                      "error": "#ba1a1a",
+                      "on-primary": "#ffffff",
+                      "secondary-fixed-dim": "#c7c6c2",
+                      "secondary-container": "#deddd8",
+                      "surface-dim": "#dbdad5",
+                      "tertiary-fixed-dim": "#ffb595",
+                      "surface-tint": "#7238d5",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#4e1a00",
+                      "secondary": "#5e5f5b",
+                      "on-primary-container": "#bd9cff",
+                      "background": "#fbf9f4",
+                      "surface-container": "#f0eee9",
+                      "surface-container-low": "#f5f3ee",
+                      "inverse-primary": "#d3bbff",
+                      "primary-fixed-dim": "#d3bbff",
+                      "outline-variant": "#ccc3d7",
+                      "surface-container-high": "#eae8e3"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Newsreader", "serif"],
+                      "body": ["Inter", "sans-serif"],
+                      "label": ["Inter", "sans-serif"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            line-height: 1.6;
+        }
+        .serif-headline {
+            font-family: 'Newsreader', serif;
+            letter-spacing: -0.02em;
+        }
+        .gutters-of-thought {
+            padding-left: clamp(2rem, 10vw, 12rem);
+            padding-right: clamp(2rem, 10vw, 12rem);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #380080 0%, #5300b7 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<nav class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto bg-[#fbf9f4] border-none shadow-none sticky top-0 z-50">
+<div class="font-['Newsreader'] italic font-bold text-[#1b1c19] text-2xl">Movemental</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#1b1c19] opacity-70 hover:opacity-100 font-['Inter'] font-medium text-sm uppercase tracking-widest hover:text-[#5300b7] transition-colors duration-300" href="#">Archives</a>
+<a class="text-[#1b1c19] opacity-70 hover:opacity-100 font-['Inter'] font-medium text-sm uppercase tracking-widest hover:text-[#5300b7] transition-colors duration-300" href="#">Infrastructure</a>
+<a class="text-[#5300b7] border-b-2 border-[#5300b7] pb-1 font-['Inter'] font-medium text-sm uppercase tracking-widest" href="#">Intelligence</a>
+<a class="text-[#1b1c19] opacity-70 hover:opacity-100 font-['Inter'] font-medium text-sm uppercase tracking-widest hover:text-[#5300b7] transition-colors duration-300" href="#">Theory</a>
+</div>
+<button class="bg-primary-container text-white px-6 py-2.5 font-['Inter'] text-sm uppercase tracking-widest hover:opacity-90 transition-opacity">Access Portal</button>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative min-h-[921px] flex flex-col justify-center gutters-of-thought py-24 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-10">
+<div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-surface via-transparent to-surface-variant"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h1 class="serif-headline text-6xl md:text-8xl font-light leading-tight mb-8">
+                    What you’ve built <span class="italic">can now become</span> something it couldn’t before.
+                </h1>
+<p class="text-xl md:text-2xl font-light max-w-2xl text-on-surface-variant mb-12 font-body">
+                    We take your entire body of work—books, frameworks, years of insight—and turn it into a living system that forms people and scales.
+                </p>
+<button class="primary-gradient text-white px-10 py-5 text-lg font-medium tracking-wide hover:opacity-95 transition-all">
+                    Request a Conversation
+                </button>
+</div>
+</section>
+<!-- Section 2: The Recognition -->
+<section class="py-32 bg-surface-container-low gutters-of-thought">
+<div class="max-w-3xl ml-auto md:mr-24">
+<h2 class="serif-headline text-4xl mb-8 italic">This probably wasn’t something you were looking for.</h2>
+<div class="space-y-6 text-lg font-light text-on-surface-variant">
+<p>Most leaders seeking scale look for a bigger marketing engine or a faster publishing cycle. They look for more noise.</p>
+<p>We are interested in the signal. The intellectual architecture that sits beneath your movement. A paradigm shift isn't found in a new funnel; it's found in the structural integrity of your ideas becoming accessible infrastructure.</p>
+</div>
+</div>
+</section>
+<!-- Section 3: The Moment (Alan Hirsch) -->
+<section class="py-32 gutters-of-thought">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7">
+<h2 class="serif-headline text-5xl md:text-7xl font-light mb-12">What changes when <br/><span class="italic text-primary-container">you see it</span></h2>
+<div class="aspect-[4/5] bg-surface-container-highest overflow-hidden relative">
+<img alt="Scholarly archive" class="w-full h-full object-cover grayscale opacity-80" data-alt="dramatic wide shot of a classical library archive with high ceilings and rows of books in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt7vnGYOeR72wmkBIApG1YeKBjsSLd8WNzVS2cyP9quFP5xDjxAmZtHypIpIQ24K1XwkNklO1JhMtV5eaTnv_NZAw9vkoA7SLIS5uV4Grp5krMgEB8E5ptG3XwfRCH7tGIfoDtoggaZtdpwX4863Z3IbCHt31e6Telr9Uqio7hLUOD3pIdBgPfz6DdU4JVwXs_U7jINbrwJCnthG1L97ANPf6jLpWkmjXVIGUANKgNVgKdUerDb4bwOqRGejl6SYvPsNZDDSla2dpc"/>
+<div class="absolute inset-0 bg-primary-container mix-blend-multiply opacity-10"></div>
+</div>
+</div>
+<div class="md:col-span-5 md:pt-48">
+<div class="p-12 bg-white shadow-none border-none">
+<span class="font-body text-xs uppercase tracking-[0.3em] text-outline mb-6 block">The Case Study</span>
+<h3 class="serif-headline text-3xl mb-6">The Hirsch Paradigm</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            When Alan Hirsch brought decades of missional movement research to us, it existed as a brilliant, sprawling library. We didn't just digitize it. 
+                        </p>
+<p class="text-on-surface-variant leading-relaxed">
+                            We mapped the neural connections between his frameworks. We built a system that allows a user to enter the 'Hirschian' mind and find their specific path through it. It turned a body of work into an engine of formation.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: What This Actually Is -->
+<section class="py-32 bg-on-background text-surface gutters-of-thought">
+<div class="max-w-6xl mx-auto">
+<div class="mb-24 max-w-2xl">
+<h2 class="serif-headline text-5xl mb-8">This isn’t a website. <br/>And it’s not a content strategy.</h2>
+<p class="text-surface-variant text-xl">It is the distillation of your life's work into a digital nervous system.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16">
+<div class="group">
+<div class="text-primary-container mb-4"><span class="material-symbols-outlined text-4xl" data-icon="neurology">neurology</span></div>
+<h4 class="serif-headline text-2xl mb-4">Full Body Analysis</h4>
+<p class="text-surface-variant opacity-80">Our intelligence team reads every page you’ve written. We don't skim. We map the taxonomy of your thought to find the hidden architecture.</p>
+</div>
+<div class="group">
+<div class="text-primary-container mb-4"><span class="material-symbols-outlined text-4xl" data-icon="record_voice_over">record_voice_over</span></div>
+<h4 class="serif-headline text-2xl mb-4">Voice Mapping</h4>
+<p class="text-surface-variant opacity-80">We capture the cadence, the nuance, and the intellectual rigor that makes your work yours. Your AI isn't generic; it's a reflection of your ethos.</p>
+</div>
+<div class="group">
+<div class="text-primary-container mb-4"><span class="material-symbols-outlined text-4xl" data-icon="alt_route">alt_route</span></div>
+<h4 class="serif-headline text-2xl mb-4">Pathways</h4>
+<p class="text-surface-variant opacity-80">We build algorithmic journeys that guide users from curiosity to mastery, ensuring your insights are lived, not just read.</p>
+</div>
+<div class="group">
+<div class="text-primary-container mb-4"><span class="material-symbols-outlined text-4xl" data-icon="model_training">model_training</span></div>
+<h4 class="serif-headline text-2xl mb-4">Trained Intelligence</h4>
+<p class="text-surface-variant opacity-80">A private, secure LLM trained exclusively on your corpus. It serves as a tireless mentor to your movement, 24/7.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: How It Happens (Stepper) -->
+<section class="py-32 gutters-of-thought overflow-hidden">
+<div class="max-w-4xl">
+<h2 class="serif-headline text-5xl mb-24">We don’t build this <span class="italic">for</span> you. <br/>We build it <span class="italic">with</span> you.</h2>
+<div class="space-y-32 relative">
+<!-- Step 1 -->
+<div class="flex gap-12 items-start relative">
+<div class="serif-headline text-8xl opacity-10 leading-none">01</div>
+<div class="pt-4">
+<h3 class="serif-headline text-3xl mb-4">The Archival Extraction</h3>
+<p class="text-on-surface-variant text-lg">Weeks 1: We ingest your entire corpus. Books, journals, podcasts, and raw notes. Our team begins the semantic mapping process.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-12 items-start relative ml-0 md:ml-24">
+<div class="serif-headline text-8xl opacity-10 leading-none">02</div>
+<div class="pt-4">
+<h3 class="serif-headline text-3xl mb-4">Structural Alignment</h3>
+<p class="text-on-surface-variant text-lg">Week 2: We present the blueprint. This is where we verify the 'logic' of your movement. We refine the pathways together.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-12 items-start relative ml-0 md:ml-48">
+<div class="serif-headline text-8xl opacity-10 leading-none">03</div>
+<div class="pt-4">
+<h3 class="serif-headline text-3xl mb-4">System Synthesis</h3>
+<p class="text-on-surface-variant text-lg">Week 3: The engineering phase. We train your custom model and build the bespoke platform interface.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex gap-12 items-start relative ml-0 md:ml-72">
+<div class="serif-headline text-8xl opacity-10 leading-none">04</div>
+<div class="pt-4">
+<h3 class="serif-headline text-3xl mb-4">The Threshold</h3>
+<p class="text-on-surface-variant text-lg">Week 4: Deployment. Your work is no longer static. It is now a living intelligence ready for your movement.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: What You End Up With -->
+<section class="py-32 bg-surface-container gutters-of-thought">
+<h2 class="serif-headline text-5xl mb-16 text-center">What exists on the other side</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-10 h-full flex flex-col justify-between">
+<div>
+<h4 class="serif-headline text-2xl mb-4 italic">The Platform</h4>
+<p class="text-on-surface-variant">A bespoke editorial hub where your ideas breathe. No templates, just your identity in digital form.</p>
+</div>
+<div class="mt-8 text-outline"><span class="material-symbols-outlined" data-icon="architecture">architecture</span></div>
+</div>
+<div class="bg-surface-container-low p-10 h-full flex flex-col justify-between md:translate-y-12">
+<div>
+<h4 class="serif-headline text-2xl mb-4 italic">The Pathways</h4>
+<p class="text-on-surface-variant">Structured curriculum and formation tracks that guide individuals through the depth of your wisdom.</p>
+</div>
+<div class="mt-8 text-outline"><span class="material-symbols-outlined" data-icon="insights">insights</span></div>
+</div>
+<div class="bg-surface-container-low p-10 h-full flex flex-col justify-between">
+<div>
+<h4 class="serif-headline text-2xl mb-4 italic">The Intelligence</h4>
+<p class="text-on-surface-variant">A companion AI that knows your work better than anyone else, ready to mentor your followers.</p>
+</div>
+<div class="mt-8 text-outline"><span class="material-symbols-outlined" data-icon="psychology">psychology</span></div>
+</div>
+</div>
+</section>
+<!-- Section 7: The Shift (Before/After) -->
+<section class="py-48 gutters-of-thought">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+<div class="p-16 bg-surface-container-highest border-r-0 md:border-r-0">
+<h3 class="serif-headline text-3xl mb-12 opacity-50 uppercase tracking-widest text-xs font-body font-bold">The Old Way</h3>
+<ul class="space-y-8 font-body text-lg">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1" data-icon="close">close</span>
+<span>Passive consumption of books and media.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1" data-icon="close">close</span>
+<span>The "Guru" bottleneck: Growth stops at you.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1" data-icon="close">close</span>
+<span>Fragmented content across social and web.</span>
+</li>
+</ul>
+</div>
+<div class="p-16 bg-on-background text-surface">
+<h3 class="serif-headline text-3xl mb-12 text-primary-container uppercase tracking-widest text-xs font-body font-bold">The Movemental Way</h3>
+<ul class="space-y-8 font-body text-lg">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="check">check</span>
+<span>Active formation through lived systems.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="check">check</span>
+<span>The Intelligence scale: Your wisdom, omnipresent.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1" data-icon="check">check</span>
+<span>A unified, authoritative intellectual home.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Section 8: The Model -->
+<section class="py-32 bg-surface-container-low gutters-of-thought">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="serif-headline text-5xl mb-12">The Shared Investment</h2>
+<p class="text-xl font-light text-on-surface-variant mb-16 max-w-2xl mx-auto">We don't believe in SaaS subscriptions for movements. We believe in skin in the game.</p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-16">
+<div class="text-center">
+<div class="serif-headline text-6xl mb-2">$1,000</div>
+<div class="text-xs uppercase tracking-widest text-outline">Upfront Activation</div>
+</div>
+<div class="hidden md:block w-px h-24 bg-outline-variant opacity-30"></div>
+<div class="text-center">
+<div class="serif-headline text-6xl mb-2">10%</div>
+<div class="text-xs uppercase tracking-widest text-outline">Revenue Share</div>
+</div>
+</div>
+<div class="mt-20 p-8 border-t border-outline-variant border-opacity-10 max-w-xl mx-auto">
+<p class="text-on-surface-variant italic">No ongoing maintenance fees. No hosting costs. We only win when your movement scales.</p>
+</div>
+</div>
+</section>
+<!-- Section 9: Why This Exists & Limitation -->
+<section class="py-32 gutters-of-thought">
+<div class="max-w-3xl">
+<h2 class="serif-headline text-4xl mb-8">Why we do this.</h2>
+<p class="text-lg text-on-surface-variant mb-8">The world is flooded with shallow content. We are building the infrastructure for the few leaders who have spent decades digging deep. We want your work to last another fifty years.</p>
+<div class="bg-primary-container text-white p-8">
+<p class="font-medium">Due to the high-touch nature of our intelligence mapping, we only accept 4 new Movement Leaders per quarter.</p>
+</div>
+</div>
+</section>
+<!-- Section 10: Final CTA -->
+<section class="py-48 bg-on-background text-surface relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<div class="w-full h-full bg-gradient-to-t from-primary-container to-transparent"></div>
+</div>
+<div class="relative z-10 gutters-of-thought text-center">
+<h2 class="serif-headline text-6xl md:text-8xl font-light leading-tight mb-16">
+                    If this is real… <br/><span class="italic text-primary-container">…then it changes what <br/>your work can become.</span>
+</h2>
+<button class="bg-surface text-on-background px-16 py-6 text-xl font-bold tracking-widest uppercase hover:bg-primary-container hover:text-white transition-all">
+                    Request a Conversation
+                </button>
+<p class="mt-12 text-surface-variant opacity-60 font-light italic">Currently accepting inquiries for Q3 2024.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 bg-[#1b1c19] text-[#fbf9f4]">
+<div class="font-['Newsreader'] text-3xl italic text-[#fbf9f4]">Movemental</div>
+<div class="flex flex-wrap justify-center gap-8 text-[#ccc9c6] opacity-60 font-['Inter'] text-xs tracking-[0.2em] uppercase font-semibold">
+<a class="hover:text-white hover:opacity-100 transition-opacity duration-200" href="#">Institutional Privacy</a>
+<a class="hover:text-white hover:opacity-100 transition-opacity duration-200" href="#">Archival Standards</a>
+<a class="hover:text-white hover:opacity-100 transition-opacity duration-200" href="#">Contact Intelligence</a>
+<a class="hover:text-white hover:opacity-100 transition-opacity duration-200" href="#">Infrastructure Status</a>
+</div>
+<div class="text-[#ccc9c6] opacity-60 font-['Inter'] text-[10px] tracking-[0.1em] uppercase">
+            © 2024 Movemental Intelligence. All rights reserved.
+        </div>
+</footer>
+</body></html>
