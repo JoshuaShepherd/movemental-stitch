@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#61615d",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#d3bbff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "surface-variant": "#e4e2dd",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-secondary-fixed-variant": "#464743",
+                    "inverse-primary": "#d3bbff",
+                    "on-tertiary-fixed": "#351000",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed": "#eaddff",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-secondary-fixed": "#1b1c19",
+                    "on-primary-container": "#bd9cff",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "background": "#fbf9f4",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#722a00",
+                    "surface-container-high": "#eae8e3",
+                    "on-surface-variant": "#4a4454",
+                    "on-surface": "#1b1c19",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#deddd8",
+                    "error": "#ba1a1a",
+                    "surface-container": "#f0eee9",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "outline": "#7b7486",
+                    "surface": "#fbf9f4",
+                    "surface-container-highest": "#e4e2dd",
+                    "outline-variant": "#ccc3d7",
+                    "inverse-surface": "#30312e",
+                    "surface-tint": "#7238d5",
+                    "on-tertiary-container": "#fa9261",
+                    "primary": "#380080",
+                    "inverse-on-surface": "#f2f1ec",
+                    "secondary": "#5e5f5b",
+                    "surface-bright": "#fbf9f4",
+                    "on-primary-fixed": "#25005a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#dbdad5",
+                    "on-background": "#1b1c19",
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Newsreader', serif; font-style: italic; }
+        .glass-nav {
+            background: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 glass-nav">
+<nav class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-[#fbf9f4]">Editorial Intelligence</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#5300b7] dark:text-[#a87ffb] border-b-2 border-[#5300b7] pb-1 font-medium tracking-tight text-sm" href="#reality">The Reality</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] transition-colors duration-300 font-medium tracking-tight text-sm" href="#ai-layer">The AI Layer</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] transition-colors duration-300 font-medium tracking-tight text-sm" href="#builds">The Builds</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] transition-colors duration-300 font-medium tracking-tight text-sm" href="#process">Process</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] transition-colors duration-300 font-medium tracking-tight text-sm" href="#target">Target</a>
+</div>
+<button class="bg-primary-container text-white px-6 py-2.5 text-sm font-semibold tracking-wide hover:bg-primary transition-colors">
+                Partner With Us
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-screen-2xl mx-auto px-8 pt-32 pb-48 grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-8 md:col-start-4">
+<span class="font-label uppercase tracking-[0.3em] text-xs text-outline mb-8 block">Scholarly Infrastructure v.1.0</span>
+<h1 class="font-headline text-6xl md:text-8xl leading-[0.95] tracking-[-0.03em] mb-12">
+                    Systems for <span class="serif-italic">Intentional</span> Social Impact.
+                </h1>
+<p class="font-body text-xl md:text-2xl leading-relaxed text-on-surface-variant max-w-2xl">
+                    We architect the digital archives of tomorrow. A synthesis of high-fidelity editorial curation and deep-infrastructure AI for global institutional change.
+                </p>
+</div>
+</section>
+<!-- Asymmetric Detail Section -->
+<section class="bg-surface-container py-32" id="reality">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-12 gap-12">
+<div class="col-span-12 md:col-span-3">
+<h2 class="font-headline text-3xl tracking-tight sticky top-32">The Reality</h2>
+</div>
+<div class="col-span-12 md:col-span-7 md:col-start-5 space-y-16">
+<div class="aspect-[16/7] overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-90" data-alt="Interior of a modern high-end library with dark wood shelves and warm ambient lighting on cream-colored paper archives" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1_YYZubMpL2ZIrI32VpERsYFax5IC6t4SMKnfZVKQ5mXOHTIF3laKz78Opiy7TW5tdWSrYiPFCL36F_mLQk6Tmya7wjhl-UvOlxMKlhlFt8l6iDjS6pU7sye24yX_cOPu57S-MsdBzqx02IZ4rxIfKUbY8P9omc6yu91YxrgiPJO30avUdpfyTusD0lipQUngJ8484trUpAWBy2BUoHoPijmC73HJcrrTEut5nDsFddw7pOkBYmpQOP2C4BaJcGGVGlFMjAlgQDuW"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<p class="font-body leading-relaxed">
+                                Information density has reached a terminal velocity. Raw data is no longer the asset; discernment is. Our framework prioritizes the "Human-in-the-Loop" for radical clarity.
+                            </p>
+</div>
+<div class="space-y-6">
+<p class="font-body leading-relaxed">
+                                We reject the ephemeral. Every platform we build is designed as a permanent archive—a ledger of institutional intelligence that gains value with time.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Five Builds (Institutional List) -->
+<section class="py-48 bg-surface" id="builds">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-3">
+<h2 class="font-headline text-3xl tracking-tight mb-8">The Five Builds</h2>
+<p class="text-sm font-body text-outline max-w-[200px]">Strategic pillars of our intellectual and technical architecture.</p>
+</div>
+<div class="col-span-12 md:col-span-8 md:col-start-5">
+<ul class="space-y-0">
+<li class="group py-12 flex items-baseline hover:bg-surface-container-low transition-colors duration-500 px-4 -mx-4">
+<span class="font-label text-xs text-outline w-16 shrink-0">01</span>
+<div class="flex-grow">
+<h3 class="font-headline text-4xl mb-4 group-hover:pl-4 transition-all duration-500">Semantic Synthesis</h3>
+<p class="text-on-surface-variant max-w-xl group-hover:pl-4 transition-all duration-500">Turning vast unstructured datasets into actionable editorial narratives through recursive AI modeling.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors">north_east</span>
+</li>
+<li class="group py-12 flex items-baseline hover:bg-surface-container-low transition-colors duration-500 px-4 -mx-4">
+<span class="font-label text-xs text-outline w-16 shrink-0">02</span>
+<div class="flex-grow">
+<h3 class="font-headline text-4xl mb-4 group-hover:pl-4 transition-all duration-500">Archival Continuity</h3>
+<p class="text-on-surface-variant max-w-xl group-hover:pl-4 transition-all duration-500">Infrastructure designed for fifty-year cycles, ensuring digital assets remain readable across generations.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors">north_east</span>
+</li>
+<li class="group py-12 flex items-baseline hover:bg-surface-container-low transition-colors duration-500 px-4 -mx-4">
+<span class="font-label text-xs text-outline w-16 shrink-0">03</span>
+<div class="flex-grow">
+<h3 class="font-headline text-4xl mb-4 group-hover:pl-4 transition-all duration-500">Verification Engine</h3>
+<p class="text-on-surface-variant max-w-xl group-hover:pl-4 transition-all duration-500">Multi-modal cross-referencing protocols to eliminate hallucinations in social impact reporting.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors">north_east</span>
+</li>
+<li class="group py-12 flex items-baseline hover:bg-surface-container-low transition-colors duration-500 px-4 -mx-4">
+<span class="font-label text-xs text-outline w-16 shrink-0">04</span>
+<div class="flex-grow">
+<h3 class="font-headline text-4xl mb-4 group-hover:pl-4 transition-all duration-500">Contextual UX</h3>
+<p class="text-on-surface-variant max-w-xl group-hover:pl-4 transition-all duration-500">Interfaces that prioritize deep focus and minimize cognitive load through intentional asymmetry.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors">north_east</span>
+</li>
+<li class="group py-12 flex items-baseline hover:bg-surface-container-low transition-colors duration-500 px-4 -mx-4">
+<span class="font-label text-xs text-outline w-16 shrink-0">05</span>
+<div class="flex-grow">
+<h3 class="font-headline text-4xl mb-4 group-hover:pl-4 transition-all duration-500">Impact Ledger</h3>
+<p class="text-on-surface-variant max-w-xl group-hover:pl-4 transition-all duration-500">Quantifiable social outcome tracking embedded directly into the content lifecycle.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors">north_east</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Process Section - Glassmorphism Interaction -->
+<section class="relative py-48 bg-[#1b1c19] text-surface overflow-hidden" id="process">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="Macro photography of vintage typewriter keys and fine paper texture with deep shadows and sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpMD4L_8gexg6yU7ne5WxZh4_uAPLrhuPfHHbwC8A82TKW1kCgGAW-GrcrAdfOSQc6aTvj2mPefEtpyOOYrIgri0HA6P-osyW4VQXiDQxAZj88aEPUGYx5ok-us8HbrN9-dmmhIZQZ-2g6qC-7AalS9GkS3mJIejNb-QLWu-Q2kk_NQc82zfaT4IB4CzkwvQJkpMAL6kqOhgUSwrewGqREiXjMUx9MuwikGxMK2uNjjjoo_FaOluSXT_02yFRZgJOiHDmQquwOb__A"/>
+</div>
+<div class="relative max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 md:col-span-6">
+<h2 class="font-headline text-5xl md:text-7xl mb-12">Building for <br/><span class="serif-italic">Permanence.</span></h2>
+<p class="font-body text-xl opacity-80 max-w-md leading-relaxed mb-16">
+                            Our process follows the methodology of the Great Libraries: Catalog, Synthesize, Preserve, and Disseminate.
+                        </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="p-8 bg-white/5 backdrop-blur-xl border border-white/10">
+<h4 class="font-label text-xs uppercase tracking-widest mb-4">Phase I</h4>
+<p class="font-body text-sm opacity-70">Deep ingestion of institutional memory.</p>
+</div>
+<div class="p-8 bg-white/5 backdrop-blur-xl border border-white/10">
+<h4 class="font-label text-xs uppercase tracking-widest mb-4">Phase II</h4>
+<p class="font-body text-sm opacity-70">Algorithmic layering and semantic mapping.</p>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 md:col-start-8">
+<div class="p-12 bg-primary-container text-surface relative">
+<span class="material-symbols-outlined text-4xl mb-8" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+<h3 class="font-headline text-3xl mb-6">The Partner Inquiry</h3>
+<p class="font-body mb-10 opacity-90 leading-relaxed">
+                                We only take on four high-capacity institutional builds per year. Each partnership is an immersion into the core intent of your organization.
+                            </p>
+<a class="inline-flex items-center space-x-4 border-b border-surface/50 pb-2 hover:border-surface transition-all" href="#">
+<span class="font-label font-bold uppercase tracking-widest text-xs">Initiate Protocol</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Target Section -->
+<section class="py-48 bg-surface" id="target">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<span class="font-label uppercase tracking-[0.3em] text-xs text-outline mb-4 block">Target Ecosystems</span>
+<h2 class="font-headline text-5xl">Where we operate.</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<div class="h-[1px] bg-outline-variant w-full"></div>
+<h4 class="font-headline text-2xl">Philanthropic Foundations</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">Centralizing decades of impact data into accessible, story-driven digital archives for stakeholders.</p>
+</div>
+<div class="space-y-6">
+<div class="h-[1px] bg-outline-variant w-full"></div>
+<h4 class="font-headline text-2xl">Academic Institutes</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">Bridging the gap between peer-reviewed research and public-facing editorial influence.</p>
+</div>
+<div class="space-y-6">
+<div class="h-[1px] bg-outline-variant w-full"></div>
+<h4 class="font-headline text-2xl">NGO Global Clusters</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">Harmonizing disparate regional narratives into a unified global mission statement.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] text-[#fbf9f4]">
+<div class="flex flex-col md:flex-row justify-between items-start px-8 py-16 max-w-screen-2xl mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-serif text-[#fbf9f4] mb-4">Editorial Intelligence</div>
+<p class="text-[#ccc9c6] opacity-80 text-sm max-w-xs font-body leading-relaxed">
+                    © 2024 Editorial Intelligence. All Rights Reserved. Built for high-capacity social impact.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-24">
+<div class="flex flex-col space-y-4">
+<span class="font-label uppercase tracking-widest text-[10px] text-outline">Exploration</span>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity text-sm font-body" href="#reality">The Reality</a>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity text-sm font-body" href="#builds">The Five Builds</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label uppercase tracking-widest text-[10px] text-outline">Internal</span>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity text-sm font-body" href="#process">Process</a>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity text-sm font-body" href="#">Inquiry</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label uppercase tracking-widest text-[10px] text-outline">Legal</span>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity text-sm font-body" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity text-sm font-body underline underline-offset-4" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

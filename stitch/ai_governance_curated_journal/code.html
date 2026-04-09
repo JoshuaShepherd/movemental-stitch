@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Governance Framework | The Digital Curator</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#4e1a00",
+                    "secondary": "#695296",
+                    "surface-dim": "#dbdad5",
+                    "on-tertiary-container": "#fa9261",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f2f1eb",
+                    "surface-container-low": "#f5f4ee",
+                    "surface-container": "#efeee8",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#30312d",
+                    "background": "#fbf9f4",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary-fixed": "#240a4e",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-background": "#1b1c19",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#eaddff",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#cbb2fd",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-secondary-container": "#574183",
+                    "on-primary-container": "#bd9cff",
+                    "on-secondary": "#ffffff",
+                    "surface-variant": "#e4e2dd",
+                    "surface-container-high": "#e9e8e3",
+                    "primary-fixed": "#eaddff",
+                    "secondary-fixed-dim": "#d3bbff",
+                    "outline": "#7b7486",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#7238d5",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fbf9f4",
+                    "primary": "#380080",
+                    "tertiary-container": "#722a00",
+                    "primary-container": "#5300b7",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-surface": "#1b1c19",
+                    "inverse-primary": "#d3bbff",
+                    "on-secondary-fixed-variant": "#503a7c",
+                    "outline-variant": "#ccc3d7",
+                    "surface": "#fbf9f4",
+                    "on-primary-fixed": "#25005a",
+                    "on-surface-variant": "#4a4454"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(251, 249, 244, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+      .ambient-shadow {
+        box-shadow: 0 32px 64px -4px rgba(27, 28, 25, 0.06);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fbf9f4;
+        color: #1b1c19;
+      }
+      h1, h2, h3, .font-serif {
+        font-family: 'Newsreader', serif;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="font-serif text-2xl tracking-tight text-[#1b1c19] dark:text-[#fbf9f4]">
+                The Governance Framework
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1b1c19]/70 hover:text-[#380080] transition-colors duration-300 text-sm font-medium" href="#">Principles</a>
+<a class="text-[#380080] font-semibold border-b-2 border-[#380080] text-sm" href="#">Framework</a>
+<a class="text-[#1b1c19]/70 hover:text-[#380080] transition-colors duration-300 text-sm font-medium" href="#">Directives</a>
+<a class="text-[#1b1c19]/70 hover:text-[#380080] transition-colors duration-300 text-sm font-medium" href="#">Archive</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full text-sm font-medium hover:bg-primary-container transition-colors duration-300">
+                    Access Library
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-[1440px] mx-auto">
+<!-- Hero Section: Curated Journal Style -->
+<header class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-32 items-end">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 mb-6 text-primary">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label text-xs uppercase tracking-[0.02em] font-semibold">Institutional Briefing Vol. 04</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-serif text-on-surface tracking-[-0.02em] leading-[1.1] mb-8">
+                    Establish clarity, boundaries, and confidence in how your organization uses AI.
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface/70 font-body leading-[1.6] max-w-2xl">
+                    Move from uncertainty and risk to a clear, defensible framework for responsible AI use. Designed for institutional permanence.
+                </p>
+</div>
+<div class="lg:col-span-5 flex justify-end">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low group">
+<img alt="Library interior" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="Modern high-end library with floor to ceiling bookshelves, soft natural lighting through large windows, minimalist architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKV_xkulHOBqI4ujNDjVCD0QuC2XPD0kxoWU55d2OTepLrhGgJ5U0Jh6TbbG2lNHpQMuORLv8HWSgi5JNpz331n5YNcTDs_e8N5UOKcGvA3eV16TnMAQoYpXTksMY4xRfE7WjZnHDTRsYFzj71mrrKKi74xDpWF6SKL3FiHZuJ8XeE2lH6e1mKFpSu5w_v5D6zRssR2muRY6gu2a04M9stV08THdcKGelcMpRgNXaimNqkgW_EFFhJW23qc9pS6H7B_OZzXVpQcAYj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="font-serif italic text-lg text-white/90">The Curator’s Library, London</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Asymmetric Content Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-40">
+<!-- Sidebar: Key Callouts with Glassmorphism -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="bg-surface-container-low p-10 rounded-lg ambient-shadow relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-6xl" data-icon="policy">policy</span>
+</div>
+<h3 class="font-serif text-3xl mb-4">Strategic Imperative</h3>
+<p class="text-on-surface/70 leading-[1.6] mb-6">
+                        AI adoption is no longer a technological choice, but a governance mandate. Without a framework, efficiency becomes a liability.
+                    </p>
+<div class="flex items-center gap-4 text-primary font-semibold">
+<span>Read the Whitepaper</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<div class="p-10 rounded-lg bg-surface-container border border-outline-variant/20">
+<div class="mb-4 text-tertiary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="history_edu">history_edu</span>
+</div>
+<h3 class="font-serif text-2xl mb-2">Ethics Directive</h3>
+<p class="text-sm text-on-surface/60 leading-[1.6]">
+                        Codifying human-in-the-loop protocols for all generative outputs within fiscal auditing workflows.
+                    </p>
+</div>
+</aside>
+<!-- Main Content: Institutional List -->
+<div class="lg:col-span-7 lg:col-start-6">
+<div class="mb-12">
+<h2 class="text-4xl font-serif mb-4">What You’ll Leave With</h2>
+<div class="w-24 h-1 bg-tertiary-container rounded-full"></div>
+</div>
+<div class="space-y-0">
+<!-- Institutional List Item -->
+<div class="py-8 group hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 rounded-lg flex items-start gap-8">
+<span class="font-serif text-3xl text-primary/30 group-hover:text-primary transition-colors italic">01</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Defensible Policy Documentation</h4>
+<p class="text-on-surface/70 leading-relaxed max-w-xl">
+                                A suite of legal and operational documents that define exactly how your organization handles data privacy and model training.
+                            </p>
+</div>
+</div>
+<!-- Institutional List Item -->
+<div class="py-8 group hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 rounded-lg flex items-start gap-8">
+<span class="font-serif text-3xl text-primary/30 group-hover:text-primary transition-colors italic">02</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Risk Mitigation Roadmap</h4>
+<p class="text-on-surface/70 leading-relaxed max-w-xl">
+                                A step-by-step audit of current shadow AI usage and a transition plan for sanctioned, enterprise-grade alternatives.
+                            </p>
+</div>
+</div>
+<!-- Institutional List Item -->
+<div class="py-8 group hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 rounded-lg flex items-start gap-8">
+<span class="font-serif text-3xl text-primary/30 group-hover:text-primary transition-colors italic">03</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Internal Compliance Training</h4>
+<p class="text-on-surface/70 leading-relaxed max-w-xl">
+                                Modular curriculum for staff at all levels to ensure AI literacy and adherence to new institutional boundaries.
+                            </p>
+</div>
+</div>
+<!-- Institutional List Item -->
+<div class="py-8 group hover:bg-surface-container-low transition-colors duration-300 px-4 -mx-4 rounded-lg flex items-start gap-8">
+<span class="font-serif text-3xl text-primary/30 group-hover:text-primary transition-colors italic">04</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Custom Governance Portal</h4>
+<p class="text-on-surface/70 leading-relaxed max-w-xl">
+                                A centralized digital dashboard to monitor compliance, audit logs, and ethical performance of active AI systems.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Formation Progress Signature Component -->
+<section class="max-w-4xl mx-auto mb-40 text-center">
+<h3 class="font-label text-xs uppercase tracking-[0.1em] mb-8 font-bold">Current Framework Evolution</h3>
+<div class="w-full h-8 bg-surface-container-highest rounded-full overflow-hidden mb-4 p-1">
+<div class="h-full bg-tertiary-container rounded-full w-[72%]"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-surface/50 uppercase tracking-wider">
+<span>Phase: Drafting</span>
+<span class="text-tertiary font-bold">Phase: Validation (72%)</span>
+<span>Phase: Archive</span>
+</div>
+</section>
+<!-- Bento Grid: Institutional Case Studies -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
+<div class="md:col-span-2 bg-surface-container-low h-[400px] rounded-lg relative overflow-hidden group">
+<img alt="Corporate office" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern corporate office atrium with clean lines, marble floors, and minimalist furniture in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMhuxDdJ3Q5IkRTtsXqjsoiCY01ecSZhPwEe2GREzgTUnAKb_tcSawBdcqeMbGTVJPhgYQnSIP8Qa4meZ3THI6h_7MPpnAbcxrXYPKQzDnkRIk7u6VIewJrGP9l43jrkteP0NsDj8x10h2Y1G-ysgeWihNPMB8qyoV8lBp4RlJsgWQ5SOn2XFbJHai4ll-TKDXuDQflmGGKh5p25R4vDl5m8R3-7Rn16SbV4QWUgSijnjLbHP04kRTrEsMZ9P4pUUDFgbC4epFt3Hs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent p-10 flex flex-col justify-end">
+<span class="text-white/60 font-label text-xs uppercase tracking-widest mb-2">Case Study 01</span>
+<h4 class="text-white text-3xl font-serif">Global Financial Institute</h4>
+<p class="text-white/80 max-w-md mt-2">Implementation of ethical AI safeguards for multi-national asset management.</p>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-10 rounded-lg flex flex-col justify-between group cursor-pointer">
+<div class="material-symbols-outlined text-5xl" data-icon="book_5">book_5</div>
+<div>
+<h4 class="text-2xl font-serif mb-4">Request the Full Governance Playbook</h4>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+<div class="bg-surface-container h-[400px] rounded-lg p-10 flex flex-col items-center justify-center text-center">
+<div class="mb-6">
+<span class="material-symbols-outlined text-6xl text-tertiary-container" data-icon="verified_user">verified_user</span>
+</div>
+<h4 class="text-2xl font-serif mb-4">Certified Integration</h4>
+<p class="text-on-surface/60 text-sm">Meeting ISO/IEC 42001 standards for artificial intelligence management systems.</p>
+</div>
+<div class="md:col-span-2 bg-surface-container-high h-[400px] rounded-lg overflow-hidden relative">
+<div class="p-10 relative z-10">
+<h4 class="text-3xl font-serif max-w-sm">Built for the next decade, not the next quarter.</h4>
+<p class="text-on-surface/70 mt-4 max-w-md leading-relaxed">Our approach prioritizes long-term institutional stability over transient tech trends.</p>
+</div>
+<div class="absolute bottom-0 right-0 w-2/3 h-2/3 opacity-20">
+<span class="material-symbols-outlined text-[200px]" data-icon="architecture">architecture</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-20 px-12 grid grid-cols-1 md:grid-cols-2 items-end gap-12 rounded-t-[2rem]">
+<div>
+<div class="text-lg font-serif italic text-[#1b1c19] dark:text-[#fbf9f4] mb-8">
+                The Digital Curator Institutional Archive
+            </div>
+<div class="flex flex-wrap gap-x-12 gap-y-4">
+<a class="text-[0.75rem] uppercase tracking-[0.02em] text-[#1b1c19]/50 hover:text-[#1b1c19] underline decoration-from-font transition-all" href="#">Ethics</a>
+<a class="text-[0.75rem] uppercase tracking-[0.02em] text-[#1b1c19]/50 hover:text-[#1b1c19] underline decoration-from-font transition-all" href="#">Liability</a>
+<a class="text-[0.75rem] uppercase tracking-[0.02em] text-[#1b1c19]/50 hover:text-[#1b1c19] underline decoration-from-font transition-all" href="#">Governance</a>
+<a class="text-[0.75rem] uppercase tracking-[0.02em] text-[#1b1c19]/50 hover:text-[#1b1c19] underline decoration-from-font transition-all" href="#">Privacy</a>
+</div>
+</div>
+<div class="md:text-right">
+<p class="text-[0.75rem] uppercase tracking-[0.02em] text-[#1b1c19]/50 mb-4">
+                Institutional Contact: framework@digitalcurator.org
+            </p>
+<p class="text-[0.75rem] uppercase tracking-[0.02em] text-[#1b1c19]/70 font-semibold">
+                © 2024 The Digital Curator Institutional Archive. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

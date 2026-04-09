@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#4e1a00",
+                        "surface-container": "#f0eee9",
+                        "surface-bright": "#fbf9f4",
+                        "on-surface-variant": "#4a4454",
+                        "inverse-surface": "#30312e",
+                        "surface-tint": "#7238d5",
+                        "outline-variant": "#ccc3d7",
+                        "secondary-container": "#deddd8",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary-container": "#fa9261",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface": "#fbf9f4",
+                        "secondary-fixed": "#e4e2dd",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "primary": "#380080",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#eae8e3",
+                        "primary-fixed": "#eaddff",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#d3bbff",
+                        "background": "#fbf9f4",
+                        "outline": "#7b7486",
+                        "on-background": "#1b1c19",
+                        "on-primary-fixed": "#25005a",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#61615d",
+                        "surface-dim": "#dbdad5",
+                        "on-secondary-fixed-variant": "#464743",
+                        "on-secondary-fixed": "#1b1c19",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#722a00",
+                        "secondary": "#5e5f5b",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#bd9cff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#5300b7",
+                        "surface-container-low": "#f5f3ee",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "inverse-on-surface": "#f2f1ec",
+                        "inverse-primary": "#d3bbff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .network-bg {
+            background-image: radial-gradient(#5300b7 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f4] dark:bg-[#1b1c19] docked full-width top-0 sticky z-50 transition-colors">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-[#1b1c19] dark:text-[#fbf9f4] font-serif">Movemental</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">Overview</a>
+<a class="text-[#5300b7] dark:text-[#a370f7] font-semibold border-b-2 border-[#5300b7] pb-1 hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">Analysis</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">Technology</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">AI Capabilities</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">Conclusions</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="text-[#1b1c19]/70 font-medium hover:text-[#5300b7] transition-all">Inquiry</button>
+<button class="bg-primary-container text-white px-6 py-2 font-semibold hover:opacity-80 active:scale-95 transition-all">Institutional Access</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex flex-col justify-center px-8 md:px-24 py-20 overflow-hidden">
+<div class="absolute inset-0 network-bg -z-10"></div>
+<div class="max-w-4xl">
+<div class="flex items-center gap-3 mb-8">
+<div class="h-[1px] w-12 bg-primary"></div>
+<span class="font-label text-sm uppercase tracking-[0.2em] text-primary font-bold">Research Paper 2024.04</span>
+</div>
+<h1 class="serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight mb-12">
+                    The Architecture of <br/> <span class="italic text-primary">Predictive Kinetic</span> Curation.
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-12">
+                    A comprehensive analysis of movement-based data synthesis and its implications for institutional digital asset management in high-volatility environments.
+                </p>
+<div class="flex flex-wrap gap-8 items-center">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-widest text-on-surface/40 mb-1">Status</span>
+<!-- Formation Progress Pill -->
+<div class="flex items-center gap-2 bg-surface-container-high px-4 py-1.5">
+<div class="w-2 h-2 bg-primary animate-pulse"></div>
+<span class="text-sm font-semibold text-primary uppercase tracking-tighter">Analysis Finalizing</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-widest text-on-surface/40 mb-1">Confidence</span>
+<span class="text-2xl font-serif italic text-on-surface">98.4%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Analysis Section -->
+<section class="px-8 md:px-24 py-32 bg-surface-container-low">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Column 1: Intro -->
+<div class="lg:col-span-5 flex flex-col justify-start">
+<h2 class="serif text-4xl md:text-5xl leading-tight mb-8">Structural Integrity in Digital Ecosystems</h2>
+<p class="font-body text-on-surface-variant leading-[1.8] mb-8">
+                        The current landscape of institutional curation requires a departure from standard algorithmic filtering. Movemental introduces a rhythmic approach to data auditing—one that values the pauses as much as the signals.
+                    </p>
+<div class="bg-surface-container-lowest p-10 mt-4 border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="format_quote">format_quote</span>
+<p class="serif text-2xl italic leading-relaxed text-on-surface">
+                            "The modern archivist does not just collect; they synthesize patterns from the void between information points."
+                        </p>
+<p class="mt-6 font-label text-sm font-bold uppercase tracking-widest text-primary">— Dr. Aris Thorne, Head of Research</p>
+</div>
+</div>
+<!-- Column 2: Data Cards (Bento) -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface p-8 flex flex-col justify-between aspect-square group hover:bg-primary-container transition-all duration-500">
+<div>
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors" data-icon="neurology">neurology</span>
+<h3 class="serif text-2xl mt-4 group-hover:text-white transition-colors">Neural Synchronization</h3>
+</div>
+<div class="space-y-4">
+<div class="h-[2px] w-full bg-surface-container-high group-hover:bg-white/20">
+<div class="h-full bg-primary group-hover:bg-white w-[75%]"></div>
+</div>
+<p class="text-sm font-medium group-hover:text-on-primary-container/80 transition-colors">Efficiency increased by 22% in lateral processing tests across distributed nodes.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-highest p-8 flex flex-col gap-6">
+<img class="w-full aspect-[4/3] object-cover grayscale opacity-80 mix-blend-multiply" data-alt="minimalist architectural drawing showing intersecting lines and spheres representing a complex data network in monochromatic shades" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBzFOsr2OKqt4Qq_7QhAKENGzuYKSmIehEEnCG82AxpOU7ICc6lsIUDYehQTvlB2WyWGvM7SKfi3HawugQcn99rZUKVONxrG6dUhWAnemDCyqzg716Hvj8Baj4C5cEUvZr0TZJAW9GpHp8AywIkO-PfofHGaZNJe22opo8VrG4o8MB5pHXcRy1Vp-9KNb8mW0s7kxVlZM0QGXuA1eYdApGnrmHJCB6Rne9TO7-wpbMIeDbfg2l59wIDybmxQE9-aOFaDHCruAvyV2p"/>
+<div>
+<h3 class="serif text-2xl mb-2">Lateral Mapping</h3>
+<p class="text-sm text-on-surface-variant">Mapping non-linear relationships within institutional archives using Movemental's proprietary Technology.</p>
+</div>
+</div>
+<!-- Card 3 (Wide) -->
+<div class="md:col-span-2 bg-[#1b1c19] text-[#fbf9f4] p-12 flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<h3 class="serif text-3xl mb-6">AI Capabilities: The Silent Auditor</h3>
+<p class="text-lg opacity-70 leading-relaxed mb-8">
+                                Our secondary AI layer operates at the periphery, identifying structural weaknesses before they manifest as data drift.
+                            </p>
+<button class="border border-[#fbf9f4]/30 px-8 py-3 font-semibold hover:bg-white hover:text-[#1b1c19] transition-all">Download Methodology</button>
+</div>
+<div class="flex flex-col items-end gap-2">
+<span class="text-5xl font-serif">14.2<span class="text-xl">ms</span></span>
+<span class="text-[10px] uppercase tracking-widest opacity-50">Auditing Latency</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Proof Section -->
+<section class="px-8 md:px-24 py-32 bg-surface">
+<div class="max-w-6xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-20">
+<h2 class="serif text-5xl md:text-6xl mb-6 md:mb-0">Technological <span class="italic">Foundations</span></h2>
+<p class="font-label text-sm uppercase tracking-widest text-primary font-bold">Establishing the New Standard</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-outline-variant/20">
+<div class="bg-surface py-12 md:pr-12">
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary/60 mb-6 block">Foundation 01</span>
+<h4 class="serif text-2xl mb-4">The Kinetic Engine</h4>
+<p class="text-on-surface-variant leading-relaxed">Processing data not as static points, but as velocities. This allows for anticipatory curation based on informational momentum.</p>
+</div>
+<div class="bg-surface py-12 md:px-12 border-l border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary/60 mb-6 block">Foundation 02</span>
+<h4 class="serif text-2xl mb-4">Entropy Resistance</h4>
+<p class="text-on-surface-variant leading-relaxed">Maintaining the integrity of the archive against the natural decay of digital relevance through continuous re-contextualization.</p>
+</div>
+<div class="bg-surface py-12 md:pl-12 border-l border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary/60 mb-6 block">Foundation 03</span>
+<h4 class="serif text-2xl mb-4">Intentional Curation</h4>
+<p class="text-on-surface-variant leading-relaxed">Prioritizing the high-value 'Modern Archivist' perspective over high-volume algorithmic flooding.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section: High Trust Conversation Driver -->
+<section class="px-8 md:px-24 py-40">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="serif text-5xl md:text-7xl mb-12 leading-tight">Begin the <span class="italic">Institutional Dialogue</span>.</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-16 max-w-2xl mx-auto">
+                    Movemental is currently accepting inquiries for private institutional research access for the 2024-2025 fiscal period. Speak with our lead analysts.
+                </p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<a class="bg-primary-container text-white px-12 py-5 text-lg font-semibold hover:opacity-90 active:scale-95 transition-all w-full md:w-auto" href="#">
+                        Inquiry for Access
+                    </a>
+<a class="group flex items-center gap-3 px-12 py-5 text-lg font-semibold border-b-2 border-transparent hover:border-primary transition-all w-full md:w-auto justify-center" href="#">
+                        Review Methodology
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-[#000000] text-[#fbf9f4] font-body text-sm tracking-wide mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-4 mb-8 md:mb-0">
+<div class="text-lg font-serif text-[#fbf9f4]">Movemental</div>
+<p class="text-[#ccc9c6] max-w-xs">Leading the future of digital archiving and kinetic research curation.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-8 md:gap-12 mb-8 md:mb-0">
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Methodology</a>
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Data Sources</a>
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Contact Research Team</a>
+</nav>
+<div class="text-[#ccc9c6] text-right">
+                © 2024 Movemental Institutional Research. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

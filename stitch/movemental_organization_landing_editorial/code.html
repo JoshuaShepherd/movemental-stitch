@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Editorial Intelligence | Solving the Capacity Problem</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#61615d",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#d3bbff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "surface-variant": "#e4e2dd",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-secondary-fixed-variant": "#464743",
+                    "inverse-primary": "#d3bbff",
+                    "on-tertiary-fixed": "#351000",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed": "#eaddff",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-secondary-fixed": "#1b1c19",
+                    "on-primary-container": "#bd9cff",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "background": "#fbf9f4",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "tertiary-fixed": "#ffdbcc",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#722a00",
+                    "surface-container-high": "#eae8e3",
+                    "on-surface-variant": "#4a4454",
+                    "on-surface": "#1b1c19",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#deddd8",
+                    "error": "#ba1a1a",
+                    "surface-container": "#f0eee9",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "outline": "#7b7486",
+                    "surface": "#fbf9f4",
+                    "surface-container-highest": "#e4e2dd",
+                    "outline-variant": "#ccc3d7",
+                    "inverse-surface": "#30312e",
+                    "surface-tint": "#7238d5",
+                    "on-tertiary-container": "#fa9261",
+                    "primary": "#380080",
+                    "inverse-on-surface": "#f2f1ec",
+                    "secondary": "#5e5f5b",
+                    "surface-bright": "#fbf9f4",
+                    "on-primary-fixed": "#25005a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#dbdad5",
+                    "on-background": "#1b1c19",
+                    "surface-container-low": "#f5f3ee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif-quote {
+            font-family: 'Newsreader', serif;
+            letter-spacing: -0.02em;
+        }
+        .tonal-gradient {
+            background: linear-gradient(135deg, #380080 0%, #5300b7 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-on-primary-container selection:text-primary-container">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fbf9f4] dark:bg-[#1b1c19] no-border transition-colors duration-300">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-[#fbf9f4]">
+                Editorial Intelligence
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#5300b7] dark:text-[#a87ffb] border-b-2 border-[#5300b7] pb-1 font-medium text-sm tracking-tight transition-colors duration-300" href="#reality">The Reality</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] font-medium text-sm tracking-tight transition-colors duration-300" href="#ai-layer">The AI Layer</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] font-medium text-sm tracking-tight transition-colors duration-300" href="#builds">The Builds</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] font-medium text-sm tracking-tight transition-colors duration-300" href="#process">Process</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] hover:text-[#5300b7] font-medium text-sm tracking-tight transition-colors duration-300" href="#target">Target</a>
+</div>
+<button class="bg-[#5300b7] text-white px-6 py-2 text-sm font-semibold tracking-wide hover:bg-[#380080] transition-all duration-300">
+                Partner With Us
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative px-8 py-24 md:py-40 max-w-screen-2xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-8">
+<h1 class="text-6xl md:text-[5.5rem] leading-[0.95] text-on-surface mb-12">
+                    High-capacity strategy <br/>for <span class="italic">non-profits</span> facing a <span class="text-primary-container">resource crisis.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl font-light leading-relaxed">
+                    We bridge the gap between ambitious social impact goals and the reality of limited operational bandwidth through an intelligent editorial layer.
+                </p>
+</div>
+<div class="md:col-span-4 mt-8 md:mt-24 border-l border-outline-variant pl-8">
+<p class="text-sm font-bold text-primary tracking-widest mb-4">THE REALITY</p>
+<p class="text-lg leading-relaxed text-on-surface italic serif-quote">
+                    "The problem isn't your mission. The problem is the friction between your vision and your daily execution capacity."
+                </p>
+</div>
+</div>
+</header>
+<!-- The Capacity Problem Section -->
+<section class="bg-surface-container-low py-32 px-8" id="reality">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
+<div class="relative aspect-[4/5] bg-surface-container-highest overflow-hidden">
+<img alt="abstract office" class="w-full h-full object-cover grayscale" data-alt="dramatic minimalist workspace with harsh sunlight shadows on a clean desk and high-end stationery for a professional editorial feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs0rdFC0-vcseWgqH-SkZ6CMjG-33leeNYKDmkviNylzkqIusHUbXCdVTCOoVr3V_zY3YMSetO0gYKd1w78ZOgiv6WjVLatpf8US2zCe6zw52T150Bf-32TRQJiyY1_UDo2Fz-J3j--tTLaK6JLL80aZrtav_A__3Kvt50CcrhOVQApoX_r6qpyp0EZ7zDjoCWVg90wtdj72w2EE8ZNNZNXnauWqUUhTyBdxoqytl1XNHbav8PSmoN7Pt3swAEmOr7XpQ1bWYDoCRO"/>
+<div class="absolute inset-0 bg-primary-container mix-blend-multiply opacity-10"></div>
+</div>
+<div class="flex flex-col justify-center">
+<h2 class="text-4xl md:text-5xl mb-8 leading-tight">Your mission is scaling, but your team's time is fixed.</h2>
+<div class="space-y-8">
+<div class="group border-b border-outline-variant pb-6">
+<h3 class="text-2xl mb-2 text-on-surface">The Editorial Gap</h3>
+<p class="text-on-surface-variant leading-relaxed">High-impact organizations often lack the specialized "intelligence layer" that translates raw data into narrative influence.</p>
+</div>
+<div class="group border-b border-outline-variant pb-6">
+<h3 class="text-2xl mb-2 text-on-surface">Friction of Execution</h3>
+<p class="text-on-surface-variant leading-relaxed">Every new initiative adds exponential complexity. Without a streamlined system, progress slows to a crawl.</p>
+</div>
+<div class="group border-b border-outline-variant pb-6">
+<h3 class="text-2xl mb-2 text-on-surface">Decision Fatigue</h3>
+<p class="text-on-surface-variant leading-relaxed">Executive leaders spend 60% of their time on logistical alignment rather than strategic advancement.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Five Builds Section -->
+<section class="bg-surface py-32 px-8" id="builds">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-24 text-right max-w-4xl ml-auto">
+<span class="text-sm font-bold text-primary tracking-widest">ARCHITECTURE</span>
+<h2 class="text-5xl md:text-7xl mt-4 mb-8">The Five Builds.</h2>
+<p class="text-xl text-on-surface-variant italic">A systematic reconstruction of organizational capacity.</p>
+</div>
+<!-- Bento-style Asymmetric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Build 1 -->
+<div class="md:col-span-7 bg-surface-container-low p-12 flex flex-col justify-between aspect-video md:aspect-auto">
+<div>
+<span class="text-4xl font-serif text-primary-container">01</span>
+<h3 class="text-3xl mt-6 mb-4">Narrative Sovereignty</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Own your story across all platforms with a unified, high-fidelity editorial voice that requires zero daily micromanagement.</p>
+</div>
+<div class="mt-8 text-xs font-bold tracking-widest text-outline">CAPACITY IMPACT: +25%</div>
+</div>
+<!-- Build 2 -->
+<div class="md:col-span-5 bg-surface-container-high p-12 flex flex-col justify-between">
+<div>
+<span class="text-4xl font-serif text-primary-container">02</span>
+<h3 class="text-3xl mt-6 mb-4">Automated Intake</h3>
+<p class="text-on-surface-variant leading-relaxed">Streamline how your organization receives, processes, and catalogs mission-critical intelligence.</p>
+</div>
+<div class="mt-8 text-xs font-bold tracking-widest text-outline">CAPACITY IMPACT: +15%</div>
+</div>
+<!-- Build 3 -->
+<div class="md:col-span-4 bg-surface-container-highest p-12 flex flex-col justify-between">
+<div>
+<span class="text-4xl font-serif text-primary-container">03</span>
+<h3 class="text-3xl mt-6 mb-4">The AI Engine</h3>
+<p class="text-on-surface-variant leading-relaxed">Customized LLM protocols trained specifically on your brand’s historical impact and stylistic nuances.</p>
+</div>
+<div class="mt-8 text-xs font-bold tracking-widest text-outline">CAPACITY IMPACT: +40%</div>
+</div>
+<!-- Build 4 & 5 Combined/Staggered -->
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-primary-container p-12 text-on-primary">
+<span class="text-4xl font-serif text-on-primary-container">04</span>
+<h3 class="text-3xl mt-6 mb-4">Decision Dashboards</h3>
+<p class="opacity-80 leading-relaxed">Move from intuition to intelligence with real-time visual mapping of organizational momentum.</p>
+</div>
+<div class="bg-surface-container-low p-12">
+<span class="text-4xl font-serif text-primary-container">05</span>
+<h3 class="text-3xl mt-6 mb-4">Legacy Archiving</h3>
+<p class="text-on-surface-variant leading-relaxed">Turn every project into a reusable asset, ensuring institutional knowledge is never lost.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing/Investment Section -->
+<section class="bg-on-surface py-32 px-8 text-surface" id="process">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-24">
+<div class="md:w-1/3">
+<h2 class="text-5xl mb-8">The Investment in Focus.</h2>
+<p class="text-surface-variant opacity-70 leading-relaxed">We operate on a transparent, flat-fee structure designed for high-impact budgeting. No hidden variables, just direct capacity expansion.</p>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Tier 1 -->
+<div class="p-10 border border-on-surface-variant/30 flex flex-col justify-between">
+<div>
+<h3 class="text-2xl mb-4 font-serif italic text-primary-fixed-dim">Foundational Build</h3>
+<p class="text-3xl mb-8">$5,000 <span class="text-sm font-sans tracking-widest opacity-60">/ PROJECT</span></p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed-dim text-sm">check_circle</span> Editorial Infrastructure</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed-dim text-sm">check_circle</span> Narrative Style Guide</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed-dim text-sm">check_circle</span> Core AI Integration</li>
+</ul>
+</div>
+<button class="w-full py-4 border border-surface hover:bg-surface hover:text-on-surface transition-colors font-bold text-xs tracking-widest">ENQUIRE</button>
+</div>
+<!-- Tier 2 -->
+<div class="p-10 bg-primary-container text-surface flex flex-col justify-between shadow-2xl">
+<div>
+<h3 class="text-2xl mb-4 font-serif italic text-on-primary-container">Enterprise Intelligence</h3>
+<p class="text-3xl mb-8">$10,000 <span class="text-sm font-sans tracking-widest opacity-60">/ PROJECT</span></p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-on-primary-container text-sm">check_circle</span> Full Five-Build Deployment</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-on-primary-container text-sm">check_circle</span> Custom Data Visualizations</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-on-primary-container text-sm">check_circle</span> Executive Continuity Suite</li>
+</ul>
+</div>
+<button class="w-full py-4 bg-surface text-primary-container hover:bg-on-primary-container hover:text-surface transition-colors font-bold text-xs tracking-widest">START BUILD</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t-0 bg-[#1b1c19] dark:bg-[#000000] text-[#fbf9f4]">
+<div class="flex flex-col md:flex-row justify-between items-start px-8 py-16 max-w-screen-2xl mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-serif text-[#fbf9f4] mb-4">Editorial Intelligence</div>
+<p class="max-w-xs text-sm text-[#ccc9c6] opacity-80 leading-relaxed font-body">
+                    Transforming organizational bandwidth through precision editorial engineering and intentional technology.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="flex flex-col space-y-4">
+<span class="text-xs font-bold tracking-widest uppercase opacity-40">Section</span>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity font-body text-sm" href="#reality">The Reality</a>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity font-body text-sm" href="#builds">The Five Builds</a>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity font-body text-sm" href="#process">Process</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-xs font-bold tracking-widest uppercase opacity-40">Company</span>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity font-body text-sm" href="#">Inquiry</a>
+<a class="text-[#ccc9c6] opacity-80 hover:opacity-100 transition-opacity font-body text-sm" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col space-y-4 md:col-span-1 col-span-2">
+<span class="text-xs font-bold tracking-widest uppercase opacity-40">Impact</span>
+<p class="text-sm italic font-serif">"Empowering the mission-driven through systematic clarity."</p>
+</div>
+</div>
+</div>
+<div class="px-8 pb-12 max-w-screen-2xl mx-auto text-[10px] uppercase tracking-widest text-[#ccc9c6] opacity-40">
+            © 2024 Editorial Intelligence. All Rights Reserved. Built for high-capacity social impact.
+        </div>
+</footer>
+</body></html>

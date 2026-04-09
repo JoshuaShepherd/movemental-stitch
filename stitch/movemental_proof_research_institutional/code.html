@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#4e1a00",
+                    "surface-container": "#f0eee9",
+                    "surface-bright": "#fbf9f4",
+                    "on-surface-variant": "#4a4454",
+                    "inverse-surface": "#30312e",
+                    "surface-tint": "#7238d5",
+                    "outline-variant": "#ccc3d7",
+                    "secondary-container": "#deddd8",
+                    "on-tertiary-fixed": "#351000",
+                    "on-tertiary-container": "#fa9261",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "tertiary-fixed": "#ffdbcc",
+                    "surface": "#fbf9f4",
+                    "secondary-fixed": "#e4e2dd",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "primary": "#380080",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#eae8e3",
+                    "primary-fixed": "#eaddff",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#d3bbff",
+                    "background": "#fbf9f4",
+                    "outline": "#7b7486",
+                    "on-background": "#1b1c19",
+                    "on-primary-fixed": "#25005a",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#61615d",
+                    "surface-dim": "#dbdad5",
+                    "on-secondary-fixed-variant": "#464743",
+                    "on-secondary-fixed": "#1b1c19",
+                    "surface-variant": "#e4e2dd",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#722a00",
+                    "secondary": "#5e5f5b",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#bd9cff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "surface-container-low": "#f5f3ee",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "inverse-on-surface": "#f2f1ec",
+                    "inverse-primary": "#d3bbff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f4] dark:bg-[#1b1c19] sticky top-0 z-50 transition-colors">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-[#1b1c19] dark:text-[#fbf9f4] font-serif">Movemental</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">Overview</a>
+<a class="text-[#5300b7] dark:text-[#a370f7] font-semibold border-b-2 border-[#5300b7] pb-1" href="#">Analysis</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">Technology</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">AI Capabilities</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-all duration-200" href="#">Conclusions</a>
+</div>
+<div class="flex gap-4 items-center">
+<button class="hidden lg:block text-sm font-semibold text-[#1b1c19]/70 hover:text-[#5300b7] transition-colors">Inquiry</button>
+<button class="bg-primary-container text-white px-6 py-2.5 font-bold text-sm tracking-tight active:opacity-80 active:scale-95 transition-all">Institutional Access</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-24 md:py-32">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase mb-6 block">Institutional Whitepaper 2024</span>
+<h1 class="text-6xl md:text-8xl -tracking-[0.02em] font-light leading-[1.1] text-on-surface mb-8">
+                        The Mechanics of <br/><span class="italic font-normal">Superior Movement.</span>
+</h1>
+<p class="text-xl leading-relaxed text-on-surface-variant max-w-2xl font-body">
+                        Movemental Institutional Research provides an empirical framework for biometric analysis, leveraging proprietary neural synthesis to redefine musculoskeletal efficiency.
+                    </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-8">
+<div class="bg-surface-container p-8 border-l-4 border-primary">
+<div class="text-4xl font-headline font-bold text-on-surface mb-1">99.8%</div>
+<div class="text-sm font-label text-on-surface-variant uppercase tracking-wider">Analysis Accuracy</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Claim & Technical Superiority (Bento Grid) -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<h2 class="text-4xl md:text-5xl font-headline mb-16 max-w-3xl leading-tight">Quantifying the human variable through autonomous synthesis.</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-7 bg-surface-container-lowest p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="biometric_setup">android_fingerprint</span>
+<h3 class="text-3xl font-headline mb-4">Proprietary Kinematic Engines</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Our engine processes 10,000+ data points per second, creating a live digital twin of musculoskeletal performance with zero latency.</p>
+</div>
+<div class="mt-12 overflow-hidden">
+<img class="w-full h-48 object-cover grayscale opacity-80" data-alt="Close-up of a sophisticated high-tech biometric interface showing skeletal mapping and data streams in deep amethyst and white colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADE24ptF8WvwNbeyEsUH5vJQDquGzMGexo7qP77oiUI-iFjET08Jx8v5PXE9pXLYaMEeU_mYn05x_YKCg4B7jf29Bbt956uw3ciCCr4xgolSwFU56LqZlUVsvsoVbhs34gxOSvGqf8_556EGZeM8brjLxpQKjFyeKmKwKDCZTxMY01ZSOofxgVWZWE-t49pSZKRrEZnu5Lq-qnu9CvSW54JT03MdQ9u3utVvNPBzl-UHwAwqxA1V1PFfkTzCynHwVFrLc2LHkPMvXw"/>
+</div>
+</div>
+<div class="md:col-span-5 bg-primary-container p-12 text-on-primary flex flex-col justify-center">
+<h3 class="text-3xl font-headline mb-6 text-on-primary-container">Architectural Reliability</h3>
+<p class="opacity-90 leading-relaxed text-lg mb-8">Built on a permanent ledger of institutional performance data, ensuring every insight is backed by verified clinical benchmarks.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 py-4 border-b border-white/10">
+<span class="material-symbols-outlined" data-icon="shield_checked" data-weight="fill">shield</span>
+<span class="font-medium">Validated Clinical Integrity</span>
+</div>
+<div class="flex items-center gap-4 py-4 border-b border-white/10">
+<span class="material-symbols-outlined" data-icon="database" data-weight="fill">database</span>
+<span class="font-medium">2.4PB Movement Library</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-high p-12">
+<h4 class="text-2xl font-headline mb-4">Precision Latency</h4>
+<p class="text-on-surface-variant">Real-time feedback loops reduced to sub-12ms for elite athletic environments.</p>
+</div>
+<div class="md:col-span-8 bg-surface-container p-12 flex items-center justify-between">
+<div class="max-w-md">
+<h4 class="text-2xl font-headline mb-4">The Global Benchmark</h4>
+<p class="text-on-surface-variant">Adopted by 14 Olympic committees and 120+ professional diagnostic centers worldwide.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-6xl hidden sm:block" data-icon="language">language</span>
+</div>
+</div>
+</div>
+</section>
+<!-- AI is part of the system - Deep Charcoal / Amethyst -->
+<section class="bg-[#1b1c19] py-32 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<span class="text-[#a370f7] font-bold tracking-[0.2em] text-xs uppercase mb-8 block">Integrated Intelligence</span>
+<h2 class="text-5xl md:text-6xl text-white font-headline leading-tight mb-8">
+                            AI is not a feature. <br/>
+<span class="text-[#a370f7]">It is the substrate.</span>
+</h2>
+<div class="space-y-8">
+<p class="text-[#ccc9c6] text-xl leading-relaxed">
+                                Unlike legacy platforms that append machine learning to existing data, Movemental was engineered from the ground up to operate as a self-optimizing neural network.
+                            </p>
+<p class="text-[#ccc9c6] text-xl leading-relaxed opacity-70">
+                                Every scan, every repetition, and every minute of movement data refines the global model, delivering hyper-personalized institutional guidance.
+                            </p>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-[#a370f7]/10 flex items-center justify-center p-12">
+<div class="grid grid-cols-4 grid-rows-4 gap-4 w-full h-full">
+<!-- Abstract Data Representation -->
+<div class="bg-[#a370f7]/20"></div>
+<div class="bg-[#a370f7]/40 col-span-2"></div>
+<div class="bg-[#a370f7]/10"></div>
+<div class="bg-[#a370f7]/60"></div>
+<div class="bg-[#a370f7]/10"></div>
+<div class="bg-[#a370f7]/80 col-span-2"></div>
+<div class="bg-[#a370f7]/30"></div>
+<div class="bg-[#a370f7]/50 col-span-2"></div>
+<div class="bg-[#a370f7]/10"></div>
+<div class="bg-[#a370f7]/20"></div>
+<div class="bg-[#a370f7]/90"></div>
+<div class="bg-[#a370f7]/10"></div>
+</div>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-[#a370f7] p-8 text-black font-bold">
+                            CORE NEURAL SYNC
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comparative Landscape (Institutional Table) -->
+<section class="bg-surface py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl md:text-5xl font-headline mb-4">Comparative Analysis</h2>
+<p class="text-on-surface-variant max-w-2xl">Standardized performance benchmarks across the modern movement technology landscape.</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface uppercase text-xs tracking-widest font-bold">
+<th class="py-6 px-8">Capability</th>
+<th class="py-6 px-8 text-primary">Movemental Pro</th>
+<th class="py-6 px-8">Legacy SaaS</th>
+<th class="py-6 px-8">Manual Diagnostic</th>
+</tr>
+</thead>
+<tbody class="text-lg">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-8 px-8 font-headline border-b border-surface-container">Processing Depth</td>
+<td class="py-8 px-8 text-primary font-bold border-b border-surface-container">94-Layer Neural Net</td>
+<td class="py-8 px-8 border-b border-surface-container">Pattern Matching</td>
+<td class="py-8 px-8 border-b border-surface-container">Subjective Observation</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-8 px-8 font-headline border-b border-surface-container">Latency Threshold</td>
+<td class="py-8 px-8 text-primary font-bold border-b border-surface-container">&lt;12ms (Real-time)</td>
+<td class="py-8 px-8 border-b border-surface-container">~400ms (Delayed)</td>
+<td class="py-8 px-8 border-b border-surface-container">N/A (Post-event)</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-8 px-8 font-headline border-b border-surface-container">Scalability</td>
+<td class="py-8 px-8 text-primary font-bold border-b border-surface-container">Unlimited Node Cluster</td>
+<td class="py-8 px-8 border-b border-surface-container">Fixed License</td>
+<td class="py-8 px-8 border-b border-surface-container">Linear (Human Hours)</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-8 px-8 font-headline border-b border-surface-container">Data Sovereignty</td>
+<td class="py-8 px-8 text-primary font-bold border-b border-surface-container">Vaulted Encryption</td>
+<td class="py-8 px-8 border-b border-surface-container">Cloud Shared</td>
+<td class="py-8 px-8 border-b border-surface-container">Paper/Local Digital</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<h2 class="text-5xl md:text-7xl font-headline mb-12 italic">Join the institutional front-line.</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="bg-primary-container text-white px-12 py-5 text-lg font-bold tracking-tight w-full md:w-auto hover:bg-primary transition-all">Request Full Dossier</button>
+<button class="bg-secondary-container text-on-secondary-fixed px-12 py-5 text-lg font-bold tracking-tight w-full md:w-auto hover:bg-secondary-fixed-dim transition-all">Consult Research Team</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-[#000000] text-[#fbf9f4] transition-colors">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 mt-24 max-w-screen-2xl mx-auto">
+<div class="text-lg font-serif text-[#fbf9f4] mb-8 md:mb-0">Movemental Research</div>
+<div class="flex flex-wrap justify-center gap-8 text-sm tracking-wide font-body">
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Methodology</a>
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Data Sources</a>
+<a class="text-[#ccc9c6] hover:text-white transition-colors" href="#">Contact Research Team</a>
+</div>
+<div class="mt-8 md:mt-0 text-[#ccc9c6] text-sm font-body">
+                © 2024 Movemental Institutional Research. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

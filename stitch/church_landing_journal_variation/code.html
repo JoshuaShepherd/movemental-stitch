@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1b1c19",
+                        "primary-fixed-dim": "#d3bbff",
+                        "tertiary": "#4e1a00",
+                        "tertiary-fixed": "#ffdbcc",
+                        "inverse-primary": "#d3bbff",
+                        "on-primary-fixed": "#25005a",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1c19",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "surface-variant": "#e4e2dd",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "surface-tint": "#7238d5",
+                        "outline-variant": "#ccc3d7",
+                        "on-tertiary-fixed": "#351000",
+                        "inverse-surface": "#30312e",
+                        "background": "#fbf9f4",
+                        "surface-container": "#f0eee9",
+                        "on-primary-container": "#bd9cff",
+                        "secondary-container": "#deddd8",
+                        "surface-container-high": "#eae8e3",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "surface-bright": "#fbf9f4",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#dbdad5",
+                        "on-surface": "#1b1c19",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#464743",
+                        "primary": "#380080",
+                        "primary-container": "#5300b7",
+                        "surface-container-low": "#f5f3ee",
+                        "primary-fixed": "#eaddff",
+                        "on-secondary-container": "#61615d",
+                        "outline": "#7b7486",
+                        "surface": "#fbf9f4",
+                        "tertiary-container": "#722a00",
+                        "secondary": "#5e5f5b",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e4e2dd",
+                        "on-surface-variant": "#4a4454",
+                        "on-tertiary-container": "#fa9261",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-container-highest": "#e4e2dd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .shadow-tint { box-shadow: 0 12px 40px rgba(27, 28, 25, 0.04); }
+        .glass-nav { background: rgba(251, 249, 244, 0.8); backdrop-filter: blur(24px); }
+        .primary-gradient { background: linear-gradient(135deg, #380080 0%, #5300b7 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-[#fbf9f4] tracking-tight">Editorial Intelligence</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-[#1b1c19]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm font-medium tracking-wide uppercase" href="#">Platform</a>
+<a class="text-[#1b1c19]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm font-medium tracking-wide uppercase" href="#">Methodology</a>
+<a class="text-[#5300b7] font-semibold border-b-2 border-[#5300b7] text-sm tracking-wide uppercase" href="#">Institutions</a>
+<a class="text-[#1b1c19]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm font-medium tracking-wide uppercase" href="#">Pricing</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="text-[#1b1c19]/70 hover:text-[#5300b7] transition-colors duration-300 text-sm font-semibold">Sign In</button>
+<button class="primary-gradient text-white px-8 py-3 text-sm font-semibold active:scale-95 transition-transform duration-100">Get Started</button>
+</div>
+</div>
+</header>
+<main class="pt-32">
+<!-- Hero Section: Scholarly Intro -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-12 gap-8 items-end">
+<div class="col-span-12 lg:col-span-8">
+<span class="block text-primary font-bold tracking-[0.2em] text-xs uppercase mb-6">Archive &amp; Insight</span>
+<h1 class="font-serif text-7xl md:text-8xl leading-[0.95] tracking-tighter text-on-surface mb-12">
+                        Preserving the <span class="italic">Intellectual Heritage</span> of Global Institutions.
+                    </h1>
+</div>
+<div class="col-span-12 lg:col-span-4 pb-4">
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                        A digital environment engineered for deep engagement, curated research, and the authoritative archiving of theological and academic discourse.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Featured Insight: Asymmetric Bento -->
+<section class="bg-surface-container-low py-32 mb-32">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Main Card -->
+<div class="md:col-span-7 bg-surface-container-lowest p-12 shadow-tint relative group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden mb-12">
+<img alt="Institutional Archives" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of ancient vellum manuscript with elegant calligraphy under soft focused library lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvK6Ze09komJtC68vZ9n42mkEyGpobH5AWYXsZyonG8QP6I_-KtUkLb3KqbuuHXLAp8rs8XxSdSnwZAbLZqgb6DDXe2c5GrKHaRz80F7Zr_lgS9z5AguKqEW_cgJ1FgX7NH6OOLgno3fSELlpAF3SyJdUoSBaNP4LH7Rb9COry0EsIxPXAKUxRUXVC9YGGon4q2-RIl3LCZH_mW9clFoeU0ofkQ4WIClD4nZDo-1YAZOqVas7d8ELqRgfTE8iYrtCkJItSGhRi_nsW"/>
+</div>
+<h2 class="font-serif text-4xl mb-6">The Methodology of Archival Integrity</h2>
+<p class="text-on-surface-variant leading-relaxed max-w-xl mb-8">
+                            Discover our proprietary framework for digitizing high-density texts while maintaining the "breath" of the original physical document.
+                        </p>
+<div class="flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase group-hover:gap-4 transition-all">
+                            Read the Thesis 
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Secondary Cards -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="bg-primary-container p-12 text-on-primary shadow-tint h-full flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl mb-8" data-weight="fill">history_edu</span>
+<div>
+<h3 class="font-serif text-3xl mb-4">Curated Periodicals</h3>
+<p class="text-on-primary-container leading-relaxed mb-6">
+                                    Access over 400 years of documented scholarship within a single, rhythmic interface.
+                                </p>
+<button class="bg-white text-primary px-6 py-3 font-bold text-xs tracking-widest uppercase">Explore Volume I</button>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 shadow-tint">
+<h3 class="font-serif text-2xl mb-4 italic">Recent Ingests</h3>
+<ul class="space-y-6">
+<li class="group cursor-pointer">
+<span class="text-[10px] text-primary/50 font-bold block mb-1">MAY 2024</span>
+<span class="text-lg font-medium group-hover:text-primary transition-colors">The Geneva Papers: Digital Restoration</span>
+</li>
+<li class="group cursor-pointer">
+<span class="text-[10px] text-primary/50 font-bold block mb-1">APR 2024</span>
+<span class="text-lg font-medium group-hover:text-primary transition-colors">Liturgical Echoes in Modern Space</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Section: Wide Margin Quote -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-48">
+<div class="grid grid-cols-12">
+<div class="col-start-2 col-span-10 lg:col-start-4 lg:col-span-6 text-center">
+<span class="material-symbols-outlined text-outline-variant text-6xl mb-12">format_quote</span>
+<blockquote class="font-serif text-4xl md:text-5xl leading-tight text-on-surface italic mb-12">
+                        "To curate is to care. Our digital spaces must reflect the same reverence we hold for the physical parchment."
+                    </blockquote>
+<cite class="not-italic font-label font-bold text-xs tracking-[0.3em] uppercase text-primary">— Dr. Julian Thorne, Lead Archivist</cite>
+</div>
+</div>
+</section>
+<!-- Service Modules: Tonal Architecture -->
+<section class="mb-32">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="flex flex-col">
+<div class="h-px w-12 bg-primary mb-8"></div>
+<h4 class="font-serif text-2xl mb-6">Semantic Search</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Search beyond keywords. Our AI-driven engine understands theological nuance and historical context, surfacing connections across centuries of data.
+                        </p>
+</div>
+<div class="flex flex-col">
+<div class="h-px w-12 bg-primary mb-8"></div>
+<h4 class="font-serif text-2xl mb-6">Collaborative Annotation</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            A scholar's workbench. Private or shared marginalia that lives alongside the text, allowing for inter-institutional dialogue.
+                        </p>
+</div>
+<div class="flex flex-col">
+<div class="h-px w-12 bg-primary mb-8"></div>
+<h4 class="font-serif text-2xl mb-6">Permanent Preservation</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Hardened digital storage protocols that ensure your institution's intellectual output remains accessible for generations to come.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section: Immersive Surface -->
+<section class="bg-on-surface text-surface py-32">
+<div class="max-w-screen-2xl mx-auto px-8 text-center">
+<h2 class="font-serif text-5xl md:text-6xl mb-12">Begin Your Institutional Migration</h2>
+<p class="text-surface-variant/70 text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
+                    Join the ranks of leading seminaries and research institutions who have entrusted their heritage to Editorial Intelligence.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-8">
+<button class="bg-surface text-on-surface px-12 py-5 font-bold tracking-widest uppercase hover:bg-primary-container hover:text-white transition-all">Schedule a Consultation</button>
+<button class="border border-surface/20 text-surface px-12 py-5 font-bold tracking-widest uppercase hover:bg-surface/10 transition-all">Download Prospectus</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] text-[#fbf9f4] py-24 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+<div class="space-y-8">
+<div class="text-xl font-serif text-[#fbf9f4]">Editorial Intelligence</div>
+<p class="text-[#ccc9c6] text-sm leading-relaxed pr-12">
+                    Redefining digital stewardship for the modern archivist through precision engineering and editorial grace.
+                </p>
+</div>
+<div class="space-y-6">
+<div class="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-fixed-dim">Platform</div>
+<nav class="flex flex-col gap-4">
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Archival Storage</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Semantic Engine</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Institution API</a>
+</nav>
+</div>
+<div class="space-y-6">
+<div class="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-fixed-dim">Resources</div>
+<nav class="flex flex-col gap-4">
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Documentation</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Case Studies</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Contact Support</a>
+</nav>
+</div>
+<div class="space-y-6">
+<div class="text-[10px] font-bold tracking-[0.2em] uppercase text-primary-fixed-dim">Legal</div>
+<nav class="flex flex-col gap-4">
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity text-sm" href="#">Terms of Service</a>
+</nav>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-24 pt-12 border-t border-white/5 text-center md:text-left">
+<p class="text-[#ccc9c6] text-xs tracking-wide">
+                © 2024 Editorial Intelligence. All rights reserved. Built for the Modern Archivist.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f5f3ee",
+                        "surface-dim": "#dbdad5",
+                        "primary-container": "#5300b7",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#deddd8",
+                        "tertiary-fixed": "#ffdbcc",
+                        "tertiary-container": "#722a00",
+                        "secondary": "#5e5f5b",
+                        "on-secondary-fixed-variant": "#464743",
+                        "on-secondary-fixed": "#1b1c19",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e4e2dd",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#351000",
+                        "on-surface-variant": "#4a4454",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface": "#fbf9f4",
+                        "on-tertiary-container": "#fa9261",
+                        "inverse-primary": "#d3bbff",
+                        "on-primary-fixed": "#25005a",
+                        "primary": "#380080",
+                        "primary-fixed": "#eaddff",
+                        "on-secondary-container": "#61615d",
+                        "secondary-fixed": "#e4e2dd",
+                        "background": "#fbf9f4",
+                        "outline": "#7b7486",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "surface-bright": "#fbf9f4",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#4e1a00",
+                        "primary-fixed-dim": "#d3bbff",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "outline-variant": "#ccc3d7",
+                        "surface-tint": "#7238d5",
+                        "surface-container": "#f0eee9",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "inverse-surface": "#30312e",
+                        "on-primary-container": "#bd9cff",
+                        "on-background": "#1b1c19",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#eae8e3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .display-lg { font-size: 3.5rem; line-height: 1.1; letter-spacing: -0.02em; }
+        .headline-md { font-size: 1.75rem; line-height: 1.2; }
+        body { font-family: 'Inter', sans-serif; background-color: #fbf9f4; color: #1b1c19; }
+        h1, h2, h3, .newsreader { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-[#fbf9f4] dark:bg-[#1b1c19] w-full sticky top-0 z-50">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-[1440px] mx-auto">
+<div class="font-['Newsreader'] text-2xl font-bold italic text-[#1b1c19] dark:text-[#fbf9f4]">
+                Movemental
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-medium text-sm" href="#">Platform</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-medium text-sm" href="#">Movement Leaders</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-medium text-sm" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-medium text-sm" href="#">Research</a>
+</div>
+<button class="bg-[#5300b7] text-white px-6 py-2.5 font-medium text-sm scale-100 active:scale-[0.98] transition-transform">
+                Start a Conversation
+            </button>
+</div>
+<div class="bg-[#f0eee9] dark:bg-[#252623] h-[1px] w-full invisible"></div>
+</nav>
+<main>
+<!-- Hero Section: Permanent Surface -->
+<section class="relative pt-24 pb-32 px-12 overflow-hidden">
+<div class="max-w-[1440px] mx-auto grid grid-cols-12 gap-6 items-end">
+<div class="col-span-12 lg:col-span-8">
+<span class="text-primary font-bold tracking-widest uppercase text-xs mb-6 block">Structural Logic</span>
+<h1 class="display-lg text-on-surface mb-8">
+                        The architecture of <span class="italic">informed action.</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        Movemental is not a static tool. It is a dynamic infrastructure that translates vast cultural corpuses into precise institutional intelligence.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Deep Tone Section: The Engine -->
+<section class="bg-on-surface text-surface py-32 px-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div>
+<h2 class="headline-md mb-6 border-l-4 border-primary-container pl-6">01. Corpus Ingestion</h2>
+<p class="text-surface-variant leading-relaxed opacity-80">
+                                Our system begins at the source—integrating qualitative discourse, archival records, and live movement data into a unified, secure database. 
+                            </p>
+</div>
+<div>
+<h2 class="headline-md mb-6 border-l-4 border-primary-container pl-6">02. Semantic Mapping</h2>
+<p class="text-surface-variant leading-relaxed opacity-80">
+                                We go beyond keyword matching. Our proprietary AI layer identifies underlying power dynamics, sentiment shifts, and structural narratives within the movement.
+                            </p>
+</div>
+<div>
+<h2 class="headline-md mb-6 border-l-4 border-primary-container pl-6">03. Intelligence Output</h2>
+<p class="text-surface-variant leading-relaxed opacity-80">
+                                Transforming abstract analysis into actionable policy recommendations, organizational roadmaps, and longitudinal impact tracking.
+                            </p>
+</div>
+</div>
+<div class="relative aspect-square bg-inverse-surface/30 flex items-center justify-center">
+<!-- Abstract Visual Architecture -->
+<div class="w-full h-full p-12 grid grid-cols-6 grid-rows-6 gap-2 opacity-50">
+<div class="bg-primary-container col-span-2 row-span-4"></div>
+<div class="bg-surface col-span-3 row-span-2"></div>
+<div class="bg-outline-variant col-span-1 row-span-1"></div>
+<div class="bg-secondary-container col-span-4 row-span-2"></div>
+<div class="bg-primary col-span-1 row-span-4"></div>
+<div class="bg-on-surface-variant col-span-2 row-span-2"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-surface-container-lowest p-8 w-64 h-64 shadow-xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl">database</span>
+<div class="space-y-2">
+<div class="h-2 bg-primary-container w-3/4"></div>
+<div class="h-2 bg-surface-container-highest w-full"></div>
+<div class="h-2 bg-surface-container-highest w-1/2"></div>
+</div>
+<span class="text-on-surface font-bold text-xs uppercase tracking-tighter">System Core v4.2</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tonal Layering: Product Preview -->
+<section class="bg-surface-container py-32 px-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<h2 class="display-lg mb-6">The Interface of Insight</h2>
+<p class="text-on-surface-variant">We prioritize clarity over complexity. Our interface is designed to disappear, leaving only the data that matters.</p>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<!-- Dashboard Preview: Asymmetric Bento -->
+<div class="col-span-12 lg:col-span-8 bg-surface p-12 shadow-sm min-h-[500px] flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<h3 class="headline-md">Narrative Pulse</h3>
+<p class="text-sm text-on-surface-variant italic">Real-time analysis of movement alignment</p>
+</div>
+<div class="bg-primary-container/10 px-4 py-1 text-primary text-xs font-bold uppercase">Active</div>
+</div>
+<div class="flex-1 my-12 flex items-center justify-center">
+<div class="w-full h-64 relative">
+<!-- Mock Graph Area -->
+<div class="absolute inset-0 bg-surface-container-low/50"></div>
+<svg class="w-full h-full" viewbox="0 0 800 256">
+<path d="M0 200 Q 100 150 200 180 T 400 100 T 600 140 T 800 50" fill="none" stroke="#5300b7" stroke-width="4"></path>
+<path d="M0 220 Q 150 180 300 210 T 500 130 T 800 100" fill="none" stroke="#ccc3d7" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-8 pt-8 border-t border-surface-container">
+<div>
+<span class="block text-2xl font-bold text-primary">84%</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant">Agreement</span>
+</div>
+<div>
+<span class="block text-2xl font-bold text-primary">2.4k</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant">Nodes</span>
+</div>
+<div>
+<span class="block text-2xl font-bold text-primary">High</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant">Velocity</span>
+</div>
+</div>
+</div>
+<!-- Sidebar Detail Card -->
+<div class="col-span-12 lg:col-span-4 space-y-8">
+<div class="bg-on-surface p-8 text-surface h-1/2 flex flex-col justify-between">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+<div class="space-y-4">
+<p class="font-headline text-lg italic">"The analysis identifies a critical divergence in strategy within the Pacific Rim movement leaders."</p>
+<p class="text-xs text-surface-variant uppercase tracking-widest">AI Observation Log #092</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-8 h-1/2 flex flex-col justify-center">
+<h4 class="font-bold text-sm uppercase mb-4 tracking-widest">Platform Integration</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Institutional Data Lakes
+                                </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Federated Learning Layers
+                                </li>
+<li class="flex items-center gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span> Secure API Enclaves
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Trust Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<img class="w-full grayscale brightness-90 shadow-2xl" data-alt="monochrome interior of a modern library or research facility with clean architectural lines and soft natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1XdgZKzTrVoP-xvV5AhipryerNDZfXY3xu8t4JpZR__8eneEkNYbIvPkC91HMJowGQxiSG8hESCgaz_nZtFKmQoWD6IiEG6mYoAdMPmCSggCZ7vMXLGf5ZSH93sOoTzy2mgLnwytEn_MPyLrzRfd3dOzIa5pJNyge56MFUj2xviRFqNmRyBVGwzMEMtLIPYuXnwXhzSQwWixeloJRkqZHiEAYspQ6YWetRSX33byA0bXST9MaAaOU5qfPs7jgRxL0olcCRoWr_cSm"/>
+<div class="absolute -bottom-12 -right-12 bg-primary-container p-12 text-surface hidden md:block">
+<p class="font-headline text-3xl italic">Provenance matters.</p>
+<p class="text-xs mt-4 uppercase tracking-widest opacity-80">Our Ethical Sourcing Protocol</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="display-lg">Built for the long horizon.</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                        Movemental infrastructure is deployed on sovereign servers, ensuring that movement intelligence remains owned by the movements themselves. No vendor lock-in. No data surveillance. Just clarity.
+                    </p>
+<div class="pt-8">
+<button class="bg-on-surface text-surface px-10 py-4 font-bold text-sm tracking-widest uppercase hover:bg-primary transition-colors">
+                            Request Technical Whitepaper
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Path Call to Action -->
+<section class="bg-surface-container-low py-32 px-12 border-t border-surface-container">
+<div class="max-w-[1440px] mx-auto text-center">
+<h2 class="newsreader text-5xl md:text-6xl mb-12 italic">Ready to see your movement's architecture?</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-[#5300b7] text-white px-12 py-5 font-bold text-base hover:shadow-xl transition-all">
+                        Schedule a Demo
+                    </button>
+<button class="bg-surface-container-lowest text-on-surface px-12 py-5 font-bold text-base hover:bg-surface-dim transition-all">
+                        Explore Research
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f0eee9] dark:bg-[#1b1c19]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1440px] mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-['Newsreader'] text-lg font-semibold text-[#1b1c19] dark:text-[#fbf9f4] mb-2">Movemental</div>
+<div class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60">
+                    © 2024 Movemental Infrastructure. All rights reserved.
+                </div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Institutional Access</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>

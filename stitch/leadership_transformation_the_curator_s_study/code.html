@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Curator | AI Leadership &amp; Institutional Transformation</title>
+<!-- Google Fonts: Newsreader (Serif) & Inter (Sans) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,600;1,6..72,700;1,6..72,800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#695296",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed-dim": "#d3bbff",
+                    "outline-variant": "#ccc3d7",
+                    "secondary-container": "#cbb2fd",
+                    "tertiary-container": "#722a00",
+                    "on-tertiary-fixed": "#351000",
+                    "primary-container": "#5300b7",
+                    "inverse-surface": "#30312d",
+                    "surface-container-low": "#f5f4ee",
+                    "on-surface": "#1b1c19",
+                    "on-tertiary-container": "#fa9261",
+                    "surface-dim": "#dbdad5",
+                    "primary": "#380080",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e9e8e3",
+                    "on-primary-fixed": "#25005a",
+                    "surface-variant": "#e4e2dd",
+                    "outline": "#7b7486",
+                    "on-surface-variant": "#4a4454",
+                    "inverse-on-surface": "#f2f1eb",
+                    "tertiary-fixed": "#ffdbcc",
+                    "surface-container-highest": "#e4e2dd",
+                    "inverse-primary": "#d3bbff",
+                    "error": "#ba1a1a",
+                    "background": "#fbf9f4",
+                    "surface": "#fbf9f4",
+                    "secondary-fixed-dim": "#d3bbff",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1b1c19",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#240a4e",
+                    "primary-fixed": "#eaddff",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-bright": "#fbf9f4",
+                    "secondary-fixed": "#eaddff",
+                    "surface-container": "#efeee8",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "surface-tint": "#7238d5",
+                    "on-secondary-container": "#574183",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#503a7c",
+                    "on-primary-container": "#bd9cff",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-sans selection:bg-primary-fixed selection:text-primary">
+<!-- TopAppBar -->
+<nav class="bg-[#fbf9f4] dark:bg-[#1b1c19] flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto docked full-width top-0">
+<div class="font-serif text-2xl italic tracking-tighter text-[#1b1c19] dark:text-[#fbf9f4]">
+            The Curator
+        </div>
+<div class="hidden md:flex gap-12">
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#1b1c19] dark:hover:text-[#fbf9f4] hover:bg-[#f5f4ee] dark:hover:bg-[#efeee8]/10 transition-colors duration-300" href="#">Curriculum</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#1b1c19] dark:hover:text-[#fbf9f4] hover:bg-[#f5f4ee] dark:hover:bg-[#efeee8]/10 transition-colors duration-300" href="#">Faculty</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#1b1c19] dark:hover:text-[#fbf9f4] hover:bg-[#f5f4ee] dark:hover:bg-[#efeee8]/10 transition-colors duration-300" href="#">Research</a>
+<a class="text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 font-medium hover:text-[#1b1c19] dark:hover:text-[#fbf9f4] hover:bg-[#f5f4ee] dark:hover:bg-[#efeee8]/10 transition-colors duration-300" href="#">Admissions</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-sans font-semibold tracking-tight active:scale-95 transition-all duration-200">
+            Apply Now
+        </button>
+</nav>
+<main class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<!-- Hero Section: Editorial Journal Style -->
+<header class="py-24 md:py-40 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-8">
+<p class="font-sans text-xs uppercase tracking-widest text-primary mb-6 font-bold">Institutional Series № 03</p>
+<h1 class="font-serif italic text-6xl md:text-8xl text-on-surface leading-[1.05] tracking-tighter">
+                    AI Leadership &amp; <br/>
+<span class="text-primary-container">Institutional</span> <br/>
+                    Transformation.
+                </h1>
+</div>
+<div class="md:col-span-4 pb-4">
+<p class="font-sans text-lg text-on-surface-variant leading-relaxed italic mb-8 border-l-2 border-primary-container/20 pl-6">
+                    "A study in the architecture of permanence within the era of transient intelligence."
+                </p>
+<div class="flex items-center gap-4">
+<span class="w-12 h-[1px] bg-outline"></span>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface">Autumn Cohort 2024</p>
+</div>
+</div>
+</header>
+<!-- Signature Component: Formation Progress (Outcome Highlights) -->
+<section class="mb-32">
+<div class="bg-surface-container-low rounded-lg p-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-4">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Cognitive Integration</p>
+<div class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[85%]"></div>
+</div>
+<p class="font-serif italic text-xl text-on-surface">01. Structural Synthesis</p>
+<p class="font-sans text-sm text-on-surface/70 leading-relaxed">Defining the core logic of machine intelligence within legacy frameworks.</p>
+</div>
+<div class="space-y-4">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Policy Architecture</p>
+<div class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[62%]"></div>
+</div>
+<p class="font-serif italic text-xl text-on-surface">02. Ethical Curation</p>
+<p class="font-sans text-sm text-on-surface/70 leading-relaxed">Designing governance that outlasts the technological cycle.</p>
+</div>
+<div class="space-y-4">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Human Capital</p>
+<div class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[94%]"></div>
+</div>
+<p class="font-serif italic text-xl text-on-surface">03. Talent Formation</p>
+<p class="font-sans text-sm text-on-surface/70 leading-relaxed">Cultivating a workforce capable of navigating the symbiotic future.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetrical Grid: Overview and Who This Is For -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-24 mb-40">
+<!-- 33% Column -->
+<div class="md:col-span-4 space-y-12">
+<div class="sticky top-24">
+<h2 class="font-serif italic text-4xl mb-8">The Overview</h2>
+<div class="aspect-[3/4] rounded-lg overflow-hidden bg-surface-container-high relative">
+<img class="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" data-alt="Minimalist architectural shot of a modern library with clean lines, concrete walls, and soft natural light from a high window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlCMlog1HXd5DG0bq6iWAeKCKxbYS8xvNAJtFzLvGxgIXixjJ_rH_nQ-nXqXKwCEKUgvWAXwarYeTVYYx57lhNp9QvasH8MTCa0NcIB3BTwnUnYQGNfXOnSuO_E_NoPKJOVRGV3VTK6Ywnb-Kfph-i3XKk6vASVAY5R1TTlV7I8HY0tnezomyiiMYbNK9NxD-mTDembFX87zOGGF56Six6qWiwsz4EYyqkhqpg6N1cpwaMMV33TfznmCm_lJozqUG3hNr66JLIaNli"/>
+</div>
+<p class="mt-8 font-sans text-on-surface-variant text-sm leading-relaxed">
+                        The Digital Curator Institutional Press provides the foundational texts and curriculum for this intensive study. All sessions are recorded for the private archive.
+                    </p>
+</div>
+</div>
+<!-- 66% Column -->
+<div class="md:col-span-8 space-y-24">
+<div class="max-w-2xl">
+<p class="font-serif italic text-3xl leading-relaxed text-primary-container mb-12">
+                        Institutional leadership is no longer about managing change—it is about curating the transformation of the very fabric of knowledge and decision-making.
+                    </p>
+<div class="space-y-8 font-sans text-lg text-on-surface leading-relaxed">
+<p>
+                            This 8-week intensive is designed for leaders who view AI not as a tool, but as a new architectural layer for their organizations. We move beyond "prompt engineering" into the realm of **Institutional Logic Transformation**.
+                        </p>
+<p>
+                            Participants will engage with faculty from the intersections of Computer Science, Ethics, and Organizational Design to develop a bespoke transformation blueprint for their respective entities.
+                        </p>
+</div>
+</div>
+<!-- Ghost Border separation for 'Who This Is For' -->
+<div class="outline outline-1 outline-outline-variant/15 rounded-lg p-12 bg-surface-container-lowest">
+<h2 class="font-serif italic text-4xl mb-12">Who This Is For</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance">account_balance</span>
+<h3 class="font-sans font-bold text-lg">Institutional Officers</h3>
+<p class="font-sans text-sm text-on-surface-variant leading-relaxed">Provosts, CEOs, and Directors responsible for the long-term stewardship of established organizations.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="architecture">architecture</span>
+<h3 class="font-sans font-bold text-lg">Strategy Architects</h3>
+<p class="font-sans text-sm text-on-surface-variant leading-relaxed">Heads of Innovation and Strategy seeking to embed AI into the structural core of their operations.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="history_edu">history_edu</span>
+<h3 class="font-sans font-bold text-lg">Ethical Stewards</h3>
+<p class="font-sans text-sm text-on-surface-variant leading-relaxed">Legal and ethics leads focused on the governance of algorithmic decision-making.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="hub">hub</span>
+<h3 class="font-sans font-bold text-lg">Network Leaders</h3>
+<p class="font-sans text-sm text-on-surface-variant leading-relaxed">Managers of complex ecosystems where decentralized intelligence must be orchestrated.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Modules & Faculty -->
+<section class="mb-40">
+<h2 class="font-serif italic text-4xl mb-16 text-center">Curated Modules</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[800px]">
+<!-- Bento Item 1: Large Feature -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-low rounded-lg p-12 flex flex-col justify-between">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-4">Core Module 01</p>
+<h3 class="font-serif italic text-5xl mb-6 leading-tight">The Ontology of <br/>Machine Intelligence</h3>
+<p class="font-sans text-lg text-on-surface-variant leading-relaxed max-w-sm">A deep dive into how large-scale models shift the nature of institutional knowledge and retrieval.</p>
+</div>
+<div class="mt-12 flex items-center justify-between">
+<div class="flex -space-x-4">
+<img class="w-12 h-12 rounded-full border-2 border-surface" data-alt="Portrait of a distinguished male professor with glasses and salt-and-pepper hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv92_6MeXfMsHQUn6veC1mw9K6gdQXtd8CRGINSTKLJnMP3lDBKC_3na10BT9DslJv1BkAkEA0rqTjYmLioG052Bc-y18zicx7FfODttzm1_S5-mkRqiOvRjmd4IUGFUzC_vFLT5zz4ZjvPfk7IPyfU-Pewi7UodjTbv8BOMgp1v_kjfQC3bfZVcNtkvU7NOp7rlWe05P6GKBw5bxlxw_hvjOCXeCorzXEeXL72OySknZpMmCcxD95CIKBDNBTJH_WaogQPS6lNX5H"/>
+<img class="w-12 h-12 rounded-full border-2 border-surface" data-alt="Portrait of a professional female researcher with a focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbFfiQ5Yiy5oznuR8_BWdTd1eyHTZufXc-55G8n2jE9UXusglK5Nk8cg50cYhnSUGtnSOp6LJd38yzaCk8ueO5qkEyokNdPManCHqJ9_BdApGo1SC8QYLNrWTMHjM9bXVMqE6kGBjSIftCog4GKVm7CjII3Gw_LcFUWXoiSaRxs1yCK4Ix0-vnfP6OqopAX61X1oXtErY7Rl5jMY69husatL6dCpJMJr2_OH-RfTCTcYsgfbp0E2NgnKHQb_gLjDCBF00zypGgusgY"/>
+</div>
+<span class="font-label text-xs uppercase tracking-widest">Lead Faculty</span>
+</div>
+</div>
+<!-- Bento Item 2: Vertical Image -->
+<div class="md:col-span-1 md:row-span-2 rounded-lg overflow-hidden relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Abstract close-up of book spines in a library with soft evening light hitting the pages" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvBRNPlkn3IYpRJdD71wrb06u5CqzKzzhAT5Q4K-N0qvCKKzFtsx7kNh6OwQwq5YTI0vJ3w7mXSYytB6l7R_qJ7QS9R3-ysGQ0-vjScdUODexCu2VBSwjn8S4qXwz4CNTOhFzIkZsGAEwWeIhSi7tyLo5LfK1xLP37kAZz_rwGRVyk1IXCnmZVY6Zq2UXL8yZRdE6r1UHVTfbgLYfjkjZrmhfHuK8PhkmQ4Lh8GTfTwsWrPHEIMgAtOjjuPHlef73K82xBiHWv9ozR"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] p-8 flex flex-col justify-end">
+<h4 class="text-white font-serif italic text-2xl">The Library Archive</h4>
+<p class="text-white/80 font-sans text-xs uppercase mt-2 tracking-widest">Supplemental Reading</p>
+</div>
+</div>
+<!-- Bento Item 3: Secondary Container Style -->
+<div class="md:col-span-1 bg-secondary-container rounded-lg p-8 flex flex-col justify-center text-on-secondary-container">
+<h3 class="font-serif italic text-3xl mb-4 leading-tight">Formation Protocols</h3>
+<p class="font-sans text-sm leading-relaxed opacity-90">Building internal AI councils and governance structures that adapt in real-time.</p>
+</div>
+<!-- Bento Item 4: Dark Accent -->
+<div class="md:col-span-1 bg-inverse-surface rounded-lg p-8 flex flex-col justify-between text-inverse-on-surface">
+<span class="material-symbols-outlined text-3xl" data-icon="auto_awesome">auto_awesome</span>
+<div>
+<h3 class="font-serif italic text-2xl">Final Synthesis</h3>
+<p class="font-sans text-xs mt-2 opacity-70">A private consultation with the Curator's Board.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 border-t border-outline-variant/10">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-serif italic text-5xl md:text-6xl mb-12">Join the next cohort of <br/>Institutional Curators.</h2>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full font-sans font-bold text-lg hover:bg-primary-container transition-all shadow-lg active:scale-95">
+                        Inquire for Admission
+                    </button>
+<button class="bg-surface-container-high text-on-surface px-12 py-5 rounded-full font-sans font-bold text-lg hover:bg-surface-container-highest transition-all active:scale-95">
+                        Download Prospectus
+                    </button>
+</div>
+<p class="mt-12 font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">Limited to 24 institutions per cycle.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#fbf9f4] dark:bg-[#1b1c19] full-width py-16 mt-32 border-t border-surface-container">
+<div class="max-w-screen-xl mx-auto px-12 grid grid-cols-1 md:grid-cols-2 items-end">
+<div class="space-y-8">
+<div class="font-serif italic text-lg text-[#1b1c19] dark:text-[#fbf9f4]">
+                    The Digital Curator
+                </div>
+<p class="font-sans text-xs uppercase tracking-widest Inter text-[#1b1c19]/60 dark:text-[#fbf9f4]/60">
+                    © 2024 The Digital Curator Institutional Press. All rights reserved.
+                </p>
+</div>
+<div class="flex gap-8 md:justify-end mt-12 md:mt-0">
+<a class="font-sans text-xs uppercase tracking-widest Inter text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#380080] dark:hover:text-[#5300b7] transition-all" href="#">Ethics &amp; Governance</a>
+<a class="font-sans text-xs uppercase tracking-widest Inter text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#380080] dark:hover:text-[#5300b7] transition-all" href="#">Institutional Access</a>
+<a class="font-sans text-xs uppercase tracking-widest Inter text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#380080] dark:hover:text-[#5300b7] transition-all" href="#">Privacy</a>
+<a class="font-sans text-xs uppercase tracking-widest Inter text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#380080] dark:hover:text-[#5300b7] transition-all" href="#">Archive</a>
+</div>
+</div>
+</footer>
+</body></html>

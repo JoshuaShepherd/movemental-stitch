@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Movemental Conversation | Journal</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#722a00",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-bright": "#fbf9f4",
+                    "on-tertiary-fixed": "#351000",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#4a4454",
+                    "surface-container": "#f0eee9",
+                    "surface-container-high": "#eae8e3",
+                    "secondary": "#5e5f5b",
+                    "outline-variant": "#ccc3d7",
+                    "surface-variant": "#e4e2dd",
+                    "primary-container": "#5300b7",
+                    "inverse-surface": "#30312e",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#61615d",
+                    "on-secondary-fixed-variant": "#464743",
+                    "surface-container-low": "#f5f3ee",
+                    "surface": "#fbf9f4",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#bd9cff",
+                    "on-background": "#1b1c19",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary-container": "#fa9261",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "on-secondary-fixed": "#1b1c19",
+                    "outline": "#7b7486",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#d3bbff",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#deddd8",
+                    "inverse-primary": "#d3bbff",
+                    "surface-tint": "#7238d5",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#dbdad5",
+                    "on-surface": "#1b1c19",
+                    "primary": "#380080",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed": "#eaddff",
+                    "background": "#fbf9f4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-accent {
+            background: rgba(251, 249, 244, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        ::selection {
+            background-color: #bd9cff;
+            color: #25005a;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fbf9f4] dark:bg-zinc-950">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline text-[#1b1c19] dark:text-[#fbf9f4] uppercase tracking-widest">
+                Movemental
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Platform</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Movement Leaders</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-sans uppercase tracking-tighter text-sm hover:text-[#5300b7] transition-colors duration-300" href="#">Research</a>
+</div>
+<button class="bg-[#5300b7] text-white px-8 py-3 font-sans text-xs uppercase tracking-widest hover:bg-[#380080] transition-all transform active:scale-95 duration-150">
+                Start a Conversation
+            </button>
+</div>
+<div class="h-px w-full bg-[#f0eee9] dark:bg-zinc-900"></div>
+</nav>
+<main class="max-w-screen-2xl mx-auto px-12 pt-24 md:pt-40">
+<!-- Hero Section -->
+<header class="grid grid-cols-12 gap-8 mb-40">
+<div class="col-span-12 md:col-span-10 lg:col-span-8">
+<p class="font-headline italic text-primary text-xl mb-6 tracking-tight">The Journal Variation</p>
+<h1 class="font-headline text-6xl md:text-8xl leading-[1.1] text-on-surface -ml-1 mb-12 tracking-tight">
+                    The Movemental <br/>
+<span class="italic text-primary-container">Conversation</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl">
+                    A deliberate dialogue designed to move beyond the transactional. We invite you to an editorial space where institutional clarity meets relational trust.
+                </p>
+</div>
+</header>
+<!-- The Process: Asymmetric Grid -->
+<section class="mb-64">
+<div class="grid grid-cols-12 gap-x-12 gap-y-32">
+<!-- Phase 1: Context -->
+<div class="col-span-12 md:col-span-7 flex flex-col justify-end">
+<div class="mb-12">
+<span class="font-headline text-4xl text-primary-container/30 block mb-4 italic">01</span>
+<h2 class="font-headline text-5xl mb-8">Context</h2>
+<div class="h-1 w-24 bg-primary-container mb-8"></div>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                            Every organization exists within a unique lattice of history and intent. We begin by listening to the silences between the objectives—mapping the invisible forces that govern your movement.
+                        </p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 md:col-start-9">
+<div class="bg-surface-container p-12">
+<h4 class="font-headline italic text-xl mb-6">What makes this work</h4>
+<p class="font-body text-sm leading-relaxed text-on-surface-variant">
+                            Radical honesty from the participants. When we remove the mask of "corporate performance," the true institutional spirit emerges. Trust is the only currency here.
+                        </p>
+</div>
+</div>
+<!-- Phase 2: Reveal (Glassmorphic) -->
+<div class="col-span-12 relative">
+<div class="absolute -top-20 -left-12 w-96 h-96 bg-primary-container/5 rounded-full blur-[120px]"></div>
+<div class="relative glass-accent p-12 md:p-24 shadow-2xl shadow-primary/5">
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 md:col-span-6">
+<span class="font-headline text-4xl text-primary-container/30 block mb-4 italic">02</span>
+<h2 class="font-headline text-5xl mb-8">Reveal</h2>
+<p class="font-body text-xl leading-relaxed text-on-surface mb-8">
+                                    The moment of insight. We synthesize the patterns observed in the context phase to reveal the core friction—the pivot point where your organization's energy is either harnessed or lost.
+                                </p>
+</div>
+<div class="col-span-12 md:col-span-5 md:col-start-8 flex items-center">
+<div class="w-full aspect-[4/5] bg-on-surface overflow-hidden">
+<img alt="Reveal visual representation" class="w-full h-full object-cover opacity-80 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Abstract architectural lines with dramatic contrast between light and deep shadows, minimalist editorial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgJPT-d-u17hyFe1Q9_B5JrvIV1OpQOXI7iWvCyFhxNa9q64--dkXQZ8AN9QwF9Ip0HbkLgY3KS6ORffcqlVXQ879YEWafRA8BOo1gqM_ka2sRR9nrzIfQbN_3nyCCOjxiVSfRR1U2_CBgGP036wOwHYgG18CZDCwEmq70swKMqjD-5kV5ZnvND8ZAYUm1hh00dQGtCda460H2dNz95QEhrUdGoZPeoQSGkyoafUAMI2JiLc_S8NLL33wFEYWA99epO-j5B5rF28qM"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phase 3: Map -->
+<div class="col-span-12 md:col-span-5">
+<div class="bg-surface-container-high p-12 mb-12">
+<h4 class="font-headline italic text-xl mb-6">Where this can break</h4>
+<p class="font-body text-sm leading-relaxed text-on-secondary-fixed-variant">
+                            The avoidance of uncomfortable truths. If the map excludes the difficult terrain, the journey will inevitably fail at the first sign of pressure.
+                        </p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7">
+<span class="font-headline text-4xl text-primary-container/30 block mb-4 italic">03</span>
+<h2 class="font-headline text-5xl mb-8">Map</h2>
+<div class="h-1 w-24 bg-primary-container mb-8"></div>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant mb-12">
+                        We chart the trajectory. This isn't a static plan but a dynamic topology of potential actions, categorized by their systemic impact and relational cost.
+                    </p>
+<div class="w-full aspect-video bg-surface-container-highest flex items-center justify-center">
+<img alt="Mapping visualization" class="w-full h-full object-cover mix-blend-multiply opacity-40" data-alt="Crystalline network patterns glowing in deep amethyst and indigo tones, representing systemic mapping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLRJVeH9l1sF4OHekz7RepmOf-IAHdq6BlmZxLWHfbXo5EPSQEDPACcONxVl9PauTSrsigotIHkW1LGcCN3Z8zxS8Pq9pnHsto90owWEW0F8W9Zj9CYEMQhs-sOlsVSlxgT9oRv4YsRCleNMMsGoTYYh55wx8fyxx3poL6M31jxbe4U08dO-QTOhBRLMREdFSoqvKUsZxi1lGCvyCEfRgX5TdtMI6kPl_aJNVOXNlmAkWfnoemocHI65K-Axpqs5TO4cCd4JUNj46s"/>
+</div>
+</div>
+<!-- Phase 4: Decide -->
+<div class="col-span-12 lg:col-span-8 lg:col-start-3 text-center pt-32">
+<span class="font-headline text-4xl text-primary-container/30 block mb-4 italic">04</span>
+<h2 class="font-headline text-6xl mb-12">Decide</h2>
+<p class="font-body text-2xl leading-relaxed text-on-surface max-w-3xl mx-auto mb-16">
+                        The conversation concludes not with a document, but with a commitment. A choice to move—with precision, with empathy, and with the full weight of the institution.
+                    </p>
+<a class="inline-block bg-primary text-white px-16 py-6 font-sans text-sm uppercase tracking-[0.2em] hover:bg-primary-container transition-all" href="#">
+                        Start a Conversation
+                    </a>
+</div>
+</div>
+</section>
+<!-- Final Relational Note -->
+<section class="grid grid-cols-12 gap-8 mb-40">
+<div class="col-span-12 md:col-span-4">
+<h3 class="font-headline text-3xl italic text-primary-container">Relational Trust</h3>
+</div>
+<div class="col-span-12 md:col-span-8">
+<p class="font-headline text-2xl leading-relaxed text-on-surface-variant">
+                    We do not offer solutions to those we do not know. The Movemental Conversation is the gateway to a partnership that values the depth of the inquiry as much as the impact of the result.
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-black w-full border-t border-[#ccc9c6]/10 mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-headline text-[#fbf9f4]">Movemental</div>
+<p class="text-[#ccc9c6]/60 font-sans text-xs tracking-widest uppercase mt-2">Institutional Systems</p>
+</div>
+<div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-12">
+<a class="text-[#ccc9c6]/60 font-sans text-xs tracking-widest uppercase hover:text-[#fbf9f4] transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6]/60 font-sans text-xs tracking-widest uppercase hover:text-[#fbf9f4] transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-[#ccc9c6]/60 font-sans text-xs tracking-widest uppercase hover:text-[#fbf9f4] transition-opacity opacity-80 hover:opacity-100" href="#">Institutional Ethics</a>
+</div>
+</div>
+<div class="px-12 pb-12 text-center md:text-left">
+<p class="text-[#ccc9c6]/40 font-sans text-[10px] tracking-widest uppercase">
+                © 2024 Movemental Institutional Systems. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

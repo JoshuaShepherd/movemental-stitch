@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "tertiary": "#4e1a00",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fbf9f4",
+                        "background": "#fbf9f4",
+                        "secondary": "#5e5f5b",
+                        "on-surface-variant": "#4a4454",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "tertiary-fixed": "#ffdbcc",
+                        "tertiary-container": "#722a00",
+                        "inverse-primary": "#d3bbff",
+                        "inverse-surface": "#30312e",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-container-highest": "#e4e2dd",
+                        "primary": "#380080",
+                        "surface-variant": "#e4e2dd",
+                        "surface-container-high": "#eae8e3",
+                        "primary-container": "#5300b7",
+                        "on-tertiary-container": "#fa9261",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0eee9",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#bd9cff",
+                        "surface-tint": "#7238d5",
+                        "outline": "#7b7486",
+                        "outline-variant": "#ccc3d7",
+                        "on-primary-fixed": "#25005a",
+                        "on-secondary-fixed-variant": "#464743",
+                        "surface-container-low": "#f5f3ee",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1c19",
+                        "secondary-container": "#deddd8",
+                        "primary-fixed": "#eaddff",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "surface-bright": "#fbf9f4",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "on-surface": "#1b1c19",
+                        "secondary-fixed": "#e4e2dd",
+                        "on-secondary-fixed": "#1b1c19",
+                        "on-secondary-container": "#61615d",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "primary-fixed-dim": "#d3bbff",
+                        "secondary-fixed-dim": "#c7c6c2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Newsreader'; font-style: italic; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4] dark:bg-stone-950 flex justify-between items-center px-12 h-24 w-full">
+<div class="text-2xl font-serif font-bold text-[#1b1c19] dark:text-[#fbf9f4] font-serif italic tracking-tight Newsreader">
+            Editorial Intelligence
+        </div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300 font-sans uppercase tracking-widest text-xs" href="#">Archives</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300 font-sans uppercase tracking-widest text-xs" href="#">Infrastructure</a>
+<a class="text-[#5300b7] dark:text-[#a370f7] font-bold border-b-2 border-[#5300b7] font-sans uppercase tracking-widest text-xs" href="#">Intelligence</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300 font-sans uppercase tracking-widest text-xs" href="#">Theory</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-[#5300b7] text-white px-8 py-3 font-sans uppercase tracking-widest text-xs hover:bg-[#380080] transition-all active:scale-95 duration-200">
+                Access Portal
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Architectural Depth -->
+<section class="relative min-h-[921px] flex items-center px-12 bg-surface overflow-hidden">
+<div class="absolute right-0 top-0 w-1/2 h-full bg-surface-container-low z-0"></div>
+<div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<span class="inline-block font-sans uppercase tracking-[0.3em] text-xs mb-6 text-on-surface-variant">The Structural Intelligence Report</span>
+<h1 class="text-[5rem] leading-[0.95] font-headline font-bold -tracking-[0.04em] text-on-surface mb-8">
+                        The <span class="serif-italic">Movement</span> <br/>Leader.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-12">
+                        Architecting digital permanence through editorial discipline. A framework designed for the modern archivist who values structural integrity over algorithmic trends.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-white px-10 py-5 font-sans uppercase tracking-widest text-sm font-bold active:scale-95 transition-transform">
+                            Download Framework
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-on-surface relative overflow-hidden group">
+<img alt="Structural Foundation" class="w-full h-full object-cover opacity-80 mix-blend-luminosity group-hover:opacity-100 transition-opacity duration-700" data-alt="Monochromatic architectural detail of a brutalist concrete building with sharp shadows and geometric depth in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4x-uXHgT08EqqGSEUSAJnBBA4qrJfn7mPp0uaheS_j82zYniM0LAHt1wD1wsrXIaKC8AksVYdb4XJra0cB0P5EwwWUAUMeAzkwN4Ere5Flr49kcAH76eBK0E4gUXN5-2hcYro4PQudZVsTc96-C8fYEZRIfvyCf_O4g-KZMrRirq3cA1Ko7zxz6XGQFHRdW1XJN0cmik3sfI2wC8O9YCmBzq2tHn2NT92_HpbmoLWu4TpoKHkJACNe1cCptthPH3GKsy_iomqsUZL"/>
+<div class="absolute bottom-0 left-0 p-8 text-surface">
+<p class="font-sans uppercase tracking-widest text-[10px] mb-2 opacity-60">Volume 04</p>
+<p class="font-headline italic text-2xl">Structural Permanence</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Tonal Layering -->
+<section class="py-32 px-12 bg-on-surface text-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="text-4xl font-headline font-bold leading-tight mb-8">
+                            A departure from <span class="text-primary-fixed-dim italic">standard utility.</span>
+</h2>
+<p class="text-surface-variant/80 text-lg leading-relaxed mb-12">
+                            Traditional creation focuses on the transient. Movement Leadership focuses on the architectural. We build intellectual infrastructure that outlives the scroll.
+                        </p>
+<div class="space-y-12">
+<div class="flex gap-8 group">
+<div class="text-primary-fixed-dim text-4xl font-headline italic">01</div>
+<div>
+<h4 class="font-sans uppercase tracking-widest text-sm font-bold mb-3">Permanent Anchors</h4>
+<p class="text-surface-variant/60">Establishing brand anchors that serve as a source of truth for your entire ecosystem.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="text-primary-fixed-dim text-4xl font-headline italic">02</div>
+<div>
+<h4 class="font-sans uppercase tracking-widest text-sm font-bold mb-3">Semantic Shells</h4>
+<p class="text-surface-variant/60">Navigation and hierarchy defined by intent, not just interaction patterns.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-stone-900 aspect-square p-8 flex flex-col justify-end">
+<span class="material-symbols-outlined text-4xl text-primary-fixed-dim mb-4" data-icon="architecture">architecture</span>
+<p class="font-sans uppercase tracking-widest text-[10px] opacity-40">Methodology</p>
+<p class="font-headline text-xl">The Blueprints</p>
+</div>
+<div class="bg-stone-800 aspect-square p-8 flex flex-col justify-end mt-12">
+<span class="material-symbols-outlined text-4xl text-primary-fixed-dim mb-4" data-icon="account_balance">account_balance</span>
+<p class="font-sans uppercase tracking-widest text-[10px] opacity-40">Stability</p>
+<p class="font-headline text-xl">The Foundation</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Proof - Comparison (Data Driven) -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="text-5xl font-headline font-bold mb-4 tracking-tight">Institutional Proof.</h2>
+<p class="text-on-surface-variant font-sans uppercase tracking-widest text-xs">Movement Leaders vs. Top-25 Creators</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 bg-surface-container overflow-hidden">
+<!-- Column 1: Top 25 -->
+<div class="bg-surface-container-low p-16 space-y-12">
+<div class="border-b-2 border-outline-variant/20 pb-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Standard Creators</h3>
+<p class="font-sans uppercase tracking-widest text-[10px] text-on-surface-variant">Top-25 Benchmark</p>
+</div>
+<div class="space-y-10">
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="font-sans text-xs uppercase tracking-widest font-semibold">Retention Span</span>
+<span class="font-headline italic text-lg">14 Days</span>
+</div>
+<div class="h-1 bg-surface-container-highest w-full">
+<div class="h-full bg-on-surface-variant w-[15%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="font-sans text-xs uppercase tracking-widest font-semibold">Brand Equity Decay</span>
+<span class="font-headline italic text-lg">High</span>
+</div>
+<div class="h-1 bg-surface-container-highest w-full">
+<div class="h-full bg-on-surface-variant w-[85%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="font-sans text-xs uppercase tracking-widest font-semibold">Interaction Depth</span>
+<span class="font-headline italic text-lg">Surface</span>
+</div>
+<div class="h-1 bg-surface-container-highest w-full">
+<div class="h-full bg-on-surface-variant w-[30%]"></div>
+</div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant italic leading-relaxed pt-8 border-t border-outline-variant/20">
+                            "Relies on the algorithm's pulse for survival. Growth is linear but fragile."
+                        </p>
+</div>
+<!-- Column 2: Movement Leader -->
+<div class="bg-on-surface p-16 space-y-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[12rem]" data-icon="verified">verified</span>
+</div>
+<div class="border-b-2 border-primary-container/30 pb-8 relative z-10">
+<h3 class="font-headline text-2xl font-bold mb-2 text-surface">Movement Leaders</h3>
+<p class="font-sans uppercase tracking-widest text-[10px] text-primary-fixed-dim">Institutional Model</p>
+</div>
+<div class="space-y-10 relative z-10">
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="font-sans text-xs uppercase tracking-widest font-semibold text-surface">Retention Span</span>
+<span class="font-headline italic text-lg text-primary-fixed-dim">Perennial</span>
+</div>
+<div class="h-1 bg-stone-800 w-full">
+<div class="h-full bg-primary-container w-[100%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="font-sans text-xs uppercase tracking-widest font-semibold text-surface">Brand Equity Decay</span>
+<span class="font-headline italic text-lg text-primary-fixed-dim">Negative (Compounding)</span>
+</div>
+<div class="h-1 bg-stone-800 w-full">
+<div class="h-full bg-primary-container w-[5%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="font-sans text-xs uppercase tracking-widest font-semibold text-surface">Interaction Depth</span>
+<span class="font-headline italic text-lg text-primary-fixed-dim">Structural</span>
+</div>
+<div class="h-1 bg-stone-800 w-full">
+<div class="h-full bg-primary-container w-[95%]"></div>
+</div>
+</div>
+</div>
+<p class="text-sm text-surface-variant/60 italic leading-relaxed pt-8 border-t border-stone-800 relative z-10">
+                            "Operates independently of trends. Growth is geometric and permanent."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-surface-container-low px-12">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-[4rem] font-headline font-bold leading-tight mb-12">Become the <span class="serif-italic">Archivist</span> of your niche.</h2>
+<div class="bg-surface p-1 w-full max-w-xl mx-auto flex">
+<input class="flex-grow bg-transparent border-none px-6 py-4 focus:ring-0 text-sm font-sans uppercase tracking-widest" placeholder="Institutional Email" type="email"/>
+<button class="bg-on-surface text-surface px-8 py-4 font-sans uppercase tracking-widest text-xs font-bold hover:bg-primary-container transition-colors">
+                        Request Protocol
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-black w-full py-16 flex flex-col md:flex-row justify-between items-center px-12 w-full">
+<div class="text-[#fbf9f4] font-serif text-lg mb-8 md:mb-0">Editorial Intelligence</div>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="flex gap-8">
+<a class="text-[#ccc9c6] opacity-70 hover:opacity-100 transition-opacity font-sans uppercase tracking-widest text-xs Inter" href="#">Ethics</a>
+<a class="text-[#ccc9c6] opacity-70 hover:opacity-100 transition-opacity font-sans uppercase tracking-widest text-xs Inter" href="#">Privacy</a>
+<a class="text-[#ccc9c6] opacity-70 hover:opacity-100 transition-opacity font-sans uppercase tracking-widest text-xs Inter" href="#">Protocols</a>
+<a class="text-[#ccc9c6] opacity-70 hover:opacity-100 transition-opacity font-sans uppercase tracking-widest text-xs Inter" href="#">Institutional Access</a>
+</div>
+<p class="text-[#ccc9c6] opacity-70 font-sans uppercase tracking-widest text-[10px] text-center md:text-right">
+                © 2024 Editorial Intelligence. All rights reserved. Built for the Modern Archivist.
+            </p>
+</div>
+</footer>
+</body></html>

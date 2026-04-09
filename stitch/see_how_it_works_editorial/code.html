@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-dim": "#dbdad5",
+                    "primary-container": "#5300b7",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#deddd8",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-container": "#722a00",
+                    "secondary": "#5e5f5b",
+                    "on-secondary-fixed-variant": "#464743",
+                    "on-secondary-fixed": "#1b1c19",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e4e2dd",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#351000",
+                    "on-surface-variant": "#4a4454",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-container": "#fa9261",
+                    "inverse-primary": "#d3bbff",
+                    "on-primary-fixed": "#25005a",
+                    "primary": "#380080",
+                    "primary-fixed": "#eaddff",
+                    "on-secondary-container": "#61615d",
+                    "secondary-fixed": "#e4e2dd",
+                    "background": "#fbf9f4",
+                    "outline": "#7b7486",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "surface-bright": "#fbf9f4",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "outline-variant": "#ccc3d7",
+                    "surface-tint": "#7238d5",
+                    "surface-container": "#f0eee9",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "inverse-surface": "#30312e",
+                    "on-primary-container": "#bd9cff",
+                    "on-background": "#1b1c19",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#eae8e3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Newsreader'; font-style: italic; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<nav class="bg-[#fbf9f4] dark:bg-[#1b1c19] flex justify-between items-center px-12 py-6 w-full max-w-[1440px] mx-auto sticky top-0 z-50 backdrop-blur-xl bg-opacity-80">
+<div class="font-['Newsreader'] text-2xl font-bold italic text-[#1b1c19] dark:text-[#fbf9f4]">Movemental</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-[#5300b7] dark:text-[#a67cff] font-bold border-b-2 border-[#5300b7] font-['Inter'] font-medium text-sm transition-colors" href="#">Platform</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-['Inter'] font-medium text-sm" href="#">Movement Leaders</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-['Inter'] font-medium text-sm" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] transition-colors font-['Inter'] font-medium text-sm" href="#">Research</a>
+</div>
+<button class="bg-[#5300b7] text-white px-6 py-2 font-['Inter'] font-medium text-sm hover:bg-[#380080] transition-transform active:scale-[0.98]">
+            Start a Conversation
+        </button>
+</nav>
+<main class="w-full">
+<section class="px-12 py-24 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 items-end max-w-[1440px] mx-auto">
+<div class="md:col-span-8">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-primary font-semibold mb-6 block">Infrastructure for Impact</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl -tracking-[0.02em] leading-[1.1] text-on-surface">
+                    A Scholarly Approach to <span class="serif-italic">Collective Action.</span>
+</h1>
+</div>
+<div class="md:col-span-4 pb-4">
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                    Movemental isn't just a tool; it's an editorial framework for social architects. Explore the sequence from raw research to structural change.
+                </p>
+</div>
+</section>
+<section class="bg-surface-container py-32">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5 sticky top-40">
+<h2 class="font-headline text-4xl mb-8 text-on-surface">The Intelligence Engine</h2>
+<div class="space-y-12">
+<div class="group">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-8 h-[2px] bg-primary"></span>
+<span class="font-label text-sm uppercase tracking-widest text-primary font-bold">01. Analyze</span>
+</div>
+<h3 class="font-headline text-2xl mb-2">Ingest Institutional Knowledge</h3>
+<p class="text-on-surface-variant leading-relaxed">Our system parses decades of research, legal frameworks, and community data to identify the pressure points in your vertical.</p>
+</div>
+<div class="group opacity-40 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-8 h-[2px] bg-outline-variant"></span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">02. Extract</span>
+</div>
+<h3 class="font-headline text-2xl mb-2">Synthesize Strategic Pathways</h3>
+<p class="text-on-surface-variant leading-relaxed">Moving beyond data to insight. We isolate the specific levers—policy, public sentiment, or resource flow—ready for mobilization.</p>
+</div>
+<div class="group opacity-40 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-8 h-[2px] bg-outline-variant"></span>
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">03. Build</span>
+</div>
+<h3 class="font-headline text-2xl mb-2">Deploy Movement Infrastructure</h3>
+<p class="text-on-surface-variant leading-relaxed">Automated governance, digital treasury, and communication protocols. The hard scaffolding of lasting movements.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 flex flex-col gap-12">
+<div class="bg-surface-container-lowest p-4 shadow-sm">
+<img alt="Platform Dashboard" class="w-full aspect-[4/3] object-cover grayscale-[0.2] contrast-[1.05]" data-alt="Sophisticated data visualization dashboard with deep purple accents on a clean cream background showing network graphs and analytical charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU3aNuXCzS-6oJH6f8RlnEo-2cS5rK73NlBBL6G5rsBnJlD6nyHRtlO1LRWTxXmtTKbWrHLIptD9G0_mGke0i2gZvYkyYYkHpktzMXyRdhLtwInGsTMw0WfrwhenEsL0wtJOPTJmKr1KxRhpypcSeSBXKvQymm7TB7U61sUdRiRkiWKQFm14afz5MtRkqMUMm8GsYo9bsLG95SjRtTd2AiJ4mrWdBBZkD5vi4uEOqnCBaefrG22OySZfSOveleLF8LHwCTbYasvN_P"/>
+</div>
+<div class="bg-surface-container-lowest p-4 shadow-sm translate-x-12">
+<img alt="Network Analysis" class="w-full aspect-video object-cover grayscale-[0.2]" data-alt="Detailed close up of a digital map showing social connection points in a minimalist editorial style with charcoal and amethyst colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg-ITqHMZQBkEMTA_X1Z642tvuLD19XakkP9dGoJ3AKwJmF9VwVDOoN_HEjumn-k8DSCvPL1qbPwvW9mjH54t-XnKYbYtPvbpj1Prel8P66H2QOOSNbzjj7yT-N0lXuBj6UiTkrm16pkEyr2J66VovkVONofYR9c-0rPOIBbwlJECHbD3R3676fTFPboaC7QK9ms5G4c8JO_U2sOWr2lM-vUThrcY3i3olZlk8On8kXDvdq4r_VafqfaKJBK4ym0zn9tocQvik8Odd"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-12 max-w-[1440px] mx-auto overflow-hidden">
+<h2 class="font-headline text-5xl mb-20 text-center">Sample <span class="serif-italic">Formation Pathway</span></h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 relative">
+<div class="p-12 bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="mb-16">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="clinical_notes">clinical_notes</span>
+</div>
+<h4 class="font-headline text-3xl mb-4">Policy Auditing</h4>
+<p class="text-on-surface-variant mb-8 leading-relaxed italic">"Identify the bureaucratic silences that hinder progress."</p>
+<ul class="space-y-4 font-body text-sm text-on-surface">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Historical archive scanning</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Legislative gap analysis</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Stakeholder mapping</li>
+</ul>
+</div>
+<div class="p-12 bg-surface-container-low hover:bg-surface-container-high transition-colors group">
+<div class="mb-16">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="account_tree">account_tree</span>
+</div>
+<h4 class="font-headline text-3xl mb-4">Cohort Curation</h4>
+<p class="text-on-surface-variant mb-8 leading-relaxed italic">"Assemble the intellectual vanguard for the mission."</p>
+<ul class="space-y-4 font-body text-sm text-on-surface">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Expertise vetting protocols</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Decentralized ID issuance</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Governance onboarding</li>
+</ul>
+</div>
+<div class="p-12 bg-surface-container hover:bg-surface-container-highest transition-colors group">
+<div class="mb-16">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="auto_awesome_motion">auto_awesome_motion</span>
+</div>
+<h4 class="font-headline text-3xl mb-4">Action Deployment</h4>
+<p class="text-on-surface-variant mb-8 leading-relaxed italic">"The movement enters the public domain."</p>
+<ul class="space-y-4 font-body text-sm text-on-surface">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Strategic narrative release</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Digital asset mobilization</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-primary"></span> Real-time impact tracking</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="bg-primary px-12 py-32 flex flex-col items-center text-center">
+<h2 class="font-headline text-white text-5xl md:text-6xl mb-12 max-w-4xl">Ready to architect your <span class="serif-italic">institution's legacy?</span></h2>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="bg-white text-primary px-10 py-4 font-label font-bold text-sm hover:bg-surface-container-low transition-all">
+                    REQUEST INSTITUTIONAL ACCESS
+                </button>
+<button class="bg-transparent border-2 border-white/30 text-white px-10 py-4 font-label font-bold text-sm hover:bg-white/10 transition-all">
+                    VIEW THE RESEARCH PAPER
+                </button>
+</div>
+</section>
+<section class="bg-surface py-24 px-12 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<img alt="Academic Library" class="w-full aspect-[4/5] object-cover grayscale contrast-125" data-alt="Interior of a modern minimalist library with warm wooden shelves and soft atmospheric lighting reflecting an academic tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABSmmKHHuNdcKFhDm1HLmWhUWhmx72hoK-fRvkTKVTKuxaSMRvz96IoNuETspbfCxQUk89Y7EcIolc4itW-I3yYtaFuVjfl_3q1VMGr64o-XHCoNYcol007ONPY4oNj6d6_KM39vmCXPvDrApNHkdTCKYNpTMPPIGpTFHSpvDI9cfHhwYC7tCZTIZC2pjSez5_SBhLmAP-cFVGq1E153Sj1KJnIrH_LGkmA--ZZYpS3AcLg7JhrLFJ_-pcHF8_lxrwmDJxDyoydlJA"/>
+</div>
+<div class="order-1 md:order-2">
+<h3 class="font-headline text-4xl mb-6">Built by scholars, <br/>for the practitioners.</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Our methodology is peer-reviewed and stress-tested. We believe the most powerful movements aren't just loud—they are structurally sound. We provide the blueprint for the next century of social organization.
+                    </p>
+<div class="flex gap-12">
+<div>
+<div class="font-headline text-3xl text-primary mb-1">12k+</div>
+<div class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Active Nodes</div>
+</div>
+<div>
+<div class="font-headline text-3xl text-primary mb-1">84%</div>
+<div class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Policy Conversion</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#f0eee9] dark:bg-[#1b1c19] flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<div class="font-['Newsreader'] text-lg font-semibold text-[#1b1c19] dark:text-[#fbf9f4] mb-2">Movemental</div>
+<p class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60">
+                © 2024 Movemental Infrastructure. All rights reserved.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Institutional Access</a>
+<a class="font-['Inter'] text-xs tracking-wide uppercase text-[#1b1c19]/60 dark:text-[#fbf9f4]/60 hover:text-[#5300b7] dark:hover:text-[#a67cff] transition-all" href="#">Press Kit</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | Editorial Modernism</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#a5a9e6",
+                        "tertiary-fixed": "#e0e1f9",
+                        "outline-variant": "#ccc3d7",
+                        "on-tertiary-fixed": "#0a0c40",
+                        "on-secondary-container": "#574183",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "tertiary": "#2E3192",
+                        "secondary-fixed": "#eaddff",
+                        "inverse-surface": "#30312d",
+                        "surface": "#fbf9f4",
+                        "on-primary-fixed": "#25005a",
+                        "secondary": "#695296",
+                        "primary": "#380080",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#5300b7",
+                        "surface-variant": "#e4e2dd",
+                        "on-primary": "#ffffff",
+                        "background": "#fbf9f4",
+                        "outline": "#7b7486",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#2E3192",
+                        "surface-dim": "#dbdad5",
+                        "secondary-fixed-dim": "#d3bbff",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-container-high": "#e9e8e3",
+                        "on-primary-container": "#bd9cff",
+                        "surface-container-low": "#f5f4ee",
+                        "on-secondary-fixed": "#240a4e",
+                        "primary-fixed-dim": "#d3bbff",
+                        "on-surface-variant": "#4a4454",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#cbb2fd",
+                        "inverse-on-surface": "#f2f1eb",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#d3bbff",
+                        "on-secondary-fixed-variant": "#503a7c",
+                        "on-tertiary-container": "#e0e1f9",
+                        "on-background": "#1b1c19",
+                        "on-tertiary-fixed-variant": "#1c1e6b",
+                        "surface-tint": "#7238d5",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "surface-container": "#efeee8",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#eaddff",
+                        "on-surface": "#1b1c19",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f4;
+            color: #1b1c19;
+        }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="bg-transparent absolute top-0 left-0 right-0 z-50">
+<div class="flex justify-between items-center w-full px-12 py-8 max-w-[1440px] mx-auto">
+<div class="font-newsreader text-2xl font-bold tracking-tighter text-white">Movemental</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium tracking-wide transition-all duration-300 text-white/80 hover:text-white" href="#">Solutions</a>
+<a class="text-sm font-medium tracking-wide transition-all duration-300 text-white/80 hover:text-white" href="#">Approach</a>
+<a class="text-sm font-medium tracking-wide transition-all duration-300 text-white/80 hover:text-white" href="#">Insights</a>
+<a class="text-sm font-medium tracking-wide transition-all duration-300 text-white/80 hover:text-white" href="#">Contact</a>
+</div>
+<button class="bg-white text-primary px-8 py-3 rounded-full text-sm font-semibold hover:bg-surface-container-low transition-all duration-300 active:scale-95 shadow-lg">
+                Start a Conversation
+            </button>
+</div>
+</nav>
+<main class="relative overflow-hidden">
+<!-- Hero Section: Full-Bleed Editorial -->
+<section class="relative min-h-screen flex items-center bg-black">
+<!-- Full Bleed Background -->
+<div class="absolute inset-0">
+<img alt="Brutalist architectural detail" class="w-full h-full object-cover opacity-60 grayscale-[0.4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcJ69iIDR8Kvf3USZ-ZZnJCQ0_M5hQasABmWKLScYH9Gmi3-rrIhXYHLh4PvVwelnAKKxGpRAa7OfbmujMoeugH8vze5ogS_uPXPdpOGsVtD3pKu3UsqhOoQ0RkuAMInyTBWNvon2arHmZ51G4bc4UuQTu9tti5zA6_c9g4zlJR8SK9lDJDgaYIzyapNoYLlyWyEU0bEqQNLJyH2rwpYTqcaMLxyhXDLI3vdUHDy5LYSHhi44ATlWzUaP3buNiG_kjOa3jQMNEgyKj"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-12 grid grid-cols-12 gap-y-16 w-full pt-20">
+<!-- Asymmetrical Headline Cluster -->
+<div class="col-span-12 lg:col-span-10 xl:col-span-8">
+<h1 class="font-newsreader italic text-[3.5rem] md:text-[6rem] leading-[1] tracking-tight text-white mb-12">
+                        Turn your ideas—or your organization—into a living system that forms people and scales impact.
+                    </h1>
+<div class="grid grid-cols-12 gap-8 items-start">
+<!-- Subtext offset to create whitespace -->
+<div class="col-start-1 md:col-start-2 col-span-12 md:col-span-6 lg:col-span-5">
+<p class="text-xl md:text-2xl leading-relaxed text-white/80 font-body mb-10">
+                                Movemental translates movement intelligence into modern digital infrastructure—combining digital platforms, AI, training and consulting to build systems that actually work.
+                            </p>
+<div class="flex flex-wrap items-center gap-8">
+<button class="bg-tertiary text-white px-10 py-5 rounded-full text-lg font-semibold transition-all duration-300 hover:brightness-125 hover:shadow-xl active:scale-95">
+                                    Start a Conversation
+                                </button>
+<button class="flex items-center gap-3 text-white font-medium text-lg group">
+                                    See How it Works
+                                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Institutional Work -->
+<section class="bg-surface py-32 px-12">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<span class="text-sm font-semibold tracking-[0.2em] text-tertiary mb-6 block uppercase">CORE CAPABILITIES</span>
+<h2 class="font-newsreader text-5xl md:text-6xl leading-tight">Digital Infrastructure for Large-Scale Movements</h2>
+</div>
+<div class="w-full md:w-64">
+<div class="text-xs font-semibold tracking-widest mb-3 opacity-40 uppercase">FORMATION PROGRESS</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-3/4"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Bento Card 1 -->
+<div class="md:col-span-2 bg-surface-container-low p-16 rounded-lg flex flex-col justify-between min-h-[450px]">
+<span class="material-symbols-outlined text-5xl text-tertiary" data-icon="architecture">architecture</span>
+<div>
+<h3 class="font-newsreader text-4xl mb-6">Strategic Architecture</h3>
+<p class="text-on-surface/70 text-lg leading-relaxed max-w-md">Designing the underlying blueprints that allow organizations to scale without losing their essential soul or cultural DNA.</p>
+</div>
+</div>
+<!-- Bento Card 2 -->
+<div class="bg-tertiary text-white p-16 rounded-lg flex flex-col justify-between min-h-[450px] relative overflow-hidden">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-5xl" data-icon="psychology">psychology</span>
+<h3 class="font-newsreader text-4xl mt-10 mb-6">Movement AI</h3>
+<p class="text-white/80 text-lg leading-relaxed">Leveraging generative intelligence to synthesize knowledge and guide participants through complex formation journeys.</p>
+</div>
+<div class="absolute -bottom-20 -right-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+</div>
+<!-- Bento Card 3 -->
+<div class="bg-surface-container-low p-16 rounded-lg flex flex-col justify-between min-h-[450px]">
+<span class="material-symbols-outlined text-5xl text-tertiary" data-icon="group_work">group_work</span>
+<div>
+<h3 class="font-newsreader text-4xl mb-6">Ecosystem Training</h3>
+<p class="text-on-surface/70 text-lg leading-relaxed">Practical training systems that translate high-level movement philosophy into repeatable, daily excellence.</p>
+</div>
+</div>
+<!-- Bento Card 4 -->
+<div class="md:col-span-2 bg-white p-16 rounded-lg flex flex-col md:flex-row items-center gap-16 min-h-[450px]">
+<div class="flex-1">
+<h3 class="font-newsreader text-4xl mb-6">Digital Platforms</h3>
+<p class="text-on-surface/70 text-lg leading-relaxed">Custom-built software environments that serve as the operating system for your organization's unique mission.</p>
+</div>
+<div class="flex-1 w-full h-full min-h-[250px] bg-surface-container rounded-lg overflow-hidden">
+<img alt="Data visualization" class="w-full h-full object-cover mix-blend-multiply opacity-40" data-alt="Clean, minimalist abstract dashboard UI showing network connections and nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD-L8YNVEc3zn0cwi3aagnqCof11ULrT1NwTNlLAzkvD5ZdIVd2DLWm0UGPXbJlWbOIP_0ytbrMDCMTPi2bA2bH7_9aKoZ5Cz-F6cf0l60C9f3wRizkaDwU4UUwGnBoMvZQnMXtWOFdcMIINwvumSD9Dm0nbe3nxrguQm6PlPKzTKOUAvwYP5qpgI4I6oHR5dRGFgliolfjFcHTcJTQTcR2pxA44wkimNs8jXG7WALb7CqtpROkv_n8Ye_SpYvMrEXK6ZX-udirgD9"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 px-12 bg-surface-container-low">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-newsreader text-5xl md:text-7xl mb-10">Ready to evolve your system?</h2>
+<p class="text-xl md:text-2xl text-on-surface/60 mb-16 font-body">Schedule a consultation with our system architects to explore how movement intelligence can redefine your infrastructure.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-8">
+<button class="bg-tertiary text-white px-14 py-6 rounded-full text-xl font-semibold shadow-xl shadow-tertiary/20 hover:scale-105 transition-all">
+                        Start a Conversation
+                    </button>
+<button class="bg-white text-on-surface px-14 py-6 rounded-full text-xl font-semibold hover:bg-surface transition-all shadow-sm">
+                        View Case Studies
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface py-20 px-12">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 w-full max-w-[1440px] mx-auto border-t border-on-surface/5 pt-16">
+<div class="font-newsreader text-2xl font-bold text-on-surface">Movemental</div>
+<div class="flex flex-wrap gap-10">
+<a class="text-xs uppercase tracking-widest font-semibold text-on-surface/40 hover:text-tertiary transition-colors" href="#">Solutions</a>
+<a class="text-xs uppercase tracking-widest font-semibold text-on-surface/40 hover:text-tertiary transition-colors" href="#">Approach</a>
+<a class="text-xs uppercase tracking-widest font-semibold text-on-surface/40 hover:text-tertiary transition-colors" href="#">Insights</a>
+<a class="text-xs uppercase tracking-widest font-semibold text-on-surface/40 hover:text-tertiary transition-colors" href="#">Privacy Policy</a>
+</div>
+<p class="text-[10px] uppercase tracking-[0.2em] font-semibold text-on-surface/40">
+                © 2024 Movemental. Built for Impact.
+            </p>
+</div>
+</footer>
+</body></html>

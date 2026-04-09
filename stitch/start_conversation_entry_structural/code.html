@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#4a4454",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f5f3ee",
+                    "on-secondary-fixed": "#1b1c19",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-tertiary-container": "#fa9261",
+                    "on-background": "#1b1c19",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#d3bbff",
+                    "on-secondary-fixed-variant": "#464743",
+                    "inverse-on-surface": "#f2f1ec",
+                    "secondary-container": "#deddd8",
+                    "surface-bright": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-tint": "#7238d5",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#eaddff",
+                    "on-surface": "#1b1c19",
+                    "surface-container": "#f0eee9",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#4e1a00",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-secondary-container": "#61615d",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "tertiary-fixed": "#ffdbcc",
+                    "outline-variant": "#ccc3d7",
+                    "on-tertiary-fixed": "#351000",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "primary": "#380080",
+                    "secondary": "#5e5f5b",
+                    "surface": "#fbf9f4",
+                    "on-primary-fixed": "#25005a",
+                    "inverse-surface": "#30312e",
+                    "background": "#fbf9f4",
+                    "surface-variant": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container-high": "#eae8e3",
+                    "on-primary-container": "#bd9cff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "outline": "#7b7486",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#722a00",
+                    "surface-dim": "#dbdad5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 40px -12px rgba(27, 28, 25, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f4] dark:bg-stone-950 docked full-width top-0 z-50">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-stone-100">
+                Movemental
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Philosophy</a>
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Pathways</a>
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Archive</a>
+</div>
+<button class="bg-[#5300b7] text-white px-6 py-2 font-body text-sm font-medium transition-opacity active:opacity-80">
+                Get Started
+            </button>
+</nav>
+<div class="bg-[#f0eee9] dark:bg-stone-900 h-[1px] w-full"></div>
+</header>
+<main class="min-h-screen pt-24 pb-32">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Side: Editorial Content -->
+<div class="lg:col-span-7 space-y-12">
+<div class="space-y-6">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant block">Strategic Inquiry</span>
+<h1 class="font-headline text-6xl md:text-7xl lg:text-8xl -tracking-[0.03em] leading-[0.95] text-on-surface">
+                        Let’s figure out if this is worth building.
+                    </h1>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8">
+<div class="space-y-4">
+<div class="h-px w-12 bg-primary"></div>
+<h3 class="font-headline text-2xl">The Intellectual Audit</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            We don't build for the sake of construction. We build because the archive demands expression. Our initial conversation is a structural assessment of your vision's permanence.
+                        </p>
+</div>
+<div class="space-y-4">
+<div class="h-px w-12 bg-primary"></div>
+<h3 class="font-headline text-2xl">Curation over Scale</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Every project in the Movemental ecosystem is curated for depth. We look for partners who value the rhythm of high-end editorial experiences over generic SaaS patterns.
+                        </p>
+</div>
+</div>
+<div class="aspect-[16/9] w-full bg-surface-container relative group overflow-hidden">
+<img alt="Scholarly Library" class="w-full h-full object-cover mix-blend-multiply opacity-80 transition-transform duration-700 group-hover:scale-105" data-alt="atmospheric library interior with rows of old books, soft natural light through high windows, dusty scholarly atmosphere, warm neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCle4AcCyVvj2wOsucBXqn_eeJYhRqmTIYCDR1bZSr4vLSDA7MxQ94PqLxZastHJyMNuvtHPFpa-ngZgqmrc3sIoPQxA2IdhzGesvZfXUx-ZhNAqR0QgmNSUEhB7KzX0CfTM7NNUfOw8xrHaMz5wlORTOqUq9ZZc7XKGbDLhb87_RDzM8AtYcqbWIFP7qqkcQiWNDnyUzaYXzyB374Z6Z8uy0LEOhQyAr_o1tRQVADK0OQk4Xk-pnGD8ezps6il_ygVsOK-iCdpktb"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+<!-- Right Side: The Framed Invitation (Deep Charcoal) -->
+<div class="lg:col-span-5 lg:sticky lg:top-32">
+<div class="bg-inverse-surface text-inverse-on-surface p-12 space-y-12 editorial-shadow relative overflow-hidden">
+<!-- Subtle Texture Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMYtkxagqcyxKRrOFzMxVClhhtCJ9jquDThCEqEpMuO_dpGYr9CG0i3XwLXwIqbsnxVBDJBKuG9_X2u9wViKq2dJGa4JFI-ltWA3Ci2ncLGUpTzadfFvf0PWLPhMv6SfG-CYUWSXNCwyZGzROM8_kiVxwQrazntubblgR_LEQDGZbJQdFb-QcIPDyMQbyNMnDPXItJAmgmmxVQvzR3ie3XpP0BEsbKXFvUrldbyzai433VKrYO-gUWzXWy2e75t4vh7cqFQkS73vnE');"></div>
+<div class="relative z-10 space-y-8">
+<div class="space-y-2">
+<h2 class="font-headline text-3xl">Initiate Inquiry</h2>
+<p class="font-body text-surface-variant text-sm leading-relaxed">
+                                Provide the architectural foundations of your concept. We respond to inquiries that demonstrate a commitment to digital craftsmanship.
+                            </p>
+</div>
+<form class="space-y-8">
+<div class="group relative">
+<label class="font-label text-[10px] uppercase tracking-[0.2em] text-outline-variant block mb-2">Subject of Archive</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-on-surface-variant/30 py-3 px-0 focus:ring-0 focus:border-primary transition-all text-lg font-headline placeholder:text-on-surface-variant/50" placeholder="Project Name or Vision" type="text"/>
+</div>
+<div class="group relative">
+<label class="font-label text-[10px] uppercase tracking-[0.2em] text-outline-variant block mb-2">Architect's Identity</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-on-surface-variant/30 py-3 px-0 focus:ring-0 focus:border-primary transition-all text-lg font-headline placeholder:text-on-surface-variant/50" placeholder="Professional Email" type="email"/>
+</div>
+<div class="group relative">
+<label class="font-label text-[10px] uppercase tracking-[0.2em] text-outline-variant block mb-2">Structural Intent</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-on-surface-variant/30 py-3 px-0 focus:ring-0 focus:border-primary transition-all text-lg font-headline placeholder:text-on-surface-variant/50 resize-none" placeholder="What is the core problem this project solves for the modern archivist?" rows="4"></textarea>
+</div>
+<button class="w-full py-6 bg-gradient-to-br from-[#380080] to-[#5300b7] text-white font-body font-bold text-sm uppercase tracking-widest transition-transform active:scale-[0.98]" type="submit">
+                                Submit for Review
+                            </button>
+</form>
+<p class="font-body text-[10px] text-center text-outline-variant uppercase tracking-widest opacity-60">
+                            Est. Response Time: 48-72 Hours
+                        </p>
+</div>
+</div>
+<!-- Tonal Layering Elements -->
+<div class="mt-8 grid grid-cols-3 gap-1">
+<div class="h-1 bg-surface-container-highest"></div>
+<div class="h-1 bg-primary"></div>
+<div class="h-1 bg-inverse-surface"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Content Sections for Depth -->
+<section class="bg-surface-container py-32">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-24">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="architecture">architecture</span>
+<h4 class="font-headline text-3xl">Structural Integrity</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        We prioritize systems that endure. Our design choices are guided by longevity and semantic clarity.
+                    </p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="history_edu">history_edu</span>
+<h4 class="font-headline text-3xl">Editorial Focus</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        Every interface tells a story. We ensure your data is curated into a narrative that resonates with the intellectual user.
+                    </p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="font-headline text-3xl">The Human Pulse</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        Beyond the pixels lies the human intent. We build bridges between complex systems and intuitive understanding.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#fbf9f4] dark:bg-stone-950 full-width py-12">
+<div class="bg-[#f0eee9] dark:bg-stone-900 h-[1px] w-full mb-8"></div>
+<div class="flex flex-col items-center justify-center space-y-6 w-full px-8 text-center">
+<p class="font-sans text-xs uppercase tracking-widest text-[#1b1c19] dark:text-stone-300">
+                © 2024 Movemental. Built for the Modern Archivist.
+            </p>
+<div class="flex space-x-8">
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Privacy</a>
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Terms</a>
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

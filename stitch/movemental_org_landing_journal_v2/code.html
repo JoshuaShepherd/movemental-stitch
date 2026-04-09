@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | Curated Journal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#464743",
+                        "primary-fixed-dim": "#d3bbff",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-fixed": "#ffdbcc",
+                        "outline-variant": "#ccc3d7",
+                        "secondary-container": "#deddd8",
+                        "on-primary-fixed": "#25005a",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "surface-container": "#f0eee9",
+                        "surface-container-high": "#eae8e3",
+                        "on-surface-variant": "#4a4454",
+                        "tertiary-container": "#722a00",
+                        "surface-dim": "#dbdad5",
+                        "inverse-primary": "#d3bbff",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "on-primary-container": "#bd9cff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#5300b7",
+                        "secondary-fixed": "#e4e2dd",
+                        "surface-container-highest": "#e4e2dd",
+                        "tertiary": "#4e1a00",
+                        "primary-fixed": "#eaddff",
+                        "outline": "#7b7486",
+                        "on-tertiary-fixed": "#351000",
+                        "on-secondary-fixed": "#1b1c19",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#7238d5",
+                        "surface-container-low": "#f5f3ee",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "background": "#fbf9f4",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "inverse-on-surface": "#f2f1ec",
+                        "primary": "#380080",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#61615d",
+                        "on-surface": "#1b1c19",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#fa9261",
+                        "secondary": "#5e5f5b",
+                        "on-background": "#1b1c19",
+                        "surface": "#fbf9f4",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb595"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 bg-[#fbf9f4] dark:bg-stone-950 backdrop-blur-xl bg-opacity-80 transition-all duration-300">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic tracking-tight text-[#1b1c19] dark:text-[#fbf9f4]">Movemental</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300" href="#">Leaders</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300" href="#">Approach</a>
+</div>
+<div class="flex items-center gap-8">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer">search</button>
+<button class="bg-primary-container text-on-primary px-6 py-2.5 font-medium hover:bg-primary transition-colors active:scale-95 duration-200">
+                    Sign In
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[870px] flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-surface">
+<!-- Subtle Network Visual Background -->
+<div aria-hidden="true" class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%]">
+<div class="w-full h-full" style="background-image: radial-gradient(circle at 50% 50%, #5300b7 0.5px, transparent 0.5px); background-size: 60px 60px;"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface via-transparent to-surface"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-surface-container-low text-on-surface-variant text-xs font-semibold tracking-widest uppercase">
+<span class="w-2 h-2 bg-primary rounded-full"></span>
+                Volume 01: Institutional Integrity
+            </div>
+<h1 class="text-6xl md:text-8xl font-serif text-on-surface leading-[1.05] -tracking-[0.02em]">
+                The digital archive <br/>
+<span class="italic">of high-trust</span> <br/>
+                governance.
+            </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-body font-light leading-relaxed">
+                Movemental curates the structural knowledge of organizations that last centuries. We provide the intellectual architecture for contemporary leadership.
+            </p>
+<div class="pt-8 flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="px-10 py-4 bg-primary-container text-on-primary text-sm font-semibold tracking-wide hover:brightness-110 transition-all">
+                    REQUEST AN INVITATION
+                </button>
+<button class="text-on-surface font-medium hover:text-primary transition-colors flex items-center gap-2">
+                    Read the Manifesto
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</header>
+<!-- The Problem Section -->
+<section class="py-32 px-6 bg-surface-container-low">
+<div class="max-w-3xl mx-auto text-center space-y-12">
+<h2 class="text-4xl md:text-5xl font-serif text-on-surface leading-tight">
+                The capacity problem: <br/>
+<span class="italic">Institutional memory is dissolving in the stream of real-time data.</span>
+</h2>
+<div class="space-y-8 text-lg text-on-surface-variant font-body leading-[1.8] font-light">
+<p>
+                    Modern organizations suffer from a terminal focus on the immediate. This "digital presentism" erodes the structural foundations required for long-term societal impact. When we lose our history, we lose our ability to lead.
+                </p>
+<p>
+                    Movemental was established to solve this specific crisis of continuity. We don't just store data; we preserve the intent, the logic, and the moral weight of institutional decisions.
+                </p>
+</div>
+</div>
+</section>
+<!-- What We Do: The Five Builds -->
+<section class="py-32 px-6 bg-surface">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+<div class="sticky top-40 space-y-6">
+<h3 class="text-sm font-semibold tracking-[0.2em] text-primary uppercase">The Methodology</h3>
+<h2 class="text-5xl font-serif text-on-surface">The Five Builds</h2>
+<p class="text-on-surface-variant text-lg">Our protocol for establishing digital permanence across the movement lifecycle.</p>
+</div>
+<div class="space-y-32">
+<!-- Build 1 -->
+<div class="space-y-6">
+<span class="text-7xl font-serif italic text-outline-variant opacity-50 block">01</span>
+<h4 class="text-2xl font-serif text-on-surface">Ontological Mapping</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Defining the core truths and definitions that anchor your organization's mission across generations.</p>
+</div>
+<!-- Build 2 -->
+<div class="space-y-6">
+<span class="text-7xl font-serif italic text-outline-variant opacity-50 block">02</span>
+<h4 class="text-2xl font-serif text-on-surface">Strategic Provenance</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Tracing every decision back to its root incentive, ensuring a chain of accountability that survives personnel turnover.</p>
+</div>
+<!-- Build 3 -->
+<div class="space-y-6">
+<span class="text-7xl font-serif italic text-outline-variant opacity-50 block">03</span>
+<h4 class="text-2xl font-serif text-on-surface">Digital Curation</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Transitioning from passive storage to active editorial curation of your most critical institutional assets.</p>
+</div>
+<!-- Build 4 -->
+<div class="space-y-6">
+<span class="text-7xl font-serif italic text-outline-variant opacity-50 block">04</span>
+<h4 class="text-2xl font-serif text-on-surface">Network Fidelity</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Securing communication channels and archival access through cryptographic proof and high-trust infrastructure.</p>
+</div>
+<!-- Build 5 -->
+<div class="space-y-6">
+<span class="text-7xl font-serif italic text-outline-variant opacity-50 block">05</span>
+<h4 class="text-2xl font-serif text-on-surface">The Legacy Interface</h4>
+<p class="text-on-surface-variant font-body leading-relaxed">Crafting bespoke digital interfaces that allow future leaders to commune with the wisdom of their predecessors.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Proof: Product Screenshot Section -->
+<section class="py-32 px-6 bg-surface-container">
+<div class="max-w-7xl mx-auto space-y-24">
+<div class="text-center max-w-2xl mx-auto space-y-6">
+<h2 class="text-4xl font-serif text-on-surface">The Scholarly Interface</h2>
+<p class="text-on-surface-variant">A minimal framing of our primary research dashboard, designed for deep focus and rigorous archival inquiry.</p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary/10 to-primary/5 blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative bg-surface-container-lowest shadow-[0_40px_100px_-20px_rgba(27,28,25,0.12)]">
+<img alt="Scholarly Interface Screenshot" class="w-full grayscale-[20%] mix-blend-multiply opacity-90" data-alt="Minimalist dashboard interface showing a clean typographic archival system with serif headings and plenty of white space on a desk background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQFbeqi-jiJ3Y0hkw77qLDAcjMa-b0-kafYdbeXJIPYGToCpapbfhO2np2dtaqjP2hyKxk7QQUNgxx3TUPHDrTDnD-ezOjXIPOAHIRUSMWlPcE7t2JKmnHw7im7zrwUKgFRMn84Vhj7jpCLJByX3Fbai5P0DTeWntd1jDIOagtvNM8txhdz24MRozQm13f2-f7Re0yVh9wIYfqTfBKFee0p0ZtJCHw3FrfKH2W9iE7G2bKKJp9FzM-XKoJsEtDY5q_r7dcRY6gD6nG"/>
+<!-- Decorative Element -->
+<div class="absolute bottom-12 right-12 flex flex-col items-end gap-2 text-[10px] font-mono uppercase tracking-widest text-on-surface-variant/40">
+<span>Movemental Protocol v.4.2</span>
+<span>Archival Access: Level 03</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-sm text-on-surface-variant leading-[1.6]">
+<div class="space-y-4">
+<h5 class="font-bold text-on-surface">Zero-Distraction Environment</h5>
+<p>Every element of the interface is optimized for cognitive load reduction. We eliminate the noise of modern software to allow for sustained intellectual synthesis.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-on-surface">Intertextual Linking</h5>
+<p>Automated semantic mapping connects disparate documents through shared philosophical lineages, revealing the hidden architecture of your organization.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-on-surface">Permanent Citation</h5>
+<p>Every data point is anchored with a permanent, cryptographic signature, ensuring that truth remains verifiable across the entire institutional timeline.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-24 pb-12 bg-[#1b1c19] dark:bg-black">
+<div class="flex flex-col items-center text-center px-8 max-w-screen-xl mx-auto space-y-16">
+<div class="text-xl font-serif text-[#fbf9f4]">Movemental</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="text-[#ccc9c6] hover:text-[#fbf9f4] underline decoration-1 underline-offset-4 transition-opacity" href="#">Ethics &amp; Transparency</a>
+<a class="text-[#ccc9c6] hover:text-[#fbf9f4] transition-opacity" href="#">Archival Standards</a>
+<a class="text-[#ccc9c6] hover:text-[#fbf9f4] transition-opacity" href="#">Privacy Protocol</a>
+<a class="text-[#ccc9c6] hover:text-[#fbf9f4] transition-opacity" href="#">Contact</a>
+</div>
+<div class="w-full h-px bg-[#fbf9f4]/10 max-w-sm"></div>
+<div class="text-[#ccc9c6] text-sm max-w-2xl font-light leading-relaxed">
+                © 2024 Movemental. Preserving Institutional Integrity through Digital Curation. <br/>
+                Movemental is a 501(c)(3) non-profit organization dedicated to the science of organizational memory.
+            </div>
+</div>
+</footer>
+</body></html>

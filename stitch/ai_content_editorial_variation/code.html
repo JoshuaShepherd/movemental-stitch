@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#4e1a00",
+                    "secondary": "#695296",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#fa9261",
+                    "tertiary-container": "#722a00",
+                    "surface-container-highest": "#e4e2dd",
+                    "secondary-fixed": "#eaddff",
+                    "background": "#fbf9f4",
+                    "surface": "#fbf9f4",
+                    "surface-bright": "#fbf9f4",
+                    "primary-container": "#5300b7",
+                    "surface-variant": "#e4e2dd",
+                    "primary-fixed": "#eaddff",
+                    "on-surface-variant": "#4a4454",
+                    "primary-fixed-dim": "#d3bbff",
+                    "primary": "#380080",
+                    "surface-tint": "#7238d5",
+                    "on-primary-container": "#bd9cff",
+                    "surface-container-high": "#e9e8e3",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#ccc3d7",
+                    "on-secondary-fixed": "#240a4e",
+                    "inverse-primary": "#d3bbff",
+                    "inverse-on-surface": "#f2f1eb",
+                    "on-secondary-container": "#574183",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312d",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#d3bbff",
+                    "outline": "#7b7486",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "on-secondary-fixed-variant": "#503a7c",
+                    "surface-container-low": "#f5f4ee",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary-fixed": "#351000",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#cbb2fd",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-dim": "#dbdad5",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "error": "#ba1a1a",
+                    "on-background": "#1b1c19",
+                    "tertiary-fixed": "#ffdbcc",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeee8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fbf9f4; color: #1b1c19; font-family: 'Inter', sans-serif; }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4]/80 backdrop-blur-xl shadow-[0_32px_64px_-4px_rgba(27,28,25,0.06)]">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-12 py-6">
+<div class="text-2xl font-newsreader font-semibold text-[#1b1c19] tracking-tighter">The Digital Curator</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-[#380080] font-semibold font-newsreader tracking-tight transition-colors duration-300" href="#">Curriculum</a>
+<a class="text-[#1b1c19]/70 font-['Inter'] text-sm uppercase tracking-widest hover:text-[#380080] transition-colors duration-300" href="#">Outcomes</a>
+<a class="text-[#1b1c19]/70 font-['Inter'] text-sm uppercase tracking-widest hover:text-[#380080] transition-colors duration-300" href="#">Scholars</a>
+<a class="text-[#1b1c19]/70 font-['Inter'] text-sm uppercase tracking-widest hover:text-[#380080] transition-colors duration-300" href="#">Enroll</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label text-sm font-medium hover:opacity-90 active:scale-95 transition-all">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section: Bold Asymmetry -->
+<section class="max-w-[1440px] mx-auto px-12 md:grid md:grid-cols-12 gap-8 mb-48">
+<div class="md:col-start-4 md:col-span-9">
+<h1 class="font-newsreader text-[clamp(3.5rem,8vw,5.5rem)] leading-[1.05] tracking-tighter mb-12 font-medium">
+                    Create a content system that <span class="italic text-primary">extends your reach</span> and multiplies your impact.
+                </h1>
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-5 rounded-full text-lg font-medium shadow-lg hover:opacity-90 active:scale-95 transition-all">
+                        Build your content system →
+                    </button>
+<p class="max-w-md font-body text-lg leading-relaxed text-on-surface/70">
+                        An institutional framework for thought leaders, researchers, and digital architects to codify knowledge into a self-sustaining ecosystem.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Overview: Editorial Layout -->
+<section class="bg-surface-container-low py-32 mb-48">
+<div class="max-w-[1440px] mx-auto px-12 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative">
+<img class="rounded-lg w-full aspect-[4/5] object-cover" data-alt="Minimalist library shelf with deep purple shadows and soft cream lighting, elegant book spines and architectural geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8eeV8lbBgkU3FBMDA7uNG5Zkdlqa8JAc2a1IvCilQ-ZBJYcwqsv_empPZ00VjKscfPZcPUewgoHAowEiYcdBd8l4ss_ee4ugcK_7cHDmyeH6xMb50nSK3nABZOJ7jBXrxXGuTI9pgxQYL9JvU3tRTiaftTYh_3PIfIAStoW_LfVdwSlp5b0RmFvgICABsfVq_IUZpb5g6VXRpCVhpmjRjVXUPmk2H9-NMfd8w1C6P35ps5GGvvr4W3ApBYSgsBG4zjUk_Fqvy6VKm"/>
+<div class="absolute -bottom-8 -right-8 bg-surface-container-highest p-8 rounded-lg shadow-xl max-w-xs">
+<span class="text-tertiary-container font-newsreader italic text-xl">The Curatorial Method</span>
+<p class="text-sm mt-2 text-on-surface-variant font-body">Our framework moves beyond mere posting. We architect permanence.</p>
+</div>
+</div>
+<div class="md:col-start-7 md:col-span-5">
+<h2 class="font-newsreader text-4xl mb-8 tracking-tight">An Intellectual Infrastructure</h2>
+<div class="space-y-6 font-body text-on-surface/80 leading-relaxed text-lg">
+<p>In an age of ephemeral streams, "The Digital Curator" provides the tools to build a permanent intellectual estate. We don't teach you to "create content"; we teach you to design systems.</p>
+<p>Through a rigorous synthesis of AI logic and human curation, we help you transform fragmented ideas into a cohesive, multi-channel narrative that builds authority while you sleep.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Who This Is For: Institutional List -->
+<section class="max-w-[1440px] mx-auto px-12 mb-48 grid md:grid-cols-12">
+<div class="md:col-start-2 md:col-span-2">
+<span class="label-md font-label text-xs uppercase tracking-[0.2em] text-primary/60 border-t border-primary/20 pt-4 block">Audience</span>
+</div>
+<div class="md:col-span-8">
+<h3 class="font-newsreader text-5xl mb-16 tracking-tight">Who This Is For</h3>
+<div class="grid gap-1 border-t border-outline-variant/20">
+<div class="group flex items-center justify-between py-12 hover:bg-surface-container-low px-8 transition-colors rounded-lg">
+<div class="flex gap-12 items-baseline">
+<span class="font-newsreader italic text-primary/40 text-2xl">01</span>
+<div>
+<h4 class="text-2xl font-newsreader font-medium">Domain Experts &amp; Academics</h4>
+<p class="text-on-surface-variant mt-2 max-w-lg">Transform lifelong research into a digital curriculum that generates global impact without sacrificing depth.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div class="group flex items-center justify-between py-12 hover:bg-surface-container-low px-8 transition-colors rounded-lg">
+<div class="flex gap-12 items-baseline">
+<span class="font-newsreader italic text-primary/40 text-2xl">02</span>
+<div>
+<h4 class="text-2xl font-newsreader font-medium">Founders &amp; Digital Architects</h4>
+<p class="text-on-surface-variant mt-2 max-w-lg">Build the "Founder's Engine"—a system that turns strategic vision into high-frequency, high-value output.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+<div class="group flex items-center justify-between py-12 hover:bg-surface-container-low px-8 transition-colors rounded-lg">
+<div class="flex gap-12 items-baseline">
+<span class="font-newsreader italic text-primary/40 text-2xl">03</span>
+<div>
+<h4 class="text-2xl font-newsreader font-medium">Institutional Voices</h4>
+<p class="text-on-surface-variant mt-2 max-w-lg">Establish a standard of quality that mirrors the prestige of a physical institution in the digital landscape.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- What You'll Leave With: Bento Grid -->
+<section class="bg-surface-container-low py-32 mb-48">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="mb-24">
+<h2 class="font-newsreader text-5xl tracking-tight max-w-2xl">What You'll Leave With</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface p-12 rounded-lg flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-4xl text-primary">account_tree</span>
+<div>
+<h4 class="font-newsreader text-2xl mb-4">The Content Ontology</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">A bespoke map of your unique knowledge base, structured for infinite repurposing across all digital formats.</p>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-12 rounded-lg flex flex-col justify-between aspect-square md:scale-105 shadow-2xl relative z-10">
+<span class="material-symbols-outlined text-4xl text-on-primary-container" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<div>
+<h4 class="font-newsreader text-2xl mb-4">The AI Co-Pilot Suite</h4>
+<p class="opacity-80 text-sm leading-relaxed">Customized GPT-based frameworks trained on your specific voice, logic, and stylistic nuances to ensure quality scaling.</p>
+</div>
+</div>
+<div class="bg-surface p-12 rounded-lg flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-4xl text-primary">history_edu</span>
+<div>
+<h4 class="font-newsreader text-2xl mb-4">Curation Workflow</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">A daily institutional practice that takes you from raw insight to polished publication in under 45 minutes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Outcomes: Progress Pills -->
+<section class="max-w-[1440px] mx-auto px-12 mb-32 grid md:grid-cols-12 gap-12">
+<div class="md:col-span-5">
+<h3 class="font-newsreader text-4xl mb-6">Core Outcomes</h3>
+<p class="font-body text-on-surface/70 mb-12">We measure success by the "Formation" of your system. Here is the transformation our scholars typically experience.</p>
+<div class="space-y-10">
+<div>
+<div class="flex justify-between mb-3 items-end">
+<span class="font-newsreader text-xl">Authority Establishment</span>
+<span class="text-tertiary-container font-label text-sm font-bold">92%</span>
+</div>
+<div class="h-4 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[92%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-3 items-end">
+<span class="font-newsreader text-xl">Operational Efficiency</span>
+<span class="text-tertiary-container font-label text-sm font-bold">85%</span>
+</div>
+<div class="h-4 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[85%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-3 items-end">
+<span class="font-newsreader text-xl">Reach Multiplier</span>
+<span class="text-tertiary-container font-label text-sm font-bold">78%</span>
+</div>
+<div class="h-4 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-[78%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-start-7 md:col-span-6 bg-surface-container-high rounded-lg p-12">
+<div class="flex flex-col h-full justify-center text-center items-center">
+<span class="material-symbols-outlined text-6xl text-primary/20 mb-8">workspace_premium</span>
+<h4 class="font-newsreader text-3xl mb-6 italic">"This is the first system that didn't ask me to be a 'creator' but rather a scholar in my own field."</h4>
+<div class="w-16 h-[1px] bg-primary/20 mb-6"></div>
+<p class="font-label text-xs uppercase tracking-widest text-primary font-bold">Director of Research, Arkenstone Lab</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-24 bg-[#f5f4ee] dark:bg-[#1b1c19]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1440px] mx-auto px-12">
+<div>
+<div class="text-xl font-newsreader italic text-[#1b1c19] dark:text-[#fbf9f4] mb-4">The Digital Curator</div>
+<p class="font-['Inter'] text-sm tracking-normal leading-relaxed text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 max-w-xs">
+                    © 2024 The Digital Curator. All institutional rights reserved.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:justify-end items-start md:items-center">
+<a class="text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#380080] underline decoration-from-font underline-offset-4 text-sm font-['Inter']" href="#">Privacy Policy</a>
+<a class="text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#380080] underline decoration-from-font underline-offset-4 text-sm font-['Inter']" href="#">Terms of Service</a>
+<a class="text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#380080] underline decoration-from-font underline-offset-4 text-sm font-['Inter']" href="#">Institutional Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

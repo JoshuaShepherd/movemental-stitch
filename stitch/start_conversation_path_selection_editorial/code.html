@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#4a4454",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f5f3ee",
+                    "on-secondary-fixed": "#1b1c19",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-tertiary-container": "#fa9261",
+                    "on-background": "#1b1c19",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#d3bbff",
+                    "on-secondary-fixed-variant": "#464743",
+                    "inverse-on-surface": "#f2f1ec",
+                    "secondary-container": "#deddd8",
+                    "surface-bright": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-tint": "#7238d5",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#eaddff",
+                    "on-surface": "#1b1c19",
+                    "surface-container": "#f0eee9",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#4e1a00",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-secondary-container": "#61615d",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "tertiary-fixed": "#ffdbcc",
+                    "outline-variant": "#ccc3d7",
+                    "on-tertiary-fixed": "#351000",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "primary": "#380080",
+                    "secondary": "#5e5f5b",
+                    "surface": "#fbf9f4",
+                    "on-primary-fixed": "#25005a",
+                    "inverse-surface": "#30312e",
+                    "background": "#fbf9f4",
+                    "surface-variant": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container-high": "#eae8e3",
+                    "on-primary-container": "#bd9cff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "outline": "#7b7486",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#722a00",
+                    "surface-dim": "#dbdad5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-tight {
+            font-family: 'Newsreader', serif;
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f4] dark:bg-stone-950 flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-stone-100">Movemental</div>
+<nav class="hidden md:flex space-x-8">
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Philosophy</a>
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Pathways</a>
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Archive</a>
+</nav>
+<button class="bg-primary-container text-white px-6 py-2 font-body text-sm font-medium tracking-wide transition-opacity active:opacity-80">
+            Get Started
+        </button>
+</header>
+<!-- Separation Line as per JSON -->
+<div class="bg-[#f0eee9] dark:bg-stone-900 h-[1px] w-full"></div>
+<main class="max-w-screen-2xl mx-auto px-8 pt-24 pb-32">
+<!-- Hero Heading -->
+<div class="max-w-3xl mb-24">
+<span class="font-body text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-6 block">Inquiry Phase 01</span>
+<h1 class="serif-tight text-6xl md:text-8xl font-light text-on-surface leading-[1.1]">
+                Where are you <span class="italic text-primary-container">coming</span> from?
+            </h1>
+</div>
+<!-- Path Selection Cards: Asymmetrical Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Option 1: Movement Leader -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="bg-surface-container-low p-12 h-full min-h-[500px] flex flex-col justify-between transition-all duration-500 hover:bg-surface-container-lowest">
+<div>
+<div class="mb-12">
+<span class="material-symbols-outlined text-4xl text-primary-container" data-icon="history_edu">history_edu</span>
+</div>
+<h2 class="serif-tight text-4xl mb-6">Movement Leader</h2>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-md">
+                            “I’ve built a body of work” — You are an individual practitioner, researcher, or creator looking to codify, archive, or expand a personal legacy of change.
+                        </p>
+</div>
+<div class="flex items-center space-x-4 mt-12 overflow-hidden">
+<img class="w-32 h-40 object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Monochrome close-up of ink pens and handwritten journals on a clean wooden desk with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZQNP0m4y5KSaXdfEzqMrLm5hMVOmSAzCB4gToyFcHOocLI0rorQZ_h0qRQSaxR17O9M4l_M6XbZl5TQTOkjGR44VFS61jG7ew9_g8r5YfoyUym-1mRw6B6BKE0bAGErMjvVG2TIxN4hgP3fNLjbOWcrEcDQTtHNp9boM6V5hNS_jUxFUNstKtDryY3gOXXA6-2zWizgh0k8TevWGUtvZP3e0lZpvxWhOUMdsVuM-3zSMMVazF0fHw_iPQqEPggDw0nxmQdmgkE6uV"/>
+<div class="flex flex-col">
+<span class="font-body text-xs uppercase tracking-widest text-on-surface-variant">Selected Pathway</span>
+<span class="font-serif italic text-xl">The Archivist's Solo</span>
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<span class="material-symbols-outlined text-3xl text-primary-container opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-[-10px] group-hover:translate-x-0 duration-300" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+<!-- Option 2: Organization -->
+<div class="md:col-span-5 group cursor-pointer md:mt-32">
+<div class="bg-primary-container p-12 h-full min-h-[500px] flex flex-col justify-between transition-all duration-500">
+<div>
+<div class="mb-12">
+<span class="material-symbols-outlined text-4xl text-on-primary-container" data-icon="account_balance">account_balance</span>
+</div>
+<h2 class="serif-tight text-4xl mb-6 text-white">Organization</h2>
+<p class="font-body text-lg text-on-primary-container leading-relaxed">
+                            “I’m leading a team or institution” — You represent a collective entity seeking to align institutional memory with future strategic momentum.
+                        </p>
+</div>
+<div class="mt-12 bg-[#380080] p-8">
+<p class="text-white font-serif italic text-lg leading-snug">
+                            Institutional frameworks for systemic intelligence.
+                        </p>
+<div class="mt-4 flex items-center space-x-2">
+<div class="h-[1px] w-12 bg-on-primary-container"></div>
+<span class="text-xs uppercase tracking-widest text-on-primary-container font-body">Scale Strategy</span>
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<span class="material-symbols-outlined text-3xl text-primary-container opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-[-10px] group-hover:translate-x-0 duration-300" data-icon="arrow_right_alt">arrow_right_alt</span>
+</div>
+</div>
+</div>
+<!-- Scholarly Subtext Section -->
+<section class="mt-48 grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-t border-outline-variant pt-16">
+<div class="md:col-span-4">
+<h3 class="serif-tight text-2xl">The Methodology</h3>
+</div>
+<div class="md:col-span-8">
+<p class="font-body text-sm text-on-surface-variant max-w-xl leading-relaxed">
+                    Movemental operates at the intersection of archival rigor and digital agility. Whether you are preserving a singular vision or an organizational history, our pathways are designed to transform static data into kinetic movement.
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#fbf9f4] dark:bg-stone-950 flex flex-col items-center justify-center space-y-6 w-full px-8 text-center py-12">
+<div class="bg-[#f0eee9] dark:bg-stone-900 h-[1px] w-full mb-8"></div>
+<p class="font-sans text-xs uppercase tracking-widest text-[#1b1c19] dark:text-stone-300">
+            © 2024 Movemental. Built for the Modern Archivist.
+        </p>
+<div class="flex space-x-12">
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Privacy</a>
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Terms</a>
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</footer>
+</body></html>

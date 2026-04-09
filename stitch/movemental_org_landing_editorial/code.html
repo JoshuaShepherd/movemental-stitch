@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb595",
+                    "surface-container-low": "#f5f3ee",
+                    "on-secondary-fixed-variant": "#464743",
+                    "surface-bright": "#fbf9f4",
+                    "on-secondary-fixed": "#1b1c19",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1b1c19",
+                    "on-primary-fixed": "#25005a",
+                    "on-error": "#ffffff",
+                    "primary": "#380080",
+                    "secondary-container": "#deddd8",
+                    "surface-dim": "#dbdad5",
+                    "outline-variant": "#ccc3d7",
+                    "background": "#fbf9f4",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#ffdbcc",
+                    "surface": "#fbf9f4",
+                    "tertiary": "#4e1a00",
+                    "surface-container-high": "#eae8e3",
+                    "primary-fixed": "#eaddff",
+                    "surface-tint": "#7238d5",
+                    "surface-variant": "#e4e2dd",
+                    "inverse-primary": "#d3bbff",
+                    "on-surface-variant": "#4a4454",
+                    "on-primary-container": "#bd9cff",
+                    "surface-container": "#f0eee9",
+                    "on-tertiary-fixed": "#351000",
+                    "surface-container-highest": "#e4e2dd",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-tertiary-container": "#fa9261",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "on-error-container": "#93000a",
+                    "outline": "#7b7486",
+                    "secondary-fixed": "#e4e2dd",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-surface": "#1b1c19",
+                    "on-secondary-container": "#61615d",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#722a00",
+                    "secondary": "#5e5f5b",
+                    "inverse-surface": "#30312e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f4;
+            color: #1b1c19;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Newsreader', serif;
+        }
+        .deep-gradient {
+            background: linear-gradient(135deg, #380080 0%, #5300b7 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed-dim">
+<!-- Top Navigation Shell -->
+<header class="w-full top-0 z-50 bg-[#fbf9f4] dark:bg-[#1b1c19]">
+<nav class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] italic text-[#1b1c19] dark:text-[#fbf9f4]">
+                Editorial Intelligence
+            </div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#5300b7] dark:text-[#a370f7] border-b-2 border-[#5300b7] pb-1 font-['Newsreader'] tracking-tight transition-all duration-300" href="#">Capacity</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7] font-['Newsreader'] tracking-tight transition-all duration-300" href="#">Governance</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7] font-['Newsreader'] tracking-tight transition-all duration-300" href="#">Structural</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7] font-['Newsreader'] tracking-tight transition-all duration-300" href="#">Insights</a>
+<a class="text-[#1b1c19] dark:text-[#fbf9f4] opacity-70 hover:opacity-100 hover:text-[#5300b7] font-['Newsreader'] tracking-tight transition-all duration-300" href="#">About</a>
+</div>
+<button class="bg-[#5300b7] text-white px-6 py-3 font-body text-sm uppercase tracking-widest scale-95 active:scale-90 transition-transform">
+                Partner With Us
+            </button>
+</nav>
+</header>
+<main>
+<!-- Section 1: Hero & The Capacity Problem -->
+<section class="px-8 pt-24 pb-32 max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8">
+<h1 class="text-5xl md:text-7xl lg:text-8xl leading-none -tracking-[0.02em] font-light mb-12">
+                    Most nonprofits don't have a <span class="italic">strategy</span> problem, they have a <span class="text-primary-container">capacity</span> problem.
+                </h1>
+<p class="text-xl md:text-2xl font-body leading-relaxed max-w-2xl opacity-80">
+                    The vision is clear. The intent is noble. But the friction is constant. We address the four pillars of organizational exhaustion: Time, People, Structure, and Tools.
+                </p>
+</div>
+<div class="lg:col-span-4 self-end lg:pb-12">
+<div class="space-y-8 border-l border-outline-variant/30 pl-8">
+<div class="group cursor-default">
+<span class="font-body text-xs uppercase tracking-[0.3em] opacity-40">01</span>
+<h3 class="text-2xl serif mt-2 italic">Institutional Integrity</h3>
+</div>
+<div class="group cursor-default">
+<span class="font-body text-xs uppercase tracking-[0.3em] opacity-40">02</span>
+<h3 class="text-2xl serif mt-2 italic">Structural Capacity</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: AI Capabilities (Asymmetric Bento) -->
+<section class="bg-surface-container py-32 px-8">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20">
+<h2 class="text-4xl md:text-5xl serif mb-6">New capabilities with Intelligence.</h2>
+<p class="font-body opacity-60 tracking-widest uppercase text-xs">Unlocking the movement through technology</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-0">
+<!-- Bento Item 1 -->
+<div class="md:col-span-2 lg:col-span-2 bg-surface p-12 border-r border-b border-outline-variant/20 h-[400px] flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="account_tree">account_tree</span>
+<div>
+<h4 class="text-2xl serif mb-4 italic">Mapping Relationships</h4>
+<p class="font-body text-sm leading-relaxed opacity-70">Visualize the invisible networks connecting your mission to the stakeholders that matter most.</p>
+</div>
+</div>
+<!-- Bento Item 2 -->
+<div class="md:col-span-2 lg:col-span-4 bg-primary-container text-white p-12 h-[400px] flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-white/50" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="text-4xl serif mt-8 leading-tight max-w-md italic">Generating context-aware content at movement speed.</h4>
+</div>
+<div class="absolute bottom-0 right-0 w-1/2 h-full opacity-20">
+<img class="w-full h-full object-cover" data-alt="abstract digital light waves flowing in deep purple and blue space representing neural network connectivity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1XZQXZlrAlM67PmX1QvLEiFtmWKgeU5kF9-jUtYHgKNZvrIpE51fN9yeyWN1OVPAW6wpCY_95enj1RHd_pjwgFphxvmMr6OR8loHGGfWRoQ5OhfFTJdl5O0nij3iInJIM11zgexoBjt_kXD8NcEFL8F9OH3U_owY3ODU4_tecEW2u8bzlczvdMZdMwqK7wM0vOH78QD83ypFDpj-Bbfo24yUJjCan-MwWAcBIMTGZLEqYK6UUKA3r-X3V9IhmE9R77O99tigT_n92"/>
+</div>
+</div>
+<!-- Bento Item 3 -->
+<div class="md:col-span-3 lg:col-span-3 bg-surface-container-highest p-12 border-r border-outline-variant/20 h-[400px] flex flex-col justify-between">
+<div>
+<h4 class="text-2xl serif mb-4 italic">Organizing Information</h4>
+<p class="font-body text-sm leading-relaxed opacity-70 max-w-xs">Transform fractured datasets into a single, living archive of institutional knowledge.</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-on-surface" data-icon="inventory_2">inventory_2</span>
+</div>
+<!-- Bento Item 4 -->
+<div class="md:col-span-1 lg:col-span-3 bg-surface p-12 h-[400px] flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="query_stats">query_stats</span>
+<div>
+<h4 class="text-2xl serif mb-4 italic">Decision Support</h4>
+<p class="font-body text-sm leading-relaxed opacity-70">Move from gut feelings to data-informed governance with real-time feedback loops.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3 & 7: The "Build With" Philosophy -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-4xl md:text-6xl serif leading-tight mb-8">We don't advise, <br/><span class="italic font-light">we build with you.</span></h2>
+<p class="text-lg font-body opacity-80 leading-relaxed mb-8">
+                        The traditional consulting model is broken. It delivers reports that gather dust. We create four-week immersive environments where we co-author the tools and systems your team needs.
+                    </p>
+<div class="flex items-center gap-4 text-primary font-body font-semibold tracking-wider text-sm uppercase">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+                        Focused collaboration, not long-term dependency.
+                    </div>
+</div>
+<div class="relative bg-surface-container-low p-12">
+<img class="w-full grayscale contrast-125 mb-8" data-alt="professional workspace with high-end architecture, natural light, and team members collaborating around a large wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYkUGGZiBeFYZXhsfa5RkWIGo_o8BnyPS_LvCJ6eJ2Wk0-eu4IqFj9_3UbJWXGqboCMltoJ-6VKgy_SecPL8AyRX_75hHHil78-rVe4PjR2opzncYhUozchQQK79GHXKr7aDoQRDjY2Vm4hTuiEQly49cJvLOtR903qFjYDUKZFbQ04uA_7G0soDK6zh36IuTgvLXslrkHnOYPl9o5BaE1X0LSDCxtSRVo9DlvdZWp0x-emZon7f9uaP5Ke4G_GMGokD--Ila7GZuA"/>
+<div class="absolute -bottom-6 -right-6 bg-primary-container text-white p-8 max-w-[280px]">
+<p class="serif text-xl italic">"Not consulting, but building the systems that sustain the work."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: The Five Builds (The Core Offering) -->
+<section class="bg-on-secondary-fixed text-white py-32 px-8 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col lg:flex-row justify-between items-baseline mb-24 gap-8">
+<h2 class="text-5xl md:text-7xl serif">The Five Builds.</h2>
+<p class="font-body text-on-secondary-fixed-variant tracking-widest uppercase text-sm">Strategic Infrastructure Menu</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-px bg-on-secondary-fixed-variant/20">
+<!-- Build 1 -->
+<div class="bg-on-secondary-fixed p-8 flex flex-col justify-between group cursor-default h-[450px] transition-colors hover:bg-primary-container">
+<div>
+<p class="font-body text-xs tracking-widest opacity-40 mb-12">BUILD 01</p>
+<h3 class="text-3xl serif mb-4">Governance</h3>
+<p class="text-sm opacity-60 font-body leading-relaxed">Establish ethical AI policies and clear decision-making frameworks.</p>
+</div>
+<div class="text-2xl serif italic">$5k</div>
+</div>
+<!-- Build 2 -->
+<div class="bg-on-secondary-fixed p-8 flex flex-col justify-between group cursor-default h-[450px] transition-colors hover:bg-primary-container">
+<div>
+<p class="font-body text-xs tracking-widest opacity-40 mb-12">BUILD 02</p>
+<h3 class="text-3xl serif mb-4">Discovery Lab</h3>
+<p class="text-sm opacity-60 font-body leading-relaxed">Map your data ecosystem and identify the highest leverage automation points.</p>
+</div>
+<div class="text-2xl serif italic">$5k</div>
+</div>
+<!-- Build 3 -->
+<div class="bg-on-secondary-fixed p-8 flex flex-col justify-between group cursor-default h-[450px] transition-colors hover:bg-primary-container">
+<div>
+<p class="font-body text-xs tracking-widest opacity-40 mb-12">BUILD 03</p>
+<h3 class="text-3xl serif mb-4">Adaptive Leadership</h3>
+<p class="text-sm opacity-60 font-body leading-relaxed">Coaching for executives on managing organizational change in the age of AI.</p>
+</div>
+<div class="text-2xl serif italic">$5k</div>
+</div>
+<!-- Build 4 -->
+<div class="bg-on-secondary-fixed p-8 flex flex-col justify-between group cursor-default h-[450px] transition-colors hover:bg-primary-container">
+<div>
+<p class="font-body text-xs tracking-widest opacity-40 mb-12">BUILD 04</p>
+<h3 class="text-3xl serif mb-4 text-primary-fixed">Content System</h3>
+<p class="text-sm opacity-60 font-body leading-relaxed">A custom-tuned generation engine for your voice, your values, and your mission.</p>
+</div>
+<div class="text-2xl serif italic">$10k</div>
+</div>
+<!-- Build 5 -->
+<div class="bg-on-secondary-fixed p-8 flex flex-col justify-between group cursor-default h-[450px] transition-colors hover:bg-primary-container">
+<div>
+<p class="font-body text-xs tracking-widest opacity-40 mb-12">BUILD 05</p>
+<h3 class="text-3xl serif mb-4 text-primary-fixed">Fundraising System</h3>
+<p class="text-sm opacity-60 font-body leading-relaxed">Intelligent donor mapping and automated personalization at scale.</p>
+</div>
+<div class="text-2xl serif italic">$10k</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5, 8 & 11: Outcome & Movement -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5">
+<div class="aspect-square bg-surface-container relative">
+<img class="w-full h-full object-cover grayscale opacity-50" data-alt="black and white artistic close-up of ink on textured paper forming intricate organic patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBZDar30J0bLZG3CnJearRkrq2PQDuJCcSjUo355UxV96czSP3W87ynMhCKr2x1KP96LDFykiY_X2t7Utrgx8jyMnVE_okkSwlUpg8OlOfhR0JJES1ywP6tfnPyBvLPYrQ5fwhjsL9IZTPBWMbotDFPOYhrx4XawcRATAVD7VsD_fZ2EX8snRm7AGb_S8bxRuEi8nvW7Jm9VYU1YNOGzklPLqGmInasn2M2Yc2kM6OlbwMNR9Xhi9pSs-STr4VnD2yxFfAJ0mssKXi"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center">
+<span class="text-7xl serif italic text-primary leading-none">4</span>
+<p class="font-body text-xs uppercase tracking-widest mt-2">Weeks to impact</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-center pl-0 lg:pl-12">
+<h2 class="text-4xl md:text-5xl serif mb-8 leading-tight">Four weeks, real outcomes. <br/>Our relationship to Movement Leaders is a partnership of equals.</h2>
+<p class="text-lg font-body opacity-80 leading-relaxed mb-12">
+                        If this works, it changes what you're capable of doing. We don't just solve today's problems; we expand the horizon of what your organization can achieve next year, and the year after.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+<p class="font-body text-sm">Deployment of living tools within 28 days.</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="check_circle">check_circle</span>
+<p class="font-body text-sm">Radical transparency in pricing and process.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9 & 10: Who this is (not) for -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div class="space-y-12">
+<h2 class="text-3xl serif italic">Who this is for.</h2>
+<ul class="space-y-8">
+<li class="border-b border-outline-variant/30 pb-6 flex justify-between items-end">
+<span class="text-xl serif">Capable teams.</span>
+<span class="font-body text-xs opacity-40 uppercase">A-Players Only</span>
+</li>
+<li class="border-b border-outline-variant/30 pb-6 flex justify-between items-end">
+<span class="text-xl serif">Limited capacity.</span>
+<span class="font-body text-xs opacity-40 uppercase">Resource Constrained</span>
+</li>
+<li class="border-b border-outline-variant/30 pb-6 flex justify-between items-end">
+<span class="text-xl serif">Open to building.</span>
+<span class="font-body text-xs opacity-40 uppercase">Co-Creation</span>
+</li>
+</ul>
+</div>
+<div class="space-y-12">
+<h2 class="text-3xl serif italic opacity-40">Who this is not for.</h2>
+<ul class="space-y-8">
+<li class="border-b border-outline-variant/30 pb-6 flex justify-between items-end">
+<span class="text-xl serif opacity-40">Quick fixes.</span>
+<span class="font-body text-xs opacity-20 uppercase">Surface level</span>
+</li>
+<li class="border-b border-outline-variant/30 pb-6 flex justify-between items-end">
+<span class="text-xl serif opacity-40">No implementation.</span>
+<span class="font-body text-xs opacity-20 uppercase">Hands-off</span>
+</li>
+<li class="border-b border-outline-variant/30 pb-6 flex justify-between items-end">
+<span class="text-xl serif opacity-40">Static strategies.</span>
+<span class="font-body text-xs opacity-20 uppercase">Fear of change</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 px-8 text-center bg-surface">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-5xl md:text-7xl serif mb-12 italic">Ready to expand your capacity?</h2>
+<button class="deep-gradient text-white px-12 py-6 font-body text-lg uppercase tracking-widest hover:brightness-110 transition-all">
+                    Start a Conversation
+                </button>
+<p class="mt-8 font-body text-xs opacity-40 uppercase tracking-[0.4em]">No sales decks. Just a talk about what's next.</p>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#1b1c19] dark:bg-[#000000] w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-bold font-['Newsreader'] text-[#fbf9f4]">Editorial Intelligence</div>
+<p class="text-[#ccc9c6] font-['Inter'] text-xs leading-relaxed max-w-xs">
+                    Building institutional integrity through structural capacity and adaptive technology.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[#fbf9f4] font-['Inter'] text-sm uppercase tracking-widest mb-2 opacity-50">Frameworks</span>
+<a class="text-[#fbf9f4] underline underline-offset-4 font-['Inter'] text-sm uppercase tracking-widest" href="#">Governance Frameworks</a>
+<a class="text-[#ccc9c6] hover:text-[#5300b7] transition-colors font-['Inter'] text-sm uppercase tracking-widest" href="#">Capacity Audits</a>
+<a class="text-[#ccc9c6] hover:text-[#5300b7] transition-colors font-['Inter'] text-sm uppercase tracking-widest" href="#">AI Ethics Board</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[#fbf9f4] font-['Inter'] text-sm uppercase tracking-widest mb-2 opacity-50">Legal</span>
+<a class="text-[#ccc9c6] hover:text-[#5300b7] transition-colors font-['Inter'] text-sm uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-[#ccc9c6] hover:text-[#5300b7] transition-colors font-['Inter'] text-sm uppercase tracking-widest" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[#fbf9f4] font-['Inter'] text-sm uppercase tracking-widest mb-2 opacity-50">Location</span>
+<p class="text-[#ccc9c6] font-['Inter'] text-sm uppercase tracking-widest">Remote-First<br/>Global Operations</p>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-20 pt-8 border-t border-[#ccc9c6]/10 flex flex-col md:flex-row justify-between items-center gap-6 opacity-60">
+<p class="text-[#ccc9c6] font-['Inter'] text-xs uppercase tracking-widest">
+                © 2024 Editorial Intelligence. All rights reserved. Built for Institutional Integrity.
+            </p>
+<div class="flex gap-8">
+<span class="material-symbols-outlined text-[#fbf9f4]" data-icon="public">public</span>
+<span class="material-symbols-outlined text-[#fbf9f4]" data-icon="terminal">terminal</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Movemental | The Archive</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e4e2dd",
+                        "secondary-fixed-dim": "#c7c6c2",
+                        "on-primary-container": "#bd9cff",
+                        "on-secondary-fixed-variant": "#464743",
+                        "primary-fixed-dim": "#d3bbff",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dbdad5",
+                        "inverse-surface": "#30312e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "tertiary-container": "#722a00",
+                        "surface-container-high": "#eae8e3",
+                        "secondary": "#5e5f5b",
+                        "on-surface": "#1b1c19",
+                        "surface": "#fbf9f4",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-container-low": "#f5f3ee",
+                        "tertiary": "#4e1a00",
+                        "secondary-container": "#deddd8",
+                        "inverse-primary": "#d3bbff",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-tint": "#7238d5",
+                        "primary": "#380080",
+                        "primary-container": "#5300b7",
+                        "on-primary-fixed-variant": "#5912bd",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-container": "#f0eee9",
+                        "on-primary-fixed": "#25005a",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#eaddff",
+                        "secondary-fixed": "#e4e2dd",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#ccc3d7",
+                        "on-tertiary-container": "#fa9261",
+                        "background": "#fbf9f4",
+                        "on-background": "#1b1c19",
+                        "on-secondary-container": "#61615d",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "outline": "#7b7486",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#351000",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#1b1c19",
+                        "on-surface-variant": "#4a4454"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 40px -12px rgba(27, 28, 25, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f4] dark:bg-[#1b1c19]">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-[#fbf9f4]">Movemental</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium tracking-tight text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-colors duration-300" href="#">Platform</a>
+<a class="text-sm font-medium tracking-tight text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-colors duration-300" href="#">Infrastructure</a>
+<a class="text-sm font-medium tracking-tight text-[#1b1c19]/70 dark:text-[#fbf9f4]/70 hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-colors duration-300" href="#">Intelligence</a>
+<a class="text-sm font-medium tracking-tight text-[#5300b7] dark:text-[#a370f7] font-semibold" href="#">Archive</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden md:block bg-primary-container text-on-primary hover:opacity-90 active:scale-95 transition-all px-6 py-2.5 text-sm font-medium">Get Started</button>
+<span class="material-symbols-outlined cursor-pointer text-[#1b1c19] dark:text-[#fbf9f4]" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section: The Archive -->
+<section class="relative min-h-screen flex items-center justify-start overflow-hidden pt-20">
+<!-- Background Image with Tonal Overlay -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%] brightness-[0.85]" data-alt="Interior of a modern high-end library with dark wood shelves, warm accent lighting, large windows, and a scholarly atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCv7pjYGfI02OOmllBUfh-VT-1_HnWyiDxySDAFuacBkQWHQOKoGKJj0VGTkZYfcWs-V0JcE_5BLyJykeA7MwrNIv_8w8lLJhiJcZU_NjY_Ez49OOoQ9jA7YFe439Nz2YhwIpSTOOvOjgNNIGzSnhk0nCUBqjr5wjSDF69JanpMYhbdVJ6RdpYzIALbfMJNG1Iz02lMDtJ_-ueGpG9ETjMiMYWdDvyBKjrZ2FdkzvzgHyT3yoIi1HhBYmvpuwsGd2Ed3CnCWR8yl8I"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-8 py-20">
+<div class="grid grid-cols-12 gap-8 items-center">
+<!-- Glassmorphic Content Card -->
+<div class="col-span-12 lg:col-span-7 xl:col-span-6 bg-surface/80 backdrop-blur-[24px] p-12 md:p-20 editorial-shadow">
+<div class="max-w-2xl">
+<span class="block text-primary font-body font-bold uppercase tracking-[0.2em] text-[10px] mb-8">Systemic Evolution</span>
+<h1 class="font-headline text-[3rem] md:text-[3.5rem] leading-[1.1] text-on-surface -tracking-[0.02em] mb-8">
+                                Turn your ideas—or your organization—into a living system that forms people and scales impact.
+                            </h1>
+<p class="font-body text-lg leading-[1.6] text-on-surface-variant mb-12 max-w-xl">
+                                Movemental translates movement intelligence into modern digital infrastructure—combining digital platforms, AI, training and consulting to build systems that actually work.
+                            </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 text-sm font-semibold tracking-wide hover:opacity-90 transition-all active:scale-95">
+                                    Start a Conversation
+                                </button>
+<button class="bg-secondary-container text-on-secondary-fixed px-8 py-4 text-sm font-semibold tracking-wide hover:bg-surface-variant transition-all active:scale-95 flex items-center gap-2">
+                                    See How it Works
+                                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Asymmetric Decorative Element -->
+<div class="hidden lg:flex col-span-5 xl:col-span-6 justify-end items-center">
+<div class="relative w-72 h-[32rem] bg-on-surface overflow-hidden">
+<img class="w-full h-full object-cover opacity-60" data-alt="Close up of an open vintage book with delicate paper texture and elegant typography in warm directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu3tbN0gYz6BB-fuNKt1MnfqFBP_MocFc4ObvVBzKi3hbPLCoeIclEpgvtOzxfH4c7BF7brtpzjAfoKSqbFyDXD4DJCkSxrhL5DhKasCpRLsDw935GiGIKQjRZJC71EeVQUViK5m2xPddiCw7I9iRYB8F8BWUTheA7aoPaYzEElb9g948py2SzSGRD9-XrxtDs9mxSaw8IDl-iTVdfWx04p9HEZ3y-_kiL_JIuKplCuZqI8pQhX5kain-WUj3hT0hL988bRLlMpFZv"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-[1px] h-32 bg-primary-container/40"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Section: Tonal Layering Example -->
+<section class="bg-surface-container py-32">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="menu_book">menu_book</span>
+<h3 class="font-headline text-2xl text-on-surface">Curated Architecture</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Infrastructure designed for the specific rhythms of your community, not generic software templates.</p>
+</div>
+<div class="space-y-6 pt-12 md:pt-24">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="neurology">neurology</span>
+<h3 class="font-headline text-2xl text-on-surface">Applied Intelligence</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">AI integration that respects institutional memory while accelerating future output.</p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="history_edu">history_edu</span>
+<h3 class="font-headline text-2xl text-on-surface">Cultural Training</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Building the human systems required to sustain technological transformation.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f0eee9] dark:bg-[#151613]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full mt-auto max-w-[1440px] mx-auto">
+<div class="font-sans Inter text-xs uppercase tracking-widest text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 mb-8 md:mb-0">
+                © 2024 Movemental. All rights reserved.
+            </div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="font-sans Inter text-xs uppercase tracking-widest text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-opacity duration-200" href="#">Privacy</a>
+<a class="font-sans Inter text-xs uppercase tracking-widest text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-opacity duration-200" href="#">Terms</a>
+<a class="font-sans Inter text-xs uppercase tracking-widest text-[#1b1c19]/50 dark:text-[#fbf9f4]/50 hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-opacity duration-200" href="#">Security</a>
+<a class="font-sans Inter text-xs uppercase tracking-widest text-[#1b1c19] dark:text-[#fbf9f4] hover:text-[#5300b7] dark:hover:text-[#a370f7] transition-opacity duration-200" href="#">Documentation</a>
+</div>
+</div>
+</footer>
+</body></html>

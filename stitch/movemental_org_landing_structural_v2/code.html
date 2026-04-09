@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#464743",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fbf9f4",
+                    "tertiary-fixed": "#ffdbcc",
+                    "outline-variant": "#ccc3d7",
+                    "secondary-container": "#deddd8",
+                    "on-primary-fixed": "#25005a",
+                    "surface-variant": "#e4e2dd",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-container": "#f0eee9",
+                    "surface-container-high": "#eae8e3",
+                    "on-surface-variant": "#4a4454",
+                    "tertiary-container": "#722a00",
+                    "surface-dim": "#dbdad5",
+                    "inverse-primary": "#d3bbff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "on-primary-container": "#bd9cff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "secondary-fixed": "#e4e2dd",
+                    "surface-container-highest": "#e4e2dd",
+                    "tertiary": "#4e1a00",
+                    "primary-fixed": "#eaddff",
+                    "outline": "#7b7486",
+                    "on-tertiary-fixed": "#351000",
+                    "on-secondary-fixed": "#1b1c19",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#7238d5",
+                    "surface-container-low": "#f5f3ee",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "background": "#fbf9f4",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#30312e",
+                    "inverse-on-surface": "#f2f1ec",
+                    "primary": "#380080",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#61615d",
+                    "on-surface": "#1b1c19",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#fa9261",
+                    "secondary": "#5e5f5b",
+                    "on-background": "#1b1c19",
+                    "surface": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb595"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .glass-effect { backdrop-filter: blur(24px); background-color: rgba(251, 249, 244, 0.8); }
+        .hero-gradient { background: linear-gradient(135deg, #1b1c19 0%, #30312e 100%); }
+        .amethyst-gradient { background: linear-gradient(135deg, #380080 0%, #5300b7 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation -->
+<nav class="w-full top-0 sticky z-50 bg-[#fbf9f4] dark:bg-stone-950 transition-all duration-300">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic tracking-tight text-[#1b1c19] dark:text-[#fbf9f4]">
+                Movemental
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#5300b7] dark:text-[#7c4dff] font-semibold border-none hover:text-[#5300b7] transition-colors duration-300" href="#">Leaders</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300" href="#">Organizations</a>
+<a class="text-[#1b1c19] dark:text-[#ccc9c6] font-medium hover:text-[#5300b7] transition-colors duration-300" href="#">Approach</a>
+<button class="amethyst-gradient text-white px-8 py-3 font-medium active:scale-95 transition-transform">
+                    Sign In
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[921px] flex items-center hero-gradient text-white overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover grayscale" data-alt="abstract architectural close-up of stone pillars and light shadows creating a sense of permanence and structural depth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ZzJRIQlni0xzD8k9QqX-f4IEaUzlA-UqkEJVaeQutVzeguE5MmYzBGfENyXj-Gy5NZEfY8xeaJ6W89DJ3JFIc6VCPQXiTjd0uRFKXVsLa50q3NSu1Z_ZNUnQxb91dSV0GO61v0NzF9uuFcSrrQaK9A5-wfAhqxvEFScpPXSQDV6PwUF5GyzaxfDbSoMfBHjDZVrcWY9jdofJpR00xNYSz7BPHI1IqqHB422gECuZTurS4i3F5bGRJ2aSeAQnmtcZn4W6QEv20HWo"/>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7 space-y-8">
+<h1 class="text-6xl md:text-8xl font-serif italic leading-[1.1] tracking-tight">
+                    Institutional <br/>Integrity in the <br/>Digital Age.
+                </h1>
+<p class="text-xl md:text-2xl text-secondary-fixed max-w-2xl font-light">
+                    We curate the digital foundations of human governance through structural permanence and editorial precision.
+                </p>
+<div class="pt-4">
+<button class="amethyst-gradient px-10 py-5 text-lg font-medium hover:brightness-110 active:scale-95 transition-all">
+                        Begin the Curation
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="glass-effect p-12 text-on-surface shadow-2xl border-none">
+<span class="material-symbols-outlined text-[#5300b7] text-4xl mb-6">assured_workload</span>
+<h3 class="text-2xl font-serif mb-4 italic">The Archivist's Protocol</h3>
+<p class="text-sm uppercase tracking-[0.2em] font-bold mb-6 text-on-surface-variant">Active Directive 2024</p>
+<p class="text-lg leading-relaxed mb-8 text-on-surface-variant">
+                        Our platform serves as a modern buffer between raw algorithmic output and institutional wisdom. We transform noise into legacy.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center justify-between text-sm border-b border-outline-variant/30 pb-2">
+<span>Stability Index</span>
+<span class="font-mono">99.98%</span>
+</div>
+<div class="flex items-center justify-between text-sm border-b border-outline-variant/30 pb-2">
+<span>Veracity Score</span>
+<span class="font-mono">High Affinity</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- The New Layer -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1">
+<div class="relative aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="conceptual visual representing translation with light refracting through prism into structured geometric patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJNqdzsULenURcIwyz1zliFdq4W-w0YhyGyfvnowjIaJFqdCmp_TAQKnJ1nAfPwzNx1ftLFk4JYiCumGQ_g3378tr6RxTmNVlVd0HuYRh6uMg6W4KnQbGmgdF7pVNHQQMDxutp-gFPbJCXGdFPx2v4XmJItJ1Gvy_oSwqztyEIoNL8uDKCeU4gNK2uONTleUDPgErA6IzorzXcpkvW70MCQ49ByKPHfseH9IMWhWplaD0FwxQMLW3veIxw_Bt46GIMQL70md-GHBLU"/>
+<div class="absolute inset-0 bg-primary-container/10 flex items-center justify-center">
+<div class="w-4/5 h-4/5 border-[16px] border-surface"></div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<span class="text-sm uppercase tracking-[0.3em] font-bold text-primary">The New Layer</span>
+<h2 class="text-5xl font-serif leading-tight">Translation as a <br/>New Capability.</h2>
+<div class="space-y-6 text-xl text-on-surface-variant leading-relaxed">
+<p>
+                        We utilize advanced linguistic models not just for summary, but for tectonic translation—realigning fragmented data into the cohesive structures required for high-level decision making.
+                    </p>
+<p>
+                        This isn't about speed; it's about depth. We enable institutions to speak the language of the future without sacrificing the nuance of the past.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Five Builds -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-6xl font-serif mb-6 italic">The Five Builds</h2>
+<p class="text-xl text-on-surface-variant">Five architectural frameworks for enduring digital presence.</p>
+</div>
+<div class="flex space-x-4">
+<button class="w-16 h-16 flex items-center justify-center bg-surface hover:bg-white transition-colors">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-16 h-16 flex items-center justify-center amethyst-gradient text-white">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<!-- Asymmetric Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Build 1 -->
+<div class="md:col-span-8 bg-surface p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="font-mono text-primary mb-4 block">01</span>
+<h3 class="text-4xl font-serif italic mb-6">Sentient Archives</h3>
+<p class="text-lg text-on-surface-variant max-w-xl">Self-organizing data structures that evolve as institutional knowledge grows, ensuring context is never lost.</p>
+</div>
+<div class="flex justify-end">
+<img class="w-32 h-32 object-cover grayscale opacity-50" data-alt="macro photograph of crystalline structures with soft focus purple lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDseK36iI5cFXO1pfzpzA6GNu0X1nRWRHXkwUdyRmsZIPu0Us-egZD3KenpDDL089kp2wBkC3REGTIRdJWabLUyN4BUTgeZHriB8xE1PpuIjIi383faC0rZN90jqKBCis13aHXwOz7PSZZSVJxEe8Qr0jCYV9lDTOwFOPBzeiH1piX-fYxN5-iFT3sukjmOHbVuR4mui93uTHwmcvhw1PTJjVIScFXEGeGTawWyzn4h-ssOvPUmJ3fP3Upo-DowTNF9tI5qcJ9Ph44v"/>
+</div>
+</div>
+<!-- Build 2 -->
+<div class="md:col-span-4 bg-on-surface text-surface p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="font-mono text-primary-fixed-dim mb-4 block">02</span>
+<h3 class="text-3xl font-serif italic mb-4">Veracity Engines</h3>
+<p class="text-on-secondary-fixed-variant">Cross-referencing truth anchors against historical precedence.</p>
+</div>
+<span class="material-symbols-outlined text-5xl">verified</span>
+</div>
+<!-- Build 3 -->
+<div class="md:col-span-4 bg-surface-container-high p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="font-mono text-primary mb-4 block">03</span>
+<h3 class="text-3xl font-serif italic mb-4">Civic Protocols</h3>
+<p class="text-on-surface-variant">The interface between public trust and digital governance.</p>
+</div>
+<span class="material-symbols-outlined text-5xl">gavel</span>
+</div>
+<!-- Build 4 & 5 -->
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-primary-container text-white p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="font-mono text-primary-fixed-dim mb-4 block">04</span>
+<h3 class="text-3xl font-serif italic mb-4">Strategic Echo</h3>
+<p class="opacity-80">Managing the resonance of institutional messaging across decades.</p>
+</div>
+<span class="material-symbols-outlined text-5xl">record_voice_over</span>
+</div>
+<div class="bg-surface p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="font-mono text-primary mb-4 block">05</span>
+<h3 class="text-3xl font-serif italic mb-4">Curation Layers</h3>
+<p class="text-on-surface-variant">The final editorial oversight that ensures human meaning persists.</p>
+</div>
+<span class="material-symbols-outlined text-5xl">history_edu</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Fit Section: Who this is for -->
+<section class="min-h-screen flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 bg-on-surface text-surface flex flex-col justify-center px-12 md:px-24 py-24">
+<h2 class="text-5xl md:text-7xl font-serif italic mb-12">Who This <br/>Is For</h2>
+<div class="space-y-12 max-w-lg">
+<div class="space-y-4">
+<h4 class="text-xl font-bold tracking-widest uppercase text-primary-fixed-dim">Foundational NGOs</h4>
+<p class="text-lg opacity-70">Organizations tasked with global stewardship and the preservation of human rights across multiple generations.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-xl font-bold tracking-widest uppercase text-primary-fixed-dim">Academic Trusts</h4>
+<p class="text-lg opacity-70">Institutions housing the collective intellect of our species, requiring more than just storage.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-xl font-bold tracking-widest uppercase text-primary-fixed-dim">Legacy Media</h4>
+<p class="text-lg opacity-70">The gatekeepers of truth who need resilient structures to combat the erosion of digital permanence.</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<img class="w-full h-full object-cover grayscale" data-alt="minimalist architectural sculpture in a desert landscape at dusk with high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfPPOLG2w8lnUA_7a3iyb-RzInTG-yMmoADw48WhARd-vvALvl7JknN_ey8lgPgGXvi0xHvT65lfZI8mNrsxE0pnklQJC5XlMTc8F4F7Mbky2G4z5WGGgaFJhRxyNdv4nVVTQUAEoLjBRZDokORoPnBvRleZf2_Ql5T2O9-JYHg42668aAK0Teux2Hg1KPLDUrV6QH9U-6ujwPtjcK69YXdzSkTSuqmBHRT09Yt6_hQ3rgN6vgZanE9dEOYUzFsZ3THKJHhMuHdTo6"/>
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
+<div class="absolute bottom-24 left-12 md:left-24 right-12 text-white">
+<p class="text-4xl font-serif italic leading-tight">"Integrity is not a state of being, but a constant architectural effort."</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#1b1c19] dark:bg-black w-full pt-24 pb-12 text-[#fbf9f4]">
+<div class="flex flex-col items-center text-center px-8">
+<div class="text-xl font-serif text-[#fbf9f4] mb-12">Movemental</div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-6 mb-16">
+<a class="text-[#ccc9c6] hover:text-white transition-opacity duration-300" href="#">Ethics &amp; Transparency</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity duration-300" href="#">Archival Standards</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity duration-300" href="#">Privacy Protocol</a>
+<a class="text-[#ccc9c6] hover:text-white transition-opacity duration-300" href="#">Contact</a>
+</div>
+<div class="w-full h-px bg-white/10 mb-12"></div>
+<p class="text-sm font-body tracking-wide opacity-60">
+                © 2024 Movemental. Preserving Institutional Integrity through Digital Curation.
+            </p>
+</div>
+</footer>
+</body></html>

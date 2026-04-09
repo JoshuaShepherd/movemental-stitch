@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#4a4454",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f5f3ee",
+                    "on-secondary-fixed": "#1b1c19",
+                    "primary-fixed-dim": "#d3bbff",
+                    "on-tertiary-container": "#fa9261",
+                    "on-background": "#1b1c19",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#d3bbff",
+                    "on-secondary-fixed-variant": "#464743",
+                    "inverse-on-surface": "#f2f1ec",
+                    "secondary-container": "#deddd8",
+                    "surface-bright": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#7a3005",
+                    "surface-tint": "#7238d5",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#eaddff",
+                    "on-surface": "#1b1c19",
+                    "surface-container": "#f0eee9",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#4e1a00",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-secondary-container": "#61615d",
+                    "on-primary-fixed-variant": "#5912bd",
+                    "tertiary-fixed": "#ffdbcc",
+                    "outline-variant": "#ccc3d7",
+                    "on-tertiary-fixed": "#351000",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "primary": "#380080",
+                    "secondary": "#5e5f5b",
+                    "surface": "#fbf9f4",
+                    "on-primary-fixed": "#25005a",
+                    "inverse-surface": "#30312e",
+                    "background": "#fbf9f4",
+                    "surface-variant": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#5300b7",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container-high": "#eae8e3",
+                    "on-primary-container": "#bd9cff",
+                    "secondary-fixed-dim": "#c7c6c2",
+                    "outline": "#7b7486",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#722a00",
+                    "surface-dim": "#dbdad5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-tight {
+            font-family: 'Newsreader', serif;
+            letter-spacing: -0.02em;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-bottom-color: #380080 !important;
+        }
+        .custom-radio {
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid #7b7486;
+            border-radius: 0;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+            position: relative;
+        }
+        .custom-radio:checked {
+            background-color: #380080;
+            border-color: #380080;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#fbf9f4] dark:bg-stone-950 sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#1b1c19] dark:text-stone-100">Movemental</div>
+<nav class="hidden md:flex space-x-12">
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Philosophy</a>
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Pathways</a>
+<a class="font-serif text-lg tracking-tight font-medium text-[#1b1c19] dark:text-stone-400 hover:text-[#5300b7] transition-colors duration-300" href="#">Archive</a>
+</nav>
+<button class="bg-[#5300b7] text-white px-8 py-3 font-body text-sm font-medium tracking-wide uppercase transition-all hover:opacity-90 active:opacity-80">
+                Get Started
+            </button>
+</div>
+<div class="bg-[#f0eee9] dark:bg-stone-900 h-[1px] w-full"></div>
+</header>
+<main class="max-w-screen-2xl mx-auto px-8 pt-20 pb-32">
+<div class="editorial-grid">
+<!-- Left Column: Context & Intent -->
+<div class="col-span-12 lg:col-span-4 lg:pr-12 mb-16 lg:mb-0">
+<div class="sticky top-32">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-6 block">Initial Inquiry</span>
+<h1 class="serif-tight text-6xl md:text-7xl font-light leading-[1.1] text-on-surface mb-8">
+                        Tell us a bit about your work
+                    </h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed max-w-sm">
+                        Movemental is designed for practitioners who value depth over velocity. Your responses here help us understand if your project aligns with our archival frameworks.
+                    </p>
+<div class="mt-16 space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container">auto_stories</span>
+<p class="text-sm italic font-headline text-on-secondary-container">"The archivist's role is not just to collect, but to catalyze the future through the preservation of intent."</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: The Form -->
+<div class="col-span-12 lg:col-span-7 lg:col-start-6">
+<form class="space-y-20">
+<!-- Section 1: Creation -->
+<section class="space-y-12">
+<div class="space-y-4">
+<label class="font-headline text-2xl text-on-surface block italic">What have you built?</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant py-4 px-0 font-body text-lg placeholder:text-outline focus:ring-0 transition-all resize-none overflow-hidden" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Describe the core essence of your project..." rows="1"></textarea>
+</div>
+<div class="space-y-4">
+<label class="font-headline text-2xl text-on-surface block italic">Where does it currently live?</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant py-4 px-0 font-body text-lg placeholder:text-outline focus:ring-0 transition-all resize-none overflow-hidden" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="URL, physical location, or current platform..." rows="1"></textarea>
+</div>
+<div class="space-y-4">
+<label class="font-headline text-2xl text-on-surface block italic">What made you curious about this?</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant py-4 px-0 font-body text-lg placeholder:text-outline focus:ring-0 transition-all resize-none overflow-hidden" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="The spark that led to movement..." rows="1"></textarea>
+</div>
+</section>
+<!-- Section 2: Fit Signal -->
+<section class="bg-surface-container-low p-12 space-y-16">
+<div class="flex items-center justify-between border-b border-outline-variant pb-6">
+<h2 class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant">Fit Signal</h2>
+<span class="material-symbols-outlined text-outline">analytics</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<span class="font-body text-sm font-medium text-on-surface leading-tight block">Do you have an existing audience?</span>
+<div class="space-y-3">
+<label class="flex items-center cursor-pointer group">
+<input class="custom-radio" name="audience" type="radio"/>
+<span class="font-body text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Yes, established.</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input class="custom-radio" name="audience" type="radio"/>
+<span class="font-body text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">In the early stages.</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input class="custom-radio" name="audience" type="radio"/>
+<span class="font-body text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Not yet.</span>
+</label>
+</div>
+</div>
+<div class="space-y-6">
+<span class="font-body text-sm font-medium text-on-surface leading-tight block">Are you interested in building a long-term system around your work?</span>
+<div class="space-y-3">
+<label class="flex items-center cursor-pointer group">
+<input class="custom-radio" name="system" type="radio"/>
+<span class="font-body text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Absolutely. Preservation is key.</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input class="custom-radio" name="system" type="radio"/>
+<span class="font-body text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">I am exploring the possibility.</span>
+</label>
+<label class="flex items-center cursor-pointer group">
+<input class="custom-radio" name="system" type="radio"/>
+<span class="font-body text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">I prefer ephemeral output.</span>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Form Footer -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 pt-8">
+<p class="font-body text-xs text-on-surface-variant italic max-w-xs">
+                            Upon submission, our editorial board will review your inquiry. You can expect a response within 48-72 hours.
+                        </p>
+<button class="w-full md:w-auto bg-primary-container text-white px-12 py-5 font-body text-sm font-bold tracking-widest uppercase transition-all hover:bg-primary active:scale-[0.98]" type="submit">
+                            Submit Inquiry
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Content Visual Break -->
+<section class="w-full h-[614px] relative overflow-hidden bg-on-surface">
+<img class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="Monochrome close-up of vintage books in a dark library with a single soft light source illuminating the spines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQV_Cxxx0hIphFf1BZDY9KEfSH6NaOFFeCLf3iYkaOG6wOViGtVpRSGOKOAehbhdRy-tcm827XNIFR4ERUCov8ghXAcBnVAjNc45DVbgYYzqhFys29Hnfex9UpfKKzJOx2KgahOg9GW0BANgcfwSSy6kHIFxqNRDmLSSBust6c6NQctX40ubPnFmPrHJNZTFHqGEHRDm8TjXPMFrFia6-SklhXi8dgcRUeL9BK_TjYl-6x_HU8BoaxK43AbG-tlSmny5DFMpgcLRoc"/>
+<div class="absolute inset-0 flex items-center justify-center p-8">
+<h2 class="serif-tight text-4xl md:text-6xl text-white text-center max-w-4xl leading-tight">
+                "Modern archiving isn't about the past—it's about the structure we give the present."
+            </h2>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#fbf9f4] dark:bg-stone-950">
+<div class="bg-[#f0eee9] dark:bg-stone-900 h-[1px] w-full mb-8"></div>
+<div class="flex flex-col items-center justify-center space-y-6 w-full px-8 py-12 text-center">
+<div class="flex space-x-8">
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Privacy</a>
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Terms</a>
+<a class="font-sans text-xs uppercase tracking-widest text-[#ccc9c6] hover:text-[#1b1c19] dark:hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<p class="font-sans text-xs uppercase tracking-widest text-[#1b1c19] dark:text-stone-300">
+                © 2024 Movemental. Built for the Modern Archivist.
+            </p>
+</div>
+</footer>
+</body></html>
